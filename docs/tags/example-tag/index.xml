@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Example Tag on Unbounded School</title>
-    <link>https://unbounded.school/tags/example-tag/</link>
+    <link>http://localhost:1313/tags/example-tag/</link>
     <description>Recent content in Example Tag on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://unbounded.school/tags/example-tag/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/example-tag/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Pattern File</title>
-      <link>https://unbounded.school/patterns/pattern/</link>
+      <title>KPop Demon Hunters Quest</title>
+      <link>http://localhost:1313/patterns/pattern/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/pattern/</guid>
-      <description>&lt;p&gt;You can just write &lt;strong&gt;markdown&lt;/strong&gt; here. But don&amp;rsquo;t forget there are lots of shortcodes to help you with writing and showing off code too. See &lt;a href=&#34;https://thepaciellogroup.github.io/cupper/&#34;&gt;the documentation for &lt;strong&gt;Cupper&lt;/strong&gt;&lt;/a&gt; for full details.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s an example of a note shortcode for adding little &amp;ldquo;oh and also&amp;rdquo; notes to your patterns&amp;rsquo; documentation.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <guid>http://localhost:1313/patterns/pattern/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s an example of a note shortcode for adding little &amp;ldquo;oh and also&amp;rdquo; notes to your patterns&amp;rsquo; documentation.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
   </channel>
 </rss>

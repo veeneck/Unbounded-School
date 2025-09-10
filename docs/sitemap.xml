@@ -2,20 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://unbounded.school/tags/another-tag/</loc>
+    <loc>http://localhost:1313/patterns/kpop/</loc>
   </url><url>
-    <loc>https://unbounded.school/categories/</loc>
+    <loc>http://localhost:1313/patterns/kpop/task1/</loc>
   </url><url>
-    <loc>https://unbounded.school/print-version/</loc>
+    <loc>http://localhost:1313/toplevel/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/example-tag/</loc>
+    <loc>http://localhost:1313/patterns/kpop/task2/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/pattern/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/</loc>
+    <loc>http://localhost:1313/print-version/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://unbounded.school/</loc>
+    <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/patterns/</loc>
   </url>
 </urlset>

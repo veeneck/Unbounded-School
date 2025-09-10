@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Name Of This Project/Site on Unbounded School</title>
-    <link>https://unbounded.school/</link>
-    <description>Recent content in The Name Of This Project/Site on Unbounded School</description>
+    <title>Top Level Folder called Content on Unbounded School</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Top Level Folder called Content on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://unbounded.school/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cupper</title>
-      <link>https://unbounded.school/print-version/</link>
+      <title>First Task</title>
+      <link>http://localhost:1313/patterns/kpop/task1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/print-version/</guid>
-      <description>&lt;p&gt;You don&amp;rsquo;t want to edit this file :-)&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/kpop/task1/</guid>
+      <description>&lt;p&gt;this is my first task!&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My First Pattern File</title>
-      <link>https://unbounded.school/patterns/pattern/</link>
+      <title>Top Level</title>
+      <link>http://localhost:1313/toplevel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/pattern/</guid>
-      <description>&lt;p&gt;You can just write &lt;strong&gt;markdown&lt;/strong&gt; here. But don&amp;rsquo;t forget there are lots of shortcodes to help you with writing and showing off code too. See &lt;a href=&#34;https://thepaciellogroup.github.io/cupper/&#34;&gt;the documentation for &lt;strong&gt;Cupper&lt;/strong&gt;&lt;/a&gt; for full details.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s an example of a note shortcode for adding little &amp;ldquo;oh and also&amp;rdquo; notes to your patterns&amp;rsquo; documentation.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <guid>http://localhost:1313/toplevel/</guid>
+      <description>&lt;p&gt;some top level stuff&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second Task</title>
+      <link>http://localhost:1313/patterns/kpop/task2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/patterns/kpop/task2/</guid>
+      <description>&lt;p&gt;this is my second task!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cupper</title>
+      <link>http://localhost:1313/print-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/print-version/</guid>
+      <description>&lt;p&gt;You don&amp;rsquo;t want to edit this file :-)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

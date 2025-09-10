@@ -51,12 +51,6 @@
               </a>
               <p class="library-desc">
                 {{ .Site.Params.Description | markdownify }}
-                {{ if ne .Type "print-version" }}
-                  <a class="print" href="{{ "print-version" | absURL }}">
-                    <svg viewBox="0 0 35 45" aria-hidden="true" focusable="false">
-                      <use xlink:href="#doc"></use>
-                    </svg>Print version
-                 {{ end }}
                </a>
               </p>
               {{ if eq .Type "print-version" }}
