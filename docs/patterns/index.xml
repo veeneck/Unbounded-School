@@ -1,46 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Patterns on Cupper</title>
-    <link>http://localhost:1313/cupper/patterns/</link>
-    <description>Recent content in Patterns on Cupper</description>
+    <title>Patterns on Unbounded School</title>
+    <link>http://localhost:1313/patterns/</link>
+    <description>Recent content in Patterns on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/cupper/patterns/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/patterns/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation</title>
-      <link>http://localhost:1313/cupper/patterns/installation/</link>
+      <title>My First Pattern File</title>
+      <link>http://localhost:1313/patterns/pattern/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cupper/patterns/installation/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; is built using the static site engine, &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, and NPM. The codebase is available to download on Github. Let&amp;rsquo;s get everything installed step-by-step.&lt;/p&gt;&#xA;&lt;h2 id=&#34;install-hugo&#34;&gt;Install Hugo&lt;/h2&gt;&#xA;&lt;p&gt;First you need to install Hugo globally.&lt;/p&gt;&#xA;&lt;h3 id=&#34;osx-users&#34;&gt;OSX users&lt;/h3&gt;&#xA;&lt;p&gt;If you are a Mac user and have &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt; on your system, installing Hugo is simple:&lt;/p&gt;&#xA;&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;brew install hugo&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;Alternatively, you can manually &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;install Hugo from a package&lt;/a&gt;. You can verify the installation was successful by typing:&lt;/p&gt;&#xA;&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;hugo version&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h3 id=&#34;windows-users&#34;&gt;Windows users&lt;/h3&gt;&#xA;&lt;p&gt;Installing on Windows is a little more involved than on OSX. The authors of Hugo provide &lt;a href=&#34;https://gohugo.io/tutorials/installing-on-windows/&#34;&gt;a guide&lt;/a&gt; with instructions for technical and less technical users.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Setup</title>
-      <link>http://localhost:1313/cupper/patterns/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cupper/patterns/setup/</guid>
-      <description>&lt;p&gt;By now, you should have followed the &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Installation&lt;!-- raw HTML omitted --&gt; instructions. You should have Hugo and Node installed, and a local copy of a forked version of &lt;strong&gt;Cupper&lt;/strong&gt;. You should also have run &lt;code&gt;npm install&lt;/code&gt; in the root of that codebase.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cleaning-the-content-folder&#34;&gt;&amp;ldquo;Cleaning&amp;rdquo; the content folder&lt;/h2&gt;&#xA;&lt;p&gt;Before you can start writing documentation, there are a few things still to do in order to get set up. At the moment, your version of &lt;strong&gt;Cupper&lt;/strong&gt; is a facsimile of the original, containing all the content you&amp;rsquo;re reading right now. We want to delete that content and replace it with some starter content. There&amp;rsquo;s a simple &lt;code&gt;clean&lt;/code&gt; command for this.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Serving</title>
-      <link>http://localhost:1313/cupper/patterns/serving/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cupper/patterns/serving/</guid>
-      <description>&lt;h2 id=&#34;serving-locally&#34;&gt;Serving locally&lt;/h2&gt;&#xA;&lt;p&gt;While you&amp;rsquo;re creating content for your project, you&amp;rsquo;ll probably want to see what the finished product looks like. Fortunately, &lt;strong&gt;Cupper&lt;/strong&gt; is easy to serve locally using the &lt;code&gt;serve&lt;/code&gt; command:&lt;/p&gt;&#xA;&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;npm run serve&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;This will serve your working project from &lt;code&gt;localhost:1313&lt;/code&gt;. Whenever you make changes to your files, the site will automatically rebuild. No need to refresh the web page!&lt;/p&gt;&#xA;&lt;h2 id=&#34;publishing-on-github-pages&#34;&gt;Publishing on Github Pages&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; creates a &lt;code&gt;/docs&lt;/code&gt; folder containing the latest version of your site whenever you do an &lt;code&gt;npm run build&lt;/code&gt; or a &lt;code&gt;git commit&lt;/code&gt;. So long as you forked the &lt;strong&gt;Cupper&lt;/strong&gt; repository when making your own version (see &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Setup&lt;!-- raw HTML omitted --&gt;), whenever you push to master, you will also be updating the site found at your Github Pages URL.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Printing</title>
-      <link>http://localhost:1313/cupper/patterns/printing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cupper/patterns/printing/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt;&amp;rsquo;s output site includes a one-page &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Print version&lt;!-- raw HTML omitted --&gt; of the generated library, available at &lt;code&gt;/print-version&lt;/code&gt;. So, if your library base URL is &lt;code&gt;https://yourName.github.io/your-library&lt;/code&gt;, you can print the whole library — to PDF if wanted — from the following address:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://yourName.github.io/your-library/print-version&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Print styles are also provided for individual pattern pages so, if you wanted to print off a single pattern document, you can!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Updating Cupper</title>
-      <link>http://localhost:1313/cupper/patterns/updating/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cupper/patterns/updating/</guid>
-      <description>&lt;p&gt;The core of &lt;strong&gt;Cupper&amp;rsquo;s&lt;/strong&gt; functionality is in its Hugo theme, also called &lt;strong&gt;Cupper&lt;/strong&gt;. This is found in the theme folder.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;content&lt;/li&gt;&#xA;&lt;li&gt;docs&lt;/li&gt;&#xA;&lt;li&gt;lib&lt;/li&gt;&#xA;&lt;li&gt;snippets&lt;/li&gt;&#xA;&lt;li&gt;static&lt;/li&gt;&#xA;&lt;li&gt;themes&#xA;&lt;ul&gt;&#xA;&lt;li&gt;cupper&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Do not &amp;ldquo;hack the core&amp;rdquo;. If you have any issues with &lt;strong&gt;Cupper&lt;/strong&gt;, please report them to &lt;a href=&#34;https://github.com/ThePacielloGroup/cupper/issues&#34;&gt;the &lt;strong&gt;Cupper&lt;/strong&gt; Github repository&lt;/a&gt; and they will be dealt with ASAP.&lt;/p&gt;&#xA;&lt;p&gt;Cupper is undergoing constant development, so keep an eye out for new releases. To update to a new version of &lt;strong&gt;Cupper&lt;/strong&gt;, simply run the &lt;code&gt;update&lt;/code&gt; command from inside your local project folder.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/pattern/</guid>
+      <description>&lt;p&gt;You can just write &lt;strong&gt;markdown&lt;/strong&gt; here. But don&amp;rsquo;t forget there are lots of shortcodes to help you with writing and showing off code too. See &lt;a href=&#34;https://thepaciellogroup.github.io/cupper/&#34;&gt;the documentation for &lt;strong&gt;Cupper&lt;/strong&gt;&lt;/a&gt; for full details.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s an example of a note shortcode for adding little &amp;ldquo;oh and also&amp;rdquo; notes to your patterns&amp;rsquo; documentation.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
   </channel>
 </rss>

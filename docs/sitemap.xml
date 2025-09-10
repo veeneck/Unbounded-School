@@ -2,68 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/cupper/patterns/coding/code-blocks/</loc>
+    <loc>http://localhost:1313/tags/another-tag/</loc>
   </url><url>
-    <loc>http://localhost:1313/cupper/patterns/installation/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/cupper/patterns/writing/project-structure/</loc>
+    <loc>http://localhost:1313/print-version/</loc>
   </url><url>
-    <loc>http://localhost:1313/cupper/patterns/writing/</loc>
+    <loc>http://localhost:1313/tags/example-tag/</loc>
   </url><url>
-    <loc>http://localhost:1313/cupper/patterns/coding/demo-embedding/</loc>
+    <loc>http://localhost:1313/patterns/pattern/</loc>
   </url><url>
-    <loc>http://localhost:1313/cupper/patterns/media/</loc>
+    <loc>http://localhost:1313/patterns/</loc>
   </url><url>
-    <loc>http://localhost:1313/cupper/patterns/setup/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/cupper/patterns/writing/markdown-and-metadata/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/serving/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/coding/writing-inline-demos/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/printing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/updating/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/writing/expandable-sections/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/print-version/</loc>
-    <lastmod>2017-07-29T22:48:43+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/cupper/</loc>
-    <lastmod>2017-06-26T18:27:58+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/cupper/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/coding/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/coding/color-palettes/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/coding/command-line/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/coding/file-trees/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/media/including-images/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/media/including-videos/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/tags/markdown/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/tags/metadata/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/writing/notes-and-warnings/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/writing/references/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/writing/snippets/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/writing/tables-of-contents/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cupper/patterns/coding/tested/</loc>
+    <loc>http://localhost:1313/</loc>
   </url>
 </urlset>

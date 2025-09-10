@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Cupper</title>
-    <link>http://localhost:1313/cupper/tags/</link>
-    <description>Recent content in Tags on Cupper</description>
+    <title>Tags on Unbounded School</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/cupper/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown</title>
-      <link>http://localhost:1313/cupper/tags/markdown/</link>
+      <title>Another Tag</title>
+      <link>http://localhost:1313/tags/another-tag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cupper/tags/markdown/</guid>
+      <guid>http://localhost:1313/tags/another-tag/</guid>
       <description></description>
     </item>
     <item>
-      <title>Metadata</title>
-      <link>http://localhost:1313/cupper/tags/metadata/</link>
+      <title>Example Tag</title>
+      <link>http://localhost:1313/tags/example-tag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cupper/tags/metadata/</guid>
+      <guid>http://localhost:1313/tags/example-tag/</guid>
       <description></description>
     </item>
   </channel>
