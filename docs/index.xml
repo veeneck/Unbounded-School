@@ -1,248 +1,166 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Cupper Documentation Builder on Cupper</title>
-    <link>https://thepaciellogroup.github.io/cupper/</link>
+    <link>http://localhost:1313/cupper/</link>
     <description>Recent content in The Cupper Documentation Builder on Cupper</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jun 2017 18:27:58 +0100</lastBuildDate>
-    
-	<atom:link href="https://thepaciellogroup.github.io/cupper/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 29 Jul 2017 22:48:43 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/cupper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Code blocks</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/coding/code-blocks/</link>
+      <link>http://localhost:1313/cupper/patterns/coding/code-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/coding/code-blocks/</guid>
-      <description>Markdown already supports code samples both inline (using single backticks like `some code here`) and in blocks. Cupper will syntax highlight HTML, CSS, and JavaScript if you provide the correct language in the formulation of the block.
-So, this&amp;hellip;
-```html &amp;lt;button aria-pressed=&#34;false&#34;toggle me&amp;lt;/button ```  &amp;hellip; will result in this:
-&amp;lt;button aria-pressed=&amp;quot;false&amp;quot;&amp;gt;toggle me&amp;lt;/button&amp;gt;  Note that the syntax highlighting uses a greyscale theme. Cupper is careful not to use color as part of its own design, because these colors may clash with those of the design being illustrated and discussed.</description>
+      <guid>http://localhost:1313/cupper/patterns/coding/code-blocks/</guid>
+      <description>&lt;p&gt;Markdown already supports code samples both inline (using single backticks like `some code here`) and in blocks. &lt;strong&gt;Cupper&lt;/strong&gt; will syntax highlight HTML, CSS, and JavaScript if you provide the correct language in the formulation of the block.&lt;/p&gt;&#xA;&lt;p&gt;So, this…&lt;/p&gt;&#xA;&lt;pre class=&#34;&#34;&gt;&lt;code  data-codeblock-shortcode&gt;&#xA;```html&#xA;&amp;lt;button aria-pressed=&#34;false&#34;&gt;toggle me&amp;lt;/button&gt;&#xA;```&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;… will result in this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;aria-pressed&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt;&amp;gt;toggle me&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note that the syntax highlighting uses a greyscale theme. &lt;strong&gt;Cupper&lt;/strong&gt; is careful not to use color as part of its own design, because these colors may clash with those of the design being illustrated and discussed.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Installation</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/installation/</link>
+      <link>http://localhost:1313/cupper/patterns/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/installation/</guid>
-      <description>Cupper is built using the static site engine, Hugo, and NPM. The codebase is available to download on Github. Let&amp;rsquo;s get everything installed step-by-step.
-Install Hugo First you need to install Hugo globally.
-OSX users If you are a Mac user and have Homebrew on your system, installing Hugo is simple:
-brew install hugo Alternatively, you can manually install Hugo from a package. You can verify the installation was successful by typing:</description>
+      <guid>http://localhost:1313/cupper/patterns/installation/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; is built using the static site engine, &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, and NPM. The codebase is available to download on Github. Let&amp;rsquo;s get everything installed step-by-step.&lt;/p&gt;&#xA;&lt;h2 id=&#34;install-hugo&#34;&gt;Install Hugo&lt;/h2&gt;&#xA;&lt;p&gt;First you need to install Hugo globally.&lt;/p&gt;&#xA;&lt;h3 id=&#34;osx-users&#34;&gt;OSX users&lt;/h3&gt;&#xA;&lt;p&gt;If you are a Mac user and have &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt; on your system, installing Hugo is simple:&lt;/p&gt;&#xA;&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;brew install hugo&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;Alternatively, you can manually &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;install Hugo from a package&lt;/a&gt;. You can verify the installation was successful by typing:&lt;/p&gt;&#xA;&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;hugo version&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h3 id=&#34;windows-users&#34;&gt;Windows users&lt;/h3&gt;&#xA;&lt;p&gt;Installing on Windows is a little more involved than on OSX. The authors of Hugo provide &lt;a href=&#34;https://gohugo.io/tutorials/installing-on-windows/&#34;&gt;a guide&lt;/a&gt; with instructions for technical and less technical users.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Project structure</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/writing/project-structure/</link>
+      <link>http://localhost:1313/cupper/patterns/writing/project-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/writing/project-structure/</guid>
-      <description>Before you can set about making documentation, you need to know where everything goes. The simplest folder structure looks like this:
- content  _index.md print-version.md patterns  name-of-my-pattern.md name-of-my-other-pattern.md      /content - This is where all of your content lives. You won&amp;rsquo;t need to visit any other folders very frequently. _index.md — This is the content file for your home page. print-version.md — This is a placeholder for the single-page / print-friendly version of you library.</description>
+      <guid>http://localhost:1313/cupper/patterns/writing/project-structure/</guid>
+      <description>&lt;p&gt;Before you can set about making documentation, you need to know where everything goes. The simplest folder structure looks like this:&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;content&#xA;&lt;ul&gt;&#xA;&lt;li&gt;_index.md&lt;/li&gt;&#xA;&lt;li&gt;print-version.md&lt;/li&gt;&#xA;&lt;li&gt;patterns&#xA;&lt;ul&gt;&#xA;&lt;li&gt;name-of-my-pattern.md&lt;/li&gt;&#xA;&lt;li&gt;name-of-my-other-pattern.md&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;/content&lt;/strong&gt; - This is where all of your content lives. You won&amp;rsquo;t need to visit any other folders very frequently.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;_index.md&lt;/strong&gt; — This is the content file for your home page.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;print-version.md&lt;/strong&gt; — This is a placeholder for the single-page / print-friendly version of you library. Leave this file as it is.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;/patterns&lt;/strong&gt; — This is the folder where individual content files are kept. &lt;strong&gt;Cupper&lt;/strong&gt; refers to each individual documentation file/page as a &amp;ldquo;pattern&amp;rdquo;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;subsections&#34;&gt;Subsections&lt;/h2&gt;&#xA;&lt;p&gt;You may have noticed that this site&amp;rsquo;s navigation is divided partly into subsections, with labels like &amp;ldquo;Writing&amp;rdquo;. &lt;strong&gt;Cupper&lt;/strong&gt; (or, rather, Hugo) allows you to create such subsections by simply nesting folders under the &lt;code&gt;/patterns&lt;/code&gt; folder. In the following example, I have a subsection about different types of &amp;ldquo;popup&amp;rdquo; pattern.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Demo embedding</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/coding/demo-embedding/</link>
+      <link>http://localhost:1313/cupper/patterns/coding/demo-embedding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/coding/demo-embedding/</guid>
-      <description>Sometimes just pictures of the pattern you&amp;rsquo;re documenting aren&amp;rsquo;t enough. Interactive patterns benefit from live demos, so that readers can test their functionality.
-CodePen Cupper offers a couple of ways to do this. The first is by embedding CodePen demos into the content. The codePen shortcode takes just one argument: the codePen&amp;rsquo;s ID.
-&amp;#x7b;{% codePen VpVNKW %}}  This will embed the identified codePen into the content wherever you placed the shortcode, with the result view showing by default:</description>
+      <guid>http://localhost:1313/cupper/patterns/coding/demo-embedding/</guid>
+      <description>&lt;p&gt;Sometimes just pictures of the pattern you&amp;rsquo;re documenting aren&amp;rsquo;t enough. Interactive patterns benefit from live demos, so that readers can test their functionality.&lt;/p&gt;&#xA;&lt;h2 id=&#34;codepen&#34;&gt;CodePen&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; offers a couple of ways to do this. The first is by embedding CodePen demos into the content. The &lt;code&gt;codePen&lt;/code&gt; shortcode takes just one argument: the codePen&amp;rsquo;s &lt;code&gt;ID&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;pre class=&#34;&#34;&gt;&lt;code  data-codeblock-shortcode&gt;&#xA;&amp;#x7b;{% codePen VpVNKW %}}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;This will embed the identified codePen into the content wherever you placed the shortcode, with the result view showing by default:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Setup</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/setup/</link>
+      <link>http://localhost:1313/cupper/patterns/setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/setup/</guid>
-      <description>By now, you should have followed the  Installation instructions. You should have Hugo and Node installed, and a local copy of a forked version of Cupper. You should also have run npm install in the root of that codebase.
-&amp;ldquo;Cleaning&amp;rdquo; the content folder Before you can start writing documentation, there are a few things still to do in order to get set up. At the moment, your version of Cupper is a facsimile of the original, containing all the content you&amp;rsquo;re reading right now.</description>
+      <guid>http://localhost:1313/cupper/patterns/setup/</guid>
+      <description>&lt;p&gt;By now, you should have followed the &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Installation&lt;!-- raw HTML omitted --&gt; instructions. You should have Hugo and Node installed, and a local copy of a forked version of &lt;strong&gt;Cupper&lt;/strong&gt;. You should also have run &lt;code&gt;npm install&lt;/code&gt; in the root of that codebase.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cleaning-the-content-folder&#34;&gt;&amp;ldquo;Cleaning&amp;rdquo; the content folder&lt;/h2&gt;&#xA;&lt;p&gt;Before you can start writing documentation, there are a few things still to do in order to get set up. At the moment, your version of &lt;strong&gt;Cupper&lt;/strong&gt; is a facsimile of the original, containing all the content you&amp;rsquo;re reading right now. We want to delete that content and replace it with some starter content. There&amp;rsquo;s a simple &lt;code&gt;clean&lt;/code&gt; command for this.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Markdown &amp; metadata</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/writing/markdown-and-metadata/</link>
+      <link>http://localhost:1313/cupper/patterns/writing/markdown-and-metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/writing/markdown-and-metadata/</guid>
-      <description>In Cupper everything is documented using markdown, as a &amp;ldquo;pattern&amp;rdquo;. To create a new pattern file, just add a file with the .md extension to the content/patterns folder. It&amp;rsquo;s recommended you use &amp;ldquo;kebab case&amp;rdquo; to name the file (words separated by hyphens). For example, a pattern with the title &amp;ldquo;Menu button&amp;rdquo; should probably have the filename menu-button. Then you get a nice clean URL: username.github.io/your-library/patterns/menu-button.
-If you&amp;rsquo;re not familiar with writing markdown, there are a number of tutorials available.</description>
+      <guid>http://localhost:1313/cupper/patterns/writing/markdown-and-metadata/</guid>
+      <description>&lt;p&gt;In &lt;strong&gt;Cupper&lt;/strong&gt; everything is documented using markdown, as a &amp;ldquo;pattern&amp;rdquo;. To create a new pattern file, just add a file with the &lt;code&gt;.md&lt;/code&gt; extension to the &lt;code&gt;content/patterns&lt;/code&gt; folder. It&amp;rsquo;s recommended you use &amp;ldquo;kebab case&amp;rdquo; to name the file (words separated by hyphens). For example, a pattern with the title &amp;ldquo;Menu button&amp;rdquo; should probably have the filename &lt;code&gt;menu-button&lt;/code&gt;. Then you get a nice clean URL: &lt;code&gt;username.github.io/your-library/patterns/menu-button&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re not familiar with writing markdown, there are a number of tutorials available. One of the best is &lt;a href=&#34;https://guides.github.com/features/mastering-markdown/&#34;&gt;Mastering Markdown&lt;/a&gt; offered by Github. There&amp;rsquo;s also a &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;nice cheatsheet here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Serving</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/serving/</link>
+      <link>http://localhost:1313/cupper/patterns/serving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/serving/</guid>
-      <description>Serving locally While you&amp;rsquo;re creating content for your project, you&amp;rsquo;ll probably want to see what the finished product looks like. Fortunately, Cupper is easy to serve locally using the serve command:
-npm run serve This will serve your working project from localhost:1313. Whenever you make changes to your files, the site will automatically rebuild. No need to refresh the web page!
-Publishing on Github Pages Cupper creates a /docs folder containing the latest version of your site whenever you do an npm run build or a git commit.</description>
+      <guid>http://localhost:1313/cupper/patterns/serving/</guid>
+      <description>&lt;h2 id=&#34;serving-locally&#34;&gt;Serving locally&lt;/h2&gt;&#xA;&lt;p&gt;While you&amp;rsquo;re creating content for your project, you&amp;rsquo;ll probably want to see what the finished product looks like. Fortunately, &lt;strong&gt;Cupper&lt;/strong&gt; is easy to serve locally using the &lt;code&gt;serve&lt;/code&gt; command:&lt;/p&gt;&#xA;&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;npm run serve&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;This will serve your working project from &lt;code&gt;localhost:1313&lt;/code&gt;. Whenever you make changes to your files, the site will automatically rebuild. No need to refresh the web page!&lt;/p&gt;&#xA;&lt;h2 id=&#34;publishing-on-github-pages&#34;&gt;Publishing on Github Pages&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; creates a &lt;code&gt;/docs&lt;/code&gt; folder containing the latest version of your site whenever you do an &lt;code&gt;npm run build&lt;/code&gt; or a &lt;code&gt;git commit&lt;/code&gt;. So long as you forked the &lt;strong&gt;Cupper&lt;/strong&gt; repository when making your own version (see &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Setup&lt;!-- raw HTML omitted --&gt;), whenever you push to master, you will also be updating the site found at your Github Pages URL.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Writing inline demos</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/coding/writing-inline-demos/</link>
+      <link>http://localhost:1313/cupper/patterns/coding/writing-inline-demos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/coding/writing-inline-demos/</guid>
-      <description>There are some issues with  Demo embedding, like the embeds not working offline. They also come with their own branding, which will clash with the pattern you&amp;rsquo;re trying to illustrate.
-Cupper offers another option: a special demo shortcode that allows you to write HTML, CSS, and JavaScript directly into the markdown file. The outputted demo is encapsulated using Shadow DOM, so you don&amp;rsquo;t have to worry about broken styles and global JS.</description>
+      <guid>http://localhost:1313/cupper/patterns/coding/writing-inline-demos/</guid>
+      <description>&lt;p&gt;There are some issues with &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Demo embedding&lt;!-- raw HTML omitted --&gt;, like the embeds not working offline. They also come with their own branding, which will clash with the pattern you&amp;rsquo;re trying to illustrate.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; offers another option: a special &lt;code&gt;demo&lt;/code&gt; shortcode that allows you to write HTML, CSS, and JavaScript directly into the markdown file. The outputted demo is encapsulated using Shadow DOM, so you don&amp;rsquo;t have to worry about broken styles and global JS.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Printing</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/printing/</link>
+      <link>http://localhost:1313/cupper/patterns/printing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/printing/</guid>
-      <description>Cupper&amp;rsquo;s output site includes a one-page  Print version of the generated library, available at /print-version. So, if your library base URL is https://yourName.github.io/your-library, you can print the whole library — to PDF if wanted — from the following address:
-https://yourName.github.io/your-library/print-version     Print styles are also provided for individual pattern pages so, if you wanted to print off a single pattern document, you can!
-  </description>
+      <guid>http://localhost:1313/cupper/patterns/printing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt;&amp;rsquo;s output site includes a one-page &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Print version&lt;!-- raw HTML omitted --&gt; of the generated library, available at &lt;code&gt;/print-version&lt;/code&gt;. So, if your library base URL is &lt;code&gt;https://yourName.github.io/your-library&lt;/code&gt;, you can print the whole library — to PDF if wanted — from the following address:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://yourName.github.io/your-library/print-version&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Print styles are also provided for individual pattern pages so, if you wanted to print off a single pattern document, you can!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Updating Cupper</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/updating/</link>
+      <link>http://localhost:1313/cupper/patterns/updating/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/updating/</guid>
-      <description>The core of Cupper&amp;rsquo;s functionality is in its Hugo theme, also called Cupper. This is found in the theme folder.
- content docs lib snippets static themes  cupper    Do not &amp;ldquo;hack the core&amp;rdquo;. If you have any issues with Cupper, please report them to the Cupper Github repository and they will be dealt with ASAP.
-Cupper is undergoing constant development, so keep an eye out for new releases.</description>
+      <guid>http://localhost:1313/cupper/patterns/updating/</guid>
+      <description>&lt;p&gt;The core of &lt;strong&gt;Cupper&amp;rsquo;s&lt;/strong&gt; functionality is in its Hugo theme, also called &lt;strong&gt;Cupper&lt;/strong&gt;. This is found in the theme folder.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;content&lt;/li&gt;&#xA;&lt;li&gt;docs&lt;/li&gt;&#xA;&lt;li&gt;lib&lt;/li&gt;&#xA;&lt;li&gt;snippets&lt;/li&gt;&#xA;&lt;li&gt;static&lt;/li&gt;&#xA;&lt;li&gt;themes&#xA;&lt;ul&gt;&#xA;&lt;li&gt;cupper&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Do not &amp;ldquo;hack the core&amp;rdquo;. If you have any issues with &lt;strong&gt;Cupper&lt;/strong&gt;, please report them to &lt;a href=&#34;https://github.com/ThePacielloGroup/cupper/issues&#34;&gt;the &lt;strong&gt;Cupper&lt;/strong&gt; Github repository&lt;/a&gt; and they will be dealt with ASAP.&lt;/p&gt;&#xA;&lt;p&gt;Cupper is undergoing constant development, so keep an eye out for new releases. To update to a new version of &lt;strong&gt;Cupper&lt;/strong&gt;, simply run the &lt;code&gt;update&lt;/code&gt; command from inside your local project folder.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Expandable sections</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/writing/expandable-sections/</link>
+      <link>http://localhost:1313/cupper/patterns/writing/expandable-sections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/writing/expandable-sections/</guid>
-      <description>In some cases, where there is a lot of content, it&amp;rsquo;s helpful to collapse certain sections. That way, readers get an overview of what&amp;rsquo;s in the content and can choose where to focus in. Cupper provides a shortcode method for creating expandable sections which generates accessible markup using aria-expanded.
-The expandable shortcode takes three parameters:
- label — This is the label for the the section heading. level — This is the heading level (e.</description>
+      <guid>http://localhost:1313/cupper/patterns/writing/expandable-sections/</guid>
+      <description>&lt;p&gt;In some cases, where there is a lot of content, it&amp;rsquo;s helpful to collapse certain sections. That way, readers get an overview of what&amp;rsquo;s in the content and can choose where to focus in. &lt;strong&gt;Cupper&lt;/strong&gt; provides a shortcode method for creating expandable sections which generates accessible markup using &lt;code&gt;aria-expanded&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;code&gt;expandable&lt;/code&gt; shortcode takes three parameters:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;label&lt;/strong&gt; — This is the label for the the section heading.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;level&lt;/strong&gt; — This is the heading level (e.g. &lt;code&gt;level=&amp;quot;2&amp;quot;&lt;/code&gt; for an &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;) that will contain the label. If you omit a level parameter, no heading is used; it&amp;rsquo;s just a button.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;open&lt;/strong&gt; — Include this and give it a value of &amp;ldquo;true&amp;rdquo; or &amp;ldquo;yes&amp;rdquo; to make the section expanded on page load.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s what the code might look like for a simple expandable section containing markdown:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Print version</title>
-      <link>https://thepaciellogroup.github.io/cupper/print-version/</link>
+      <link>http://localhost:1313/cupper/print-version/</link>
       <pubDate>Sat, 29 Jul 2017 22:48:43 +0100</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/print-version/</guid>
-      <description>You don&amp;rsquo;t want to edit this file :-)</description>
+      <guid>http://localhost:1313/cupper/print-version/</guid>
+      <description>&lt;p&gt;You don&amp;rsquo;t want to edit this file :-)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Color palettes</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/coding/color-palettes/</link>
+      <link>http://localhost:1313/cupper/patterns/coding/color-palettes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/coding/color-palettes/</guid>
-      <description>There&amp;rsquo;s no reason why your Cupper-powered pattern library has to be all about functionality. You can include style guide-like information such as color palettes too. The colors shortcode makes it easy to exhibit colors and their values together. Just supply a comma-separated list of CSS color values.
-&amp;#x7b;{% colors &#34;#111111, #cccccc, #ffffff&#34; %}}  The result is a one row strip showing each color supplied in order. The colors for Cupper are greyscale:</description>
+      <guid>http://localhost:1313/cupper/patterns/coding/color-palettes/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s no reason why your &lt;strong&gt;Cupper&lt;/strong&gt;-powered pattern library has to be all about functionality. You can include style guide-like information such as color palettes too. The &lt;code&gt;colors&lt;/code&gt; shortcode makes it easy to exhibit colors and their values together. Just supply a comma-separated list of CSS color values.&lt;/p&gt;&#xA;&lt;pre class=&#34;&#34;&gt;&lt;code  data-codeblock-shortcode&gt;&#xA;&amp;#x7b;{% colors &#34;#111111, #cccccc, #ffffff&#34; %}}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;The result is a one row strip showing each color supplied in order. The colors for &lt;strong&gt;Cupper&lt;/strong&gt; are greyscale:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Command line</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/coding/command-line/</link>
+      <link>http://localhost:1313/cupper/patterns/coding/command-line/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/coding/command-line/</guid>
-      <description>Your pattern documentation may need to include commands for installing packages or using CLIs. Cupper offers the cmd shortcode for making code blocks look like terminal commands.
-Here&amp;rsquo;s how you write it:
-&amp;#x7b;{&amp;lt;cmd}} npm run start &amp;#x7b;{&amp;lt;/cmd}}  And here&amp;rsquo;s how it looks:
-npm run start    The cmd shortcode currently only supports single commands. If you want to show multiple, successive commands use separate cmd blocks.
-  </description>
+      <guid>http://localhost:1313/cupper/patterns/coding/command-line/</guid>
+      <description>&lt;p&gt;Your pattern documentation may need to include commands for installing packages or using &lt;!-- raw HTML omitted --&gt;CLI&lt;!-- raw HTML omitted --&gt;s. &lt;strong&gt;Cupper&lt;/strong&gt; offers the &lt;code&gt;cmd&lt;/code&gt; shortcode for making code blocks look like terminal commands.&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s how you write it:&lt;/p&gt;&#xA;&lt;pre class=&#34;&#34;&gt;&lt;code  data-codeblock-shortcode&gt;&#xA;&amp;#x7b;{&amp;lt;cmd&gt;}}&#xA;npm run start&#xA;&amp;#x7b;{&amp;lt;/cmd&gt;}}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;And here&amp;rsquo;s how it looks:&lt;/p&gt;&#xA;&lt;pre class=&#34;cmd&#34;&gt;&lt;code&gt;npm run start&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;The &lt;code&gt;cmd&lt;/code&gt; shortcode currently only supports single commands. If you want to show multiple, successive commands use separate &lt;code&gt;cmd&lt;/code&gt; blocks.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>File trees</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/coding/file-trees/</link>
+      <link>http://localhost:1313/cupper/patterns/coding/file-trees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/coding/file-trees/</guid>
-      <description>Representing folder/file structures is simple and accessible in Cupper. Which is just as well, because some components may need to conform to a certain folder structure.
-The file tree is described using a markdown nested list structure:
-&amp;#x7b;{% fileTree %}} * Level 1 folder * Level 2 file * Level 2 folder * Level 3 file * Level 3 folder * Level 4 file * Level 3 folder * Level 4 file * Level 4 file * Level 3 file * Level 2 folder * Level 3 file * Level 3 file * Level 3 file * Level 2 file * Level 1 file &amp;#x7b;{% /fileTree %}}  This is drawn in the following fashion, but preserves the underlying nested list structure for assistive technologies such as screen readers:</description>
+      <guid>http://localhost:1313/cupper/patterns/coding/file-trees/</guid>
+      <description>&lt;p&gt;Representing folder/file structures is simple and accessible in &lt;strong&gt;Cupper&lt;/strong&gt;. Which is just as well, because some components may need to conform to a certain folder structure.&lt;/p&gt;&#xA;&lt;p&gt;The file tree is described using a markdown nested list structure:&lt;/p&gt;&#xA;&lt;pre class=&#34;&#34;&gt;&lt;code  data-codeblock-shortcode&gt;&#xA;&amp;#x7b;{% fileTree %}}&#xA;* Level 1 folder&#xA;    * Level 2 file&#xA;    * Level 2 folder&#xA;        * Level 3 file&#xA;        * Level 3 folder&#xA;            * Level 4 file&#xA;        * Level 3 folder&#xA;            * Level 4 file&#xA;            * Level 4 file&#xA;        * Level 3 file&#xA;    * Level 2 folder&#xA;        * Level 3 file&#xA;        * Level 3 file&#xA;        * Level 3 file&#xA;    * Level 2 file&#xA;* Level 1 file&#xA;&amp;#x7b;{% /fileTree %}}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;This is drawn in the following fashion, but preserves the underlying nested list structure for assistive technologies such as screen readers:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Including images</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/media/including-images/</link>
+      <link>http://localhost:1313/cupper/patterns/media/including-images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/media/including-images/</guid>
-      <description>From time to time, you&amp;rsquo;ll be wanting to include images illustrating the documented pattern in hand. Images live in the static folder, which is a sibling of the /content folder you&amp;rsquo;ll be mostly working in.
- content static  images  logo.png menu-button.gif        When you first make a copy of Cupper, Cupper&amp;rsquo;s own logo will be included. You should replace this with your own company or project logo.</description>
+      <guid>http://localhost:1313/cupper/patterns/media/including-images/</guid>
+      <description>&lt;p&gt;From time to time, you&amp;rsquo;ll be wanting to include images illustrating the documented pattern in hand. Images live in the static folder, which is a sibling of the &lt;code&gt;/content&lt;/code&gt; folder you&amp;rsquo;ll be mostly working in.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;content&lt;/li&gt;&#xA;&lt;li&gt;static&#xA;&lt;ul&gt;&#xA;&lt;li&gt;images&#xA;&lt;ul&gt;&#xA;&lt;li&gt;logo.png&lt;/li&gt;&#xA;&lt;li&gt;menu-button.gif&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;When you first make a copy of &lt;strong&gt;Cupper&lt;/strong&gt;, &lt;strong&gt;Cupper&amp;rsquo;s&lt;/strong&gt; own logo will be included. You should replace this with your own company or project logo.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Including videos</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/media/including-videos/</link>
+      <link>http://localhost:1313/cupper/patterns/media/including-videos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/media/including-videos/</guid>
-      <description>Cupper has a lot of its own shortcodes, but you can still use Hugo&amp;rsquo;s built in shortcodes. These include a simple shortcode for including YouTube videos in your content. The shortcode takes just one parameter — the video&amp;rsquo;s id.
-&amp;#x7b;{&amp;lt;youtube w7Ft2ymGmfc}}  </description>
+      <guid>http://localhost:1313/cupper/patterns/media/including-videos/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; has a lot of its own shortcodes, but you can still use Hugo&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/extras/shortcodes#built-in-shortcodes&#34;&gt;built in shortcodes&lt;/a&gt;. These include a simple shortcode for including YouTube videos in your content. The shortcode takes just one parameter — the video&amp;rsquo;s &lt;code&gt;id&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;pre class=&#34;&#34;&gt;&lt;code  data-codeblock-shortcode&gt;&#xA;&amp;#x7b;{&amp;lt;youtube w7Ft2ymGmfc&gt;}}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>Notes &amp; warnings</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/writing/notes-and-warnings/</link>
+      <link>http://localhost:1313/cupper/patterns/writing/notes-and-warnings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/writing/notes-and-warnings/</guid>
-      <description>Cupper acknowledges that simple markdown is limiting when it comes to writing compelling documentation, so it provides a number of &amp;ldquo;shortcodes&amp;rdquo;. Shortcodes offer a simple syntax for including rich content. For example, Cupper provides shortcodes for including notes and warnings.
-Notes You may wish to pick out some content in your pattern&amp;rsquo;s documentation as a note — an aside to the main thrust of the pattern&amp;rsquo;s description. This is possible using the following syntax:</description>
+      <guid>http://localhost:1313/cupper/patterns/writing/notes-and-warnings/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; acknowledges that simple markdown is limiting when it comes to writing compelling documentation, so it provides a number of &amp;ldquo;shortcodes&amp;rdquo;. Shortcodes offer a simple syntax for including rich content. For example, &lt;strong&gt;Cupper&lt;/strong&gt; provides shortcodes for including notes and warnings.&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;&#xA;&lt;p&gt;You may wish to pick out some content in your pattern&amp;rsquo;s documentation as a note — an aside to the main thrust of the pattern&amp;rsquo;s description. This is possible using the following syntax:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>References</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/writing/references/</link>
+      <link>http://localhost:1313/cupper/patterns/writing/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/writing/references/</guid>
-      <description>Cross-references Cupper identifies the main content files in your documentation as patterns, and they&amp;rsquo;re kept in the content/ patterns folder. It&amp;rsquo;s easy to cross-reference patterns using the pattern shortcode. For example, I can reference the  Notes &amp;amp; warnings pattern. Here&amp;rsquo;s what the markdown looks like, including the shortcode:
-I can reference the &amp;#x7b;{% pattern &#34;Notes &amp; warnings&#34; %}} pattern here.  This saves you having to worry about pathing and decorates the generated link with a bookmark icon, identifying the link as a pattern reference visually.</description>
+      <guid>http://localhost:1313/cupper/patterns/writing/references/</guid>
+      <description>&lt;h2 id=&#34;cross-references&#34;&gt;Cross-references&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; identifies the main content files in your documentation as &lt;em&gt;patterns&lt;/em&gt;, and they&amp;rsquo;re kept in the &lt;strong&gt;content/ patterns&lt;/strong&gt; folder. It&amp;rsquo;s easy to cross-reference patterns using the &lt;code&gt;pattern&lt;/code&gt; shortcode. For example, I can reference the &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Notes &amp;amp; warnings&lt;!-- raw HTML omitted --&gt; pattern. Here&amp;rsquo;s what the markdown looks like, including the shortcode:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Snippets</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/writing/snippets/</link>
+      <link>http://localhost:1313/cupper/patterns/writing/snippets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/writing/snippets/</guid>
-      <description>A lot of the time, your larger documentation patterns will share some common techniques and utilities. For this reason, Cupper lets you save snippets of markdown in a snippets folder, alongside the main content folder.
-The example visually-hidden.md snippet describes the CSS needed to create content that is visually hidden but still available to screen readers. Since this is a technique/utility you are likely to use often, it&amp;rsquo;s nice to be able to just drop a snippet into your markdown content.</description>
+      <guid>http://localhost:1313/cupper/patterns/writing/snippets/</guid>
+      <description>&lt;p&gt;A lot of the time, your larger documentation patterns will share some common techniques and utilities. For this reason, &lt;strong&gt;Cupper&lt;/strong&gt; lets you save snippets of markdown in a &lt;strong&gt;snippets&lt;/strong&gt; folder, alongside the main content folder.&lt;/p&gt;&#xA;&lt;p&gt;The example &lt;code&gt;visually-hidden.md&lt;/code&gt; snippet describes the CSS needed to create content that is visually hidden but still available to screen readers. Since this is a technique/utility you are likely to use often, it&amp;rsquo;s nice to be able to just drop a snippet into your markdown content. The &lt;code&gt;snippet&lt;/code&gt; shortcode lets you do exactly that:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tables of contents</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/writing/tables-of-contents/</link>
+      <link>http://localhost:1313/cupper/patterns/writing/tables-of-contents/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/writing/tables-of-contents/</guid>
-      <description>Pattern pages in Cupper that have two or more subheadings (&amp;lt;h2&amp;gt;s) automatically get a table of contents: a list of links to the main subsections for the page. This feature is made accessible as a navigation region with the &amp;ldquo;Table of contents&amp;rdquo; label and uses an ordered list. The table of contents markup for the  Setup page looks something like this:
-&amp;lt;nav class=&amp;quot;toc&amp;quot; aria-labelledby=&amp;quot;toc-heading&amp;quot;&amp;gt; &amp;lt;h2 id=&amp;quot;toc-heading&amp;quot;&amp;gt;Table of contents&amp;lt;/h2&amp;gt; &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a href=&amp;quot;#cleaning-the-content-folder&amp;quot;&amp;gt;“Cleaning” the content folder&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a href=&amp;quot;#the-setup-command&amp;quot;&amp;gt;The setup command&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a href=&amp;quot;#the-config-file&amp;quot;&amp;gt;The config file&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a href=&amp;quot;#including-a-logo&amp;quot;&amp;gt;Including a logo&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/nav&amp;gt;  Tables of content are a neat way to break down the content of the page and give users a navigable overview.</description>
+      <guid>http://localhost:1313/cupper/patterns/writing/tables-of-contents/</guid>
+      <description>&lt;p&gt;Pattern pages in &lt;strong&gt;Cupper&lt;/strong&gt; that have two or more subheadings (&lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;s) automatically get a &lt;strong&gt;table of contents&lt;/strong&gt;: a list of links to the main subsections for the page. This feature is made accessible as a navigation region with the &amp;ldquo;Table of contents&amp;rdquo; label and uses an ordered list. The table of contents markup for the &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Setup&lt;!-- raw HTML omitted --&gt; page looks something like this:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tested using...</title>
-      <link>https://thepaciellogroup.github.io/cupper/patterns/coding/tested/</link>
+      <link>http://localhost:1313/cupper/patterns/coding/tested/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thepaciellogroup.github.io/cupper/patterns/coding/tested/</guid>
-      <description>When you&amp;rsquo;re an inclusive designer, it&amp;rsquo;s pertinent to do some testing. Following specs is one thing, but you need to verify that your component works okay for users.
-Cupper provided a tested shortcode that lets you show which browsers and assistive technologies you&amp;rsquo;ve tried your design out in. Here&amp;rsquo;s an example. Note the commas and &amp;ldquo;+&amp;rdquo; signs.
-&amp;#x7b;{% tested using=&#34;Firefox + JAWS, Chrome, Safari iOS + Voiceover, Edge&#34; %}}  This outputs:</description>
+      <guid>http://localhost:1313/cupper/patterns/coding/tested/</guid>
+      <description>&lt;p&gt;When you&amp;rsquo;re an inclusive designer, it&amp;rsquo;s pertinent to do some testing. Following specs is one thing, but you need to verify that your component works okay for users.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cupper&lt;/strong&gt; provided a &lt;code&gt;tested&lt;/code&gt; shortcode that lets you show which browsers and assistive technologies you&amp;rsquo;ve tried your design out in. Here&amp;rsquo;s an example. Note the commas and &amp;ldquo;+&amp;rdquo; signs.&lt;/p&gt;&#xA;&lt;pre class=&#34;&#34;&gt;&lt;code  data-codeblock-shortcode&gt;&#xA;&amp;#x7b;{% tested using=&#34;Firefox + JAWS, Chrome, Safari iOS + Voiceover, Edge&#34; %}}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;This outputs:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
