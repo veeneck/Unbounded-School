@@ -7,5 +7,12 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://unbounded.school/patterns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transcripts</title>
+      <link>https://unbounded.school/patterns/toplevel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unbounded.school/patterns/toplevel/</guid>
+      <description>&lt;p&gt;some top level stuff&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
