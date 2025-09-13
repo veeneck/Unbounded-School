@@ -27,3 +27,9 @@
     background: #000;
     color: #fff;
 }
+
+
+img.hero {
+    max-height: none;
+    width: 100%;
+}

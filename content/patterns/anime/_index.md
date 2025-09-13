@@ -1,3 +1,0 @@
-+++
-title = "Hunt & Sketch"
-+++

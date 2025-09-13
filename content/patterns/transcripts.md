@@ -50,7 +50,19 @@ TBD
 
 ## Projects & Electives
 
-Project based learning and electives like debate club, music & art.
+Scarlett's writing is a big part of her projects and electives. Reference the **Reading & Writing** section to view that work.
+
+Additionally, she does project based learning at home, and various clubs electives and programs locally.
+
+<div class="pills">
+    <span class="category">Electives</span>
+    <span>Monart</span>
+</div>
+
+<div class="pills">
+    <span class="category">Projects</span>
+    <span><a href="/patterns/anime">Hunt & Sketch</a></span>
+</div>
 
 ## Community Sports & Clubs
 
@@ -99,6 +111,6 @@ A running log of Scarlett's travels.
 </div>
 
 <div class="pills">
-    <span class="category">Mexico</span>
-    <span>Cancun</span>
+    <span class="category">Central America</span>
+    <span>Mexico</span>
 </div>
