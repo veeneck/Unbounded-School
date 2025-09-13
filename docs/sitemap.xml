@@ -2,32 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://unbounded.school/patterns/anime/</loc>
+    <loc>http://localhost:1313/patterns/transcripts/</loc>
   </url><url>
-    <loc>https://unbounded.school/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/anime/culture/</loc>
+    <loc>http://localhost:1313/patterns/anime/culture/</loc>
   </url><url>
-    <loc>https://unbounded.school/print-version/</loc>
+    <loc>http://localhost:1313/print-version/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/anime/eyes/</loc>
+    <loc>http://localhost:1313/patterns/anime/eyes/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/anime/kpop/</loc>
+    <loc>http://localhost:1313/patterns/anime/kpop/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/anime/geography/</loc>
+    <loc>http://localhost:1313/patterns/anime/geography/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/anime/music/</loc>
+    <loc>http://localhost:1313/patterns/writing/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/</loc>
+    <loc>http://localhost:1313/patterns/anime/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/anime/final/</loc>
+    <loc>http://localhost:1313/patterns/anime/music/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/</loc>
+    <loc>http://localhost:1313/patterns/</loc>
   </url><url>
-    <loc>https://unbounded.school/</loc>
+    <loc>http://localhost:1313/patterns/anime/final/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/toplevel/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/anime/whatis/</loc>
+    <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/patterns/anime/whatis/</loc>
   </url>
 </urlset>

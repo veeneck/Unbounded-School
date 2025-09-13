@@ -74,6 +74,7 @@
                 {{ range $.Site.Home.Sections }}
                   <ul id="patterns-list">
                     {{ range .Pages.ByWeight }}
+                    {{ if ge .Weight 1 }}
                       <li class="pattern">
                         <a href="{{ .RelPermalink }}" {{ if eq $current.Permalink .Permalink  }}aria-current="page"{{ end }}>
                           <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
@@ -82,6 +83,7 @@
                           <span class="text">{{ .Title }}</span>
                         </a>
                       </li>
+                      {{ end }}
                     {{ end }}
                     {{ range .Sections.ByWeight }}
                       <li>

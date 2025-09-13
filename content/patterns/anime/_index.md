@@ -1,3 +1,3 @@
 +++
-title = "Anime Quest: Hunt & Sketch"
+title = "Hunt & Sketch"
 +++
