@@ -8,3 +8,6 @@ publishDir = "docs"
 [params]
   description = ""
   codePenUser = "veeneck"
+  
+[markup.goldmark.renderer]
+  unsafe = true

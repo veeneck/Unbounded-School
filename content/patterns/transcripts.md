@@ -6,41 +6,99 @@ weight = 1
 
 ## Testing & Scores
 
-test scores
+Coming soon.
 
 ## Math
 
 [Khan Academy Dashboard](https://www.khanacademy.org/parent/activity-report)
 
-| Month    | Savings |
-| -------- | ------- |
-| January  | $250    |
-| February | $80     |
-| March    | $420    |
+<div class="pills">
+    <span class="category">Khan Academy</span>
+    <span>4th Grade</span>
+</div>
 
 
 ## Reading & Writing
 
 [Lexia Dashboard](https://www.mylexia.com/mylexiaweb/app/index.html#/12443/reading/classes/22176428/core5)
 
-Books Read: Holes
+<div class="pills">
+    <span class="category">Lexia Levels</span>
+    <span>16</span>
+</div>
 
-Writing Log
+[Writing Log]()
+
+<div class="pills">
+    <span class="category">Books</span>
+    <span>Holes</span>
+</div>
+
+## Science
+
+TBD
 
 ## Social Studies
 
 [BrainPop Dashboard](https://www.brainpop.com/dashboard/timeline)
 
-Geography: Continents of the World; Map Skills;
+<div class="pills">
+    <span class="category">Geography</span>
+    <span>Continents of the World</span>
+    <span>Map Skills</span>
+</div>
 
 ## Projects & Electives
 
 Project based learning and electives like debate club, music & art.
 
-## Community Sports, Clubs & Groups
+## Community Sports & Clubs
 
-Soccer, theater, 4H, etc.
+A variety of clubs and sports played at Colwich Elementary, YMCA, and through local leagues.
+
+<div class="pills">
+    <span class="category">Soccer</span>
+    <span>Pre-K</span>
+    <span>K</span>
+    <span>1st</span>
+    <span>2nd</span>
+    <span>3rd</span>
+    <span>4th</span>
+</div>
+
+<div class="pills">
+    <span class="category">Softball</span>
+    <span>K</span>
+    <span>1st</span>
+    <span>2nd</span>
+    <span>3rd</span>
+</div>
+
+<div class="pills">
+    <span class="category">Basketball</span>
+    <span>3rd</span>
+</div>
 
 ## Travel & Field Trips
 
-Places visited
+A running log of Scarlett's travels. 
+
+<div class="pills">
+    <span class="category">United States</span>
+    <span>Kansas</span>
+    <span>Florida</span>
+    <span>Colorado</span>
+    <span>Washington</span>
+    <span>Alaska</span>
+    <span>Maryland</span>
+    <span>Pennsylvania</span>
+    <span>Missouri</span>
+    <span>Oklahoma</span>
+    <span>South Carolina</span>
+    <span>North Carolina</span>
+</div>
+
+<div class="pills">
+    <span class="category">Mexico</span>
+    <span>Cancun</span>
+</div>

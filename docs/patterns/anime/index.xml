@@ -33,21 +33,21 @@
       <link>https://unbounded.school/patterns/anime/geography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://unbounded.school/patterns/anime/geography/</guid>
-      <description>&lt;p&gt;this is my second task!&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;This is a note! It&amp;rsquo;s something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;this is my second task!&lt;/p&gt;&#xA;&lt;aside aria-label=&#34;note&#34; class=&#34;note&#34;&gt;&#xA;  &lt;div&gt;&#xA;    &lt;svg class=&#34;sign&#34; aria-hidden=&#34;true&#34; viewBox=&#34;0 0 41.667306 41.66729&#34; focusable=&#34;false&#34;&gt;&#xA;      &lt;use xlink:href=&#34;#info&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;&lt;p&gt;This is a note! It&amp;rsquo;s something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;</description>
     </item>
     <item>
       <title>Music</title>
       <link>https://unbounded.school/patterns/anime/music/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://unbounded.school/patterns/anime/music/</guid>
-      <description>&lt;p&gt;this is my second task!&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;This is a note! It&amp;rsquo;s something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;this is my second task!&lt;/p&gt;&#xA;&lt;aside aria-label=&#34;note&#34; class=&#34;note&#34;&gt;&#xA;  &lt;div&gt;&#xA;    &lt;svg class=&#34;sign&#34; aria-hidden=&#34;true&#34; viewBox=&#34;0 0 41.667306 41.66729&#34; focusable=&#34;false&#34;&gt;&#xA;      &lt;use xlink:href=&#34;#info&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;&lt;p&gt;This is a note! It&amp;rsquo;s something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;</description>
     </item>
     <item>
       <title>Presentation</title>
       <link>https://unbounded.school/patterns/anime/final/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://unbounded.school/patterns/anime/final/</guid>
-      <description>&lt;p&gt;this is my second task!&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;This is a note! It&amp;rsquo;s something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;this is my second task!&lt;/p&gt;&#xA;&lt;aside aria-label=&#34;note&#34; class=&#34;note&#34;&gt;&#xA;  &lt;div&gt;&#xA;    &lt;svg class=&#34;sign&#34; aria-hidden=&#34;true&#34; viewBox=&#34;0 0 41.667306 41.66729&#34; focusable=&#34;false&#34;&gt;&#xA;      &lt;use xlink:href=&#34;#info&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;&lt;p&gt;This is a note! It&amp;rsquo;s something the reader may like to know about but is supplementary to the main content. Use notes when something may be interesting but not critical.&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;</description>
     </item>
     <item>
       <title>What is Anime?</title>
