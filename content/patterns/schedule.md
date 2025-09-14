@@ -11,13 +11,13 @@ weight = 1
 | 9:45  | Recess             |
 | 10:00 | DEAR               |
 | 10:30 | Social Studies     |
-| 11:00 | Lunch              |
+| 11:15 | Lunch              |
 | 11:30 | Recess             |
 | 12:00 | Literacy |
 | 1:00  | Daily Writing      |
 | 1:30  | Projects           |
-| 2:15  | Projects & PE      |
-| 3:00  | End of Day         |
+| 2:15  | Music & PE      |
+| 3:15  | End of Day         |
 
 ## Math & Logic
 
@@ -45,16 +45,22 @@ These larger, multi-step tasks also allow us to target areas outside of traditio
 
 Future project ideas: programming; photoshop; camping; architecture; sewing; baking; finance; drawing; singing; theater; pohtography; story writing; business;
 
-## PE
+## Music & PE
 
 On days when there is no sport practice outside of school, PE will be a joint session with the neighbors. We rotate between the sport in season and the out of season sports. Seasonal activities like roller blading are planned around the yearly events. Another example of this would be training for the local 5k race.
+
+On days where there is a sport after school, we try and schedule music for those two days per week. Music can range form guitar lessons, singing lessons, song writing, choreography and so on.
 
 On certain days we can also do swimming, yoga, climbing and pickleball at the YMCA.
 
 ## Project Days
 
-Once all core tasks are completed for a week, that time can be spent entirely on projects. With Math & Language gone, an extra 2 hours and 15 minutes is free to work on various projects.
+Once all core tasks are completed for a week, that time can be spent entirely on projects. With Math & Language gone, an extra 2 hours and 15 minutes is free to work on various projects. This usually translates to project prep being done Monday through Thursday during the project time slot, while the actual crafting or assembly of the project is done on Friday.
 
 ## Testing
 
-TBD on which standardized test. IOWA test or various homeschool tests.
+TBD on which standardized test. Currently evaluating:
+
+- [IOWA Testing](https://www.setontesting.com/product/iowa-assessments-form-e/): ~$47, mail in grading
+- [Homeschool Boss](https://homeschoolboss.com/pricing/#yearly): $60 one time, or $160 for 3x, remote administration
+- [ERB Testing](https://www.erblearn.org/families/isee-registration/): ~$185, remote administration
