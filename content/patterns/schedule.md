@@ -13,7 +13,7 @@ weight = 1
 | 10:30 | Social Studies     |
 | 11:00 | Lunch              |
 | 11:30 | Recess             |
-| 12:00 | Reading & Language |
+| 12:00 | Literacy |
 | 1:00  | Daily Writing      |
 | 1:30  | Projects           |
 | 2:15  | Projects & PE      |
