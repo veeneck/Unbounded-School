@@ -6,25 +6,23 @@ title = "Grok & Quill"
 
 ## Daily Writing
 
-First, write in your daily journal. This can be your book report, Socratic discussion, or other daily writing tasks.
+Hey there, writer! Grab your journal and write about your day, a book, or a fun discussion. Make it awesome!
 
 {{<youtube hQ1OwYu4GsY>}}
 
-After watching the video above, see if you can include one of the 6 tips in your writing.
+Watch this video, then use one of its 6 cool tips in your writing. You got this!
 
-## Grading By Grok
+## Grading with Grok
 
-The second step of your writing quest is to practice typing. Type up your previous entry to get some practice.
+Next, practice typing! Type up your journal entry for some keyboard fun.
 
-Then, go to Grok, and start with an introduction along the lines of:
+Then, tell Grok:
 
 <pre>I am a 9 year old 4th grader, and I'd like you to grade 
 my writing as if you were my teacher.</pre>
 
-Once Grok asks for your writing, **copy and paste** what you typed to get your grade.
+Copy and paste your typed entry for Grok to grade. Check your score and read Grok’s tips to make your writing even better!
 
-Make note of your grade, and read Grok's suggestions on how you could do better.
+## Revise and Shine
 
-## Type Revision
-
-Using the feedback from Grok, revise your typed file with improvements and email it to us. You can also ask Grok to grade it again to see if you have improved.
+Use Grok’s tips to improve your typed entry. Email it to us when you’re done! Want to see if you leveled up? Ask Grok to grade it again!

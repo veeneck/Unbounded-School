@@ -21,46 +21,37 @@ weight = 1
 
 ## Math & Logic
 
-[Khan Academy](https://www.khanacademy.org/) is the primary math curriculum. Once grade level is completed, [Beast Academy](https://beastacademy.com) will be used to supplement. Once grade level is mastered, math will be advanced to the next grade on a limited basis. Math studies will be reduced to 2 or 3 days a week, while Logic, Technology and Science take priority. As an example, [Learning to Code](https://developer.apple.com/swift-playground/) would be a suitable replacement.
+[Khan Academy](https://www.khanacademy.org/) is the primary math curriculum. After completing grade-level material, supplement with [Beast Academy](https://beastacademy.com). Once mastered, advance to the next grade on a limited basis, reducing math to 2–3 days weekly to prioritize Logic, Technology, and Science. For example, replace some math with [Learning to Code](https://developer.apple.com/swift-playground/).
 
 ## Social Studies
 
-[BrainPop](https://www.brainpop.com) is the digital tool used for Social Studies. For variety, physicial workbooks are used as well. Try to rotate between digital and physical methods each day. Additionally, mix in different studies (Geography, Biology, History) on a weekly basis unless there is a specific project focus that week.
+Use [BrainPop](https://www.brainpop.com) for Social Studies, alternating daily with physical workbooks from the 180 Days series: [Geography](https://www.rainbowresource.com/071750.html), [Social Studies](https://www.rainbowresource.com/071764.html), [Science](https://www.rainbowresource.com/071757.html). Rotate weekly between Geography, Biology, and History unless focusing on a specific project.
 
 ## Sciences
 
-For now, Science is covered in most of our Social Studies resources. Field trips will be mixed in to cover certain areas like Health & Technology.
+Science is currently integrated into Social Studies resources. Supplement with field trips for Health and Technology topics.
 
 ## Reading and Language
 
-[Lexia](https://www.lexialearning.com) is the main tool in use. Once grade levels are complete, [Khan Academy](https://www.khanacademy.org/) will be used to supplement additional material. **DEAR** (Drop Everything & Read) along with the [Grok & Quill](/patterns/quests/grokquill/) daily writing quest also improve this area.
-
-At the end of each week there is a weekly spelling test. Spelling words are assigned based on tasks in progress that week.
+Use [Lexia](https://www.lexialearning.com) as the primary tool. After completing grade-level material, supplement with [Khan Academy](https://www.khanacademy.org/). Incorporate **DEAR** (Drop Everything & Read) and the [Grok & Quill](/patterns/quests/grokquill/) daily writing quest. Conduct weekly spelling tests based on ongoing tasks.
 
 ## Projects
 
-Projects are self guided tasks that can take up long chunks of time. Once core tasks are completed, there is enough time to dig deep into a project.
+Self-guided projects allow deep exploration after core tasks are complete. These multi-step tasks can include non-traditional subjects like music, art, dance, or theater, either self-directed or through electives like singing or Monart drawing.
 
-These larger, multi-step tasks also allow us to target areas outside of traditional education. Music, art, dancing and theater can all be part of projects. These can either be self guided, or a time to fit in electives like singing lessons or Monart drawing.
-
-Future project ideas: programming; photoshop; camping; architecture; sewing; baking; finance; drawing; singing; theater; pohtography; story writing; business;
+Future project ideas: programming, Photoshop, camping, architecture, sewing, baking, finance, drawing, singing, theater, photography, story writing, business.
 
 ## Music & PE
 
-On days when there is no sport practice outside of school, PE will be a joint session with the neighbors. We rotate between the sport in season and the out of season sports. Seasonal activities like roller blading are planned around the yearly events. Another example of this would be training for the local 5k race.
-
-On days where there is a sport after school, we try and schedule music for those two days per week. Music can range form guitar lessons, singing lessons, song writing, choreography and so on.
-
-On certain days we can also do swimming, yoga, climbing and pickleball at the YMCA.
+On non-sport practice days, hold joint PE sessions with neighbors, rotating between in-season and off-season sports or seasonal activities like rollerblading or training for a local 5k. On sport practice days (2 days/week), schedule music activities like guitar, singing, songwriting, or choreography. Additional options include swimming, yoga, climbing, or pickleball at the YMCA.
 
 ## Project Days
 
-Once all core tasks are completed for a week, that time can be spent entirely on projects. With Math & Language gone, an extra 2 hours and 15 minutes is free to work on various projects. This usually translates to project prep being done Monday through Thursday during the project time slot, while the actual crafting or assembly of the project is done on Friday.
+When weekly core tasks are complete, dedicate time to projects. With Math and Language removed, gain ~2 hours 15 minutes for projects. Prep Monday–Thursday during project slots, with crafting or assembly on Friday.
 
 ## Testing
 
-TBD on which standardized test. Currently evaluating:
-
-- [IOWA Testing](https://www.setontesting.com/product/iowa-assessments-form-e/): ~$47, mail in grading
-- [Homeschool Boss](https://homeschoolboss.com/pricing/#yearly): $60 one time, or $160 for 3x, remote administration
+Standardized testing TBD. Options under consideration:
+- [IOWA Testing](https://www.setontesting.com/product/iowa-assessments-form-e/): ~$47, mail-in grading
+- [Homeschool Boss](https://homeschoolboss.com/pricing/#yearly): $60 one-time or $160 for 3x, remote administration
 - [ERB Testing](https://www.erblearn.org/families/isee-registration/): ~$185, remote administration

@@ -4,76 +4,78 @@ title = "Hunt & Sketch"
 
 <img class="hero" src="/images/hero/kpop.jpg" width="100%" height="auto" />
 
-## Geography: Locating Korea
+## Geography: Finding Korea
 
 {{% note %}}
-Find the Apple Maps app on your iPad. Zoom all the way out by pinching your fingers. You should see a globe. Try and locate South Korea and Kansas on the globe.
+Open the Apple Maps app on your iPad. Pinch to zoom out super far—you'll see the whole globe! Spot South Korea and Kansas. Fun hunt, right?
 {{% /note %}}
 
-Using Apple Maps, Grok & Google, see if you can answer the following questions:
+Hey explorer! Use Apple Maps, Grok, or Google to answer these cool questions:
 
-1. What is the capital of South Korea?
-2. Can you walk to South Korea from Kansas? How about getting there by boat? 
-3. How many miles is it from Kansas to the capital South Korea?
-4. How long would it take you to fly that trip?
-5. What timezone is South Korea in? How about Kansas? If it is 3pm in Kansas, what time is it in South Korea?
+1. What's the capital of South Korea?
+2. Could you walk to South Korea from Kansas? What about sailing there by boat?
+3. How many miles from Kansas to South Korea's capital?
+4. How long to fly that adventure?
+5. What's South Korea's time zone? Kansas's? If it's 3 PM in Kansas, what's the time in South Korea?
 
-## Culture: KPop & Demons
+## Culture: K-Pop & Demons
 
-A lot of the references in the movie KPop Demon Hunters are based on real world Korean stories. Watch the video below to understand a few of the cultural references.
+The movie *K-Pop Demon Hunters* pulls from real Korean tales. Watch this video to discover awesome cultural bits!
 
 {{<youtube qCmpU3ssip8>}}
 
-After watching the video, see if you can write down 3 new ideas you learned about Korean culture.
+After watching, jot down 3 exciting new facts about Korean culture. Yay for learning!
 
 {{% note %}}
-Try to include 1 linguistic, 1 cultural, and 1 lyrical reference.
+Pick one about language (linguistic), one about traditions (cultural), and one about songs (lyrical). Super!
 {{% /note %}}
 
 ## Drawing Eyes
 
-Sometimes the best way to tackle a hard task is to break it down into smaller tasks. While it may be hard to draw an entire charatcer, you can start small with something like their eyes. Then, after tackling each small piece, you will end up with a full picture.
-
-Give it a shot: let's try drawing some eyes!
+Drawing a whole character can feel tricky, but start small—like just the eyes! Build up step by step, and soon you'll have the full picture. Let's try eyes first!
 
 {{<youtube 7RDY3z3JxhM>}}
 
+Grab your pencil and give it a go— you're going to rock this!
+
 ## Music: Genres
 
-Music has evolved through many stages. Scrub through the video below to get a taste of the different genres of music.
+Music has changed so much over time, with tons of fun styles! Scrub through this video to sample different genres.
 
 {{<youtube jp0GizT3Vx8>}}
 
-Write down your favorite styles of music? Are there any that you dislike?
+What are your top favorite music styles? Any you don't like? Share your thoughts!
 
 {{% note %}}
-Consider asking Grok or Google when KPop became a genre.
+Curious about K-Pop? Ask Grok or Google when it became a thing!
 {{% /note %}}
 
 ## What is Anime?
 
-While the music and culture of KPOP Demon Hunters are amazing, the drawing and animation bring it to life. 
+K-Pop Demon Hunters shines with its music, culture, and cool drawings and animation.
 
 {{<youtube lWhy4zlGl7s>}}
 
-Anime can have many different definitions and sub categories. Americans may say art is only Anime if it is made in Japan. Japanese may say all animation is anime. 
+Anime means different things to people. In America, it's often just Japanese animation. In Japan, all animation might be anime!
 
 {{% note %}}
-Sometimes subtle details, like lower frame rates, may make someone consider an animation to be anime.
+Little clues like slower frame rates can make something feel like anime.
 {{% /note %}}
 
-Since KPop Demon Hunters is an American made film, it may not fall under the anime category. Write down what you think.
+K-Pop Demon Hunters is American-made, so is it anime? Write what you think—your ideas matter!
 
 ## Drawing Demon Hunters
 
-Let's have some fun! Draw 1, or all 3, of the Demon Hunters!
+Time for creativity! Draw one (or all three) Demon Hunters. Let's make it epic!
 
 {{<youtube vIHAmuc5Mpk>}}
 
+Have a blast drawing—you're an artist in the making!
+
 ## Presentation
 
-You have compiled quite a bit of information on this quest! Your final step is to try and present that information to someone else who hasn't learned it yet.
+Wow, you've learned so much on this quest! Now share your discoveries with someone who hasn't—teach a friend or family!
 
 {{% note %}}
-You can create a slideshow, speak directly to the camera, or create an informative drawing.
+Make a fun slideshow, talk to the camera, or draw an info picture. Choose what excites you!
 {{% /note %}}
