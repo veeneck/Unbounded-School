@@ -35,15 +35,21 @@ For now, Science is covered in most of our Social Studies resources. Field trips
 
 [Lexia](https://www.lexialearning.com) is the main tool in use. Once grade levels are complete, [Khan Academy](https://www.khanacademy.org/) will be used to supplement additional material. **DEAR** (Drop Everything & Read) along with the [Grok & Quill](/patterns/quests/grokquill/) daily writing quest also improve this area.
 
+At the end of each week there is a weekly spelling test. Spelling words are assigned based on tasks in progress that week.
+
 ## Projects
 
-Projects are self guided tasks that can take up long chunks of time. Once core tasks are completed, there is enough time to dig deep into a project. 
+Projects are self guided tasks that can take up long chunks of time. Once core tasks are completed, there is enough time to dig deep into a project.
 
-Future project ideas: programming; photoshop; camping; architecture; sewing; baking; finance;
+These larger, multi-step tasks also allow us to target areas outside of traditional education. Music, art, dancing and theater can all be part of projects. These can either be self guided, or a time to fit in electives like singing lessons or Monart drawing.
+
+Future project ideas: programming; photoshop; camping; architecture; sewing; baking; finance; drawing; singing; theater; pohtography; story writing; business;
 
 ## PE
 
-On days when there is no sport practice outside of school, PE will be a joint session with the neighbors. We rotate between the sport in season and the out of season sports. Seasonal activities like roller blading are planned around the yearly events.
+On days when there is no sport practice outside of school, PE will be a joint session with the neighbors. We rotate between the sport in season and the out of season sports. Seasonal activities like roller blading are planned around the yearly events. Another example of this would be training for the local 5k race.
+
+On certain days we can also do swimming, yoga, climbing and pickleball at the YMCA.
 
 ## Project Days
 
