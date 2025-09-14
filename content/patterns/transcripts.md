@@ -1,7 +1,7 @@
 
 +++
 title = "Transcripts"
-weight = 1
+weight = 2
 +++
 
 ## Testing & Scores
@@ -61,7 +61,7 @@ Additionally, she does project based learning at home, and various clubs electiv
 
 <div class="pills">
     <span class="category">Projects</span>
-    <span><a href="/patterns/anime">Hunt & Sketch</a></span>
+    <span><a href="/patterns/quests/huntsketch">Hunt & Sketch</a></span>
 </div>
 
 ## Community Sports & Clubs

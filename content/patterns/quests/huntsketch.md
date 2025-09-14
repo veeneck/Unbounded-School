@@ -12,10 +12,11 @@ Find the Apple Maps app on your iPad. Zoom all the way out by pinching your fing
 
 Using Apple Maps, Grok & Google, see if you can answer the following questions:
 
-- What is the capital of South Korea?
-- Can you walk to South Korea from Kansas? How about getting there by boat? 
-- How many miles is it from Kansas to the capital South Korea?
-- How long would it take you to fly that trip?
+1. What is the capital of South Korea?
+2. Can you walk to South Korea from Kansas? How about getting there by boat? 
+3. How many miles is it from Kansas to the capital South Korea?
+4. How long would it take you to fly that trip?
+5. What timezone is South Korea in? How about Kansas? If it is 3pm in Kansas, what time is it in South Korea?
 
 ## Culture: KPop & Demons
 
@@ -23,38 +24,10 @@ A lot of the references in the movie KPop Demon Hunters are based on real world 
 
 {{<youtube qCmpU3ssip8>}}
 
-{{% note %}}
-Write down 3 new ideas you learned about Korean culture. Try to find 1 linguistic, 1 cultural, and 1 lyrical.
-{{% /note %}}
-
-Have you ever heard of a Dokkaebi from Korean myth? Using Grok & Google, try to find out more about them. What do they look like?
+After watching the video, see if you can write down 3 new ideas you learned about Korean culture.
 
 {{% note %}}
-Write down what you have learned about Dokkaebi. Can you think of any myths in your culture?
-{{% /note %}}
-
-## Music: Genres
-
-Music has evolved through many stages. Scrub through the video below to get a taste of the different genres of music.
-
-{{<youtube jp0GizT3Vx8>}}
-
-{{% note %}}
-Do any genres of music speak to you? Which are your favorites, and which do you not care for?
-{{% /note %}}
-
-## What is Anime?
-
-While the music and culture of KPOP Demon Hunters are amazing, the drawing and animation bring it to life. 
-
-{{<youtube lWhy4zlGl7s>}}
-
-Anime can have many different definitions and sub categories. Americans may say art is only Anime if it is made in Japan. Japanese may say all animation is anime. Then, there are subtle details, like lower frame rates that may make someone consider an animation to be anime.
-
-Since KPop Demon Hunters is an American made film, it may not fall under the anime category. What do you think?
-
-{{% note %}}
-Based on the video, would you consider KPop Demon Hunters to be anime?
+Try to include 1 linguistic, 1 cultural, and 1 lyrical reference.
 {{% /note %}}
 
 ## Drawing Eyes
@@ -65,6 +38,32 @@ Give it a shot: let's try drawing some eyes!
 
 {{<youtube 7RDY3z3JxhM>}}
 
+## Music: Genres
+
+Music has evolved through many stages. Scrub through the video below to get a taste of the different genres of music.
+
+{{<youtube jp0GizT3Vx8>}}
+
+Write down your favorite styles of music? Are there any that you dislike?
+
+{{% note %}}
+Consider asking Grok or Google when KPop became a genre.
+{{% /note %}}
+
+## What is Anime?
+
+While the music and culture of KPOP Demon Hunters are amazing, the drawing and animation bring it to life. 
+
+{{<youtube lWhy4zlGl7s>}}
+
+Anime can have many different definitions and sub categories. Americans may say art is only Anime if it is made in Japan. Japanese may say all animation is anime. 
+
+{{% note %}}
+Sometimes subtle details, like lower frame rates, may make someone consider an animation to be anime.
+{{% /note %}}
+
+Since KPop Demon Hunters is an American made film, it may not fall under the anime category. Write down what you think.
+
 ## Drawing Demon Hunters
 
 Let's have some fun! Draw 1, or all 3, of the Demon Hunters!
@@ -73,4 +72,8 @@ Let's have some fun! Draw 1, or all 3, of the Demon Hunters!
 
 ## Presentation
 
-Final deliverable
+You have compiled quite a bit of information on this quest! Your final step is to try and present that information to someone else who hasn't learned it yet.
+
+{{% note %}}
+You can create a slideshow, speak directly to the camera, or create an informative drawing.
+{{% /note %}}
