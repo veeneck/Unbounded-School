@@ -59,10 +59,9 @@ Additionally, she does project based learning at home, and various clubs electiv
     <span>Monart</span>
 </div>
 
-<div class="pills">
-    <span class="category">Projects</span>
-    <span><a href="/patterns/quests/huntsketch">Hunt & Sketch</a></span>
-</div>
+<img src="/images/hero/5krace.jpg" class="girl-scout-badge" alt="Nature Explorer Badge">
+<img src="/images/hero/animals.jpg" class="girl-scout-badge" alt="Nature Explorer Badge">
+<img src="/images/hero/cookies.jpg" class="girl-scout-badge" alt="Nature Explorer Badge">
 
 ## Community Sports & Clubs
 

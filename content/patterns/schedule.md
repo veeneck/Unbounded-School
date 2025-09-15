@@ -70,7 +70,4 @@ When weekly core tasks are complete, dedicate time to projects. With Math and La
 
 ## Testing
 
-Standardized testing TBD. Options under consideration:
-- [IOWA Testing](https://www.setontesting.com/product/iowa-assessments-form-e/): ~$47, mail-in grading
-- [Homeschool Boss](https://homeschoolboss.com/pricing/#yearly): $60 one-time or $160 for 3x, remote administration
-- [ERB Testing](https://www.erblearn.org/families/isee-registration/): ~$185, remote administration
+We use the [NWEA MAP Growth](https://www.nwea.org/map-growth/) test through Homeschool Boss. It is a computer-adaptive, standardized assessment designed to measure student achievement and academic growth in core subjects like Math, Reading, Language Usage, and Science. It adjusts question difficulty based on a student's responses, providing a precise evaluation of their skills across K–12 levels. Primarily used by schools but adapted for homeschoolers, it offers detailed, immediate reports with percentile rankings and growth projections aligned with Common Core standards. The untimed, flexible format allows students to test at home, making it ideal for personalized learning environments.

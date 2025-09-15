@@ -33,3 +33,44 @@ img.hero {
     max-height: none;
     width: 100%;
 }
+
+/* Badge styling */
+.girl-scout-badge {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #cecece;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+                inset 0 2px 4px rgba(255, 255, 255, 0.2);
+    background-color: #f5f5f5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* For positioning the ribbon */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.girl-scout-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Ribbon effect */
+.girl-scout-badge::after {
+    content: 'Scout'; /* Text on ribbon */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 20px;
+    background-color: #228B22; /* Forest green */
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    color: white; /* Text color */
+    font-size: 12px;
+    line-height: 20px; /* Center text vertically */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
