@@ -1,5 +1,6 @@
 +++
 title = "Grok & Quill"
+tags = ["writing"]
 +++
 
 <img class="hero" src="/images/hero/grokquill.jpg" />

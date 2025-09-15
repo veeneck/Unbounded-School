@@ -6,7 +6,7 @@ weight = 2
 
 ## Testing & Scores
 
-Coming soon.
+[Homeschool Boss Dashboard](https://app.homeschoolboss.com/map-testing)
 
 ## Math
 

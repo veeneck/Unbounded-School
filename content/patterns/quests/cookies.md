@@ -1,5 +1,6 @@
 +++
 title = "Egg Free Baking"
+tags = ["baking"]
 +++
 
 <img class="hero" src="/images/hero/cookies.jpg" />

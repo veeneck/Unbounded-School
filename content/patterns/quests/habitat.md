@@ -1,5 +1,6 @@
 +++
 title = "Habitat-orama"
+tags = ["crafting"]
 +++
 
 <img class="hero" src="/images/hero/habitat.jpg" />

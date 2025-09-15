@@ -1,5 +1,6 @@
 +++
 title = "Hunt & Sketch"
+tags = ["kpop", "drawing"]
 +++
 
 <img class="hero" src="/images/hero/kpop.jpg" width="100%" height="auto" />

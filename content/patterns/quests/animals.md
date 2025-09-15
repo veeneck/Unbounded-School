@@ -1,12 +1,13 @@
 +++
 title = "World Animals"
+tags = ["animals", "video editing"]
 +++
 
 <img class="hero" src="/images/hero/animals.jpg" />
 
 ## Find Your Animal
 
-Lots of cool animals live all over the world! Some call certain continents home, while others love places like hot tropics or dry deserts. These are their special habitats. Can you discover some fun facts about animals in these 8 places?
+Lots of cool animals live all over the world! Some call certain continents home, while others love places like hot tropics or dry deserts. These are their special habitats. Can you discover some fun facts about 1 animal in each of these 8 places?
 
 <div class="pills">
     <span>North America</span>
