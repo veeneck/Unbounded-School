@@ -50,22 +50,17 @@ TBD
     <span>Map Skills</span>
 </div>
 
-## Projects & Electives
+## Projects
 
-Scarlett's writing is a big part of her projects and electives. Reference the **Reading & Writing** section to view that work.
+Scarlett's writing is a big part of her projects. Reference the **Reading & Writing** section to view that work.
 
-Additionally, she does project based learning at home, and various clubs electives and programs locally.
-
-<div class="pills">
-    <span class="category">Electives</span>
-    <span>Monart</span>
-</div>
+Additionally, she does project based learning at home.
 
 <img src="/images/hero/5krace.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="5k Adventure">
 <img src="/images/hero/animals.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="World Animals">
 <img src="/images/hero/cookies.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="Egg Free Baking">
 
-## Community Sports & Clubs
+## Community Sports & Electives
 
 A variety of clubs and sports played at Colwich Elementary, YMCA, and through local leagues.
 
@@ -90,6 +85,11 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
 <div class="pills">
     <span class="category">Basketball</span>
     <span>3rd</span>
+</div>
+
+<div class="pills">
+    <span class="category">Electives</span>
+    <span>Monart</span>
 </div>
 
 ## Travel & Field Trips

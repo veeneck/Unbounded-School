@@ -57,7 +57,7 @@ Write down how you feel or take photos to show your adventure!
 
 ## Race Day
 
-<img src="/images/hero/5krace.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="5k Adventure" style="float: left; margin-right: 30px" />
+<img src="/images/hero/5krace.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="5k Adventure" style="float: left; margin-right: 30px; margin-bottom: 30px;" />
 
 It’s time to shine! You’ve trained for 4 weeks, and now it’s your 5K! Ask a grown-up to take photos or videos, or do it yourself! This is your first 5k, so capture the memories!
 

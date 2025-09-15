@@ -66,7 +66,8 @@ img.hero {
     transform: translateX(-50%);
     width: 80px;
     height: 20px;
-    background-color: #228B22;
+    background-color: #000;
+    padding: 5px;
     border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     color: white;
@@ -80,7 +81,7 @@ img.hero {
 
 /* Hover effect for ribbon text */
 .girl-scout-badge:hover::after {
-    background-color: #006400; /* Darker green on hover */
+    background-color: #000; /* Darker green on hover */
     transform: translateX(-50%) scale(1.05); /* Slight scale for ribbon */
 }
 
@@ -91,9 +92,9 @@ img.hero {
     top: -30px; /* Above the badge */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: #000;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 3px;
     font-size: 12px;
     white-space: nowrap;
