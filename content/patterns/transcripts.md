@@ -17,6 +17,8 @@ weight = 2
     <span>4th Grade</span>
 </div>
 
+<img src="/images/badges/khanmath4th.jpg" class="girl-scout-badge" alt="Nature Explorer Badge">
+
 
 ## Reading & Writing
 
@@ -59,9 +61,9 @@ Additionally, she does project based learning at home, and various clubs electiv
     <span>Monart</span>
 </div>
 
-<img src="/images/hero/5krace.jpg" class="girl-scout-badge" alt="Nature Explorer Badge">
-<img src="/images/hero/animals.jpg" class="girl-scout-badge" alt="Nature Explorer Badge">
-<img src="/images/hero/cookies.jpg" class="girl-scout-badge" alt="Nature Explorer Badge">
+<img src="/images/hero/5krace.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="5k Adventure">
+<img src="/images/hero/animals.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="World Animals">
+<img src="/images/hero/cookies.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="Egg Free Baking">
 
 ## Community Sports & Clubs
 

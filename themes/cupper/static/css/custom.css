@@ -40,7 +40,7 @@ img.hero {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #cecece;
+    border: 2px solid #030303;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
                 inset 0 2px 4px rgba(255, 255, 255, 0.2);
     background-color: #f5f5f5;
@@ -50,27 +50,53 @@ img.hero {
     margin-right: 10px;
 }
 
+/* Hover effect for badge */
 .girl-scout-badge:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 /* Ribbon effect */
 .girl-scout-badge::after {
-    content: 'Scout'; /* Text on ribbon */
+    content: 'Scout';
     position: absolute;
-    bottom: -10px;
+    bottom: -15px; /* Adjusted for better visibility */
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
     height: 20px;
-    background-color: #228B22; /* Forest green */
+    background-color: #228B22;
     border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: -1;
-    color: white; /* Text color */
+    color: white;
     font-size: 12px;
-    line-height: 20px; /* Center text vertically */
+    line-height: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
+    z-index: 1; /* Ensure ribbon is above badge */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for hover */
 }
+
+/* Hover effect for ribbon text */
+.girl-scout-badge:hover::after {
+    background-color: #006400; /* Darker green on hover */
+    transform: translateX(-50%) scale(1.05); /* Slight scale for ribbon */
+}
+
+/* Optional: Tooltip for hover text */
+.girl-scout-badge[title]:hover::before {
+    content: attr(title);
+    position: absolute;
+    top: -30px; /* Above the badge */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 2;
+}
+
