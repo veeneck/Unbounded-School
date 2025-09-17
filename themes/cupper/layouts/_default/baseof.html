@@ -111,11 +111,7 @@
         </header>
       <div class="main-and-footer">
         <div>
-          {{ if eq .Title "Transcripts" }}
-            {{ partial "transcript.html" }}
-          {{ else }}
             {{ block "main" . }}
-          {{ end }}
           {{ end }}
           <footer role="contentinfo">
             <div>
