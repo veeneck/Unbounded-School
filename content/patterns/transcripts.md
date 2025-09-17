@@ -10,10 +10,10 @@ weight = 2
 
 | Date     | Test    | Subject | Grade | Score | %-tile |
 |----------|---------|---------|-------|-------|--------|
-| 9/18/25  | MAP     | Reading | 4th   | TBD   | TBD    |
-| 9/16/25  | MAP     | Math    | 4th   | 239   | TBD    |
-| 12/16/24 | i-Ready | Reading | 3rd   | 602   | 99th   |
-| 12/13/24 | i-Ready | Math    | 3rd   | 493   | 99th   |
+| 9/25  | MAP     | Reading | 4th   | TBD   | TBD    |
+| 9/25  | MAP     | Math    | 4th   | 239   | TBD    |
+| 12/24 | i-Ready | Reading | 3rd   | 602   | 99th   |
+| 12/24 | i-Ready | Math    | 3rd   | 493   | 99th   |
 
 
 ## Math
