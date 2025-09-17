@@ -9,11 +9,17 @@
 }
 
 .pills span {
-  background-color: #e0e0e0;
+    background: linear-gradient(
+        to right,
+        #4caf50 var(--progress, 0%),
+        #e0e0e0 var(--progress, 0%)
+      );
   border-radius: 20px;
   padding: 8px 16px;
   font-family: Arial, sans-serif;
   font-size: 14px;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+  font-weight: bold;
   color: #333;
   display: inline-flex;
   height: 32px;

@@ -22,11 +22,8 @@ weight = 2
 
 <div class="pills">
     <span class="category">Khan Academy</span>
-    <span>4th Grade</span>
+    <span style="--progress: 42%">4th Grade: 42%</span>
 </div>
-
-<img src="/images/badges/khanmath4th.jpg" class="girl-scout-badge" alt="Nature Explorer Badge">
-
 
 ## Reading & Writing
 
@@ -34,7 +31,8 @@ weight = 2
 
 <div class="pills">
     <span class="category">Lexia Levels</span>
-    <span>16</span>
+    <span style="--progress: 100%">Level 16: 100%</span>
+    <span style="--progress: 47%">Level 17: 47%</span>
 </div>
 
 [Writing Log]()
@@ -46,7 +44,11 @@ weight = 2
 
 ## Science
 
-TBD
+Workbooks:
+
+<div class="pills">
+    <span style="--progress: 0%">180 Days Science: 0%</span>
+</div>
 
 ## Social Studies
 
@@ -56,6 +58,13 @@ TBD
     <span class="category">Geography</span>
     <span>Continents of the World</span>
     <span>Map Skills</span>
+    <span>Latitude & Longitude</span>
+</div>
+
+<div class="pills">
+    <span class="category">Workbooks</span>
+    <span style="--progress: 6%">180 Days Geography: 6%</span>
+    <span style="--progress: 0%">180 Days Social Studies: 0%</span>
 </div>
 
 ## Projects
