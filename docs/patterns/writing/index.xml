@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Grok &amp; Quill on Unbounded School</title>
-    <link>http://localhost:1313/patterns/writing/</link>
-    <description>Recent content in Grok &amp; Quill on Unbounded School</description>
+    <title>Writing on Unbounded School</title>
+    <link>https://unbounded.school/patterns/writing/</link>
+    <description>Recent content in Writing on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/patterns/writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://unbounded.school/patterns/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>$1,000,000</title>
+      <link>https://unbounded.school/patterns/writing/million/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unbounded.school/patterns/writing/million/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/million.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;What I would do with 1,000,000 dollars is buy toys for my sister,&#xA;nice dresses and earrings for my mom, and Reeses and new shoes&#xA;for my dad. Then, I would buy lot of beautiful fabric and art materials.&#xA;Last, I would go all around the world in amazing private plane. That’s&#xA;just some things I would do with 1,000,000 dollars!&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
