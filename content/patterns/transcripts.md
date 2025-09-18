@@ -35,6 +35,11 @@ weight = 2
     <span style="--progress: 47%">Level 17: 47%</span>
 </div>
 
+<div class="pills">
+    <span class="category">Workbooks</span>
+    <span style="--progress: 0%">180 Days Language: 0%</span>
+</div>
+
 [Writing Log](/patterns/writing/)
 
 <ul class="book-list">
