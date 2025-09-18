@@ -10,7 +10,7 @@ weight = 2
 
 | Date     | Test    | Subject | Score | %-tile |
 |----------|---------|---------|-------|--------|
-| 9/25  | MAP     | 4th Reading | TBD   | TBD    |
+| 9/25  | MAP     | 4th Reading | 224   | 95th    |
 | 9/25  | MAP     | 4th Math    | 239   | 99th    |
 | 12/24 | i-Ready | 3rd Reading | 602   | 99th   |
 | 12/24 | i-Ready | 3rd Math    | 493   | 99th   |
