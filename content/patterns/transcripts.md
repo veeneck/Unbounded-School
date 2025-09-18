@@ -92,6 +92,20 @@ Additionally, she does project based learning at home.
 <img src="/images/hero/animals.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="World Animals">
 <img src="/images/hero/cookies.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="Egg Free Baking">
 
+## Art
+
+<ul class="art-gallery">
+    <li class="art">
+        <img src="/images/art/shiloh.jpg" />
+    </li>
+    <li class="art">
+        <img src="/images/art/knight.jpg" />
+    </li>
+    <li class="art">
+        <img src="/images/art/cyclops.jpg" />
+    </li>
+</ul>
+
 ## Community Sports & Electives
 
 A variety of clubs and sports played at Colwich Elementary, YMCA, and through local leagues.
@@ -144,6 +158,7 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
 </div>
 
 <div class="pills">
-    <span class="category">Central America</span>
-    <span>Mexico</span>
+    <span class="category">North America</span>
+    <span>Cancun, Mexico</span>
+    <span>Victoria, B.C.</span>
 </div>

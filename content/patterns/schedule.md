@@ -40,7 +40,7 @@ Use [Lexia](https://www.lexialearning.com) as the primary tool. After completing
 Self-guided projects allow deep exploration after core tasks are complete. These multi-step tasks can include non-traditional subjects like music, art, dance, or theater, either self-directed or through electives like singing or Monart drawing.
 
 <div class="pills">
-    <span class="category">Ideas</span>
+    <span class="category">Ideas & Topics</span>
     <span>Programming</span>
     <span>Photoshop</span>
     <span>Camping</span>
@@ -58,6 +58,9 @@ Self-guided projects allow deep exploration after core tasks are complete. These
     <span>Business</span>
     <span>Construction</span>
     <span>Farming</span>
+    <span>Astronomy</span>
+    <span>Religion</span>
+    <span>Mythology</span>
 </div>
 
 ## Music & PE
