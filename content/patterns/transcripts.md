@@ -35,31 +35,41 @@ weight = 2
     <span style="--progress: 47%">Level 17: 47%</span>
 </div>
 
-[Writing Log]()
+[Writing Log](/patterns/writing/)
 
-<div class="pills">
-    <span class="category">Books</span>
-    <span>Holes</span>
-</div>
+<ul class="book-list">
+    <li class="book-container">
+        <a href="/writing/holes">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
+                    <img src="/images/books/holes.jpg" alt="Book Cover">
+                    <div class="book-title">Holes</div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="book-container">
+        <a href="/writing/holes">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
+                    <img src="/images/books/100dresses.jpg" alt="Book Cover">
+                    <div class="book-title">100 Dresses</div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
 
 ## Science
 
-Workbooks:
-
 <div class="pills">
+    <span class="category">Workbooks</span>
     <span style="--progress: 0%">180 Days Science: 0%</span>
 </div>
 
 ## Social Studies
-
-[BrainPop Dashboard](https://www.brainpop.com/dashboard/timeline)
-
-<div class="pills">
-    <span class="category">Geography</span>
-    <span>Continents of the World</span>
-    <span>Map Skills</span>
-    <span>Latitude & Longitude</span>
-</div>
 
 <div class="pills">
     <span class="category">Workbooks</span>
