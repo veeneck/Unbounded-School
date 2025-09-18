@@ -121,7 +121,7 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
 
 ## Travel & Field Trips
 
-A running log of Scarlett's travels. 
+<div id="map"></div>
 
 <div class="pills">
     <span class="category">United States</span>

@@ -37,6 +37,8 @@
     {{ if .IsHome }}
       <link rel="manifest" href="manifest.json">
     {{ end }}
+    <script type="text/javascript" src="/map/mapdata.js"></script>
+    <script  type="text/javascript" src="/map/worldmap.js"></script>
   </head>
   <body>
     {{ if ne .Type "print-version" }}
