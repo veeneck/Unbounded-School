@@ -70,7 +70,7 @@ weight = 2
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 6%">180 Days Geography: 6%</span>
+    <span style="--progress: 8%">180 Days Geography: 8%</span>
     <span style="--progress: 0%">180 Days Social Studies: 0%</span>
 </div>
 
