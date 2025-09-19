@@ -22,8 +22,8 @@ var simplemaps_worldmap_mapdata={
     location_opacity: 0.8,
     location_hover_opacity: 1,
     location_url: "",
-    location_size: 25,
-    location_type: "square",
+    location_size: 10,
+    location_type: "circle",
     location_border_color: "#FFFFFF",
     location_border: 2,
     location_hover_border: 2.5,
@@ -41,7 +41,7 @@ var simplemaps_worldmap_mapdata={
 		manual_zoom: "yes",
     back_image: "no",
     arrow_box: "no",
-    navigation_size: "40",
+    navigation_size: "20",
     navigation_color: "#f7f7f7",
     navigation_border_color: "#636363",
     initial_back: "no",
@@ -1572,31 +1572,110 @@ var simplemaps_worldmap_mapdata={
     }
   },
   locations: {
-    "0": {
-      name: "Paris",
-      lat: "48.866666670",
-      lng: "2.333333333",
-      color: "default",
-      description: "default",
-      url: "/patterns/writing"
-    },
-    "1": {
-      name: "Tokyo",
-      lat: "35.666666670",
-      lng: "139.750000000",
-      color: "default",
-      description: "default",
-      url: "default"
-    },
-    "3": {
-      name: "New York",
-      lat: "40.71",
-      lng: "-74.0059731",
-      description: "default",
-      color: "default",
-      url: "default",
-      size: "default"
-    }
+            "0": {
+              name: "Colwich, Kansas",
+              lat: "37.7792",
+              lng: "-97.5364",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "1": {
+              name: "Tampa, Florida",
+              lat: "27.9506",
+              lng: "-82.4572",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "2": {
+              name: "Denver, Colorado",
+              lat: "39.7392",
+              lng: "-104.9903",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "3": {
+              name: "Seattle, Washington",
+              lat: "47.6062",
+              lng: "-122.3321",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "4": {
+              name: "Sitka, Alaska",
+              lat: "57.0531",
+              lng: "-135.3300",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "5": {
+              name: "Frederick, Maryland",
+              lat: "39.4143",
+              lng: "-77.4105",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "6": {
+              name: "Hershey, Pennsylvania",
+              lat: "40.2859",
+              lng: "-76.6503",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "7": {
+              name: "Kansas City, Missouri",
+              lat: "39.0997",
+              lng: "-94.5786",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "8": {
+              name: "Oklahoma City, Oklahoma",
+              lat: "35.4676",
+              lng: "-97.5164",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "9": {
+              name: "Charleston, South Carolina",
+              lat: "32.7765",
+              lng: "-79.9311",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "10": {
+              name: "Beech Mountain, North Carolina",
+              lat: "36.2110",
+              lng: "-81.8890",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+            "11": {
+              name: "Cancun, Mexico",
+              lat: "21.1619",
+              lng: "-86.8515",
+              color: "default",
+              description: "default",
+              url: ""
+            },
+      "12": {
+          name: "Victoria, B.C.",
+          lat: "48.4284",
+          lng: "-123.3656",
+          color: "default",
+          description: "default",
+          url: ""
+      }
   },
   labels: {}
 };

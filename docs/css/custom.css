@@ -210,3 +210,67 @@ img.hero {
     object-fit: cover; /* Ensures image fills without distortion */
     display: block;
 }
+
+/* Container for the SimpleMaps world map */
+#map {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff; /* White background for the map container */
+    border: 1px solid #ccc; /* Light gray border for subtle framing */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Minimal shadow for depth */
+}
+
+/* Style for landmasses (countries) */
+path:not(.sm_state_undefined) {
+    fill: #000; /* Black fill for landmasses */
+    stroke: #999; /* Gray stroke for country borders */
+    stroke-width: 0.5; /* Thin borders for clarity */
+    transition: fill 0.2s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for countries */
+path:not(.sm_state_undefined):hover {
+    fill: #333; /* Darker gray on hover for interactivity */
+}
+
+/* Ocean background */
+svg {
+    background: #fff; /* White ocean background */
+}
+
+/* Labels (country names, if enabled) */
+.sm_label {
+    fill: #000; /* Black text for labels */
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/* Pins (for visited places, compatible with previous pin styling) */
+.sm_point {
+    fill: #000; /* Black pins */
+    stroke: #fff; /* White outline for contrast */
+    stroke-width: 1;
+    transition: transform 0.2s;
+}
+
+.sm_point:hover {
+    fill: #333; /* Darker gray on hover */
+    transform: scale(1.3); /* Slight enlargement on hover */
+}
+
+/* Hide unnecessary elements (e.g., SimpleMaps branding, if allowed) */
+.sm_credits {
+    display: none; /* Remove credits, check SimpleMaps license */
+}
+
+/* Hide the entire zoom controls container */
+.sm_zoom_controls {
+  display: none !important;
+}
+
+/* Alternatively, target the individual zoom buttons */
+.sm_zoom_in, .sm_zoom_out {
+  display: none !important;
+}
