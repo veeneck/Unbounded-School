@@ -4,19 +4,9 @@ title = "Transcripts"
 weight = 2
 +++
 
-## Testing & Scores
-
-[Homeschool Boss Dashboard](https://app.homeschoolboss.com/map-testing)
-
-| Date     | Test    | Subject | Score | %-tile |
-|----------|---------|---------|-------|--------|
-| 9/25  | MAP     | 4th Reading | 224   | 94th    |
-| 9/25  | MAP     | 4th Math    | 239   | 99th    |
-| 12/24 | i-Ready | 3rd Reading | 602   | 99th   |
-| 12/24 | i-Ready | 3rd Math    | 493   | 99th   |
-
-
 ## Math
+
+<img src="/images/testing/mathrit.png" />
 
 [Khan Academy Dashboard](https://www.khanacademy.org/parent/activity-report)
 
@@ -26,6 +16,8 @@ weight = 2
 </div>
 
 ## Reading & Writing
+
+<img src="/images/testing/readingrit.png" />
 
 [Lexia Dashboard](https://www.mylexia.com/mylexiaweb/app/index.html#/12443/reading/classes/22176428/core5)
 
@@ -162,3 +154,14 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
     <span>Cancun, Mexico</span>
     <span>Victoria, B.C.</span>
 </div>
+
+## Testing & Scores
+
+[Homeschool Boss Dashboard](https://app.homeschoolboss.com/map-testing)
+
+| Date     | Test    | Subject | Score | %-tile |
+|----------|---------|---------|-------|--------|
+| 9/25  | MAP     | 4th Reading | 224   | 94th    |
+| 9/25  | MAP     | 4th Math    | 239   | 99th    |
+| 12/24 | i-Ready | 3rd Reading | 602   | 99th   |
+| 12/24 | i-Ready | 3rd Math    | 493   | 99th   |
