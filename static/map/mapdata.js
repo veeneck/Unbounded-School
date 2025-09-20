@@ -38,7 +38,7 @@ var simplemaps_worldmap_mapdata={
     hide_labels: "no",
    
 		//Zoom settings
-		manual_zoom: "yes",
+		manual_zoom: "no",
     back_image: "no",
     arrow_box: "no",
     navigation_size: "20",

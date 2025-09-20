@@ -161,7 +161,9 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
 
 | Date     | Test    | Subject | Score | %-tile |
 |----------|---------|---------|-------|--------|
-| 9/25  | MAP     | 4th Reading | 224   | 94th    |
-| 9/25  | MAP     | 4th Math    | 239   | 99th    |
+| 9/25  | MAP     | 4th Reading | [224](/records/4thMAPFall.pdf)   | 94th    |
+| 9/25  | MAP     | 4th Math    | [239](/records/4thMAPFall.pdf)   | 99th    |
+| 4/25 | KAP | 3rd Reading | [700](/records/3rdKAP.pdf)   | 99th   |
+| 4/25 | KAP | 3rd Math    | [659](/records/3rdKAP.pdf)   | 96th   |
 | 12/24 | i-Ready | 3rd Reading | 602   | 99th   |
 | 12/24 | i-Ready | 3rd Math    | 493   | 99th   |
