@@ -21,7 +21,7 @@ weight = 1
 
 ## Math & Logic
 
-[Khan Academy](https://www.khanacademy.org/) is the primary math curriculum. After completing grade-level material, supplement with [Beast Academy](https://beastacademy.com). Once mastered, advance to the next grade on a limited basis, reducing math to 2–3 days weekly to prioritize Logic, Technology, and Science. For example, replace some math with [Learning to Code](https://developer.apple.com/swift-playground/).
+[Khan Academy](https://www.khanacademy.org/) is the primary math curriculum. After completing grade-level material, supplement with [Beast Academy](https://beastacademy.com) or [Math Academy](https://www.mathacademy.com). Once mastered, advance to the next grade on a limited basis, reducing math to 2–3 days weekly to prioritize Logic, Technology, and Science. For example, replace some math with [Learning to Code](https://developer.apple.com/swift-playground/).
 
 ## Social Studies
 
