@@ -1,7 +1,7 @@
 var simplemaps_worldmap_mapdata={
   main_settings: {
     //General settings
-		width: "responsive", //or 'responsive'
+    width: "responsive", //or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
     popups: "detect",
@@ -1577,8 +1577,8 @@ var simplemaps_worldmap_mapdata={
               lat: "37.7792",
               lng: "-97.5364",
               color: "default",
-              description: "default",
-              url: ""
+              description: '<img src="/map/pics/Colwich.jpg" style="width: 100px; margin: 0 auto;" />',
+              url: "/patterns/colwich"
             },
             "1": {
               name: "Tampa, Florida",
