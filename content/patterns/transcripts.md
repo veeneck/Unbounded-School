@@ -155,6 +155,7 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
     <span class="category">North America</span>
     <span>Cancun, Mexico</span>
     <span>Victoria, B.C.</span>
+    <span>Falmouth, Jamaica.</span>
 </div>
 
 ## Testing & Scores

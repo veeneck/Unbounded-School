@@ -1675,6 +1675,14 @@ var simplemaps_worldmap_mapdata={
           color: "default",
           description: "default",
           url: ""
+      },
+      "13": {
+          name: "Falmouth, Jamaica",
+          lat: "18.4928",
+          lng: "-77.6",
+          color: "default",
+          description: "default",
+          url: ""
       }
   },
   labels: {}
