@@ -25,11 +25,13 @@ weight = 2
     <span class="category">Lexia Levels</span>
     <span style="--progress: 100%">Level 16: 100%</span>
     <span style="--progress: 47%">Level 17: 47%</span>
+    <span style="--progress: 0%">Level 18: 0%</span>
 </div>
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 0%">180 Days Language: 0%</span>
+    <span style="--progress: 3%">180 Days Language: 3%</span>
+    <span style="--progress: 3%">180 Days Spelling: 3%</span>
 </div>
 
 [Writing Log](/patterns/writing/)
@@ -63,15 +65,15 @@ weight = 2
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 0%">180 Days Science: 0%</span>
+    <span style="--progress: 3%">180 Days Science: 3%</span>
 </div>
 
 ## Social Studies
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 8%">180 Days Geography: 8%</span>
-    <span style="--progress: 0%">180 Days Social Studies: 0%</span>
+    <span style="--progress: 11%">180 Days Geography: 11%</span>
+    <span style="--progress: 3%">180 Days Social Studies: 3%</span>
 </div>
 
 ## Projects
