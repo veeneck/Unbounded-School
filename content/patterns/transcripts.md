@@ -12,7 +12,7 @@ weight = 2
 
 <div class="pills">
     <span class="category">Khan Academy</span>
-    <span style="--progress: 48%">4th Grade: 48%</span>
+    <span style="--progress: 51%">4th Grade: 51%</span>
 </div>
 
 ## Reading & Writing
