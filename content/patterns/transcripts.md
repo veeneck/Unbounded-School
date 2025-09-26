@@ -24,7 +24,7 @@ weight = 2
 <div class="pills">
     <span class="category">Lexia Levels</span>
     <span style="--progress: 100%">Level 16: 100%</span>
-    <span style="--progress: 53%">Level 17: 53%</span>
+    <span style="--progress: 56%">Level 17: 56%</span>
     <span style="--progress: 0%">Level 18: 0%</span>
 </div>
 
