@@ -12,7 +12,7 @@ weight = 2
 
 <div class="pills">
     <span class="category">Khan Academy</span>
-    <span style="--progress: 51%">4th Grade: 51%</span>
+    <span style="--progress: 58%">4th Grade: 58%</span>
 </div>
 
 ## Reading & Writing
@@ -24,14 +24,14 @@ weight = 2
 <div class="pills">
     <span class="category">Lexia Levels</span>
     <span style="--progress: 100%">Level 16: 100%</span>
-    <span style="--progress: 56%">Level 17: 56%</span>
+    <span style="--progress: 61%">Level 17: 61%</span>
     <span style="--progress: 0%">Level 18: 0%</span>
 </div>
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 3%">180 Days Language: 3%</span>
-    <span style="--progress: 3%">180 Days Spelling: 3%</span>
+    <span style="--progress: 6%">180 Days Language: 6%</span>
+    <span style="--progress: 6%">180 Days Spelling: 6%</span>
 </div>
 
 [Writing Log](/patterns/writing/)
@@ -65,15 +65,15 @@ weight = 2
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 3%">180 Days Science: 3%</span>
+    <span style="--progress: 6%">180 Days Science: 6%</span>
 </div>
 
 ## Social Studies
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 11%">180 Days Geography: 11%</span>
-    <span style="--progress: 3%">180 Days Social Studies: 3%</span>
+    <span style="--progress: 14%">180 Days Geography: 14%</span>
+    <span style="--progress: 6%">180 Days Social Studies: 6%</span>
 </div>
 
 ## Projects
