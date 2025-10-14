@@ -12,7 +12,7 @@ weight = 2
 
 <div class="pills">
     <span class="category">Khan Academy</span>
-    <span style="--progress: 58%">4th Grade: 58%</span>
+    <span style="--progress: 67%">4th Grade: 67%</span>
 </div>
 
 ## Reading & Writing
@@ -24,14 +24,14 @@ weight = 2
 <div class="pills">
     <span class="category">Lexia Levels</span>
     <span style="--progress: 100%">Level 16: 100%</span>
-    <span style="--progress: 61%">Level 17: 61%</span>
-    <span style="--progress: 0%">Level 18: 0%</span>
+    <span style="--progress: 100%">Level 17: 100%</span>
+    <span style="--progress: 5%">Level 18: 5%</span>
 </div>
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 6%">180 Days Language: 6%</span>
-    <span style="--progress: 6%">180 Days Spelling: 6%</span>
+    <span style="--progress: 13%">180 Days Language: 13%</span>
+    <span style="--progress: 13%">180 Days Spelling: 13%</span>
 </div>
 
 [Writing Log](/patterns/writing/)
@@ -59,21 +59,32 @@ weight = 2
             </div>
         </a>
     </li>
+    <li class="book-container">
+        <a href="/writing/redfern">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
+                    <img src="/images/books/redfern.jpg" alt="Book Cover">
+                    <div class="book-title">Where The Red Fern Grows</div>
+                </div>
+            </div>
+        </a>
+    </li>
 </ul>
 
 ## Science
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 6%">180 Days Science: 6%</span>
+    <span style="--progress: 13%">180 Days Science: 13%</span>
 </div>
 
 ## Social Studies
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 14%">180 Days Geography: 14%</span>
-    <span style="--progress: 6%">180 Days Social Studies: 6%</span>
+    <span style="--progress: 20%">180 Days Geography: 20%</span>
+    <span style="--progress: 13%">180 Days Social Studies: 13%</span>
 </div>
 
 ## Projects
