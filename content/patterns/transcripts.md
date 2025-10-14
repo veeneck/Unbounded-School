@@ -38,7 +38,7 @@ weight = 2
 
 <ul class="book-list">
     <li class="book-container">
-        <a href="/writing/holes">
+        <a href="/patterns/writing/holes/">
             <div class="book">
                 <div class="book-spine"></div>
                 <div class="book-cover">
@@ -49,7 +49,7 @@ weight = 2
         </a>
     </li>
     <li class="book-container">
-        <a href="/writing/holes">
+        <a href="/patterns/writing/100dresses/">
             <div class="book">
                 <div class="book-spine"></div>
                 <div class="book-cover">
@@ -60,7 +60,7 @@ weight = 2
         </a>
     </li>
     <li class="book-container">
-        <a href="/writing/redfern">
+        <a href="/patterns/writing/redfern/">
             <div class="book">
                 <div class="book-spine"></div>
                 <div class="book-cover">
