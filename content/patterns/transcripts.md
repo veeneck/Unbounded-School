@@ -31,8 +31,8 @@ weight = 2
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 13%">180 Days Language: 13%</span>
-    <span style="--progress: 13%">180 Days Spelling: 13%</span>
+    <span style="--progress: 15%">180 Days Language: 15%</span>
+    <span style="--progress: 15%">180 Days Spelling: 15%</span>
 </div>
 
 [Writing Log](/patterns/writing/)
@@ -77,15 +77,15 @@ weight = 2
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 13%">180 Days Science: 13%</span>
+    <span style="--progress: 15%">180 Days Science: 15%</span>
 </div>
 
 ## Social Studies
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 20%">180 Days Geography: 20%</span>
-    <span style="--progress: 13%">180 Days Social Studies: 13%</span>
+    <span style="--progress: 22%">180 Days Geography: 22%</span>
+    <span style="--progress: 15%">180 Days Social Studies: 15%</span>
 </div>
 
 ## Projects
@@ -146,6 +146,7 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
 <div class="pills">
     <span class="category">Electives</span>
     <span>Monart</span>
+    <span>Music Theater</span>
 </div>
 
 ## Travel & Field Trips
