@@ -12,7 +12,7 @@ weight = 2
 
 <div class="pills">
     <span class="category">Khan Academy</span>
-    <span style="--progress: 67%">4th Grade: 67%</span>
+    <span style="--progress: 76%">4th Grade: 76%</span>
 </div>
 
 ## Reading & Writing
@@ -26,7 +26,7 @@ weight = 2
     <span class="category">Lexia Levels</span>
     <span style="--progress: 100%">Level 16: 100%</span>
     <span style="--progress: 100%">Level 17: 100%</span>
-    <span style="--progress: 5%">Level 18: 5%</span>
+    <span style="--progress: 100%">Level 18: 100%</span>
 </div>
 
 <div class="pills">
@@ -110,6 +110,9 @@ Additionally, she does project based learning at home.
     <li class="art">
         <img src="/images/art/cyclops.jpg" />
     </li>
+    <li class="art">
+        <img src="/images/art/mino.jpg" />
+    </li>
 </ul>
 
 ## Community Sports & Electives
@@ -137,6 +140,7 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
 <div class="pills">
     <span class="category">Basketball</span>
     <span>3rd</span>
+    <span>4th</span>
 </div>
 
 <div class="pills">
