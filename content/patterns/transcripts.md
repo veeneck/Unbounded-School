@@ -11,8 +11,15 @@ weight = 2
 [Khan Academy Dashboard](https://www.khanacademy.org/parent/activity-report)
 
 <div class="pills">
-    <span class="category">Khan Academy</span>
+    <span class="category">Khan Academy Math</span>
     <span style="--progress: 76%">4th Grade: 76%</span>
+</div>
+
+[Beast Academy Dashboard](https://beastacademy.com/parent/students)
+
+<div class="pills">
+    <span class="category">Beast Academy Math</span>
+    <span style="--progress: 2%">4th Grade: 2%</span>
 </div>
 
 ## Reading & Writing
@@ -27,6 +34,13 @@ weight = 2
     <span style="--progress: 100%">Level 16: 100%</span>
     <span style="--progress: 100%">Level 17: 100%</span>
     <span style="--progress: 100%">Level 18: 100%</span>
+</div>
+
+[Khan Academy Dashboard](https://www.khanacademy.org/parent/activity-report)
+
+<div class="pills">
+    <span class="category">Khan Academy Literature</span>
+    <span style="--progress: 0%">4th Grade: 0%</span>
 </div>
 
 <div class="pills">
