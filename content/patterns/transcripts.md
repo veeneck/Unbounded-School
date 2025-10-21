@@ -17,6 +17,7 @@ weight = 2
 
 ## Reading & Writing
 
+
 <img src="/images/testing/readingrit.png" />
 
 [Lexia Dashboard](https://www.mylexia.com/mylexiaweb/app/index.html#/12443/reading/classes/22176428/core5)
