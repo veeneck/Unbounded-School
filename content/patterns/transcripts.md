@@ -12,14 +12,14 @@ weight = 2
 
 <div class="pills">
     <span class="category">Khan Academy Math</span>
-    <span style="--progress: 76%">4th Grade: 76%</span>
+    <span style="--progress: 90%">4th Grade: 90%</span>
 </div>
 
 [Beast Academy Dashboard](https://beastacademy.com/parent/students)
 
 <div class="pills">
     <span class="category">Beast Academy Math</span>
-    <span style="--progress: 2%">4th Grade: 2%</span>
+    <span style="--progress: 4%">4th Grade: 4%</span>
 </div>
 
 ## Reading & Writing
@@ -45,8 +45,8 @@ weight = 2
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 15%">180 Days Language: 15%</span>
-    <span style="--progress: 15%">180 Days Spelling: 15%</span>
+    <span style="--progress: 19%">180 Days Language: 19%</span>
+    <span style="--progress: 19%">180 Days Spelling: 19%</span>
 </div>
 
 [Writing Log](/patterns/writing/)
@@ -85,21 +85,32 @@ weight = 2
             </div>
         </a>
     </li>
+    <li class="book-container">
+        <a href="/patterns/writing/seaside/">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
+                    <img src="/images/books/seaside.jpg" alt="Book Cover">
+                    <div class="book-title">Seaside Sanctuary</div>
+                </div>
+            </div>
+        </a>
+    </li>
 </ul>
 
 ## Science
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 15%">180 Days Science: 15%</span>
+    <span style="--progress: 19%">180 Days Science: 19%</span>
 </div>
 
 ## Social Studies
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 22%">180 Days Geography: 22%</span>
-    <span style="--progress: 15%">180 Days Social Studies: 15%</span>
+    <span style="--progress: 26%">180 Days Geography: 26%</span>
+    <span style="--progress: 19%">180 Days Social Studies: 19%</span>
 </div>
 
 ## Projects
@@ -126,6 +137,9 @@ Additionally, she does project based learning at home.
     </li>
     <li class="art">
         <img src="/images/art/mino.jpg" />
+    </li>
+    <li class="art">
+        <img src="/images/art/athena.jpg" />
     </li>
 </ul>
 
