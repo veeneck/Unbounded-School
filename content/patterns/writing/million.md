@@ -1,5 +1,6 @@
 +++
 title = "$1,000,000"
+weight = 1
 +++
 
 <img class="hero" src="/images/hero/million.jpg" width="100%" height="auto" />

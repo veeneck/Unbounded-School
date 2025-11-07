@@ -1,5 +1,6 @@
 +++
 title = "100 Dresses"
+weight = 4
 +++
 
 <img class="hero" src="/images/hero/100dresses.jpg" width="100%" height="auto" />

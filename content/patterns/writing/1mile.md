@@ -1,5 +1,6 @@
 +++
 title = "One Mile Race"
+weight = 5
 +++
 
 <img class="hero" src="/images/hero/1mile.jpg" width="100%" height="auto" />

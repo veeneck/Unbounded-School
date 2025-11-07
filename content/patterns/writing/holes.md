@@ -1,5 +1,6 @@
 +++
 title = "Holes"
+weight = 3
 +++
 
 <img class="hero" src="/images/hero/holes.jpg" width="100%" height="auto" />

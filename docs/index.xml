@@ -8,11 +8,25 @@
     <language>en-us</language>
     <atom:link href="https://unbounded.school/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>$1,000,000</title>
+      <link>https://unbounded.school/patterns/writing/million/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unbounded.school/patterns/writing/million/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/million.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;What I would do with 1,000,000 dollars is buy toys for my sister,&#xA;nice dresses and earrings for my mom, and Reeses and new shoes&#xA;for my dad. Then, I would buy lot of beautiful fabric and art materials.&#xA;Last, I would go all around the world in amazing private plane. That’s&#xA;just some things I would do with 1,000,000 dollars!&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Schedule</title>
       <link>https://unbounded.school/patterns/schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://unbounded.school/patterns/schedule/</guid>
       <description>&lt;h2 id=&#34;daily&#34;&gt;Daily&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Time&lt;/th&gt;&#xA;          &lt;th&gt;Lesson&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;8:30&lt;/td&gt;&#xA;          &lt;td&gt;Math &amp;amp; Logic&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;9:45&lt;/td&gt;&#xA;          &lt;td&gt;Recess&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;10:00&lt;/td&gt;&#xA;          &lt;td&gt;DEAR&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;10:30&lt;/td&gt;&#xA;          &lt;td&gt;Social Studies&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;11:15&lt;/td&gt;&#xA;          &lt;td&gt;Lunch&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;11:30&lt;/td&gt;&#xA;          &lt;td&gt;Recess&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;12:00&lt;/td&gt;&#xA;          &lt;td&gt;Literacy&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;1:00&lt;/td&gt;&#xA;          &lt;td&gt;Daily Writing&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;1:30&lt;/td&gt;&#xA;          &lt;td&gt;Projects&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2:15&lt;/td&gt;&#xA;          &lt;td&gt;Music &amp;amp; PE&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;3:15&lt;/td&gt;&#xA;          &lt;td&gt;End of Day&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;math--logic&#34;&gt;Math &amp;amp; Logic&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.khanacademy.org/&#34;&gt;Khan Academy&lt;/a&gt; is the primary math curriculum. After completing grade-level material, supplement with &lt;a href=&#34;https://beastacademy.com&#34;&gt;Beast Academy&lt;/a&gt; or &lt;a href=&#34;https://www.mathacademy.com&#34;&gt;Math Academy&lt;/a&gt;. Once mastered, advance to the next grade on a limited basis, reducing math to 2–3 days weekly to prioritize Logic, Technology, and Science. For example, replace some math with &lt;a href=&#34;https://developer.apple.com/swift-playground/&#34;&gt;Learning to Code&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Superpower</title>
+      <link>https://unbounded.school/patterns/writing/superhero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unbounded.school/patterns/writing/superhero/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/superhero.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;If I had a superpower, I would have the superpower to fly really fast.&#xA;I would have that power because I think it would be amazing to fly up to&#xA;the giant clouds and get to places quickly.&lt;/p&gt;&#xA;&lt;p&gt;I would help people with my superpower by flying up high to look for a&#xA;little girl’s doll that she lost, or saving a young boy from falling off a high edge.&#xA;I would help with anything else anyone needed. I am Scarlett the amazing superhero!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Transcripts</title>
@@ -22,11 +36,18 @@
       <description>&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;&#xA;&lt;img src=&#34;https://unbounded.school/images/testing/mathrit.png&#34; /&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.khanacademy.org/parent/activity-report&#34;&gt;Khan Academy Dashboard&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;pills&#34;&gt;&#xA;    &lt;span class=&#34;category&#34;&gt;Khan Academy Math&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 90%&#34;&gt;4th Grade: 90%&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://beastacademy.com/parent/students&#34;&gt;Beast Academy Dashboard&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;pills&#34;&gt;&#xA;    &lt;span class=&#34;category&#34;&gt;Beast Academy Math&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 4%&#34;&gt;4th Grade: 4%&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;reading--writing&#34;&gt;Reading &amp;amp; Writing&lt;/h2&gt;&#xA;&lt;img src=&#34;https://unbounded.school/images/testing/readingrit.png&#34; /&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.mylexia.com/mylexiaweb/app/index.html#/12443/reading/classes/22176428/core5&#34;&gt;Lexia Dashboard&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;pills&#34;&gt;&#xA;    &lt;span class=&#34;category&#34;&gt;Lexia Levels&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 100%&#34;&gt;Level 16: 100%&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 100%&#34;&gt;Level 17: 100%&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 100%&#34;&gt;Level 18: 100%&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.khanacademy.org/parent/activity-report&#34;&gt;Khan Academy Dashboard&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;pills&#34;&gt;&#xA;    &lt;span class=&#34;category&#34;&gt;Khan Academy Literature&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 0%&#34;&gt;4th Grade: 0%&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;pills&#34;&gt;&#xA;    &lt;span class=&#34;category&#34;&gt;Workbooks&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 19%&#34;&gt;180 Days Language: 19%&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 19%&#34;&gt;180 Days Spelling: 19%&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://unbounded.school/patterns/writing/&#34;&gt;Writing Log&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul class=&#34;book-list&#34;&gt;&#xA;    &lt;li class=&#34;book-container&#34;&gt;&#xA;        &lt;a href=&#34;https://unbounded.school/patterns/writing/holes/&#34;&gt;&#xA;            &lt;div class=&#34;book&#34;&gt;&#xA;                &lt;div class=&#34;book-spine&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;book-cover&#34;&gt;&#xA;                    &lt;img src=&#34;https://unbounded.school/images/books/holes.jpg&#34; alt=&#34;Book Cover&#34;&gt;&#xA;                    &lt;div class=&#34;book-title&#34;&gt;Holes&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/a&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li class=&#34;book-container&#34;&gt;&#xA;        &lt;a href=&#34;https://unbounded.school/patterns/writing/100dresses/&#34;&gt;&#xA;            &lt;div class=&#34;book&#34;&gt;&#xA;                &lt;div class=&#34;book-spine&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;book-cover&#34;&gt;&#xA;                    &lt;img src=&#34;https://unbounded.school/images/books/100dresses.jpg&#34; alt=&#34;Book Cover&#34;&gt;&#xA;                    &lt;div class=&#34;book-title&#34;&gt;100 Dresses&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/a&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li class=&#34;book-container&#34;&gt;&#xA;        &lt;a href=&#34;https://unbounded.school/patterns/writing/redfern/&#34;&gt;&#xA;            &lt;div class=&#34;book&#34;&gt;&#xA;                &lt;div class=&#34;book-spine&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;book-cover&#34;&gt;&#xA;                    &lt;img src=&#34;https://unbounded.school/images/books/redfern.jpg&#34; alt=&#34;Book Cover&#34;&gt;&#xA;                    &lt;div class=&#34;book-title&#34;&gt;Where The Red Fern Grows&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/a&gt;&#xA;    &lt;/li&gt;&#xA;    &lt;li class=&#34;book-container&#34;&gt;&#xA;        &lt;a href=&#34;https://unbounded.school/patterns/writing/seaside/&#34;&gt;&#xA;            &lt;div class=&#34;book&#34;&gt;&#xA;                &lt;div class=&#34;book-spine&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;book-cover&#34;&gt;&#xA;                    &lt;img src=&#34;https://unbounded.school/images/books/seaside.jpg&#34; alt=&#34;Book Cover&#34;&gt;&#xA;                    &lt;div class=&#34;book-title&#34;&gt;Seaside Sanctuary&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/a&gt;&#xA;    &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;science&#34;&gt;Science&lt;/h2&gt;&#xA;&lt;div class=&#34;pills&#34;&gt;&#xA;    &lt;span class=&#34;category&#34;&gt;Workbooks&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 19%&#34;&gt;180 Days Science: 19%&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;social-studies&#34;&gt;Social Studies&lt;/h2&gt;&#xA;&lt;div class=&#34;pills&#34;&gt;&#xA;    &lt;span class=&#34;category&#34;&gt;Workbooks&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 26%&#34;&gt;180 Days Geography: 26%&lt;/span&gt;&#xA;    &lt;span style=&#34;--progress: 19%&#34;&gt;180 Days Social Studies: 19%&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;p&gt;Scarlett&amp;rsquo;s writing is a big part of her projects. Reference the &lt;strong&gt;Reading &amp;amp; Writing&lt;/strong&gt; section to view that work.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>$1,000,000</title>
-      <link>https://unbounded.school/patterns/writing/million/</link>
+      <title>Holes</title>
+      <link>https://unbounded.school/patterns/writing/holes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/million/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/million.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;What I would do with 1,000,000 dollars is buy toys for my sister,&#xA;nice dresses and earrings for my mom, and Reeses and new shoes&#xA;for my dad. Then, I would buy lot of beautiful fabric and art materials.&#xA;Last, I would go all around the world in amazing private plane. That’s&#xA;just some things I would do with 1,000,000 dollars!&lt;/p&gt;</description>
+      <guid>https://unbounded.school/patterns/writing/holes/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/holes.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;In the book Holes there is a boy named Stanley.  He went to school and was a&#xA;pretty big kid, and he got laughed at for that. One day, he was walking under a&#xA;bridge on his way home from school and from out of the top of the bridge, shoes fell down on&#xA;him. They were a famous baseball players shoes. The cops came by and took him&#xA;to court. They gave him the choice to go to jail or Camp Green Lake. He chose Camp&#xA;Green Lake.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Report Cards</title>
+      <link>https://unbounded.school/patterns/reportcard/reportcards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unbounded.school/patterns/reportcard/reportcards/</guid>
+      <description>&lt;h2 id=&#34;fall-2025-grades&#34;&gt;Fall 2025 Grades&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Subject&lt;/th&gt;&#xA;          &lt;th&gt;Grade&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Math&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ELA&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Writing&lt;/td&gt;&#xA;          &lt;td&gt;A-&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Reading&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Social Studies&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Spelling&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;PE&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Music&lt;/td&gt;&#xA;          &lt;td&gt;A-&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Extracurricular&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;key-achievements&#34;&gt;Key Achievements&lt;/h2&gt;&#xA;&lt;p&gt;Scarlett is making excellent progress toward mastering 4th-grade Math and English, as evidenced by her strong performance in Khan Academy and Lexia. In Math, she has completed more than 50% of the curriculum with 100% mastery. In Lexia, she passed Core 16 with a 95% score and Core 17 with a perfect 100%.&lt;/p&gt;</description>
     </item>
     <item>
       <title>100 Dresses</title>
@@ -34,6 +55,27 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://unbounded.school/patterns/writing/100dresses/</guid>
       <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/100dresses.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;The Hundred Dresses, by Eleanor Estes. The theme is forgiveness.&lt;/p&gt;&#xA;&lt;p&gt;In the book The Hundred Dresses, there is a girl named Wanda. She went to school like any&#xA;other normal kid, but she had been missing school. In Wanda’s class there was a bunch of kids,&#xA;but Peggy was the prettiest. Peggy’s best friend was Maddie. They did everything together.&#xA;Maddie thought she knew why Wanda was missing school. It all started on a beautiful day,&#xA;Wanda got to school and Peggy asked Wanda how many dresses she had. Wanda only had one&#xA;dress but she didn’t want to tell everyone that so she said she had one hundred, all lined&#xA;up in her closet. Everyone started asking her that every day and Maddie could tell that was making&#xA;Wanda feel uncomfortable. That was why Wanda wouldn’t come to school. Maddie felt bad and so  did&#xA;Peggy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>One Mile Race</title>
+      <link>https://unbounded.school/patterns/writing/1mile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unbounded.school/patterns/writing/1mile/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/1mile.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;I trained for a one-mile race once. Every Wednesday, I would practice.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;On the first Wednesday of practice, I ran two minutes and walked one minute five times.&lt;/li&gt;&#xA;&lt;li&gt;On the second Wednesday, I ran three minutes and walked one minute four times.&lt;/li&gt;&#xA;&lt;li&gt;On the third Wednesday, I ran five minutes and walked one minute two times.&lt;/li&gt;&#xA;&lt;li&gt;The fourth Wednesday I ran a whole mile without stopping to walk.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I ran with some of my neighbors from Crocker Court, so we made shirts that&#xA;said Crocker Cruisers. It was a blast!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Where The Red Fern Grows</title>
+      <link>https://unbounded.school/patterns/writing/redfern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unbounded.school/patterns/writing/redfern/</guid>
+      <description>&lt;p&gt;Coming Soon&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Seaside Sanctuary</title>
+      <link>https://unbounded.school/patterns/writing/seaside/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://unbounded.school/patterns/writing/seaside/</guid>
+      <description>&lt;p&gt;Coming Soon&lt;/p&gt;</description>
     </item>
     <item>
       <title>5k Adventure</title>
@@ -71,46 +113,11 @@
       <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/habitat.jpg&#34; /&gt;&#xA;&lt;p&gt;A diorama is like a tiny world you build to show a scene, like a forest, desert, or even a superhero hideout! It’s a small model made on a base, like a piece of cardboard, where you add things like grass, rocks, trees, or buildings to make it look real. Think of it as a 3D picture you can touch, kind of like a toy set or a scene from a movie, but you make it yourself with crafts! It’s fun because you get to create every part of your little world.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Holes</title>
-      <link>https://unbounded.school/patterns/writing/holes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/holes/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/holes.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;In the book Holes there is a boy named Stanley.  He went to school and was a&#xA;pretty big kid, and he got laughed at for that. One day, he was walking under a&#xA;bridge on his way home from school and from out of the top of the bridge, shoes fell down on&#xA;him. They were a famous baseball players shoes. The cops came by and took him&#xA;to court. They gave him the choice to go to jail or Camp Green Lake. He chose Camp&#xA;Green Lake.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Hunt &amp; Sketch</title>
       <link>https://unbounded.school/patterns/quests/huntsketch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://unbounded.school/patterns/quests/huntsketch/</guid>
       <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/kpop.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;h2 id=&#34;geography-finding-korea&#34;&gt;Geography: Finding Korea&lt;/h2&gt;&#xA;&lt;aside aria-label=&#34;note&#34; class=&#34;note&#34;&gt;&#xA;  &lt;div&gt;&#xA;    &lt;svg class=&#34;sign&#34; aria-hidden=&#34;true&#34; viewBox=&#34;0 0 41.667306 41.66729&#34; focusable=&#34;false&#34;&gt;&#xA;      &lt;use xlink:href=&#34;#info&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;&lt;p&gt;Open the Apple Maps app on your iPad. Pinch to zoom out super far—you&amp;rsquo;ll see the whole globe! Spot South Korea and Kansas. Fun hunt, right?&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;&#xA;&lt;p&gt;Hey explorer! Use Apple Maps, Grok, or Google to answer these cool questions:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;What&amp;rsquo;s the capital of South Korea?&lt;/li&gt;&#xA;&lt;li&gt;Could you walk to South Korea from Kansas? What about sailing there by boat?&lt;/li&gt;&#xA;&lt;li&gt;How many miles from Kansas to South Korea&amp;rsquo;s capital?&lt;/li&gt;&#xA;&lt;li&gt;How long to fly that adventure?&lt;/li&gt;&#xA;&lt;li&gt;What&amp;rsquo;s South Korea&amp;rsquo;s time zone? Kansas&amp;rsquo;s? If it&amp;rsquo;s 3 PM in Kansas, what&amp;rsquo;s the time in South Korea?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;culture-k-pop--demons&#34;&gt;Culture: K-Pop &amp;amp; Demons&lt;/h2&gt;&#xA;&lt;p&gt;The movie &lt;em&gt;K-Pop Demon Hunters&lt;/em&gt; pulls from real Korean tales. Watch this video to discover awesome cultural bits!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My Superpower</title>
-      <link>https://unbounded.school/patterns/writing/superhero/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/superhero/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/superhero.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;If I had a superpower, I would have the superpower to fly really fast.&#xA;I would have that power because I think it would be amazing to fly up to&#xA;the giant clouds and get to places quickly.&lt;/p&gt;&#xA;&lt;p&gt;I would help people with my superpower by flying up high to look for a&#xA;little girl’s doll that she lost, or saving a young boy from falling off a high edge.&#xA;I would help with anything else anyone needed. I am Scarlett the amazing superhero!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>One Mile Race</title>
-      <link>https://unbounded.school/patterns/writing/1mile/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/1mile/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/1mile.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;I trained for a one-mile race once. Every Wednesday, I would practice.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;On the first Wednesday of practice, I ran two minutes and walked one minute five times.&lt;/li&gt;&#xA;&lt;li&gt;On the second Wednesday, I ran three minutes and walked one minute four times.&lt;/li&gt;&#xA;&lt;li&gt;On the third Wednesday, I ran five minutes and walked one minute two times.&lt;/li&gt;&#xA;&lt;li&gt;The fourth Wednesday I ran a whole mile without stopping to walk.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I ran with some of my neighbors from Crocker Court, so we made shirts that&#xA;said Crocker Cruisers. It was a blast!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Seaside Sanctuary</title>
-      <link>https://unbounded.school/patterns/writing/seaside/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/seaside/</guid>
-      <description>&lt;p&gt;Coming Soon&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Where The Red Fern Grows</title>
-      <link>https://unbounded.school/patterns/writing/redfern/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/redfern/</guid>
-      <description>&lt;p&gt;Coming Soon&lt;/p&gt;</description>
     </item>
     <item>
       <title>World Animals</title>

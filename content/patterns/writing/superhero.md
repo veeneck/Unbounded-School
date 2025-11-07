@@ -1,5 +1,6 @@
 +++
 title = "My Superpower"
+weight = 2
 +++
 
 <img class="hero" src="/images/hero/superhero.jpg" width="100%" height="auto" />
