@@ -14,7 +14,7 @@ weight = 2
 | Social Studies | A+              |
 | Spelling | A+             |
 | PE | A+ |
-| Music  | B      |
+| Music  | -      |
 | Extracurricular | A+ |
 
 ## Key Achievements
