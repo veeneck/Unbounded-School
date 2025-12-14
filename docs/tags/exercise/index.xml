@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exercise on Unbounded School</title>
-    <link>http://localhost:1313/tags/exercise/</link>
+    <link>https://unbounded.school/tags/exercise/</link>
     <description>Recent content in Exercise on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/exercise/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://unbounded.school/tags/exercise/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5k Adventure</title>
-      <link>http://localhost:1313/patterns/quests/5krace/</link>
+      <link>https://unbounded.school/patterns/quests/5krace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/patterns/quests/5krace/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/5krace.jpg&#34; /&gt;&#xA;&lt;p&gt;Get ready for an awesome adventure to become a super stretcher and a 5K running champ! You&amp;rsquo;ll learn fun stretches, make a training schedule, and train to run 3.1 miles with a big smile.&lt;/p&gt;&#xA;&lt;h2 id=&#34;making-a-training-plan&#34;&gt;Making a Training Plan&lt;/h2&gt;&#xA;&lt;p&gt;Open up Grok and introduce yourself. Grok will help you create a plan tailored specifically to you. To start the discussion, type in:&lt;/p&gt;&#xA;&lt;pre&gt;I&#39;m a 9 year old girl and I&#39;d like help creating a 5k training plan. &#xA;I&#39;m starting today, and my race is on October 18th. &#xA;Let me tell you a bit about myself before you create the plan.&lt;/pre&gt;&#xA;&lt;p&gt;After the introduction, Grok will want to know 2 things:&lt;/p&gt;</description>
+      <guid>https://unbounded.school/patterns/quests/5krace/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/5krace.jpg&#34; /&gt;&#xA;&lt;p&gt;Get ready for an awesome adventure to become a super stretcher and a 5K running champ! You&amp;rsquo;ll learn fun stretches, make a training schedule, and train to run 3.1 miles with a big smile.&lt;/p&gt;&#xA;&lt;h2 id=&#34;making-a-training-plan&#34;&gt;Making a Training Plan&lt;/h2&gt;&#xA;&lt;p&gt;Open up Grok and introduce yourself. Grok will help you create a plan tailored specifically to you. To start the discussion, type in:&lt;/p&gt;&#xA;&lt;pre&gt;I&#39;m a 9 year old girl and I&#39;d like help creating a 5k training plan. &#xA;I&#39;m starting today, and my race is on October 18th. &#xA;Let me tell you a bit about myself before you create the plan.&lt;/pre&gt;&#xA;&lt;p&gt;After the introduction, Grok will want to know 2 things:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
