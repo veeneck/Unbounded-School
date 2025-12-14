@@ -21,7 +21,7 @@ weight = 1
 
 ## Math & Logic
 
-[Khan Academy](https://www.khanacademy.org/) is the primary math curriculum. After completing grade-level material, supplement with [Beast Academy](https://beastacademy.com) or [Math Academy](https://www.mathacademy.com). Once mastered, advance to the next grade on a limited basis, reducing math to 2–3 days weekly to prioritize Logic, Technology, and Science. For example, replace some math with [Learning to Code](https://developer.apple.com/swift-playground/).
+[Khan Academy](https://www.khanacademy.org/) is the primary math curriculum. After completing grade-level material, supplement with [Beast Academy](https://beastacademy.com) or [Math Academy](https://www.mathacademy.com). Once mastered, advance to the next grade on a limited basis, reducing math to 2–3 days weekly to prioritize Logic, Technology, and Science. For example, replace some math with [Learning to Code](https://developer.apple.com/swift-playground/). Other Math platforms to consider: [Matific](https://www.matific.com/us/en-us/home/); [Brilliant](https://brilliant.org); [Synthesis](https://www.synthesis.com/tutor)' [Art of Problem Solving](https://artofproblemsolving.com)
 
 ## Social Studies
 
@@ -29,11 +29,11 @@ Use [BrainPop](https://www.brainpop.com) for Social Studies, alternating daily w
 
 ## Sciences
 
-Science is currently integrated into Social Studies resources. Supplement with field trips for Health and Technology topics.
+Science is currently integrated into Social Studies resources. Supplement with field trips for Health and Technology topics. [Beast Science](https://beastacademy.com/books/science/level-4) is avialable for 4th and 5th grade. [Home Science Tools](https://www.homesciencetools.com/science-kits/) has kits for later years.
 
 ## Reading and Language
 
-Use [Lexia](https://www.lexialearning.com) as the primary tool. After completing grade-level material, supplement with [Khan Academy](https://www.khanacademy.org/). Incorporate **DEAR** (Drop Everything & Read) and the [Grok & Quill](/patterns/quests/grokquill/) daily writing quest. Conduct weekly spelling tests based on ongoing tasks.
+Use [Lexia](https://www.lexialearning.com) as the primary tool. After completing grade-level material, supplement with [Khan Academy](https://www.khanacademy.org/). Incorporate **DEAR** (Drop Everything & Read) and the [Grok & Quill](/patterns/quests/grokquill/) daily writing quest. Conduct weekly spelling tests using words from the 180 day language workbooks. Other programs to consider: [Night Zookeeper](https://www.nightzookeeper.com), [Brave Writer](https://bravewriter.com)
 
 ## Projects
 
