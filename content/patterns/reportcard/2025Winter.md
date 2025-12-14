@@ -25,7 +25,7 @@ Her enthusiasm for independent reading and writing remains evident. She finished
 
 ## Areas For Growth
 
-Scarlett’s passion for art and creative expression grew noticeably this semester, highlighted by her ongoing Dinosaur project and her first full attempt at writing, directing, and editing an original script into a finished short film. With a packed schedule, there has been less time for music, dance, and singing. This is to be expected with a flexible schedule. When curiosity strike, it is important for Scarlett to deep dive on it. Moving forward, more time can be dedicated to a project that incorporates music. For example, the film mentioned above could be edited to add a soundtrack, or sound effects.
+Scarlett’s passion for art and creative expression grew noticeably this semester, highlighted by her ongoing Dinosaur project and her first full attempt at writing, directing, and editing an original script into a [finished short film](/patterns/writing/xmas/). With a packed schedule, there has been less time for music, dance, and singing. This is to be expected with a flexible schedule. When curiosity strike, it is important for Scarlett to deep dive on it. Moving forward, more time can be dedicated to a project that incorporates music. For example, the film mentioned above could be edited to add a soundtrack, or sound effects.
 
 ## Tests & Attendance
 
