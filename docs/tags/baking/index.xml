@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Baking on Unbounded School</title>
-    <link>https://unbounded.school/tags/baking/</link>
+    <link>http://localhost:1313/tags/baking/</link>
     <description>Recent content in Baking on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://unbounded.school/tags/baking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/baking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Egg Free Baking</title>
-      <link>https://unbounded.school/patterns/quests/cookies/</link>
+      <link>http://localhost:1313/patterns/quests/cookies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/quests/cookies/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/cookies.jpg&#34; /&gt;&#xA;&lt;p&gt;Hi there, young baker! Baking is like magic—you mix simple things and turn them into yummy treats. This lesson is all about making egg-free cookies (maybe chocolate chip or something fun like that!), a super easy recipe that’s perfect for beginners. You’ll do most of it yourself, but remember: Always have a grown-up nearby for safety, especially with the oven.&lt;/p&gt;&#xA;&lt;h2 id=&#34;find-a-recipe-online&#34;&gt;Find a Recipe Online&lt;/h2&gt;&#xA;&lt;p&gt;Baking starts with a good plan! Recipes are like treasure maps that tell you exactly what to do. Today, we’re making egg-free cookies because they’re yummy and safe for everyone—even if someone can’t eat eggs. You get to pick your own recipe this time!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/quests/cookies/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/cookies.jpg&#34; /&gt;&#xA;&lt;p&gt;Hi there, young baker! Baking is like magic—you mix simple things and turn them into yummy treats. This lesson is all about making egg-free cookies (maybe chocolate chip or something fun like that!), a super easy recipe that’s perfect for beginners. You’ll do most of it yourself, but remember: Always have a grown-up nearby for safety, especially with the oven.&lt;/p&gt;&#xA;&lt;h2 id=&#34;find-a-recipe-online&#34;&gt;Find a Recipe Online&lt;/h2&gt;&#xA;&lt;p&gt;Baking starts with a good plan! Recipes are like treasure maps that tell you exactly what to do. Today, we’re making egg-free cookies because they’re yummy and safe for everyone—even if someone can’t eat eggs. You get to pick your own recipe this time!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

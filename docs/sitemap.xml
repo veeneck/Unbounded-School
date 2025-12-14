@@ -2,68 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://unbounded.school/patterns/writing/million/</loc>
+    <loc>http://localhost:1313/patterns/writing/million/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/schedule/</loc>
+    <loc>http://localhost:1313/patterns/schedule/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/writing/superhero/</loc>
+    <loc>http://localhost:1313/patterns/writing/superhero/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/transcripts/</loc>
+    <loc>http://localhost:1313/patterns/transcripts/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/writing/holes/</loc>
+    <loc>http://localhost:1313/patterns/writing/holes/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/reportcard/reportcards/</loc>
+    <loc>http://localhost:1313/patterns/reportcard/reportcards/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/writing/100dresses/</loc>
+    <loc>http://localhost:1313/patterns/writing/100dresses/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/writing/1mile/</loc>
+    <loc>http://localhost:1313/patterns/writing/1mile/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/writing/redfern/</loc>
+    <loc>http://localhost:1313/patterns/writing/redfern/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/writing/seaside/</loc>
+    <loc>http://localhost:1313/patterns/quests/5krace/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/quests/5krace/</loc>
+    <loc>http://localhost:1313/tags/animals/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/animals/</loc>
+    <loc>http://localhost:1313/tags/baking/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/baking/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://unbounded.school/categories/</loc>
+    <loc>http://localhost:1313/tags/crafting/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/crafting/</loc>
+    <loc>http://localhost:1313/print-version/</loc>
   </url><url>
-    <loc>https://unbounded.school/print-version/</loc>
+    <loc>http://localhost:1313/tags/drawing/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/drawing/</loc>
+    <loc>http://localhost:1313/patterns/quests/cookies/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/quests/cookies/</loc>
+    <loc>http://localhost:1313/tags/exercise/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/exercise/</loc>
+    <loc>http://localhost:1313/patterns/quests/grokquill/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/quests/grokquill/</loc>
+    <loc>http://localhost:1313/patterns/quests/habitat/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/quests/habitat/</loc>
+    <loc>http://localhost:1313/patterns/quests/huntsketch/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/quests/huntsketch/</loc>
+    <loc>http://localhost:1313/tags/kpop/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/kpop/</loc>
+    <loc>http://localhost:1313/patterns/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/</loc>
+    <loc>http://localhost:1313/tags/planning/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/planning/</loc>
+    <loc>http://localhost:1313/patterns/quests/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/quests/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://unbounded.school/</loc>
+    <loc>http://localhost:1313/tags/video-editing/</loc>
   </url><url>
-    <loc>https://unbounded.school/tags/video-editing/</loc>
+    <loc>http://localhost:1313/patterns/quests/animals/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/quests/animals/</loc>
+    <loc>http://localhost:1313/patterns/writing/</loc>
   </url><url>
-    <loc>https://unbounded.school/patterns/writing/</loc>
-  </url><url>
-    <loc>https://unbounded.school/tags/writing/</loc>
+    <loc>http://localhost:1313/tags/writing/</loc>
   </url>
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drawing on Unbounded School</title>
-    <link>https://unbounded.school/tags/drawing/</link>
+    <link>http://localhost:1313/tags/drawing/</link>
     <description>Recent content in Drawing on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://unbounded.school/tags/drawing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/drawing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hunt &amp; Sketch</title>
-      <link>https://unbounded.school/patterns/quests/huntsketch/</link>
+      <link>http://localhost:1313/patterns/quests/huntsketch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/quests/huntsketch/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/kpop.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;h2 id=&#34;geography-finding-korea&#34;&gt;Geography: Finding Korea&lt;/h2&gt;&#xA;&lt;aside aria-label=&#34;note&#34; class=&#34;note&#34;&gt;&#xA;  &lt;div&gt;&#xA;    &lt;svg class=&#34;sign&#34; aria-hidden=&#34;true&#34; viewBox=&#34;0 0 41.667306 41.66729&#34; focusable=&#34;false&#34;&gt;&#xA;      &lt;use xlink:href=&#34;#info&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;&lt;p&gt;Open the Apple Maps app on your iPad. Pinch to zoom out super far—you&amp;rsquo;ll see the whole globe! Spot South Korea and Kansas. Fun hunt, right?&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;&#xA;&lt;p&gt;Hey explorer! Use Apple Maps, Grok, or Google to answer these cool questions:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;What&amp;rsquo;s the capital of South Korea?&lt;/li&gt;&#xA;&lt;li&gt;Could you walk to South Korea from Kansas? What about sailing there by boat?&lt;/li&gt;&#xA;&lt;li&gt;How many miles from Kansas to South Korea&amp;rsquo;s capital?&lt;/li&gt;&#xA;&lt;li&gt;How long to fly that adventure?&lt;/li&gt;&#xA;&lt;li&gt;What&amp;rsquo;s South Korea&amp;rsquo;s time zone? Kansas&amp;rsquo;s? If it&amp;rsquo;s 3 PM in Kansas, what&amp;rsquo;s the time in South Korea?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;culture-k-pop--demons&#34;&gt;Culture: K-Pop &amp;amp; Demons&lt;/h2&gt;&#xA;&lt;p&gt;The movie &lt;em&gt;K-Pop Demon Hunters&lt;/em&gt; pulls from real Korean tales. Watch this video to discover awesome cultural bits!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/quests/huntsketch/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/kpop.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;h2 id=&#34;geography-finding-korea&#34;&gt;Geography: Finding Korea&lt;/h2&gt;&#xA;&lt;aside aria-label=&#34;note&#34; class=&#34;note&#34;&gt;&#xA;  &lt;div&gt;&#xA;    &lt;svg class=&#34;sign&#34; aria-hidden=&#34;true&#34; viewBox=&#34;0 0 41.667306 41.66729&#34; focusable=&#34;false&#34;&gt;&#xA;      &lt;use xlink:href=&#34;#info&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;&lt;p&gt;Open the Apple Maps app on your iPad. Pinch to zoom out super far—you&amp;rsquo;ll see the whole globe! Spot South Korea and Kansas. Fun hunt, right?&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;&#xA;&lt;p&gt;Hey explorer! Use Apple Maps, Grok, or Google to answer these cool questions:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;What&amp;rsquo;s the capital of South Korea?&lt;/li&gt;&#xA;&lt;li&gt;Could you walk to South Korea from Kansas? What about sailing there by boat?&lt;/li&gt;&#xA;&lt;li&gt;How many miles from Kansas to South Korea&amp;rsquo;s capital?&lt;/li&gt;&#xA;&lt;li&gt;How long to fly that adventure?&lt;/li&gt;&#xA;&lt;li&gt;What&amp;rsquo;s South Korea&amp;rsquo;s time zone? Kansas&amp;rsquo;s? If it&amp;rsquo;s 3 PM in Kansas, what&amp;rsquo;s the time in South Korea?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;culture-k-pop--demons&#34;&gt;Culture: K-Pop &amp;amp; Demons&lt;/h2&gt;&#xA;&lt;p&gt;The movie &lt;em&gt;K-Pop Demon Hunters&lt;/em&gt; pulls from real Korean tales. Watch this video to discover awesome cultural bits!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Unbounded School</title>
-    <link>https://unbounded.school/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://unbounded.school/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Animals</title>
-      <link>https://unbounded.school/tags/animals/</link>
+      <link>http://localhost:1313/tags/animals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/animals/</guid>
+      <guid>http://localhost:1313/tags/animals/</guid>
       <description></description>
     </item>
     <item>
       <title>Baking</title>
-      <link>https://unbounded.school/tags/baking/</link>
+      <link>http://localhost:1313/tags/baking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/baking/</guid>
+      <guid>http://localhost:1313/tags/baking/</guid>
       <description></description>
     </item>
     <item>
       <title>Crafting</title>
-      <link>https://unbounded.school/tags/crafting/</link>
+      <link>http://localhost:1313/tags/crafting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/crafting/</guid>
+      <guid>http://localhost:1313/tags/crafting/</guid>
       <description></description>
     </item>
     <item>
       <title>Drawing</title>
-      <link>https://unbounded.school/tags/drawing/</link>
+      <link>http://localhost:1313/tags/drawing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/drawing/</guid>
+      <guid>http://localhost:1313/tags/drawing/</guid>
       <description></description>
     </item>
     <item>
       <title>Exercise</title>
-      <link>https://unbounded.school/tags/exercise/</link>
+      <link>http://localhost:1313/tags/exercise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/exercise/</guid>
+      <guid>http://localhost:1313/tags/exercise/</guid>
       <description></description>
     </item>
     <item>
       <title>Kpop</title>
-      <link>https://unbounded.school/tags/kpop/</link>
+      <link>http://localhost:1313/tags/kpop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/kpop/</guid>
+      <guid>http://localhost:1313/tags/kpop/</guid>
       <description></description>
     </item>
     <item>
       <title>Planning</title>
-      <link>https://unbounded.school/tags/planning/</link>
+      <link>http://localhost:1313/tags/planning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/planning/</guid>
+      <guid>http://localhost:1313/tags/planning/</guid>
       <description></description>
     </item>
     <item>
       <title>Video Editing</title>
-      <link>https://unbounded.school/tags/video-editing/</link>
+      <link>http://localhost:1313/tags/video-editing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/video-editing/</guid>
+      <guid>http://localhost:1313/tags/video-editing/</guid>
       <description></description>
     </item>
     <item>
       <title>Writing</title>
-      <link>https://unbounded.school/tags/writing/</link>
+      <link>http://localhost:1313/tags/writing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/tags/writing/</guid>
+      <guid>http://localhost:1313/tags/writing/</guid>
       <description></description>
     </item>
   </channel>

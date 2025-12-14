@@ -12,14 +12,14 @@ weight = 2
 
 <div class="pills">
     <span class="category">Khan Academy Math</span>
-    <span style="--progress: 90%">4th Grade: 90%</span>
+    <span style="--progress: 100%">4th Grade: 100%</span>
 </div>
 
 [Beast Academy Dashboard](https://beastacademy.com/parent/students)
 
 <div class="pills">
     <span class="category">Beast Academy Math</span>
-    <span style="--progress: 4%">4th Grade: 4%</span>
+    <span style="--progress: 8%">Level 4: 8%</span>
 </div>
 
 ## Reading & Writing
@@ -40,13 +40,13 @@ weight = 2
 
 <div class="pills">
     <span class="category">Khan Academy Literature</span>
-    <span style="--progress: 0%">4th Grade: 0%</span>
+    <span style="--progress: 12%">4th Grade: 12%</span>
 </div>
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 19%">180 Days Language: 19%</span>
-    <span style="--progress: 19%">180 Days Spelling: 19%</span>
+    <span style="--progress: 34%">180 Days Language: 34%</span>
+    <span style="--progress: 34%">180 Days Spelling: 34%</span>
 </div>
 
 [Writing Log](/patterns/writing/)
@@ -86,7 +86,6 @@ weight = 2
         </a>
     </li>
     <li class="book-container">
-        <a href="/patterns/writing/seaside/">
             <div class="book">
                 <div class="book-spine"></div>
                 <div class="book-cover">
@@ -94,23 +93,33 @@ weight = 2
                     <div class="book-title">Seaside Sanctuary</div>
                 </div>
             </div>
-        </a>
+    </li>
+    <li class="book-container">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
+                    <img src="/images/books/charlottesweb.jpg" alt="Book Cover">
+                    <div class="book-title">Charlotte's Web</div>
+                </div>
+            </div>
     </li>
 </ul>
 
 ## Science
 
+<img src="/images/testing/sciencerit.png" />
+
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 19%">180 Days Science: 19%</span>
+    <span style="--progress: 34%">180 Days Science: 34%</span>
 </div>
 
 ## Social Studies
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 26%">180 Days Geography: 26%</span>
-    <span style="--progress: 19%">180 Days Social Studies: 19%</span>
+    <span style="--progress: 40%">180 Days Geography: 40%</span>
+    <span style="--progress: 34%">180 Days Social Studies: 34%</span>
 </div>
 
 ## Projects
@@ -209,6 +218,8 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
 
 | Date     | Test    | Subject | Score | %-tile |
 |----------|---------|---------|-------|--------|
+| 12/25  | MAP     | 4th Science | [219](/records/4thMAPWinter.pdf)   | 95th    |
+| 12/25  | MAP     | 4th Math    | [243](/records/4thMAPWinter.pdf)   | 99th    |
 | 9/25  | MAP     | 4th Reading | [224](/records/4thMAPFall.pdf)   | 94th    |
 | 9/25  | MAP     | 4th Math    | [239](/records/4thMAPFall.pdf)   | 99th    |
 | 4/25 | KAP | 3rd Reading | [700](/records/3rdKAP.pdf)   | 99th   |
