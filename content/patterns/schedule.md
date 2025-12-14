@@ -63,6 +63,8 @@ Self-guided projects allow deep exploration after core tasks are complete. These
     <span>Mythology</span>
 </div>
 
+In addition to projects, [EdClub](https://www.edclub.com) is used for additional areas like Typing, Personal Finance, and Computers.
+
 ## Music & PE
 
 On non-sport practice days, hold joint PE sessions with neighbors, rotating between in-season and off-season sports or seasonal activities like rollerblading or training for a local 5k. On sport practice days (2 days/week), schedule music activities like guitar, singing, songwriting, or choreography. Additional options include swimming, yoga, climbing, or pickleball at the YMCA.
