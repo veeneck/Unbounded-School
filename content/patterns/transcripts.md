@@ -132,6 +132,16 @@ Additionally, she does project based learning at home.
 <img src="/images/hero/animals.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="World Animals">
 <img src="/images/hero/cookies.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="Egg Free Baking">
 
+<div class="pills">
+    <span class="category">Edclub</span>
+    <span style="--progress: 46%">Earning - Upper Elementary: 46%</span>
+    <span style="--progress: 0%">Saving - Upper Elementary: 0%</span>
+    <span style="--progress: 0%">Spending - Upper Elementary: 0%</span>
+    <span style="--progress: 8%">Word Parts - Level 4: 8%</span>
+    <span style="--progress: 8%">Digital Citizenship & Literacy 4: 8%</span>
+    <span style="--progress: 8%">Typing Jungle: 8%</span>
+</div>
+
 ## Art
 
 <ul class="art-gallery">
@@ -151,16 +161,6 @@ Additionally, she does project based learning at home.
         <img src="/images/art/athena.jpg" />
     </li>
 </ul>
-
-<div class="pills">
-    <span class="category">Edclub</span>
-    <span style="--progress: 46%">Earning - Upper Elementary: 46%</span>
-    <span style="--progress: 0%">Saving - Upper Elementary: 0%</span>
-    <span style="--progress: 0%">Spending - Upper Elementary: 0%</span>
-    <span style="--progress: 8%">Word Parts - Level 4: 8%</span>
-    <span style="--progress: 8%">Digital Citizenship & Literacy 4: 8%</span>
-    <span style="--progress: 8%">Typing Jungle: 8%</span>
-</div>
 
 ## Community Sports & Electives
 
