@@ -3,7 +3,7 @@ title = "A Christmas Story"
 weight = 7
 +++
 
-<video width="1080" height="960" controls>
+<video width="1920" height="1080" controls>
     <source src="/images/hero/A Christmas Story.mov" type="video/quicktime">
     Your browser does not support the video tag.
 </video>
