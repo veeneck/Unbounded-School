@@ -63,7 +63,7 @@ Self-guided projects allow deep exploration after core tasks are complete. These
     <span>Mythology</span>
 </div>
 
-In addition to projects, [EdClub](https://www.edclub.com) is used for additional areas like Typing, Personal Finance, and Computers.
+In addition to projects, [EdClub](https://www.edclub.com) is used for additional areas like Typing, Personal Finance, and Computers. Consider rounding out all topics with bundles from [Critical Thinking Co](https://www.criticalthinking.com).
 
 ## Music & PE
 
