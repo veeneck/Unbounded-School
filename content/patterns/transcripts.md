@@ -122,7 +122,7 @@ weight = 2
     <span style="--progress: 34%">180 Days Social Studies: 34%</span>
 </div>
 
-## Projects
+## Projects & Extracurricular
 
 Scarlett's writing is a big part of her projects. Reference the **Reading & Writing** section to view that work.
 
@@ -151,6 +151,16 @@ Additionally, she does project based learning at home.
         <img src="/images/art/athena.jpg" />
     </li>
 </ul>
+
+<div class="pills">
+    <span class="category">Edclub</span>
+    <span style="--progress: 46%">Earning - Upper Elementary: 46%</span>
+    <span style="--progress: 0%">Saving - Upper Elementary: 0%</span>
+    <span style="--progress: 0%">Spending - Upper Elementary: 0%</span>
+    <span style="--progress: 8%">Word Parts - Level 4: 8%</span>
+    <span style="--progress: 8%">Digital Citizenship & Literacy 4: 8%</span>
+    <span style="--progress: 8%">Typing Jungle: 8%</span>
+</div>
 
 ## Community Sports & Electives
 
