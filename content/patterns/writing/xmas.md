@@ -4,7 +4,7 @@ weight = 7
 +++
 
 <video width="100%" height="auto" controls>
-    <source src="/images/hero/A Christmas Story.mov" type="video/quicktime">
+    <source src="/images/books/AChristmasStory.mov" type="video/quicktime">
     Your browser does not support the video tag.
 </video>
 
