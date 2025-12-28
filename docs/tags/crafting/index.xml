@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crafting on Unbounded School</title>
-    <link>http://localhost:1313/tags/crafting/</link>
+    <link>https://unbounded.school/tags/crafting/</link>
     <description>Recent content in Crafting on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/crafting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://unbounded.school/tags/crafting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Habitat-orama</title>
-      <link>http://localhost:1313/patterns/quests/habitat/</link>
+      <link>https://unbounded.school/patterns/quests/habitat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/patterns/quests/habitat/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/habitat.jpg&#34; /&gt;&#xA;&lt;p&gt;A diorama is like a tiny world you build to show a scene, like a forest, desert, or even a superhero hideout! It’s a small model made on a base, like a piece of cardboard, where you add things like grass, rocks, trees, or buildings to make it look real. Think of it as a 3D picture you can touch, kind of like a toy set or a scene from a movie, but you make it yourself with crafts! It’s fun because you get to create every part of your little world.&lt;/p&gt;</description>
+      <guid>https://unbounded.school/patterns/quests/habitat/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/habitat.jpg&#34; /&gt;&#xA;&lt;p&gt;A diorama is like a tiny world you build to show a scene, like a forest, desert, or even a superhero hideout! It’s a small model made on a base, like a piece of cardboard, where you add things like grass, rocks, trees, or buildings to make it look real. Think of it as a 3D picture you can touch, kind of like a toy set or a scene from a movie, but you make it yourself with crafts! It’s fun because you get to create every part of your little world.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
