@@ -24,8 +24,11 @@ weight = 2
 
 ## Reading & Writing
 
+Reading:
 
 <img src="/images/testing/readingrit.png" />
+
+Language:
 
 <img src="/images/testing/languagerit.png" />
 
