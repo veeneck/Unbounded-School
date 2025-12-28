@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Report Cards on Unbounded School</title>
-    <link>https://unbounded.school/patterns/reportcard/</link>
+    <link>http://localhost:1313/patterns/reportcard/</link>
     <description>Recent content in Report Cards on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://unbounded.school/patterns/reportcard/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/patterns/reportcard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fall 2025</title>
-      <link>https://unbounded.school/patterns/reportcard/2025fall/</link>
+      <link>http://localhost:1313/patterns/reportcard/2025fall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/reportcard/2025fall/</guid>
+      <guid>http://localhost:1313/patterns/reportcard/2025fall/</guid>
       <description>&lt;h2 id=&#34;fall-2025-grades&#34;&gt;Fall 2025 Grades&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Subject&lt;/th&gt;&#xA;          &lt;th&gt;Grade&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Math&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ELA&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Writing&lt;/td&gt;&#xA;          &lt;td&gt;A-&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Reading&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Social Studies&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Spelling&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;PE&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Music&lt;/td&gt;&#xA;          &lt;td&gt;A-&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Extracurricular&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;key-achievements&#34;&gt;Key Achievements&lt;/h2&gt;&#xA;&lt;p&gt;Scarlett is making excellent progress toward mastering 4th-grade Math and English, as evidenced by her strong performance in Khan Academy and Lexia. In Math, she has completed more than 50% of the curriculum with 100% mastery. In Lexia, she passed Core 16 with a 95% score and Core 17 with a perfect 100%.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Winter 2025</title>
-      <link>https://unbounded.school/patterns/reportcard/2025winter/</link>
+      <link>http://localhost:1313/patterns/reportcard/2025winter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/reportcard/2025winter/</guid>
+      <guid>http://localhost:1313/patterns/reportcard/2025winter/</guid>
       <description>&lt;h2 id=&#34;fall-2025-grades&#34;&gt;Fall 2025 Grades&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Subject&lt;/th&gt;&#xA;          &lt;th&gt;Grade&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Math&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ELA&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Writing&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Reading&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Social Studies&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Spelling&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;PE&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Music&lt;/td&gt;&#xA;          &lt;td&gt;-&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Extracurricular&lt;/td&gt;&#xA;          &lt;td&gt;A+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;key-achievements&#34;&gt;Key Achievements&lt;/h2&gt;&#xA;&lt;p&gt;Scarlett demonstrated strong mastery of core topics this semester. She fully completed the Khan Academy 4th Grade math curriculum and transitioned to Beast Academy Level 4, earning a 100% on the Khan Academy end-of-year assessment and a MAP Math score of 243 (99th percentile). In Lexia, she completed Level 18 with 98% accuracy and has advanced to Khan Academy 4th Grade Reading units.&lt;/p&gt;</description>
     </item>
   </channel>

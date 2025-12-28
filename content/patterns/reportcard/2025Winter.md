@@ -33,7 +33,8 @@ Scarlett’s passion for art and creative expression grew noticeably this semest
 |-------|--------------------|
 | MAP Math  | 243 / 99th           |
 | MAP Sceince  | 219 / 95th        |
-| MAP Reading  |            |
+| MAP Reading  |  227 / 94th          |
+| MAP Language  |   226 / 95th         |
 | GPA Equivalent  |  3.89            |
 | Attendance  |       |
 | Days Missed |             |

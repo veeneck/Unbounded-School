@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing on Unbounded School</title>
-    <link>https://unbounded.school/tags/writing/</link>
+    <link>http://localhost:1313/tags/writing/</link>
     <description>Recent content in Writing on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://unbounded.school/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Grok &amp; Quill</title>
-      <link>https://unbounded.school/patterns/quests/grokquill/</link>
+      <link>http://localhost:1313/patterns/quests/grokquill/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/quests/grokquill/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/grokquill.jpg&#34; /&gt;&#xA;&lt;h2 id=&#34;daily-writing&#34;&gt;Daily Writing&lt;/h2&gt;&#xA;&lt;p&gt;Hey there, writer! Grab your journal and write about your day, a book, or a fun discussion. Make it awesome!&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/hQ1OwYu4GsY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Watch this video, then use one of its 6 cool tips in your writing. You got this!&lt;/p&gt;&#xA;&lt;h2 id=&#34;grading-with-grok&#34;&gt;Grading with Grok&lt;/h2&gt;&#xA;&lt;p&gt;Next, practice typing! Type up your journal entry for some keyboard fun.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/quests/grokquill/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/grokquill.jpg&#34; /&gt;&#xA;&lt;h2 id=&#34;daily-writing&#34;&gt;Daily Writing&lt;/h2&gt;&#xA;&lt;p&gt;Hey there, writer! Grab your journal and write about your day, a book, or a fun discussion. Make it awesome!&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/hQ1OwYu4GsY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Watch this video, then use one of its 6 cool tips in your writing. You got this!&lt;/p&gt;&#xA;&lt;h2 id=&#34;grading-with-grok&#34;&gt;Grading with Grok&lt;/h2&gt;&#xA;&lt;p&gt;Next, practice typing! Type up your journal entry for some keyboard fun.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

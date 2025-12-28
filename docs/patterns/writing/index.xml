@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing on Unbounded School</title>
-    <link>https://unbounded.school/patterns/writing/</link>
+    <link>http://localhost:1313/patterns/writing/</link>
     <description>Recent content in Writing on Unbounded School</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://unbounded.school/patterns/writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/patterns/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>$1,000,000</title>
-      <link>https://unbounded.school/patterns/writing/million/</link>
+      <link>http://localhost:1313/patterns/writing/million/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/million/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/million.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;What I would do with 1,000,000 dollars is buy toys for my sister,&#xA;nice dresses and earrings for my mom, and Reeses and new shoes&#xA;for my dad. Then, I would buy lot of beautiful fabric and art materials.&#xA;Last, I would go all around the world in amazing private plane. That’s&#xA;just some things I would do with 1,000,000 dollars!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/writing/million/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/million.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;What I would do with 1,000,000 dollars is buy toys for my sister,&#xA;nice dresses and earrings for my mom, and Reeses and new shoes&#xA;for my dad. Then, I would buy lot of beautiful fabric and art materials.&#xA;Last, I would go all around the world in amazing private plane. That’s&#xA;just some things I would do with 1,000,000 dollars!&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Superpower</title>
-      <link>https://unbounded.school/patterns/writing/superhero/</link>
+      <link>http://localhost:1313/patterns/writing/superhero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/superhero/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/superhero.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;If I had a superpower, I would have the superpower to fly really fast.&#xA;I would have that power because I think it would be amazing to fly up to&#xA;the giant clouds and get to places quickly.&lt;/p&gt;&#xA;&lt;p&gt;I would help people with my superpower by flying up high to look for a&#xA;little girl’s doll that she lost, or saving a young boy from falling off a high edge.&#xA;I would help with anything else anyone needed. I am Scarlett the amazing superhero!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/writing/superhero/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/superhero.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;If I had a superpower, I would have the superpower to fly really fast.&#xA;I would have that power because I think it would be amazing to fly up to&#xA;the giant clouds and get to places quickly.&lt;/p&gt;&#xA;&lt;p&gt;I would help people with my superpower by flying up high to look for a&#xA;little girl’s doll that she lost, or saving a young boy from falling off a high edge.&#xA;I would help with anything else anyone needed. I am Scarlett the amazing superhero!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Holes</title>
-      <link>https://unbounded.school/patterns/writing/holes/</link>
+      <link>http://localhost:1313/patterns/writing/holes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/holes/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/holes.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;In the book Holes there is a boy named Stanley.  He went to school and was a&#xA;pretty big kid, and he got laughed at for that. One day, he was walking under a&#xA;bridge on his way home from school and from out of the top of the bridge, shoes fell down on&#xA;him. They were a famous baseball players shoes. The cops came by and took him&#xA;to court. They gave him the choice to go to jail or Camp Green Lake. He chose Camp&#xA;Green Lake.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/writing/holes/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/holes.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;In the book Holes there is a boy named Stanley.  He went to school and was a&#xA;pretty big kid, and he got laughed at for that. One day, he was walking under a&#xA;bridge on his way home from school and from out of the top of the bridge, shoes fell down on&#xA;him. They were a famous baseball players shoes. The cops came by and took him&#xA;to court. They gave him the choice to go to jail or Camp Green Lake. He chose Camp&#xA;Green Lake.&lt;/p&gt;</description>
     </item>
     <item>
       <title>100 Dresses</title>
-      <link>https://unbounded.school/patterns/writing/100dresses/</link>
+      <link>http://localhost:1313/patterns/writing/100dresses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/100dresses/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/100dresses.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;The Hundred Dresses, by Eleanor Estes. The theme is forgiveness.&lt;/p&gt;&#xA;&lt;p&gt;In the book The Hundred Dresses, there is a girl named Wanda. She went to school like any&#xA;other normal kid, but she had been missing school. In Wanda’s class there was a bunch of kids,&#xA;but Peggy was the prettiest. Peggy’s best friend was Maddie. They did everything together.&#xA;Maddie thought she knew why Wanda was missing school. It all started on a beautiful day,&#xA;Wanda got to school and Peggy asked Wanda how many dresses she had. Wanda only had one&#xA;dress but she didn’t want to tell everyone that so she said she had one hundred, all lined&#xA;up in her closet. Everyone started asking her that every day and Maddie could tell that was making&#xA;Wanda feel uncomfortable. That was why Wanda wouldn’t come to school. Maddie felt bad and so  did&#xA;Peggy.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/writing/100dresses/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/100dresses.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;The Hundred Dresses, by Eleanor Estes. The theme is forgiveness.&lt;/p&gt;&#xA;&lt;p&gt;In the book The Hundred Dresses, there is a girl named Wanda. She went to school like any&#xA;other normal kid, but she had been missing school. In Wanda’s class there was a bunch of kids,&#xA;but Peggy was the prettiest. Peggy’s best friend was Maddie. They did everything together.&#xA;Maddie thought she knew why Wanda was missing school. It all started on a beautiful day,&#xA;Wanda got to school and Peggy asked Wanda how many dresses she had. Wanda only had one&#xA;dress but she didn’t want to tell everyone that so she said she had one hundred, all lined&#xA;up in her closet. Everyone started asking her that every day and Maddie could tell that was making&#xA;Wanda feel uncomfortable. That was why Wanda wouldn’t come to school. Maddie felt bad and so  did&#xA;Peggy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>One Mile Race</title>
-      <link>https://unbounded.school/patterns/writing/1mile/</link>
+      <link>http://localhost:1313/patterns/writing/1mile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/1mile/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/1mile.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;I trained for a one-mile race once. Every Wednesday, I would practice.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;On the first Wednesday of practice, I ran two minutes and walked one minute five times.&lt;/li&gt;&#xA;&lt;li&gt;On the second Wednesday, I ran three minutes and walked one minute four times.&lt;/li&gt;&#xA;&lt;li&gt;On the third Wednesday, I ran five minutes and walked one minute two times.&lt;/li&gt;&#xA;&lt;li&gt;The fourth Wednesday I ran a whole mile without stopping to walk.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I ran with some of my neighbors from Crocker Court, so we made shirts that&#xA;said Crocker Cruisers. It was a blast!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/writing/1mile/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/1mile.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;I trained for a one-mile race once. Every Wednesday, I would practice.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;On the first Wednesday of practice, I ran two minutes and walked one minute five times.&lt;/li&gt;&#xA;&lt;li&gt;On the second Wednesday, I ran three minutes and walked one minute four times.&lt;/li&gt;&#xA;&lt;li&gt;On the third Wednesday, I ran five minutes and walked one minute two times.&lt;/li&gt;&#xA;&lt;li&gt;The fourth Wednesday I ran a whole mile without stopping to walk.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I ran with some of my neighbors from Crocker Court, so we made shirts that&#xA;said Crocker Cruisers. It was a blast!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Where The Red Fern Grows</title>
-      <link>https://unbounded.school/patterns/writing/redfern/</link>
+      <link>http://localhost:1313/patterns/writing/redfern/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/redfern/</guid>
-      <description>&lt;img class=&#34;hero&#34; src=&#34;https://unbounded.school/images/hero/redfern.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;Where the Red Fern Grows, by Wilson Rawls. The theme is working hard to get what&#xA;you want and loss.&lt;/p&gt;&#xA;&lt;p&gt;Once upon a time, there was a boy named Billy. When Billy was really young he loved to&#xA;catch things lizards with he hands, when he got a little older, he got little traps to catch&#xA;little critters. Soon, he got tired of the traps and so desperately wanted two hunting dogs.&#xA;He asked his parents several times, but they said it was too much money. Billy started losing&#xA;weight because he wanted two hunting dogs so bad. One night after Billy saw people leave&#xA;their camp, he saw they had left a newspaper behind.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/writing/redfern/</guid>
+      <description>&lt;img class=&#34;hero&#34; src=&#34;http://localhost:1313/images/hero/redfern.jpg&#34; width=&#34;100%&#34; height=&#34;auto&#34; /&gt;&#xA;&lt;p&gt;Where the Red Fern Grows, by Wilson Rawls. The theme is working hard to get what&#xA;you want and loss.&lt;/p&gt;&#xA;&lt;p&gt;Once upon a time, there was a boy named Billy. When Billy was really young he loved to&#xA;catch things lizards with he hands, when he got a little older, he got little traps to catch&#xA;little critters. Soon, he got tired of the traps and so desperately wanted two hunting dogs.&#xA;He asked his parents several times, but they said it was too much money. Billy started losing&#xA;weight because he wanted two hunting dogs so bad. One night after Billy saw people leave&#xA;their camp, he saw they had left a newspaper behind.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Christmas Story</title>
-      <link>https://unbounded.school/patterns/writing/xmas/</link>
+      <link>http://localhost:1313/patterns/writing/xmas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://unbounded.school/patterns/writing/xmas/</guid>
-      <description>&lt;video width=&#34;100%&#34; height=&#34;auto&#34; controls&gt;&#xA;    &lt;source src=&#34;https://unbounded.school/images/books/AChristmasStory.mov&#34; type=&#34;video/quicktime&#34;&gt;&#xA;    Your browser does not support the video tag.&#xA;&lt;/video&gt;&#xA;&lt;p&gt;[Scene 1 - in the house by the Christmas tree ]&lt;/p&gt;&#xA;&lt;p&gt;N - Once upon a time the was two children, Cat and Bun bun, who were&#xA;playing with blocks on a snowy Christmas Eve.&lt;/p&gt;&#xA;&lt;p&gt;B - Let’s go play in the snow!&lt;/p&gt;&#xA;&lt;p&gt;C - Yeah!&lt;/p&gt;&#xA;&lt;p&gt;B - Wait! First we have to get our snow gear on.&lt;/p&gt;&#xA;&lt;p&gt;C - Let’s put our hat on first.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/patterns/writing/xmas/</guid>
+      <description>&lt;video width=&#34;100%&#34; height=&#34;auto&#34; controls&gt;&#xA;    &lt;source src=&#34;http://localhost:1313/images/books/AChristmasStory.mov&#34; type=&#34;video/quicktime&#34;&gt;&#xA;    Your browser does not support the video tag.&#xA;&lt;/video&gt;&#xA;&lt;p&gt;[Scene 1 - in the house by the Christmas tree ]&lt;/p&gt;&#xA;&lt;p&gt;N - Once upon a time the was two children, Cat and Bun bun, who were&#xA;playing with blocks on a snowy Christmas Eve.&lt;/p&gt;&#xA;&lt;p&gt;B - Let’s go play in the snow!&lt;/p&gt;&#xA;&lt;p&gt;C - Yeah!&lt;/p&gt;&#xA;&lt;p&gt;B - Wait! First we have to get our snow gear on.&lt;/p&gt;&#xA;&lt;p&gt;C - Let’s put our hat on first.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

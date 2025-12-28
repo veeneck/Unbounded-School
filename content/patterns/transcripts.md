@@ -27,6 +27,8 @@ weight = 2
 
 <img src="/images/testing/readingrit.png" />
 
+<img src="/images/testing/languagerit.png" />
+
 [Lexia Dashboard](https://www.mylexia.com/mylexiaweb/app/index.html#/12443/reading/classes/22176428/core5)
 
 <div class="pills">
@@ -228,6 +230,8 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
 
 | Date     | Test    | Subject | Score | %-tile |
 |----------|---------|---------|-------|--------|
+| 12/25  | MAP     | 4th Reading | [227](/records/4thMAPWinter.pdf)   | 94th    |
+| 12/25  | MAP     | 4th Language    | [226](/records/4thMAPWinter.pdf)   | 95th    |
 | 12/25  | MAP     | 4th Science | [219](/records/4thMAPWinter.pdf)   | 95th    |
 | 12/25  | MAP     | 4th Math    | [243](/records/4thMAPWinter.pdf)   | 99th    |
 | 9/25  | MAP     | 4th Reading | [224](/records/4thMAPFall.pdf)   | 94th    |
