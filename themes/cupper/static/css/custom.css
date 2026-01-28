@@ -109,6 +109,7 @@ img.hero {
 
 .book-list {
     display: flex; /* Horizontal layout for books */
+    flex-wrap: wrap;
     gap: 20px; /* Space between book covers */
     list-style: none; /* Remove default list styles */
     padding: 0;
