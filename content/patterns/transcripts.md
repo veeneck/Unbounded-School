@@ -117,6 +117,15 @@ Language:
                 </div>
             </div>
     </li>
+    <li class="book-container">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
+                    <img src="/images/books/nancydrewscarletslipper.jpg" alt="Book Cover">
+                    <div class="book-title">The Scarlet Slipper Mystery</div>
+                </div>
+            </div>
+    </li>
 </ul>
 
 ## Science
