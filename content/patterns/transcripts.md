@@ -19,7 +19,7 @@ weight = 2
 
 <div class="pills">
     <span class="category">Beast Academy Math</span>
-    <span style="--progress: 8%">Level 4: 8%</span>
+    <span style="--progress: 33%">Level 4: 33%</span>
 </div>
 
 ## Reading & Writing
@@ -45,13 +45,13 @@ Language:
 
 <div class="pills">
     <span class="category">Khan Academy Literature</span>
-    <span style="--progress: 12%">4th Grade: 12%</span>
+    <span style="--progress: 33%">4th Grade: 33%</span>
 </div>
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 34%">180 Days Language: 34%</span>
-    <span style="--progress: 34%">180 Days Spelling: 34%</span>
+    <span style="--progress: 48%">180 Days Language: 48%</span>
+    <span style="--progress: 48%">180 Days Spelling: 48%</span>
 </div>
 
 [Writing Log](/patterns/writing/)
@@ -112,6 +112,15 @@ Language:
             <div class="book">
                 <div class="book-spine"></div>
                 <div class="book-cover">
+                    <img src="/images/books/treehousetwister.jpg" alt="Book Cover">
+                    <div class="book-title">Magic Treehouse Twister on Tuesday</div>
+                </div>
+            </div>
+    </li>
+        <li class="book-container">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
                     <img src="/images/books/littlehousebigwoods.jpg" alt="Book Cover">
                     <div class="book-title">Little House Big Woods</div>
                 </div>
@@ -126,6 +135,15 @@ Language:
                 </div>
             </div>
     </li>
+    <li class="book-container">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
+                    <img src="/images/books/treehouse4.jpg" alt="Book Cover">
+                    <div class="book-title">Magic Treehouse 4 Books</div>
+                </div>
+            </div>
+    </li>
 </ul>
 
 ## Science
@@ -134,35 +152,54 @@ Language:
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 34%">180 Days Science: 34%</span>
+    <span style="--progress: 48%">180 Days Science: 48%</span>
 </div>
 
 ## Social Studies
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 40%">180 Days Geography: 40%</span>
-    <span style="--progress: 34%">180 Days Social Studies: 34%</span>
+    <span style="--progress: 54%">180 Days Geography: 54%</span>
+    <span style="--progress: 48%">180 Days Social Studies: 48%</span>
 </div>
 
 ## Projects & Extracurricular
 
 Scarlett's writing is a big part of her projects. Reference the **Reading & Writing** section to view that work.
 
-Additionally, she does project based learning at home.
+Additionally, she has earned the badges below from doing project based learning at home.
 
-<img src="/images/hero/5krace.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="5k Adventure">
-<img src="/images/hero/animals.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="World Animals">
-<img src="/images/hero/cookies.jpg" class="girl-scout-badge" alt="Nature Explorer Badge" title="Egg Free Baking">
+<ul class="project-gallery">
+    <li class="project">
+        <a href="/patterns/writing/1mile/">
+            <img src="/images/hero/5krace.jpg" class="girl-scout-badge" alt="1 Mile Badge" title="1 Mile Adventure">
+        </a>
+    </li>
+    <li class="project">
+        <a href="/patterns/writing/xmas/">
+            <img src="/images/hero/director.jpg" class="girl-scout-badge" alt="Director Intro Badge" title="Movie Intro">
+        </a>
+    </li>
+    <li class="project">
+        <a href="/patterns/writing/sewingintro/">
+            <img src="/images/hero/sewingintro.jpg" class="girl-scout-badge" alt="Sewing Intro Badge" title="Sewing Intro">
+        </a>
+    </li>
+    <li class="project">
+        <a href="/patterns/writing/sewingintro/">
+            <img src="/images/hero/dinosaurs.jpg" class="girl-scout-badge" alt="Author Badge" title="Authro Intro">
+        </a>
+    </li>
+</ul>
 
 <div class="pills">
     <span class="category">Edclub</span>
-    <span style="--progress: 46%">Earning - Upper Elementary: 46%</span>
+    <span style="--progress: 92%">Earning - Upper Elementary: 92%</span>
     <span style="--progress: 0%">Saving - Upper Elementary: 0%</span>
     <span style="--progress: 0%">Spending - Upper Elementary: 0%</span>
-    <span style="--progress: 8%">Word Parts - Level 4: 8%</span>
-    <span style="--progress: 8%">Digital Citizenship & Literacy 4: 8%</span>
-    <span style="--progress: 8%">Typing Jungle: 8%</span>
+    <span style="--progress: 12%">Word Parts - Level 4: 12%</span>
+    <span style="--progress: 23%">Digital Citizenship & Literacy 4: 23%</span>
+    <span style="--progress: 9%">Typing Jungle: 9%</span>
 </div>
 
 ## Art
@@ -182,6 +219,15 @@ Additionally, she does project based learning at home.
     </li>
     <li class="art">
         <img src="/images/art/athena.jpg" />
+    </li>
+    <li class="art">
+        <img src="/images/art/emoji.jpg" />
+    </li>
+    <li class="art">
+        <img src="/images/art/heart.jpg" />
+    </li>
+    <li class="art">
+        <img src="/images/art/spiral.jpg" />
     </li>
 </ul>
 

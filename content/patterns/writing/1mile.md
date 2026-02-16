@@ -3,6 +3,8 @@ title = "One Mile Race"
 weight = 5
 +++
 
+Task: Train for, and complete, a 1 mile race. Document what you did along the way.
+
 <img class="hero" src="/images/hero/1mile.jpg" width="100%" height="auto" />
 
 I trained for a one-mile race once. Every Wednesday, I would practice. 

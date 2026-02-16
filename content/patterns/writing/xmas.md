@@ -3,6 +3,8 @@ title = "A Christmas Story"
 weight = 7
 +++
 
+Task: Write a script for a short movie. Direct and film it. Edit it together with Dad in iMovie.
+
 <video width="100%" height="auto" controls>
     <source src="/images/books/AChristmasStory.mov" type="video/quicktime">
     Your browser does not support the video tag.
