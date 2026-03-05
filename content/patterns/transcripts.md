@@ -229,6 +229,12 @@ Additionally, she has earned the badges below from doing project based learning 
     <li class="art">
         <img src="/images/art/spiral.jpg" />
     </li>
+    <li class="art">
+        <img src="/images/art/hands.jpg" />
+    </li>
+    <li class="art">
+        <img src="/images/art/endless.jpg" />
+    </li>
 </ul>
 
 ## Community Sports & Electives
@@ -263,6 +269,7 @@ A variety of clubs and sports played at Colwich Elementary, YMCA, and through lo
     <span class="category">Electives</span>
     <span>Monart</span>
     <span>Music Theater</span>
+    <span>Rock Climbing</span>
 </div>
 
 ## Travel & Field Trips
