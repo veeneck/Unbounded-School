@@ -19,7 +19,7 @@ weight = 2
 
 <div class="pills">
     <span class="category">Beast Academy Math</span>
-    <span style="--progress: 33%">Level 4: 33%</span>
+    <span style="--progress: 40%">Level 4: 40%</span>
 </div>
 
 ## Reading & Writing
@@ -50,8 +50,8 @@ Language:
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 48%">180 Days Language: 48%</span>
-    <span style="--progress: 48%">180 Days Spelling: 48%</span>
+    <span style="--progress: 58%">180 Days Language: 58%</span>
+    <span style="--progress: 58%">180 Days Spelling: 58%</span>
 </div>
 
 [Writing Log](/patterns/writing/)
@@ -144,6 +144,15 @@ Language:
                 </div>
             </div>
     </li>
+        <li class="book-container">
+            <div class="book">
+                <div class="book-spine"></div>
+                <div class="book-cover">
+                    <img src="/images/books/Hobbit.jpg" alt="Book Cover">
+                    <div class="book-title">The Hobbit</div>
+                </div>
+            </div>
+    </li>
 </ul>
 
 ## Science
@@ -152,15 +161,15 @@ Language:
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 48%">180 Days Science: 48%</span>
+    <span style="--progress: 58%">180 Days Science: 58%</span>
 </div>
 
 ## Social Studies
 
 <div class="pills">
     <span class="category">Workbooks</span>
-    <span style="--progress: 54%">180 Days Geography: 54%</span>
-    <span style="--progress: 48%">180 Days Social Studies: 48%</span>
+    <span style="--progress: 64%">180 Days Geography: 64%</span>
+    <span style="--progress: 58%">180 Days Social Studies: 58%</span>
 </div>
 
 ## Projects & Extracurricular
@@ -186,8 +195,18 @@ Additionally, she has earned the badges below from doing project based learning 
         </a>
     </li>
     <li class="project">
-        <a href="/patterns/writing/sewingintro/">
-            <img src="/images/hero/dinosaurs.jpg" class="girl-scout-badge" alt="Author Badge" title="Authro Intro">
+        <a href="/patterns/writing/dinosaurs/">
+            <img src="/images/hero/dinosaurs.jpg" class="girl-scout-badge" alt="1st Published Book" title="1st Published Book">
+        </a>
+    </li>
+    <li class="project">
+        <a href="/patterns/writing/snowboarding/">
+            <img src="/images/hero/snowboarding.jpg" class="girl-scout-badge" alt="Intro To Snowboarding" title="Intro To Snowboarding">
+        </a>
+    </li>
+    <li class="project">
+        <a href="/patterns/writing/beets/">
+            <img src="/images/hero/beets.jpg" class="girl-scout-badge" alt="Canning Beets" title="Canning Beets">
         </a>
     </li>
 </ul>
@@ -234,6 +253,9 @@ Additionally, she has earned the badges below from doing project based learning 
     </li>
     <li class="art">
         <img src="/images/art/endless.jpg" />
+    </li>
+    <li class="art">
+        <img src="/images/art/flag.jpg" />
     </li>
 </ul>
 
