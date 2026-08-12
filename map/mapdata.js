@@ -6,8 +6,8 @@ var simplemaps_worldmap_mapdata={
     background_transparent: "yes",
     popups: "detect",
     
-		//State defaults
-		state_description: "State description",
+        //State defaults
+        state_description: "State description",
     state_color: "#e7e5e4",
     state_hover_color: "#86efac",
     state_url: "https://simplemaps.com",
@@ -16,8 +16,8 @@ var simplemaps_worldmap_mapdata={
     all_states_inactive: "no",
     all_states_zoomable: "no",
     
-		//Location defaults
-		location_description: "Location description",
+        //Location defaults
+        location_description: "Location description",
     location_color: "#166534",
     location_opacity: 0.8,
     location_hover_opacity: 1,
@@ -30,15 +30,15 @@ var simplemaps_worldmap_mapdata={
     all_locations_inactive: "no",
     all_locations_hidden: "no",
     
-		//Label defaults
-		label_color: "#ffffff",
+        //Label defaults
+        label_color: "#ffffff",
     label_hover_color: "#ffffff",
     label_size: 22,
     label_font: "Arial",
     hide_labels: "no",
    
-		//Zoom settings
-		manual_zoom: "no",
+        //Zoom settings
+        manual_zoom: "yes",
     back_image: "no",
     arrow_box: "no",
     navigation_size: "20",
@@ -53,16 +53,16 @@ var simplemaps_worldmap_mapdata={
     zoom_percentage: 0.99,
     zoom_time: 0.5,
     
-		//Popup settings
-		popup_color: "white",
+        //Popup settings
+        popup_color: "white",
     popup_opacity: 0.9,
     popup_shadow: 1,
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
     
-		//Advanced settings
-		div: "map",
+        //Advanced settings
+        div: "map",
     auto_load: "yes",
     rotate: "0",
     url_new_tab: "yes",
@@ -1577,8 +1577,8 @@ var simplemaps_worldmap_mapdata={
               lat: "37.7792",
               lng: "-97.5364",
               color: "default",
-              description: '<img src="/map/pics/Colwich.jpg" style="width: 100px; margin: 0 auto;" />',
-              url: "/patterns/colwich"
+              description: '<img src="../../../map/pics/Colwich.jpg" style="width: 100px; margin: 0 auto;" />',
+              url: ""
             },
             "1": {
               name: "Tampa, Florida",
