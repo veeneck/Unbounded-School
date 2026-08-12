@@ -8,8 +8,8 @@ var simplemaps_worldmap_mapdata={
     
 		//State defaults
 		state_description: "State description",
-    state_color: "#88A4BC",
-    state_hover_color: "#3B729F",
+    state_color: "#e7e5e4",
+    state_hover_color: "#86efac",
     state_url: "https://simplemaps.com",
     border_size: 1.5,
     border_color: "#ffffff",
@@ -18,7 +18,7 @@ var simplemaps_worldmap_mapdata={
     
 		//Location defaults
 		location_description: "Location description",
-    location_color: "#FF0067",
+    location_color: "#166534",
     location_opacity: 0.8,
     location_hover_opacity: 1,
     location_url: "",
@@ -1683,7 +1683,72 @@ var simplemaps_worldmap_mapdata={
           color: "default",
           description: "default",
           url: ""
+      },
+      "14": {
+          name: "London, England",
+          lat: "51.5074",
+          lng: "-0.1278",
+          color: "default",
+          description: "default",
+          url: ""
+      },
+      "15": {
+          name: "Bruges, Belgium",
+          lat: "51.2093",
+          lng: "3.2247",
+          color: "default",
+          description: "default",
+          url: ""
+      },
+      "16": {
+          name: "Flam, Norway",
+          lat: "60.8630",
+          lng: "7.1130",
+          color: "default",
+          description: "default",
+          url: ""
+      },
+      "17": {
+          name: "Olden, Norway",
+          lat: "61.8350",
+          lng: "6.8060",
+          color: "default",
+          description: "default",
+          url: ""
+      },
+      "18": {
+          name: "Alesund, Norway",
+          lat: "62.4722",
+          lng: "6.1549",
+          color: "default",
+          description: "default",
+          url: ""
+      },
+      "19": {
+          name: "Tromso, Norway",
+          lat: "69.6492",
+          lng: "18.9553",
+          color: "default",
+          description: "default",
+          url: ""
+      },
+      "20": {
+          name: "North Cape, Norway",
+          lat: "71.1710",
+          lng: "25.7840",
+          color: "default",
+          description: "default",
+          url: ""
+      },
+      "21": {
+          name: "Gouda, Netherlands",
+          lat: "52.0115",
+          lng: "4.7105",
+          color: "default",
+          description: "default",
+          url: ""
       }
+
   },
   labels: {}
 };
