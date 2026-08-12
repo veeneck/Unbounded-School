@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transcripts — Juliet | Unbounded School</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="homeschool-approach.html">
+        <img src="../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/schedule">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts" role="menuitem">Scarlett</a>
+            <a class="active" href="/students/juliet/transcripts" role="menuitem">Juliet</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+    <header>
+      <div class="hero-badge">Student Record</div>
+      <h1>Juliet’s Transcripts</h1>
+      <p class="subtitle">Progress, scores, reading, projects, and more.</p>
+    </header>
+
+    <section>
+      <div class="subject-card" style="text-align:center; padding:2.5rem 1.5rem;">
+        <p style="font-size:1.15rem; font-weight:650; margin:0 0 0.4rem; color:var(--ink);">Coming soon</p>
+        <p style="margin:0; color:var(--muted); font-size:0.95rem;">Juliet’s transcript will appear here as her work is added.</p>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Juliet
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+
+      const drop = document.querySelector('.nav-drop');
+      if (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        document.addEventListener('click', function () {
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
