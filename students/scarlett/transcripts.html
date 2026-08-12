@@ -14,15 +14,15 @@
           <span>Unbounded School</span>
         </a>
         <ul class="nav-links">
-          <li><a href='/schedule.html'>Schedule</a></li>
+          <li><a href='/schedule'>Schedule</a></li>
           <li class="nav-drop">
             <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
               Students
               <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </button>
             <div class="nav-dropdown" role="menu">
-              <a class="active" href="/students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
-              <a href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
+              <a class='active' href='/students/scarlett/transcripts' role='menuitem'>Scarlett</a>
+              <a href='/students/juliet/transcripts' role='menuitem'>Juliet</a>
             </div>
           </li>
         </ul>
@@ -162,9 +162,9 @@
         </div>
       </div>
 
-      <div class="tag-row" style="margin-top:0.85rem;">
-        <a class="tag" href="reportcards/fall-2025.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">Fall 2025 Report Card</a>
-        <a class="tag" href="reportcards/winter-2025.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">Winter 2025 Report Card</a>
+            <div class="pill-row" style="margin-top:1rem;">
+        <a class="pill-link pill-white" href="reportcards/fall-2025.html">Fall 2025 Report Card</a>
+        <a class="pill-link pill-white" href="reportcards/winter-2025.html">Winter 2025 Report Card</a>
       </div>
     </section>
 
@@ -172,7 +172,7 @@
     <section>
       <div class="section-head">
         <div class="icon-wrap">
-          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h6"/></svg>
+          <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
         </div>
         <h2>Math</h2>
       </div>
@@ -182,10 +182,10 @@
           <div class="value">100%</div>
           <div class="detail">4th Grade Math complete</div>
         </div>
-        <div class="progress-card">
+        <div class="progress-card complete">
           <div class="label">Beast Academy</div>
-          <div class="value">40%</div>
-          <div class="detail">Level 4 in progress</div>
+          <div class="value">100%</div>
+          <div class="detail">Level 4 complete</div>
         </div>
       </div>
       <div class="links-row">
@@ -198,34 +198,36 @@
     <section>
       <div class="section-head">
         <div class="icon-wrap">
-          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
         <h2>Reading & Writing</h2>
       </div>
-      <div class="progress-grid">
+
+      <div class="grade-switcher score-tabs grade-tabs" role="tablist" aria-label="Select grade">
+        <button type="button" class="active" data-grade="4th" role="tab" aria-selected="true">4th</button>
+        <button type="button" data-grade="5th" role="tab" aria-selected="false">5th</button>
+      </div>
+
+      <div class="grade-panel active" data-grade="4th">
+        <div class="progress-grid">
         <div class="progress-card complete">
           <div class="label">Lexia Core5</div>
           <div class="value">16–18</div>
           <div class="detail">Levels 16, 17, 18 all at 100%</div>
         </div>
-        <div class="progress-card">
-          <div class="label">Khan Literature</div>
-          <div class="value">33%</div>
-          <div class="detail">4th Grade</div>
-        </div>
-        <div class="progress-card">
+        <div class="progress-card complete">
           <div class="label">180 Days Language</div>
-          <div class="value">58%</div>
-          <div class="detail">Workbook progress</div>
+          <div class="value">100%</div>
+          <div class="detail">4th Grade workbook complete</div>
         </div>
-        <div class="progress-card">
+        <div class="progress-card complete">
           <div class="label">180 Days Spelling</div>
-          <div class="value">58%</div>
-          <div class="detail">Workbook progress</div>
+          <div class="value">100%</div>
+          <div class="detail">4th Grade workbook complete</div>
         </div>
       </div>
 
-      <h3 style="font-size:0.95rem; margin:1.25rem 0 0.75rem; font-weight:650;">Books read</h3>
+      <h3 style="font-size:0.95rem; margin:1.25rem 0 0.75rem; font-weight:650;">Books Read</h3>
       <div class="book-grid">
         <div class="book-card">
           <img src="https://covers.openlibrary.org/b/isbn/0440414806-M.jpg" alt="Holes cover" loading="lazy" onerror="this.src='https://covers.openlibrary.org/b/id/10521320-M.jpg'">
@@ -260,31 +262,47 @@
           <div class="book-title">Magic Tree House (series)</div>
         </div>
         <div class="book-card">
-          <img src="https://covers.openlibrary.org/b/isbn/0545232478-M.jpg" alt="Seaside Sanctuary cover" loading="lazy" onerror="this.style.background='#e7e5e4'; this.alt='Seaside Sanctuary'">
+          <img src="books/seaside.jpg" alt="Seaside Sanctuary cover" loading="lazy">
           <div class="book-title">Seaside Sanctuary</div>
         </div>
         <div class="book-card">
-          <img src="https://covers.openlibrary.org/b/isbn/0679847693-M.jpg" alt="The Scarlet Slipper Mystery cover" loading="lazy" onerror="this.style.background='#e7e5e4'">
+          <img src="books/nancydrewscarletslipper.jpg" alt="The Scarlet Slipper Mystery cover" loading="lazy">
           <div class="book-title">The Scarlet Slipper Mystery</div>
         </div>
       </div>
 
       <h3 style="font-size:0.95rem; margin:2rem 0 1rem; font-weight:650;">Writing</h3>
-      <div class="tag-row" style="margin:0.25rem 0 1.5rem; gap:0.55rem;">
-        <a class="tag" href="writing/4thgrade/holes.html" style="text-decoration:none;">Holes</a>
-        <a class="tag" href="writing/4thgrade/100dresses.html" style="text-decoration:none;">The Hundred Dresses</a>
-        <a class="tag" href="writing/4thgrade/redfern.html" style="text-decoration:none;">Where the Red Fern Grows</a>
-        <a class="tag" href="writing/4thgrade/million.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">$1,000,000</a>
-        <a class="tag" href="writing/4thgrade/superhero.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">My Superpower</a>
-        <a class="tag" href="writing/4thgrade/sewingintro.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">Intro to Sewing</a>
-        <a class="tag" href="writing/4thgrade/dadpoem.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">My Awesome Not Cool Dad</a>
-        <a class="tag" href="writing/4thgrade/snowboarding.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">My Colorado Trip</a>
-        <a class="tag" href="writing/4thgrade/1mile.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">One Mile Race</a>
-        <a class="tag" href="writing/4thgrade/xmas.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">A Christmas Story</a>
-        <a class="tag" href="writing/4thgrade/thanks.html" style="text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--ink);">Thank You Letter</a>
+            <div class="pill-row" style="margin:0.35rem 0 1.75rem;">
+        <a class="pill-link pill-green" href="writing/4thgrade/holes.html">Holes</a>
+        <a class="pill-link pill-green" href="writing/4thgrade/100dresses.html">The Hundred Dresses</a>
+        <a class="pill-link pill-green" href="writing/4thgrade/redfern.html">Where the Red Fern Grows</a>
+        <a class="pill-link pill-white" href="writing/4thgrade/million.html">$1,000,000</a>
+        <a class="pill-link pill-white" href="writing/4thgrade/superhero.html">My Superpower</a>
+        <a class="pill-link pill-white" href="writing/4thgrade/sewingintro.html">Intro to Sewing</a>
+        <a class="pill-link pill-white" href="writing/4thgrade/dadpoem.html">My Awesome Not Cool Dad</a>
+        <a class="pill-link pill-white" href="writing/4thgrade/snowboarding.html">My Colorado Trip</a>
+        <a class="pill-link pill-white" href="writing/4thgrade/1mile.html">One Mile Race</a>
+        <a class="pill-link pill-white" href="writing/4thgrade/xmas.html">A Christmas Story</a>
+        <a class="pill-link pill-white" href="writing/4thgrade/thanks.html">Thank You Letter</a>
       </div>
       <div class="links-row">
         <a href="https://www.mylexia.com/" target="_blank" rel="noopener">Lexia Dashboard →</a>
+      </div>
+      </div>
+
+      <div class="grade-panel" data-grade="5th">
+        <div class="progress-grid">
+          <div class="progress-card">
+            <div class="label">Lexia Core5</div>
+            <div class="value">—</div>
+            <div class="detail">5th Grade · Not started</div>
+          </div>
+          <div class="progress-card">
+            <div class="label">180 Days Spelling</div>
+            <div class="value">—</div>
+            <div class="detail">5th Grade · Not started</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -412,6 +430,17 @@
           <span class="tag">Victoria, B.C.</span>
           <span class="tag">Falmouth, Jamaica</span>
         </div>
+        <div class="label" style="margin-top:1rem;">Europe</div>
+        <div class="tag-row" style="margin-top:0.5rem;">
+          <span class="tag">London, England</span>
+          <span class="tag">Bruges, Belgium</span>
+          <span class="tag">Flam, Norway</span>
+          <span class="tag">Olden, Norway</span>
+          <span class="tag">Alesund, Norway</span>
+          <span class="tag">Tromso, Norway</span>
+          <span class="tag">North Cape, Norway</span>
+          <span class="tag">Gouda, Netherlands</span>
+        </div>
       </div>
     </section>
 
@@ -458,7 +487,7 @@
       });
 
       // Score tabs (Math / Reading / Language / Science / All)
-      const scoreButtons = document.querySelectorAll('.score-tabs button');
+      const scoreButtons = document.querySelectorAll('.score-tabs button[data-score]');
       const scorePanels = document.querySelectorAll('.score-panel');
 
       scoreButtons.forEach(function (btn) {
@@ -474,6 +503,36 @@
 
           scorePanels.forEach(function (panel) {
             if (panel.getAttribute('data-score') === score) {
+              panel.classList.remove('active');
+              void panel.offsetWidth;
+              panel.classList.add('active');
+            } else {
+              panel.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // Reading & Writing grade tabs (4th / 5th)
+      const gradeButtons = document.querySelectorAll('.grade-tabs button[data-grade]');
+      const gradePanels = document.querySelectorAll('.grade-panel');
+
+      gradeButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const grade = btn.getAttribute('data-grade');
+
+          gradeButtons.forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          gradePanels.forEach(function (panel) {
+            if (panel.getAttribute('data-grade') === grade) {
+              // re-trigger enter animation
+              panel.classList.remove('active');
+              void panel.offsetWidth;
               panel.classList.add('active');
             } else {
               panel.classList.remove('active');

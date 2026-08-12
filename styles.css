@@ -322,6 +322,50 @@ section {
   color: var(--muted);
 }
 
+/* Larger clickable pills (writing + report cards) */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.65rem;
+}
+
+a.pill-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.pill-link.pill-green {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border: 1px solid transparent;
+}
+
+a.pill-link.pill-green:hover {
+  background: #dcfce7;
+  box-shadow: 0 1px 3px rgba(22, 101, 52, 0.12);
+}
+
+a.pill-link.pill-white {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+a.pill-link.pill-white:hover {
+  border-color: #d6d3d1;
+  background: #fafaf9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+
 /* Notes */
 .note-box,
 .flex-note {
@@ -573,10 +617,32 @@ footer {
 
 .grade-panel {
   display: none;
+  opacity: 0;
+  transform: translateY(8px);
 }
 
 .grade-panel.active {
   display: block;
+  animation: gradePanelIn 0.32s ease forwards;
+}
+
+@keyframes gradePanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grade-panel.active {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .score-panel {
