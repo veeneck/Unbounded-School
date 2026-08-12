@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap");
+
 /* Unbounded School — shared styles */
 
 :root {
@@ -23,7 +25,7 @@
 }
 
 body {
-  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Source Sans 3", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg);
   background-image:
     radial-gradient(ellipse 120% 80% at 50% -20%, rgba(22, 101, 52, 0.07), transparent 50%),
@@ -63,7 +65,7 @@ body {
 }
 
 .site-nav .nav-inner {
-  max-width: 960px;
+  max-width: 1056px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -193,7 +195,7 @@ body {
 
 /* Layout shell */
 .page {
-  max-width: 880px;
+  max-width: 1056px;
   margin: 0 auto;
   padding: calc(var(--nav-height) + 1.25rem) 1.25rem 3.5rem;
 }
@@ -221,12 +223,13 @@ header {
 }
 
 header h1 {
-  font-size: clamp(1.75rem, 4vw, 2.15rem);
-  font-weight: 750;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: clamp(1.85rem, 4vw, 2.25rem);
+  font-weight: 700;
   letter-spacing: -0.03em;
+  line-height: 1.15;
   color: var(--ink);
   margin-bottom: 0.45rem;
-  line-height: 1.2;
 }
 
 header .subtitle {
@@ -251,39 +254,109 @@ header .subtitle {
 
 /* Sections */
 section {
-  margin-bottom: 3.75rem;
+  margin-bottom: 5rem;
 }
 
 .section-head {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  margin-bottom: 1rem;
+  justify-content: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.section-head:has(.section-head-links) {
+  justify-content: space-between;
+}
+
+.section-head-main {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.section-head-links {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+}
+
+a.dash-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 650;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.dash-link svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+a.dash-link:hover {
+  color: var(--accent-dark);
+  border-color: #bbf7d0;
+  background: var(--accent-soft);
+  box-shadow: 0 1px 3px rgba(22, 101, 52, 0.08);
+}
+
+.section-head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 3.25rem;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-mid));
 }
 
 .section-head .icon-wrap {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: var(--accent-soft);
+  border: 1px solid #bbf7d0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(22, 101, 52, 0.08);
 }
 
 .section-head .icon-wrap svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   stroke: var(--accent-dark);
   fill: none;
   stroke-width: 2;
 }
 
 .section-head h2 {
-  font-size: 1.2rem;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
   font-weight: 700;
   color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 /* Shared card / panel surface */
@@ -886,23 +959,22 @@ a.pill-link.pill-project:hover {
 /* Project cards (Projects / Skills / Sports) */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 1.1rem 1.15rem;
+  overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
-  min-height: 7.5rem;
   text-decoration: none;
   color: inherit;
   transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  min-height: 0;
 }
 
 a.project-card.is-link {
@@ -911,49 +983,108 @@ a.project-card.is-link {
 
 a.project-card.is-link:hover {
   border-color: #d6d3d1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
 }
 
 .project-card.featured {
-  background: linear-gradient(145deg, #fffbeb 0%, #fef3c7 55%, #fde68a 100%);
   border-color: #f59e0b;
-  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.18);
-  grid-column: span 1;
 }
 
-.project-card-top {
+.project-thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: #f5f5f4;
+  overflow: hidden;
+}
+
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-thumb .proj-link-icon {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  padding: 0.3rem;
+  box-sizing: content-box;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  stroke: var(--accent-dark);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.project-thumb-fallback {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-height: 1.15rem;
+  justify-content: center;
+  background: linear-gradient(145deg, #ecfdf5, #d1fae5);
 }
 
-.project-badge {
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #b45309;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(245, 158, 11, 0.45);
-  border-radius: 999px;
-  padding: 0.15rem 0.5rem;
+.project-thumb-fallback .proj-cat-icon,
+.project-thumb-fallback .proj-link-icon {
+  position: static;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  stroke: var(--accent-dark);
+  opacity: 0.7;
+}
+
+.project-thumb-fallback.project-thumb-sport {
+  background: linear-gradient(145deg, #e0f2fe, #bae6fd);
+}
+
+.project-thumb-fallback.project-thumb-exercise {
+  background: linear-gradient(145deg, #fef3c7, #fde68a);
+}
+
+.project-card.featured .project-thumb-fallback {
+  background: linear-gradient(145deg, #fff7ed, #ffedd5);
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.85rem 1rem 1rem;
+}
+
+.project-star {
+  margin-bottom: 0.1rem;
+}
+
+.project-star .proj-icon {
+  width: 1rem;
+  height: 1rem;
+  stroke: #d97706;
+  fill: #f59e0b;
+  stroke-width: 1.2;
 }
 
 .project-title {
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   font-weight: 700;
   color: var(--ink);
   line-height: 1.25;
-  margin-top: auto;
 }
 
 .project-cat {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: var(--muted);
 }
@@ -962,28 +1093,9 @@ a.project-card.is-link:hover {
   line-height: 1;
 }
 
-.proj-icon {
-  width: 1.05rem;
-  height: 1.05rem;
-  stroke: #d97706;
-  fill: #f59e0b;
-  stroke-width: 1.2;
-}
-
-.proj-link-icon {
-  width: 1rem;
-  height: 1rem;
-  stroke: var(--accent-dark);
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: 0.85;
-}
-
 .proj-cat-icon {
-  width: 0.95rem;
-  height: 0.95rem;
+  width: 0.9rem;
+  height: 0.9rem;
   stroke: currentColor;
   fill: none;
   stroke-width: 2;
@@ -1034,4 +1146,72 @@ a.project-card.is-link:hover {
   font-weight: 600;
   color: var(--ink);
   text-align: center;
+}
+
+/* Progress cards with bars */
+.progress-card .label {
+  margin-bottom: 0.55rem;
+}
+
+.progress-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.15rem;
+}
+
+.progress-meta .detail {
+  margin: 0;
+  min-width: 0;
+}
+
+.progress-meta .value {
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.progress-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.2rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--accent-dark);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.progress-bar {
+  height: 0.55rem;
+  border-radius: 999px;
+  background: #e7e5e4;
+  overflow: hidden;
+  margin-bottom: 0.55rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #86efac, #22c55e);
+  transition: width 0.4s ease;
+}
+
+.progress-card.complete .progress-bar-fill {
+  background: linear-gradient(90deg, #4ade80, #16a34a);
+}
+
+.progress-meta .progress-check {
+  flex-shrink: 0;
 }
