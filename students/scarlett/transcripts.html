@@ -467,35 +467,62 @@
         </div>
         <h2>Science, Geography & Social Studies</h2>
       </div>
-      <div class="progress-grid">
-                        <div class="progress-card complete" data-pct="100">
-          <div class="label">180 Days Science</div>
-          <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="180 Days Science">
-            <div class="progress-bar-fill" style="width:100%"></div>
+      <div class="grade-switcher score-tabs grade-tabs" role="tablist" aria-label="Select grade">
+        <button type="button" class="active" data-grade="4th" role="tab" aria-selected="true">4th</button>
+        <button type="button" data-grade="5th" role="tab" aria-selected="false">5th</button>
+      </div>
+
+      <div class="grade-panel active" data-grade="4th">
+        <div class="progress-grid">
+          <div class="progress-card complete" data-pct="100">
+            <div class="label">180 Days Science</div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="180 Days Science">
+              <div class="progress-bar-fill" style="width:100%"></div>
+            </div>
+            <div class="progress-meta">
+              <div class="detail">4th Grade workbook</div>
+              <div class="value">100% <span class="progress-check" aria-hidden="true">✓</span></div>
+            </div>
           </div>
-          <div class="progress-meta">
-            <div class="detail">4th Grade workbook</div>
-            <div class="value">100% <span class="progress-check" aria-hidden="true">✓</span></div>
+          <div class="progress-card complete" data-pct="100">
+            <div class="label">180 Days Geography</div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="180 Days Geography">
+              <div class="progress-bar-fill" style="width:100%"></div>
+            </div>
+            <div class="progress-meta">
+              <div class="detail">4th Grade workbook</div>
+              <div class="value">100% <span class="progress-check" aria-hidden="true">✓</span></div>
+            </div>
+          </div>
+          <div class="progress-card complete" data-pct="100">
+            <div class="label">180 Days Social Studies</div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="180 Days Social Studies">
+              <div class="progress-bar-fill" style="width:100%"></div>
+            </div>
+            <div class="progress-meta">
+              <div class="detail">4th Grade workbook</div>
+              <div class="value">100% <span class="progress-check" aria-hidden="true">✓</span></div>
+            </div>
           </div>
         </div>
-                        <div class="progress-card complete" data-pct="100">
-          <div class="label">180 Days Geography</div>
-          <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="180 Days Geography">
-            <div class="progress-bar-fill" style="width:100%"></div>
+      </div>
+
+      <div class="grade-panel" data-grade="5th">
+        <div class="progress-grid">
+          <div class="progress-card">
+            <div class="label">180 Days Science</div>
+            <div class="value">—</div>
+            <div class="detail">5th Grade · Not started</div>
           </div>
-          <div class="progress-meta">
-            <div class="detail">4th Grade workbook</div>
-            <div class="value">100% <span class="progress-check" aria-hidden="true">✓</span></div>
+          <div class="progress-card">
+            <div class="label">180 Days Geography</div>
+            <div class="value">—</div>
+            <div class="detail">5th Grade · Not started</div>
           </div>
-        </div>
-                        <div class="progress-card complete" data-pct="100">
-          <div class="label">180 Days Social Studies</div>
-          <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="180 Days Social Studies">
-            <div class="progress-bar-fill" style="width:100%"></div>
-          </div>
-          <div class="progress-meta">
-            <div class="detail">4th Grade workbook</div>
-            <div class="value">100% <span class="progress-check" aria-hidden="true">✓</span></div>
+          <div class="progress-card">
+            <div class="label">180 Days Social Studies</div>
+            <div class="value">—</div>
+            <div class="detail">5th Grade · Not started</div>
           </div>
         </div>
       </div>
@@ -645,8 +672,8 @@
   </script>
 
   
-  <script src="/map/mapdata.js"></script>
-  <script src="/map/worldmap.js"></script>
+  <script src="../../../map/mapdata.js"></script>
+  <script src="../../../map/worldmap.js"></script>
 
 </body>
 </html>
