@@ -647,10 +647,21 @@ footer {
 
 .score-panel {
   display: none;
+  opacity: 0;
+  transform: translateY(8px);
 }
 
 .score-panel.active {
   display: block;
+  animation: gradePanelIn 0.32s ease forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .score-panel.active {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .score-chart-wrap {
@@ -744,6 +755,22 @@ footer {
 /* Score table */
 .score-table-wrap {
   overflow: hidden;
+}
+
+/* All scores table: show ~10 rows, scroll for the rest */
+.score-panel[data-score="all"] .score-table-wrap {
+  max-height: 32.5rem; /* header + ~10 body rows */
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.score-panel[data-score="all"] table.scores thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 1px 0 var(--border);
 }
 
 table.scores {
