@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonArt 2025 — Projects | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+</head>
+<body>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/homeschool-approach.html">
+        <img src="../../../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/schedule.html">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
+            <a href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+    <a class="nav-back" href="/students/scarlett/transcripts.html">← Back to Transcripts</a>
+
+    <header>
+      <div class="hero-badge">Art</div>
+      <h1>MonArt 2025</h1>
+      <p class="subtitle">Drawing and art practice from the MonArt program.</p>
+    </header>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h2>Gallery</h2>
+      </div>
+      <div class="art-grid">
+        <figure class="art-item">
+          <a href="../../art/athena.jpg" target="_blank" rel="noopener">
+            <img src="../../art/athena.jpg" alt="Athena" loading="lazy">
+            <figcaption>Athena</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/cyclops.jpg" target="_blank" rel="noopener">
+            <img src="../../art/cyclops.jpg" alt="Cyclops" loading="lazy">
+            <figcaption>Cyclops</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/emoji.jpg" target="_blank" rel="noopener">
+            <img src="../../art/emoji.jpg" alt="Emoji" loading="lazy">
+            <figcaption>Emoji</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/endless.jpg" target="_blank" rel="noopener">
+            <img src="../../art/endless.jpg" alt="Endless" loading="lazy">
+            <figcaption>Endless</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/flag.jpg" target="_blank" rel="noopener">
+            <img src="../../art/flag.jpg" alt="Flag" loading="lazy">
+            <figcaption>Flag</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/hands.jpg" target="_blank" rel="noopener">
+            <img src="../../art/hands.jpg" alt="Hands" loading="lazy">
+            <figcaption>Hands</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/heart.jpg" target="_blank" rel="noopener">
+            <img src="../../art/heart.jpg" alt="Heart" loading="lazy">
+            <figcaption>Heart</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/knight.jpg" target="_blank" rel="noopener">
+            <img src="../../art/knight.jpg" alt="Knight" loading="lazy">
+            <figcaption>Knight</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/mino.jpg" target="_blank" rel="noopener">
+            <img src="../../art/mino.jpg" alt="Minotaur" loading="lazy">
+            <figcaption>Minotaur</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/shiloh.jpg" target="_blank" rel="noopener">
+            <img src="../../art/shiloh.jpg" alt="Shiloh" loading="lazy">
+            <figcaption>Shiloh</figcaption>
+          </a>
+        </figure>
+        <figure class="art-item">
+          <a href="../../art/spiral.jpg" target="_blank" rel="noopener">
+            <img src="../../art/spiral.jpg" alt="Spiral" loading="lazy">
+            <figcaption>Spiral</figcaption>
+          </a>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Projects
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      const drop = document.querySelector('.nav-drop');
+      if (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        document.addEventListener('click', function () {
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
