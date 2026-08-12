@@ -258,24 +258,9 @@ section {
   padding-bottom: 2.75rem;
 }
 
-/* More breathing room + subtle centered ornament between sections */
+/* More breathing room between sections */
 .page > section:not(:last-of-type) {
-  margin-bottom: 2.5rem;
-  position: relative;
-}
-
-.page > section:not(:last-of-type)::after {
-  content: "✦";
-  display: block;
-  margin: 3.75rem auto 0;
-  text-align: center;
-  font-size: 0.8rem;
-  line-height: 1;
-  color: #86efac;
-  text-shadow:
-    -1.85rem 0 0 #d6d3d1,
-    1.85rem 0 0 #d6d3d1;
-  opacity: 0.95;
+  margin-bottom: 6.25rem;
 }
 
 .section-head {
