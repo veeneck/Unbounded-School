@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Colorado Trip — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+  <style>
+    .writing-body p {
+      margin-bottom: 1.05rem;
+      line-height: 1.68;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+    .writing-body .task {
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-bottom: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="nav-logo" href="homeschool-approach.html">
+          <img src="unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+          <span>Unbounded School</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../../../../schedule.html">Schedule</a></li>
+          <li class="nav-drop">
+            <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+              Students
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-dropdown" role="menu">
+              <a href="../../../../transcripts.html" class="active" role="menuitem">Scarlett</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div class="page">
+    <a class="nav-back" href="writing.html">← Back to Writing Log</a>
+
+    <header>
+      <div class="hero-badge">Writing piece</div>
+      <h1>My Colorado Trip</h1>
+      <p class="subtitle">Snowboarding, ski lifts, ice skating, and family in Colorado.</p>
+    </header>
+
+    <div class="writing-hero" style="margin:0 0 1.5rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+      <img src="writing-snowboarding.jpg" alt="My Colorado Trip" style="display:block;width:100%;height:auto;max-height:420px;object-fit:cover;object-position:center;">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <p>My Colorado trip was so much fun! We mostly snowboarded. Snowboarding is not easy, and it takes a while to learn. How do you snowboard? You may ask. The easy way to snowboard is snowplowing. You face the bottom of the hill, and start going down. If you face the right way, you should go pretty slow. Sometimes you have to lift your toes up so the snow doesn’t catch your board. Another way to snowplow is to face the mountain and do the same thing, but lift your heels up instead of your toes.</p>
+        <p>Regular snowboarding is much harder. You start by facing sideways, pick whichever side you feel most comfortable with. Go down, and when you start to get too fast, turn your board so you face the mountain or the bottom of the hill. Snowplow for just a couple seconds then turn your board so it points the way you want it to go. These are the simple ways to snowboard, practice a lot and you’ll be amazing at it!</p>
+        <p>You might get upset and want to give up, but you have to push through your anger and try again. My first day I was on the bunny hill, I fell on my butt a lot. Though I learned to stop a little. On my second day, I made it down the bunny hill without falling. I got to go on the ski lift. The ski lift is hard because it is so slippery at the end. You have to tilt your board so it’s vertical and slide off. That day I didn’t get it right, and as I fell the chair almost hit my head. The hill of the ski lift was hard too, mostly because it was steep from the top to the middle. The rest was smooth sailing. From the top to the middle I got upset, but I kept going.</p>
+        <p>My third day I got off the ski lift all by myself and did better on the steep hill. When we weren’t snowboarding, we were in our cozy rental or in the small town. We also got to ice skate for the first time! It is just like rollerblading, but with no wheels! I got pretty good at it. I got to stay at my cousin Aria’s house and go to a museum with her before all that other stuff. The snowboard stuff was with my cousin Will, Uncle Chris, Mimi, Paddy, Juliet, Mom, and Dad. I had so much fun in Colorado, I didn’t want to leave.</p>
+
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hundred Dresses — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+  <style>
+    .writing-body p {
+      margin-bottom: 1.05rem;
+      line-height: 1.68;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="nav-logo" href="homeschool-approach.html">
+          <img src="unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+          <span>Unbounded School</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../../../../schedule.html">Schedule</a></li>
+          <li class="nav-drop">
+            <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+              Students
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-dropdown" role="menu">
+              <a href="../../../../transcripts.html" class="active" role="menuitem">Scarlett</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="page">
+    <a class="nav-back" href="writing.html">← Back to Writing Log</a>
+
+    <header>
+      <div class="hero-badge">Writing piece</div>
+      <h1>The Hundred Dresses</h1>
+      <p class="subtitle">Eleanor Estes · Theme: forgiveness. Scarlett’s response and reflection.</p>
+    </header>
+
+    <div class="writing-hero" style="margin:0 0 1.5rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+      <img src="writing-100dresses.jpg" alt="The Hundred Dresses" style="display:block;width:100%;height:auto;max-height:420px;object-fit:cover;object-position:center;">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <p>The Hundred Dresses, by Eleanor Estes. The theme is forgiveness.</p>
+        <p>In the book The Hundred Dresses, there is a girl named Wanda. She went to school like any other normal kid, but she had been missing school. In Wanda’s class there was a bunch of kids, but Peggy was the prettiest. Peggy’s best friend was Maddie. They did everything together. Maddie thought she knew why Wanda was missing school. It all started on a beautiful day, Wanda got to school and Peggy asked Wanda how many dresses she had. Wanda only had one dress but she didn’t want to tell everyone that so she said she had one hundred, all lined up in her closet. Everyone started asking her that every day and Maddie could tell that was making Wanda feel uncomfortable. That was why Wanda wouldn’t come to school. Maddie felt bad and so did Peggy.</p>
+        <p>The next day was the drawing competition. Maddie thought that Peggy would win because she was so good at drawing. When they walked into the classroom, there were so many colorful pictures of dresses all over the wall. It turns out that Wanda had drawn all hundred of them, she had won!</p>
+        <p>Then the teacher said there was a letter from Wanda Petronski’s father, and she read it out loud. It said that Wanda was moving and she won’t be going to that school anymore. Maddie and Peggy went to see if Wanda had moved yet, they wanted to say sorry and give her the medal from winning. When they got there, the house was empty, so they went back and wrote her a letter. After a few days, the teacher had a letter from Wanda Petronski. The letter answered back Maddie and Peggy’s questions and told Maddie to have the blue one of the hundred dresses and Peggy to have the green. When school was over, they went back home. At home Maddie just kept looking at the beautiful picture, and then she realized it was a picture of her!</p>
+        <p>She ran to Peggy’s house and hers was a picture of her too! On the way to school the next day, Peggy and Maddie thought that Wanda really liked them, and forgave them. The End I like this book because Peggy and Maddie stopped to think how Wanda was feeling and put themselves in Wanda’s shoes.</p>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

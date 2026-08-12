@@ -1,0 +1,776 @@
+/* Unbounded School — shared styles */
+
+:root {
+  --ink: #1c1917;
+  --muted: #57534e;
+  --bg: #f7f5f2;
+  --card: #ffffff;
+  --accent: #166534;
+  --accent-dark: #14532d;
+  --accent-soft: #dcfce7;
+  --accent-mid: #86efac;
+  --border: #e7e5e4;
+  --warm: #fef3c7;
+  --warm-border: #fde68a;
+  --blue-soft: #e0f2fe;
+  --nav-height: 64px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(22, 101, 52, 0.07), transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(2, 132, 199, 0.05), transparent 40%),
+    radial-gradient(circle at 0% 80%, rgba(124, 58, 237, 0.04), transparent 35%),
+    url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23166534' fill-opacity='0.035'%3E%3Ccircle cx='2' cy='2' r='1.2'/%3E%3C/g%3E%3C/svg%3E");
+  color: var(--ink);
+  line-height: 1.55;
+  font-size: 16.5px;
+  min-height: 100vh;
+}
+
+/* ========== Site nav (sticky then fade) ========== */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  background: rgba(247, 245, 242, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
+  will-change: transform, opacity;
+}
+
+.site-nav.nav-away {
+  transform: translateY(-110%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.site-nav .nav-inner {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.nav-logo span {
+  display: none;
+}
+
+@media (min-width: 520px) {
+  .nav-logo span {
+    display: inline;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  list-style: none;
+}
+
+.nav-links > li {
+  position: relative;
+}
+
+.nav-links a,
+.nav-links button.nav-drop-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.15s, background 0.15s;
+}
+
+.nav-links a:hover,
+.nav-links button.nav-drop-btn:hover,
+.nav-links a:focus-visible,
+.nav-links button.nav-drop-btn:focus-visible {
+  color: var(--ink);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.nav-links a.active {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+}
+
+.nav-drop-btn .chevron {
+  width: 12px;
+  height: 12px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.2;
+  transition: transform 0.2s;
+}
+
+.nav-drop.open .nav-drop-btn .chevron {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 160px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 0.35rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.18s, transform 0.18s, visibility 0.18s;
+  z-index: 30;
+}
+
+.nav-drop.open .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown a {
+  display: block;
+  padding: 0.55rem 0.85rem;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-dropdown a:hover {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+/* Layout shell */
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + 1.25rem) 1.25rem 3.5rem;
+}
+
+/* Header / hero */
+header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, var(--accent-soft), #bbf7d0);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(22, 101, 52, 0.15);
+}
+
+header h1 {
+  font-size: clamp(1.75rem, 4vw, 2.15rem);
+  font-weight: 750;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 0.45rem;
+  line-height: 1.2;
+}
+
+header .subtitle {
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 34em;
+  margin: 0 auto;
+}
+
+.nav-back {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.88rem;
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-back:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.4rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.section-head .icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.section-head .icon-wrap svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--accent-dark);
+  fill: none;
+  stroke-width: 2;
+}
+
+.section-head h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* Shared card / panel surface */
+.card,
+.subject-card,
+.progress-card,
+.season,
+.daily,
+.score-table-wrap,
+.placeholder-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+/* Tags */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+}
+
+.tag.muted {
+  background: #f5f5f4;
+  color: var(--muted);
+}
+
+/* Notes */
+.note-box,
+.flex-note {
+  border-radius: 12px;
+  padding: 0.95rem 1.15rem;
+  font-size: 0.9rem;
+  margin-top: 0.85rem;
+}
+
+.note-box.warm {
+  background: var(--warm);
+  border: 1px solid var(--warm-border);
+  color: var(--ink);
+}
+
+.note-box.info,
+.flex-note {
+  background: var(--blue-soft);
+  color: var(--muted);
+}
+
+/* Links row */
+.links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.links-row a {
+  font-size: 0.85rem;
+  color: var(--accent-dark);
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ========== Schedule page ========== */
+
+/* Daily schedule table */
+.daily {
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.daily-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  border-bottom: 1px solid var(--border);
+}
+
+.daily-row:last-child {
+  border-bottom: none;
+}
+
+.daily-row .time {
+  background: linear-gradient(90deg, #dcfce7, #bbf7d0);
+  padding: 0.8rem 1rem;
+  font-weight: 650;
+  font-size: 0.82rem;
+  color: var(--accent-dark);
+  display: flex;
+  align-items: center;
+}
+
+.daily-row .activity {
+  padding: 0.8rem 1.1rem;
+  font-size: 0.93rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Season cards */
+.season-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 700px) {
+  .season-track {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .season-track {
+    grid-template-columns: 1fr;
+  }
+}
+
+.season {
+  padding: 1.1rem 1.15rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.season::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.season.core::before {
+  background: linear-gradient(90deg, #166534, #22c55e);
+}
+.season.expand::before {
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+}
+.season.rest::before {
+  background: linear-gradient(90deg, #d97706, #fbbf24);
+}
+.season.ramp::before {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+
+.season.core {
+  background: linear-gradient(180deg, #ffffff 60%, #f0fdf4 100%);
+}
+.season.expand {
+  background: linear-gradient(180deg, #ffffff 60%, #f0f9ff 100%);
+}
+.season.rest {
+  background: linear-gradient(180deg, #ffffff 60%, #fffbeb 100%);
+}
+.season.ramp {
+  background: linear-gradient(180deg, #ffffff 60%, #faf5ff 100%);
+}
+
+.season .period {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.season h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.55rem;
+  color: var(--ink);
+}
+
+.season ul {
+  list-style: none;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.season li {
+  position: relative;
+  padding-left: 0.9rem;
+  margin-bottom: 0.28rem;
+}
+
+.season li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Subject cards */
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.subject-card {
+  padding: 1.15rem 1.2rem;
+}
+
+.subject-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  color: var(--accent-dark);
+}
+
+.subject-card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.65rem;
+}
+
+.subject-card a {
+  color: var(--accent-dark);
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+
+/* ========== Transcripts page ========== */
+
+/* Grade switcher */
+.grade-switcher {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1.75rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.3rem;
+  gap: 0.25rem;
+  width: fit-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.grade-switcher button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+
+.grade-switcher button:hover {
+  color: var(--ink);
+  background: #f5f5f4;
+}
+
+.grade-switcher button.active {
+  background: linear-gradient(135deg, var(--accent-soft), #bbf7d0);
+  color: var(--accent-dark);
+  box-shadow: 0 1px 2px rgba(22, 101, 52, 0.1);
+}
+
+.grade-panel {
+  display: none;
+}
+
+.grade-panel.active {
+  display: block;
+}
+
+.score-panel {
+  display: none;
+}
+
+.score-panel.active {
+  display: block;
+}
+
+.score-chart-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  padding: 0.75rem;
+  overflow: hidden;
+}
+
+.score-chart-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.score-tabs {
+  margin: 0 0 1rem;
+  justify-content: flex-start;
+}
+
+.placeholder-panel {
+  border-style: dashed;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.placeholder-panel h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.placeholder-panel p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 28em;
+  margin: 0 auto 1.25rem;
+}
+
+.placeholder-panel .status {
+  display: inline-block;
+  background: var(--warm);
+  color: #92400e;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--warm-border);
+}
+
+/* Progress cards */
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.progress-card {
+  padding: 1.1rem 1.15rem;
+}
+
+.progress-card .label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.35rem;
+}
+
+.progress-card .value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin-bottom: 0.25rem;
+}
+
+.progress-card .detail {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.progress-card.complete .value {
+  color: var(--accent);
+}
+
+/* Score table */
+.score-table-wrap {
+  overflow: hidden;
+}
+
+table.scores {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+table.scores th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #dcfce7, #bbf7d0);
+  color: var(--accent-dark);
+  font-weight: 650;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+table.scores td {
+  padding: 0.7rem 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--ink);
+}
+
+table.scores tr:hover td {
+  background: #fafdf9;
+}
+
+.pct {
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+/* Book covers grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(22, 101, 52, 0.1);
+}
+
+.book-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  background: #f5f5f4;
+  display: block;
+}
+
+.book-card .book-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.55rem 0.5rem 0.65rem;
+  line-height: 1.3;
+  text-align: center;
+  flex: 1;
+}
+
+.book-card .book-note {
+  font-size: 0.68rem;
+  color: var(--accent-dark);
+  font-weight: 600;
+  padding: 0 0.5rem 0.55rem;
+  text-align: center;
+}
+
+/* Two-column layout */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}

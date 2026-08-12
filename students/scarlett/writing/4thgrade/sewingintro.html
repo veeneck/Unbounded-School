@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to Sewing — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+  <style>
+    .writing-body p {
+      margin-bottom: 1.05rem;
+      line-height: 1.68;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+    .writing-body .task {
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-bottom: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="nav-logo" href="homeschool-approach.html">
+          <img src="unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+          <span>Unbounded School</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../../../../schedule.html">Schedule</a></li>
+          <li class="nav-drop">
+            <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+              Students
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-dropdown" role="menu">
+              <a href="../../../../transcripts.html" class="active" role="menuitem">Scarlett</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="page">
+    <a class="nav-back" href="writing.html">← Back to Writing Log</a>
+
+    <header>
+      <div class="hero-badge">Project</div>
+      <h1>Intro to Sewing</h1>
+      <p class="subtitle">One-week sewing tutorial with Mom — complete a project from start to finish.</p>
+    </header>
+
+    <div class="writing-hero" style="margin:0 0 1.5rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+      <img src="writing-sewing.jpg" alt="Intro to Sewing" style="display:block;width:100%;height:auto;max-height:420px;object-fit:cover;object-position:center;">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <p>Task: Take a one week sewing tutorial with Mom. On the last day, complete a project by yourself from beginning to end.</p>
+
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Awesome Not Cool Dad — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+  <style>
+    .writing-body p {
+      margin-bottom: 0.35rem;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="nav-logo" href="homeschool-approach.html">
+          <img src="unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+          <span>Unbounded School</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../../../../schedule.html">Schedule</a></li>
+          <li class="nav-drop">
+            <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+              Students
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-dropdown" role="menu">
+              <a href="../../../../transcripts.html" class="active" role="menuitem">Scarlett</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div class="page">
+    <a class="nav-back" href="writing.html">← Back to Writing Log</a>
+
+    <header>
+      <div class="hero-badge">Poem</div>
+      <h1>My Awesome Not Cool Dad</h1>
+      <p class="subtitle">A poem about Dad.</p>
+    </header>
+
+    <div class="writing-hero" style="margin:0 0 1.5rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+      <img src="writing-dad.jpg" alt="My Awesome Not Cool Dad" style="display:block;width:100%;height:auto;max-height:420px;object-fit:cover;object-position:center;">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <p style="margin-bottom:0.35rem;">My Dad is not cool</p>
+        <p style="margin-bottom:0.35rem;">Sometimes he acts like a fool</p>
+        <p style="margin-bottom:0.35rem;">He has bad jokes</p>
+        <p style="margin-bottom:0.35rem;">I hope he doesn’t share’ em with my folks</p>
+        <p style="margin-bottom:0.35rem;">But my Dad is awesome</p>
+        <p style="margin-bottom:0.35rem;">Because when he snuggles me I blossom</p>
+        <p style="margin-bottom:0.35rem;">When he’s near</p>
+        <p style="margin-bottom:0.35rem;">I feel great cheer</p>
+        <p style="margin-bottom:0.35rem;">I love him</p>
+        <p style="margin-bottom:0.35rem;">Even though he needs a trim</p>
+        <p style="margin-bottom:0.35rem;">He makes me mad</p>
+        <p style="margin-bottom:0.35rem;">But I love him cause’ he’s my dad</p>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

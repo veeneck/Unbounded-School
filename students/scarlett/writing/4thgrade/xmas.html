@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Christmas Story — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+  <style>
+    .writing-body p {
+      margin-bottom: 1.05rem;
+      line-height: 1.68;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+    .writing-body .task {
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-bottom: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="nav-logo" href="homeschool-approach.html">
+          <img src="unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+          <span>Unbounded School</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../../../../schedule.html">Schedule</a></li>
+          <li class="nav-drop">
+            <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+              Students
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-dropdown" role="menu">
+              <a href="../../../../transcripts.html" class="active" role="menuitem">Scarlett</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="page">
+    <a class="nav-back" href="writing.html">← Back to Writing Log</a>
+
+    <header>
+      <div class="hero-badge">Script + Film</div>
+      <h1>A Christmas Story</h1>
+      <p class="subtitle">Write a script, film it, and edit a short Christmas movie in iMovie.</p>
+    </header>
+
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <div style="margin-bottom:1.25rem;">
+          <video controls playsinline style="width:100%;border-radius:10px;background:#000;" poster="">
+            <source src="writing-xmas.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>Task: Write a script for a short movie. Direct and film it. Edit it together with Dad in iMovie.</p>
+        <p>[Scene 1 - in the house by the Christmas tree ]</p>
+        <p>N - Once upon a time the was two children, Cat and Bun bun, who were playing with blocks on a snowy Christmas Eve.</p>
+        <p>B - Let’s go play in the snow!</p>
+        <p>C - Yeah!</p>
+        <p>B - Wait! First we have to get our snow gear on.</p>
+        <p>C - Let’s put our hat on first.</p>
+        <p>B - Then our coat.</p>
+        <p>C - Then our boots.</p>
+        <p>B - Now we are ready.</p>
+        <p>[Scene 2 in the snow]</p>
+        <p>B - Let’s make snow angels!</p>
+        <p>C - I am getting tired.</p>
+        <p>B - Me too. Let’s go inside, it’s getting late.</p>
+        <p>[Scene 3 in bed]</p>
+        <p>B- We better go to sleep so Santa gives us presents.</p>
+        <p>S - Ho Ho Ho</p>
+        <p>B and C - It’s Christmas!</p>
+        <p>C - Let’s dance to some Christmas music.</p>
+        <p>B - Yeah!</p>
+        <p>[ jingle bells playing]</p>
+        <p>B - Now it’s time for the feast.</p>
+        <p>[ Scene 4 at the dinner table]</p>
+        <p>C - Let’s eat!</p>
+        <p>B and C - Yummy!</p>
+        <p>B - Now it’s time to open the presents!</p>
+        <p>C - Oh no! The presents are gone!</p>
+        <p>B - Let’s go look for the thief!</p>
+        <p>[Scene 5 outside walking in the snow]</p>
+        <p>B - Let’s follow those footsteps.</p>
+        <p>C - So you’re the thief!</p>
+        <p>B - Give us those presents back!</p>
+        <p>B - Let’s go home!</p>
+        <p>[Scene 6 in the house]</p>
+        <p>C - I am going to open my present first!</p>
+        <p>C - It is a stuffed deer!</p>
+        <p>B - Now I’m going to open my present.</p>
+        <p>B - It’s a stuffed snow leopard!</p>
+        <p>B - Let’s play with our new toys!</p>
+        <p>N - They played happily ever after. The End.</p>
+
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
