@@ -1620,11 +1620,32 @@ body.page-home a.home-bubble:hover {
 }
 
 @media (max-width: 600px) {
-  body.page-home .home-logo {
-    width: min(13rem, 62vw);
-    height: min(13rem, 62vw);
+  body.page-home .home-hero {
+    align-items: flex-start;
+    padding-top: max(2.5rem, 8vh);
+    padding-bottom: 2rem;
   }
+
+  body.page-home .home-logo {
+    width: min(11.5rem, 56vw);
+    height: min(11.5rem, 56vw);
+    margin-bottom: 1rem;
+  }
+
   body.page-home .home-tagline {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.35rem;
+  }
+
+  body.page-home .home-bubbles {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.55rem;
+    max-width: 16rem;
+    margin: 0 auto;
+  }
+
+  body.page-home a.home-bubble {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
