@@ -74,7 +74,7 @@ body {
 }
 
 .nav-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.65rem;
   text-decoration: none;
@@ -82,16 +82,22 @@ body {
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: -0.01em;
+  height: 42px;
+  line-height: 1;
+  box-sizing: border-box;
 }
 
 .nav-logo img {
   height: 42px;
   width: auto;
   display: block;
+  flex-shrink: 0;
 }
 
 .nav-logo span {
   display: none;
+  line-height: 1;
+  transform: translateY(0.5px); /* optical align with mark */
 }
 
 @media (min-width: 520px) {
@@ -105,20 +111,29 @@ body {
   align-items: center;
   gap: 0.35rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 42px;
 }
 
 .nav-links > li {
   position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-links a,
 .nav-links button.nav-drop-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.3rem;
-  padding: 0.45rem 0.85rem;
+  height: 36px;
+  padding: 0 0.85rem;
   font-size: 0.9rem;
   font-weight: 600;
+  line-height: 1;
   color: var(--muted);
   text-decoration: none;
   background: transparent;
@@ -126,6 +141,11 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-family: inherit;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  vertical-align: middle;
   transition: color 0.15s, background 0.15s;
 }
 
