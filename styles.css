@@ -1654,6 +1654,22 @@ body.page-home a.home-bubble:hover {
 }
 
 /* Co-op page */
+.wufoo-embed {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  padding: 0.75rem 0.75rem 0.25rem;
+  overflow: hidden;
+  min-height: 12rem;
+}
+
+.wufoo-embed iframe {
+  width: 100% !important;
+  max-width: 100%;
+  border: 0;
+}
+
 .wufoo-placeholder {
   background: #fff;
   border: 1px solid var(--border);
@@ -1762,12 +1778,27 @@ body.page-home a.home-bubble:hover {
   z-index: 1;
 }
 
+.coop-step-body {
+  padding-top: 0.35rem;
+  min-width: 0;
+}
+
+.coop-step-summary {
+  margin: 0 0 0.25rem;
+  font-size: 1.08rem;
+  font-weight: 750;
+  line-height: 1.3;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
 .coop-step-text {
   margin: 0;
-  padding-top: 0.55rem;
-  font-size: 1.05rem;
+  padding-top: 0;
+  font-size: 0.98rem;
   line-height: 1.55;
-  color: var(--ink);
+  color: var(--muted);
+  font-weight: 500;
 }
 
 .coop-step-cta .coop-step-num {
@@ -1776,15 +1807,19 @@ body.page-home a.home-bubble:hover {
   color: var(--accent-dark);
 }
 
-.coop-step-cta .coop-step-text {
-  font-weight: 500;
+.coop-step-cta .coop-step-summary {
+  color: var(--accent-dark);
 }
 
 .coop-form-cue {
-  font-weight: 700;
+  font-weight: 750;
   text-decoration: underline;
   text-underline-offset: 0.15em;
   color: var(--accent-dark);
+}
+
+.coop-step-cta .coop-step-text {
+  font-weight: 500;
 }
 
 @media (max-width: 600px) {
@@ -1804,10 +1839,31 @@ body.page-home a.home-bubble:hover {
     height: 2.7rem;
     font-size: 0.85rem;
   }
-  .coop-step-text {
-    font-size: 0.98rem;
-    padding-top: 0.4rem;
+  .coop-step-summary {
+    font-size: 1.02rem;
   }
+  .coop-step-text {
+    font-size: 0.92rem;
+  }
+  .coop-step-body {
+    padding-top: 0.25rem;
+  }
+}
+
+.wufoo-embed {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  padding: 0.75rem 0.75rem 0.25rem;
+  overflow: hidden;
+  min-height: 12rem;
+}
+
+.wufoo-embed iframe {
+  width: 100% !important;
+  max-width: 100%;
+  border: 0;
 }
 
 .wufoo-placeholder {
