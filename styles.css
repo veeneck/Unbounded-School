@@ -1484,3 +1484,19 @@ a.project-card.is-link:hover {
     font-size: 0.84rem;
   }
 }
+
+/* Schedule: brief labels on mobile, full on larger screens */
+.activity-brief {
+  display: none;
+}
+.activity-full {
+  display: inline;
+}
+@media (max-width: 600px) {
+  .activity-brief {
+    display: inline;
+  }
+  .activity-full {
+    display: none;
+  }
+}
