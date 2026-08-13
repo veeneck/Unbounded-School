@@ -6,17 +6,103 @@
   <title>Co-op — Unbounded School</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-coop">
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/index.html">
+        <img src="unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/schedule.html">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
+            <a href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="page">
     <header>
-      <div class="hero-badge">Coming soon</div>
-      <h1>Co-op</h1>
-      <p class="subtitle">This page is under construction.</p>
+      <div class="hero-badge">Co-op</div>
+      <h1>Looking to Homeschool?</h1>
+      <p class="subtitle">We&rsquo;re a local Colwich family that homeschools, and we&rsquo;re trying to see if there are enough people to organize meets, activities, or learning around. If so, what does that structure look like?</p>
     </header>
-    <p style="text-align:center; margin-top:1rem;">
-      <a class="nav-back" href="index.html">← Back to home</a>
-    </p>
+
+    <div class="coop-frill" aria-hidden="true">
+      <span class="coop-frill-line"></span>
+      <span class="coop-frill-dot"></span>
+      <span class="coop-frill-line"></span>
+    </div>
+
+    <div class="coop-flow" aria-label="Who this is for">
+      <div class="coop-step">
+        <div class="coop-step-num">01</div>
+        <p class="coop-step-text">You already homeschool, are looking to start, or are just interested in learning more about homeschooling in the Colwich / Andale / surrounding area.</p>
+      </div>
+      <div class="coop-step">
+        <div class="coop-step-num">02</div>
+        <p class="coop-step-text">You don&rsquo;t know how many people around you are in the same boat.</p>
+      </div>
+      <div class="coop-step">
+        <div class="coop-step-num">03</div>
+        <p class="coop-step-text">You&rsquo;re open to meeting new people, and figuring out if any shared framework makes sense.</p>
+      </div>
+      <div class="coop-step coop-step-cta">
+        <div class="coop-step-num">04</div>
+        <p class="coop-step-text"><strong class="coop-form-cue">Fill out the form below!</strong> No commitment. Just gathering info to see if there is enough overlap. A future mailing list or conversation may spark something.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>Interest Form</h2>
+      </div>
+      <div class="wufoo-placeholder" aria-label="Form placeholder">
+        <p>Wufoo form will go here.</p>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Co-op
+    </footer>
   </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+
+      const drop = document.querySelector('.nav-drop');
+      if (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        document.addEventListener('click', function () {
+          drop.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
-
