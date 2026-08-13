@@ -1,0 +1,331 @@
+
+/* Unbounded School — Wufoo form theme
+   Link this file in the Wufoo Theme Editor (Custom CSS URL).
+   Live path example: https://unbounded.school/Wufoo.css
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+/* ---------- Page / form shell ---------- */
+html,
+body {
+  background: #ffffff !important;
+  color: #1c1917 !important;
+  font-family: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#container,
+.wufoo,
+form.wufoo,
+.wufoo .info,
+.wufoo .form {
+  font-family: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif !important;
+  color: #1c1917 !important;
+}
+
+#container {
+  background: #ffffff !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0.5rem 0.35rem 1rem !important;
+  box-sizing: border-box !important;
+}
+
+/* ---------- Header / intro ---------- */
+.wufoo .info,
+form li.info {
+  background: transparent !important;
+  border: none !important;
+  margin: 0 0 1.25rem !important;
+  padding: 0 0.25rem 1rem !important;
+  border-bottom: 1px solid #e7e5e4 !important;
+}
+
+.wufoo .info h2,
+form li.info h2 {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif !important;
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: #1c1917 !important;
+  margin: 0 0 0.45rem !important;
+  line-height: 1.2 !important;
+}
+
+.wufoo .info div,
+form li.info div {
+  font-size: 0.98rem !important;
+  color: #57534e !important;
+  line-height: 1.55 !important;
+}
+
+/* ---------- Field list ---------- */
+.wufoo ul,
+form ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.wufoo li,
+form li {
+  background: transparent !important;
+  border: none !important;
+  margin: 0 0 1.15rem !important;
+  padding: 0 0.25rem !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* ---------- Labels ---------- */
+.wufoo label.desc,
+.wufoo legend,
+form label.desc,
+form legend {
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  color: #1c1917 !important;
+  margin: 0 0 0.4rem !important;
+  padding: 0 !important;
+  letter-spacing: 0.01em !important;
+}
+
+.wufoo label.choice,
+form label.choice {
+  font-weight: 500 !important;
+  color: #1c1917 !important;
+  font-size: 0.95rem !important;
+}
+
+/* Required asterisk */
+.wufoo label.desc span.req,
+.wufoo .req {
+  color: #166534 !important;
+  font-weight: 700 !important;
+}
+
+/* Instruct / help text */
+.wufoo .instruct,
+form p.instruct {
+  background: #f7f5f2 !important;
+  border: 1px solid #e7e5e4 !important;
+  border-radius: 10px !important;
+  color: #57534e !important;
+  font-size: 0.85rem !important;
+  padding: 0.55rem 0.75rem !important;
+  margin-top: 0.45rem !important;
+}
+
+/* ---------- Inputs ---------- */
+.wufoo input[type="text"],
+.wufoo input[type="email"],
+.wufoo input[type="tel"],
+.wufoo input[type="url"],
+.wufoo input[type="number"],
+.wufoo input[type="date"],
+.wufoo input.text,
+.wufoo input.email,
+.wufoo input.url,
+.wufoo input.number,
+.wufoo input.phone,
+.wufoo textarea,
+.wufoo textarea.textarea,
+.wufoo select,
+.wufoo select.select {
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif !important;
+  font-size: 1rem !important;
+  color: #1c1917 !important;
+  background: #ffffff !important;
+  border: 1px solid #e7e5e4 !important;
+  border-radius: 10px !important;
+  padding: 0.7rem 0.85rem !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+  outline: none !important;
+}
+
+.wufoo input[type="text"]:focus,
+.wufoo input[type="email"]:focus,
+.wufoo input[type="tel"]:focus,
+.wufoo input[type="url"]:focus,
+.wufoo input[type="number"]:focus,
+.wufoo input[type="date"]:focus,
+.wufoo input.text:focus,
+.wufoo input.email:focus,
+.wufoo textarea:focus,
+.wufoo select:focus {
+  border-color: #86efac !important;
+  box-shadow: 0 0 0 3px rgba(220, 252, 231, 0.9) !important;
+}
+
+.wufoo textarea,
+.wufoo textarea.textarea {
+  min-height: 7rem !important;
+  resize: vertical !important;
+  line-height: 1.5 !important;
+}
+
+/* Size variants Wufoo uses */
+.wufoo input.small,
+.wufoo select.small {
+  width: 35% !important;
+  max-width: 12rem !important;
+}
+
+.wufoo input.medium,
+.wufoo select.medium {
+  width: 65% !important;
+  max-width: 100% !important;
+}
+
+.wufoo input.large,
+.wufoo textarea.textarea,
+.wufoo select.large {
+  width: 100% !important;
+}
+
+/* ---------- Choices (radio / checkbox) ---------- */
+.wufoo ul.choices,
+form ul.choices {
+  margin: 0.25rem 0 0 !important;
+  padding: 0 !important;
+}
+
+.wufoo ul.choices li,
+form ul.choices li {
+  margin: 0.35rem 0 !important;
+  padding: 0 !important;
+}
+
+.wufoo input[type="radio"],
+.wufoo input[type="checkbox"] {
+  accent-color: #166534 !important;
+  margin-right: 0.4rem !important;
+}
+
+/* ---------- Section breaks ---------- */
+.wufoo li.section,
+form li.section {
+  border-top: 1px solid #e7e5e4 !important;
+  margin-top: 1.5rem !important;
+  padding-top: 1.15rem !important;
+}
+
+.wufoo li.section h3,
+form li.section h3 {
+  font-family: "Fraunces", Georgia, serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: #1c1917 !important;
+  margin: 0 0 0.35rem !important;
+}
+
+.wufoo li.section div,
+form li.section div {
+  color: #57534e !important;
+  font-size: 0.92rem !important;
+}
+
+/* ---------- Errors ---------- */
+.wufoo li.error,
+form li.error {
+  background: #fef2f2 !important;
+  border-radius: 10px !important;
+  padding: 0.75rem !important;
+  border: 1px solid #fecaca !important;
+}
+
+.wufoo p.error,
+.wufoo .error,
+form p.error {
+  color: #b91c1c !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  margin: 0.35rem 0 0 !important;
+}
+
+.wufoo li.error input,
+.wufoo li.error textarea,
+.wufoo li.error select {
+  border-color: #f87171 !important;
+}
+
+/* ---------- Submit button ---------- */
+.wufoo li.buttons,
+form li.buttons {
+  margin: 1.5rem 0 0.5rem !important;
+  padding: 0.25rem !important;
+  background: transparent !important;
+}
+
+.wufoo input[type="submit"],
+.wufoo input.submit,
+.wufoo button[type="submit"],
+form input[type="submit"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif !important;
+  font-size: 0.98rem !important;
+  font-weight: 700 !important;
+  color: #14532d !important;
+  background: #dcfce7 !important;
+  border: 1px solid #bbf7d0 !important;
+  border-radius: 999px !important;
+  padding: 0.75rem 1.5rem !important;
+  cursor: pointer !important;
+  box-shadow: 0 1px 3px rgba(22, 101, 52, 0.08) !important;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease !important;
+}
+
+.wufoo input[type="submit"]:hover,
+.wufoo input.submit:hover,
+.wufoo button[type="submit"]:hover,
+form input[type="submit"]:hover {
+  background: #bbf7d0 !important;
+  box-shadow: 0 3px 10px rgba(22, 101, 52, 0.12) !important;
+  transform: translateY(-1px) !important;
+}
+
+.wufoo input[type="submit"]:active,
+.wufoo input.submit:active {
+  transform: translateY(0) !important;
+}
+
+/* ---------- Footer / branding hide (optional) ---------- */
+.wufoo .footer,
+.wufoo .paging-link,
+.wufoo .shield {
+  font-family: "Source Sans 3", system-ui, sans-serif !important;
+  color: #a8a29e !important;
+  font-size: 0.75rem !important;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+  .wufoo .info h2,
+  form li.info h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .wufoo input.small,
+  .wufoo input.medium,
+  .wufoo select.small,
+  .wufoo select.medium {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .wufoo input[type="submit"],
+  .wufoo input.submit {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
