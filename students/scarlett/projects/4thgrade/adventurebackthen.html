@@ -5,6 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>An Adventure Back Then — Projects | Unbounded School</title>
   <link rel="stylesheet" href="../../../../styles.css">
+
+  <style>
+    .book-toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem 1.4rem 1.35rem;
+      margin: 0 0 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .book-toc-title {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.25rem;
+      margin: 0 0 0.75rem;
+    }
+    .book-toc-list {
+      margin: 0;
+      padding-left: 1.2rem;
+      columns: 2;
+      column-gap: 2rem;
+    }
+    .book-toc-list li {
+      margin: 0.35rem 0;
+      break-inside: avoid;
+    }
+    .book-toc-list a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .book-toc-list a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .book-toc-list { columns: 1; }
+    }
+    .book-chapter {
+      margin: 0 0 2.75rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .book-chapter:last-of-type {
+      border-bottom: none;
+      margin-bottom: 1rem;
+    }
+    .book-chapter-head {
+      text-align: center;
+      margin-bottom: 1.35rem;
+    }
+    .book-chapter-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      margin: 0 0 0.35rem;
+    }
+    .book-chapter-head h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.55rem;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+    .book-chapter-body p {
+      margin: 0 0 1rem;
+      line-height: 1.72;
+      color: var(--ink);
+      font-size: 1.05rem;
+    }
+    .book-scene-break {
+      border: 0;
+      height: 1px;
+      margin: 1.5rem auto;
+      width: 4rem;
+      background: linear-gradient(90deg, transparent, #d6d3d1, transparent);
+    }
+    .book-figure {
+      margin: 1.35rem 0 1.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #f5f5f4;
+    }
+    .book-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+
 </head>
 <body>
   <nav class="site-nav" id="site-nav" aria-label="Main">
@@ -35,28 +124,342 @@
     <header>
       <div class="hero-badge">Featured · Short Story</div>
       <h1>An Adventure Back Then</h1>
-      <p class="subtitle">Published short story.</p>
+      <p class="subtitle">A complete book by Scarlett · 9 chapters</p>
     </header>
 
-    <div class="writing-hero" style="margin:0 0 1.5rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.04);">
-      <img src="../../hero/adventurebackthen.jpg" alt="An Adventure Back Then" style="display:block;width:100%;height:auto;max-height:420px;object-fit:cover;object-position:center;">
+    <div class="writing-hero">
+      <img src="../../hero/adventurebackthen.jpg" alt="An Adventure Back Then">
     </div>
 
 
-    <section>
-      <div class="section-head">
-        <div class="icon-wrap">
-          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-        </div>
-        <h2>The Piece</h2>
+    
+    
+    <nav class="book-toc" aria-label="Table of contents">
+      <h2 class="book-toc-title">Contents</h2>
+      <ol class="book-toc-list">
+        <li><a href="#chapter-1">Chapter 1: The Lucky Win</a></li>
+        <li><a href="#chapter-2">Chapter 2: Millions Of Years Ago</a></li>
+        <li><a href="#chapter-3">Chapter 3: The Water Hole</a></li>
+        <li><a href="#chapter-4">Chapter 4: The Ocean</a></li>
+        <li><a href="#chapter-5">Chapter 5: The Night</a></li>
+        <li><a href="#chapter-6">Chapter 6: The Baby Triceratops</a></li>
+        <li><a href="#chapter-7">Chapter 7: The Meadow</a></li>
+        <li><a href="#chapter-8">Chapter 8: The Herd of Triceratops</a></li>
+        <li><a href="#chapter-9">Chapter 9: Home</a></li>
+      </ol>
+    </nav>
+    <article class="book-chapter" id="chapter-1">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 1</p>
+        <h2>The Lucky Win</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>Once upon a time, there was a family of five, a mother, father, and three children, Ruby, Anna, and Andrew. The small house they lived in was very pleasant. The children had friends just across the street that they loved to play with. Their neighborhood was just lovely, and everyone was so nice. One morning the little family got some exciting news in the mail. The King and Queen were going to spin a wheel with everyone in the town’s name on it to see who gets to visit their castle. The event would take place at the town park Friday at 3:00 p.m.</p>
+        <hr class="book-scene-break" />
+        <p>The kids were so excited! It was Wednesday, so it was coming up soon! That night, the kids couldn’t sleep. They stayed up thinking about it. On the day of the wheel spin, the kids got up early and couldn’t wait till 3:00. Shortly before 3:00, they started walking to the park and made it just in time to see the wheel spin. The little family of five were the lucky winners!</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/wheel.jpg" alt="The Lucky Win" loading="lazy" />
+        </figure>
+        <hr class="book-scene-break" />
+        <p>The next day they would get to go to the castle! They got to spend the whole day there! Saturday morning, when they got there, the King and Queen had one important rule, the rule was not to go in the room at the end of the main hall. After they said the important rule, the kids started roaming the beautiful castle while their parents talked to the King and Queen.</p>
+        <hr class="book-scene-break" />
+        <p>The kids had so much fun, they went in every room, except the one at the end of the main hall.</p>
+        <p>“I really want to go in the room the King and Queen said not to go in, it could have awesome stuff in it.” Ruby said.</p>
+        <p>“I want to too, what about you Anna?” Andrew asked.</p>
+        <p>“The King and Queen said no, so we should not go in there.” Anna told them, but from the looks of their faces, she had to go with them. In the room they went.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/portal.jpg" alt="The Lucky Win" loading="lazy" />
+        </figure>
+        <p>Once they got inside, they saw something weird looking. After a few seconds, Ruby, Andrew, and Anna were sucked away! They got taken millions of years back!</p>
+        <p>When they arrived Anna asked “Are those things in the distance dinosaurs?”</p>
+        <p>“I believe so.” Andrew said.</p>
+        <p>“Oh great, dinosaurs.” Ruby groaned.</p>
       </div>
-      <div class="subject-card" style="padding:1.35rem 1.5rem;">
-        <p style="margin:0; color:var(--muted);">Content coming soon.</p>
+    </article>
+    <article class="book-chapter" id="chapter-2">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 2</p>
+        <h2>Millions Of Years Ago</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>The portal behind them closed, and they didn’t know how to get back. After a little while, Anna had an idea. They could find another portal to take them home.</p>
+        <p>“Then we better start walking.” said Andrew.</p>
+        <p>All of a sudden, the ground started shaking.</p>
+        <p>“Earthquake!” shouted Ruby.</p>
+        <p>“No, it’s a herd of triceratops coming right for us!” yelled Andrew.</p>
+        <p>“Take cover!” screamed Anna.</p>
+        <p>They all ran behind a bush and waited for them to pass.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/triceratops2.jpg" alt="Millions Of Years Ago" loading="lazy" />
+        </figure>
+        <p>After the herd of triceratops, came a hungry T-Rex! All of them were so frightened they shivered. The T-Rex put his nose to the bush they were hiding behind and took a sniff, then went back after the triceratops.</p>
+        <p>“That was close!” said Andrew.</p>
+        <p>“Yeah!” agreed Anna, catching her breath.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/trex.jpg" alt="Millions Of Years Ago" loading="lazy" />
+        </figure>
+        <p>They calmed down, and Ruby demanded, “I need some food!”</p>
+        <p>“But what do we eat?” asked Andrew.</p>
+        <p>“Let’s find a berry bush.” Anna suggested.</p>
+        <p>After searching in a thicket, Ruby shouted “There’s some!” as she pointed to a bunch of bushes with red juicy berries.</p>
+        <p>“But there’s a stegosaurus sleeping right next to them,” Andrew told her.</p>
+        <p>“Let’s sneak past it.” Ruby suggested.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/stegosaurus.jpg" alt="Millions Of Years Ago" loading="lazy" />
+        </figure>
+        <p>So they tiptoed to the berry bushes, grabbed some berries, and tiptoed back, but on the way, Ruby stepped on a twig and woke it up! All the stegosaurus did was look at them in a weird way, and then went back to sleep.</p>
+        <p>“Why didn’t he do anything to us?” Ruby questioned.</p>
+        <p>“Yeah, why Andrew, you’re the dinosaur expert?” Anna curiously asked him.</p>
+        <p>“It’s a herbivore, that means it eats plants only, and that one seemed to be very sleepy.” Andrew answered.</p>
+        <p>“That makes sense.” said Anna.</p>
+        <p>“Let’s eat already, I’m starving.” Ruby complained.</p>
+        <p>So they ate some of the berries, and saved some for dinner. They walked and walked, and still couldn’t find the portal. The group was getting tired, and started looking for a place to sleep. Not far away, there was a small, cozy cave. They made a warm fire in it, gathered leaves to make beds, ate some berries, and went to sleep.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/cave.jpg" alt="Millions Of Years Ago" loading="lazy" />
+        </figure>
       </div>
-    </section>
+    </article>
+    <article class="book-chapter" id="chapter-3">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 3</p>
+        <h2>The Water Hole</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>The next morning, they realized that the day before they did not have any water. So they had to think of a way to get some.</p>
+        <p>“We can find a nearby water hole.” Anna suggested.</p>
+        <p>“Great idea!” Andrew agreed with Anna.</p>
+        <p>They walked to a water hole, and when they got there they saw a couple of dinosaurs. They had a body like a giraffe, but their tails were much longer and their bodies were way bigger.</p>
+        <p>“What’s that dinosaur?” asked Anna.</p>
+        <p>“Probably a long neck.” said Ruby.</p>
+        <p>“Actually, yes, but to be specific, it’s a brontosaurus.” Andrew told them.</p>
+        <hr class="book-scene-break" />
+        <p>They started walking closer to the water hole, even though there were dinosaurs drinking out of it.</p>
+        <p>All of a sudden they stopped, when Anna asked “Do those dinosaurs eat meat?”</p>
+        <p>“No,” answered Andrew, “We’ll be fine.”</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/brontosaurus.jpg" alt="The Water Hole" loading="lazy" />
+        </figure>
+        <p>Since the dinosaurs were herbivores, they all ran to grab a drink. After many sips, Andrew also filled up a water bottle he had.</p>
+        <p>It got really hot, so Ruby said “I’m going for a swim.”</p>
+        <p>Then, she jumped in. Andrew felt sweat dripping down his neck, so he jumped in too. Anna was hot too, but she tried to force herself not to jump in. In the end, she ended up jumping in anyway. After ten minutes, the water started getting low because it was so hot and the dinosaurs drank a lot.</p>
+        <p>“Now how do we stay cool?” Ruby asked.</p>
+        <p>“I have an idea,” Andrew said excitedly, “The ocean, I’ve always wanted to see sea dinosaurs!”</p>
+        <p>“There’s sea dinosaurs!?” Anna exclaimed.</p>
+        <p>“Yeah, lots of them.” Andrew told Anna.</p>
+        <p>“Let’s go already, I’m starting to sweat.” Ruby complained.</p>
+        <p>So they turned South towards the ocean, excited to cool off and look at sea dinosaurs for the first time.</p>
+        <hr class="book-scene-break" />
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/ocean2.jpg" alt="The Water Hole" loading="lazy" />
+        </figure>
+      </div>
+    </article>
+    <article class="book-chapter" id="chapter-4">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 4</p>
+        <h2>The Ocean</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>When they got to the ocean, they found a safe place to swim and jumped in. After just a little bit, Anna felt something slimy hit her leg and said “Ruby, Andrew, stop trying to scare me.”</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/henodus2.jpg" alt="The Ocean" loading="lazy" />
+        </figure>
+        <p>“We weren’t trying to scare you, we didn’t even touch you.” Andrew told Anna.</p>
+        <p>“Then who touched me?” Anna nervously asked as she looked behind her, and saw something that looked like a turtle!</p>
+        <p>She ran out of the water then Ruby saw it and did the same. Andrew just stayed where he was and looked at it.</p>
+        <p>“What is that thing?” Ruby asked.</p>
+        <p>“Why does it look like a turtle?” Anna asked.</p>
+        <p>“The Henodus looks like a turtle because of its shell, and it won’t hurt you because they are herbivores. You know they are more scared of you than you are of them.” Andrew told them.</p>
+        <p>“Let’s get back in the water then.” said Anna.</p>
+        <p>They jumped back in hoping not to see a dangerous creature.</p>
+        <hr class="book-scene-break" />
+        <p>Andrew went underwater to see if he could see a sea dinosaur in the distance. He looked for about five minutes and saw a shastasaurus!</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/shastsaurus.jpg" alt="The Ocean" loading="lazy" />
+        </figure>
+        <hr class="book-scene-break" />
+        <p>“Anna, Ruby, get out of the water, quick!” shouted Andrew.</p>
+        <p>“Why?” Anna asked.</p>
+        <p>“Just do it!” Andrew yelled.</p>
+        <p>So they all got out of the water and Ruby asked “What did you see?”</p>
+        <p>“A shastasaurus, the biggest marine reptile ever found, and, they’re carnivores!” Andrew told them, while catching his breath.</p>
+        <p>“Thanks for warning us.” Anna said gratefully.</p>
+        <hr class="book-scene-break" />
+        <p>They all sat down by the water. Just a few minutes later, there was something in the water eating algae! Ruby got up and ran away from the water, but Anna and Andrew stayed.</p>
+        <p>“No need to be afraid Ruby, it’s eating algae, so it’s a herbivore.” Anna told her.</p>
+        <p>Ruby sat down next to them and said “I wasn’t scared.”</p>
+        <p>“Yeah, right.” Andrew whispered to Anna, so she giggled.</p>
+        <p>“What’s so funny?” Ruby asked.</p>
+        <p>“Nothing.” Anna said and quickly changed the subject.</p>
+        <p>“What is that thing called?” asked Anna.</p>
+        <p>“It’s an atopodentatus.” Andrew told them.</p>
+        <p>Andrew sat there thinking about how amazing his day had been looking at things he would never see back home. But he knew he had to get home soon to keep his sisters safe.</p>
+        <p>“We should find a place to rest.” Anna sleepily said.</p>
+        <p>“How about right here on the sand?” Andrew suggested.</p>
+        <p>“Sure.” Anna agreed.</p>
+        <p>They laid down, shut their eyes, and in a few seconds were fast asleep.</p>
+      </div>
+    </article>
+    <article class="book-chapter" id="chapter-5">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 5</p>
+        <h2>The Night</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>In the middle of the night they all woke up at the same time because they had heard something squawk. Andrew knew what it was, so he grabbed Anna and Ruby’s arms and took them to a big bush to hide.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/troodon3.jpg" alt="The Night" loading="lazy" />
+        </figure>
+        <p>“Why are we …” Ruby started, then Andrew shushed her.</p>
+        <p>Then something with big eyes and three sharp claws on each hand came walking by, looked around, and trotted off.</p>
+        <p>“Now I see why we were hiding,” said Ruby.</p>
+        <p>“What was that?” Anna asked.</p>
+        <p>“It was a Troodon, and they can see very well in the dark,” Andrew told them.</p>
+        <p>“That explains the big eyes.” said Ruby.</p>
+        <p>“Let’s try to go back to sleep, but right here, in the bush.” Anna suggested.</p>
+        <p>So Andrew and Ruby went back to sleep.</p>
+        <p>Anna couldn’t fall asleep, she was too worried that something was going to get them, and when she was finally almost asleep, she heard something. She shook Andrew and Ruby to wake them up.</p>
+        <p>Ruby asked “Why did you wake us up Anna?”</p>
+        <p>“I heard something!” answered Anna.</p>
+        <p>“It was probably your imagination, go back to sleep.” Ruby sleepily told her, but before they could go back to sleep, a hungry raptor came up behind them!</p>
+        <hr class="book-scene-break" />
+        <p>“Run!” yelled Andrew.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/raptor.jpg" alt="The Night" loading="lazy" />
+        </figure>
+        <p>They ran and ran, and in the distance, Anna saw a cave and pointed to it because she thought it would be a good hiding place.</p>
+        <hr class="book-scene-break" />
+        <p>Once in the cave, they hid behind a big rock until the raptor went away.</p>
+        <p>“What type of raptor was that?” Anna asked.</p>
+        <p>“It was a velociraptor.” said Andrew.</p>
+        <p>“Who cares what type of raptor it was, the good thing is that we can go to sleep, right?” asked Ruby, hoping it was a yes.</p>
+        <p>“We sure can.” Anna told her.</p>
+        <p>Tired, they all went to sleep and didn’t get woken up for the rest of the night. In the morning, something came in the cave and woke them. That thing was small, and it had three little horns.</p>
+      </div>
+    </article>
+    <article class="book-chapter" id="chapter-6">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 6</p>
+        <h2>The Baby Triceratops</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>“Aww, look at him, he’s adorable!” squealed Anna.</p>
+        <p>“It’s a baby triceratops, and it looks like he lost his herd.” Andrew said.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/babytri.jpg" alt="The Baby Triceratops" loading="lazy" />
+        </figure>
+        <p>“Oh no, we should take care of him until he finds his family.” Anna suggested.</p>
+        <p>“No way, he’ll get us into so much trouble.” Ruby said.</p>
+        <p>“Pleeeeeeeeease!” begged Anna.</p>
+        <p>“Oh fine.” Ruby approved.</p>
+        <p>They ate some berries that were in a bush right outside the cave. Anna gave the baby triceratops some too. They were also thirsty so they took a sip of water from the water bottle Andrew had filled at the water hole.</p>
+        <hr class="book-scene-break" />
+        <p>After filling their tummies, they started looking for the portal again, and in the distance, they could see it. All of them were so excited, they jumped up and down. It was a days walk ahead. Super close to the portal was a herd of triceratops! They looked just like the baby one! That was its herd! So, they walked a little to get closer to their destination.</p>
+        <hr class="book-scene-break" />
+        <p>On their way, they all got tired so they found a comfortable patch of grass to sit on, and a bush for the baby triceratops to eat.</p>
+        <p>“I can’t wait to get back home.” Ruby said.</p>
+        <p>“Me too.” Andrew agreed.</p>
+        <p>“I miss mom and dad.” Ruby whispered to herself.</p>
+        <p>Anna heard her so she put her hand on Ruby’s shoulder and said “I miss them too, but we’ll see them soon.”</p>
+        <p>“Let’s keep walking.” Andrew told them.</p>
+        <p>“Wait, where’s the baby triceratops.” Anna asked worried.</p>
+        <p>“Let’s follow those footprints.” Andrew suggested as he pointed to footprints that started at the bush.</p>
+        <p>“Good idea!” Anna agreed. “Come on Ruby!” Anna yelled back as she was running.</p>
+        <p>“Oh great, here’s the trouble.” Ruby groaned. So, they all followed the footsteps and finally found him at the end of the trail.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/footprint.jpg" alt="The Baby Triceratops" loading="lazy" />
+        </figure>
+        <p>“There you are, I thought I lost you!” Anna said to the baby triceratops that was eating flowers.</p>
+        <p>“That’s why he came here, to eat some more food.” Andrew figured out.</p>
+        <p>“He needs a name.” Anna said.</p>
+        <p>“How about TROUBLE.” Ruby suggested.</p>
+        <p>“No, how about Munchy, because he loves to eat.” Anna said, thinking it was the perfect name.</p>
+        <p>“That is a great name, but does the triceratops like it?” Andrew asked.</p>
+        <p>The triceratops started jumping up and down.</p>
+        <p>“I think that’s a yes!” giggled Anna.</p>
+        <p>“Guys, I think you need to see this.” Ruby said.</p>
+        <p>In front of them, there was a huge meadow of pink flowers.</p>
+      </div>
+    </article>
+    <article class="book-chapter" id="chapter-7">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 7</p>
+        <h2>The Meadow</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>They stayed at the wonderful meadow the rest of the day. It smelt amazing there and the petals were so soft, delicate, and pink! Munchy would have plenty to eat, and there was a water hole right next to the meadow. They ran around in the flowers for a little bit, then got tired and sat down to rest.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/meadow2.jpg" alt="The Meadow" loading="lazy" />
+        </figure>
+        <hr class="book-scene-break" />
+        <p>“I’m hot, so I’m going to swim in the water hole.” said Ruby.</p>
+        <p>“Me too, how about you Anna?” Andrew agreed with Ruby and checked if Anna did.</p>
+        <p>“No, I’m good, you guys go. Andrew, fill up the water bottle please.” Anna answered.</p>
+        <p>Andrew said he would, then they walked to the water hole. The cold water on their skin felt amazing. While Anna was waiting for them to get back, she sat next to Munchy.</p>
+        <hr class="book-scene-break" />
+        <p>A few minutes later, Anna heard something big stomping in the distance! She had to warn Andrew and Ruby! So she ran to the water hole with Munchy following her. When Anna got there she shouted “Guys, there is something huge coming our way!”</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/trexmeadow.jpg" alt="The Meadow" loading="lazy" />
+        </figure>
+        <hr class="book-scene-break" />
+        <p>The dinosaur had already made it to the meadow, so Anna pulled her siblings out of the water hole and took them to a big rock to hide. The huge thing drank half of the water in the water hole, and that huge thing was a T-rex! If Anna hadn’t pulled Ruby and Andrew out of the water, they would have been a T-rex snack!</p>
+        <hr class="book-scene-break" />
+        <p>“Thanks for saving us!” Andrew said gratefully.</p>
+        <p>“I would do anything for you guys!” Anna told them.</p>
+        <p>“I didn’t need to be rescued, but thanks anyway.” Ruby said.</p>
+        <p>Anna giggled. “Now the meadow isn’t beautiful anymore and there’s not enough water in the water hole to swim.” Andrew groaned.</p>
+        <p>“That’s okay,” Anna told them, “it’s nighttime anyway.”</p>
+        <p>The next day, they made it all the way to the triceratops herd. Munchy was so happy, but the other triceratops were mad because they thought that the kids were trying to hurt the baby triceratops!</p>
+      </div>
+    </article>
+    <article class="book-chapter" id="chapter-8">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 8</p>
+        <h2>The Herd of Triceratops</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>The triceratops wouldn’t move out of the way, and since they didn’t like Anna, Ruby, or Andrew, the kids couldn’t get to the portal.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/portaltri.jpg" alt="The Herd of Triceratops" loading="lazy" />
+        </figure>
+        <p>“What should we do, we can’t sneak past them, there are too many.” Ruby said.</p>
+        <p>“The triceratops are herbivores, right Andrew?” Anna asked.</p>
+        <p>“Yes, they are.” answered Andrew.</p>
+        <p>“Then maybe we can lure them away with some tasty flowers.” Anna suggested.</p>
+        <p>That’s a great idea, but how are we going to get that many flowers, it could take us all day.” Andrew told them.</p>
+        <p>“Then we better get started.” Ruby said.</p>
+        <p>They all went different ways to get flowers.</p>
+        <p>“Let’s all meet back here in an hour.” Andrew told them.</p>
+        <p>When they all came back they had enough! They were all filled with joy that they could go back home.</p>
+        <p>“I guess it didn’t take as long as I thought.” Andrew said.</p>
+        <p>“You know there’s a lot of flowers here.” Ruby told Andrew.</p>
+        <p>“Ok, the plan is to put the flowers away from the portal and wait for the triceratops to smell them. The triceratops walk to them, then we jump in the portal and get sent back home.” Anna explained.</p>
+        <p>So they put the flowers away from the portal and five minutes later, they heard the triceratops sniffing. The triceratops went toward the flowers and began to eat them.</p>
+        <figure class="book-figure">
+          <img src="adventurebackthen/images/home.jpg" alt="The Herd of Triceratops" loading="lazy" />
+        </figure>
+        <p>Then they tiptoed as fast as they could to the portal and Anna whispered to Munchy, “Goodbye!” then they all held hands and jumped in. When they got back they were back in the room with the portal. They ran out quickly so they didn’t get sucked back in. Then they looked around and shouted “We’re home!” They were all so happy that they were back in their town and could see their parents and friends.</p>
+      </div>
+    </article>
+    <article class="book-chapter" id="chapter-9">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Chapter 9</p>
+        <h2>Home</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>They went to the King and Queen so that they could ask them how to get home. The royals were so generous and said they would walk them home.</p>
+        <p>“Did you go in the room we told you not to go in?” the Queen asked.</p>
+        <p>“We did.” The kids said together, “It won’t happen again!”</p>
+        <p>“Your parents were worried.” The King told them.</p>
+        <hr class="book-scene-break" />
+        <p>When they got to the house, the kids’ parents came running out and the little family did a group hug.</p>
+        <hr class="book-scene-break" />
+        <p>All of Ruby, Anna, and Andrew’s friends came out to welcome them back. The whole town had heard about their disappearance. The kids said “Hi!” and ran into the house to jump on their beds. Then they went to the pantry to get some snacks. Millions of years ago, they didn’t have comfy beds and yummy snacks. After, they went back outside and played hopscotch with their friends. All of them were so glad that they were finally home.</p>
+      </div>
+    </article>
 
     <footer>
-      Unbounded School · Projects
+      Unbounded School · An Adventure Back Then · Scarlett
     </footer>
   </div>
 
