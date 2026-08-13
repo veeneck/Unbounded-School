@@ -255,12 +255,27 @@ header .subtitle {
 /* Sections */
 section {
   margin-bottom: 0;
-  padding-bottom: 2.75rem;
+  padding-bottom: 1.5rem;
 }
 
-/* More breathing room between sections */
+/* Breathing room between sections (tighter on small screens) */
 .page > section:not(:last-of-type) {
-  margin-bottom: 6.25rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (max-width: 900px) {
+  section {
+    padding-bottom: 1.15rem;
+  }
+  .page > section:not(:last-of-type) {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page > section:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
 }
 
 .section-head {
