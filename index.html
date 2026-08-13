@@ -7,27 +7,38 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="site-nav" id="site-nav" aria-label="Main">
-      <div class="nav-inner">
-        <a class="nav-logo" href="index.html">
-          <img src="unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
-          <span>Unbounded School</span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="schedule.html">Schedule</a></li>
-          <li class="nav-drop">
-            <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
-              Students
-              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="nav-dropdown" role="menu">
-              <a href="students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
-              <a href="students/juliet/transcripts.html" role="menuitem">Juliet</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/index.html">
+        <img src="unbounded-logo.png" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="homeschool-approach.html" class="active">Approach</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts.html" role="menuitem">Scarlett · Transcripts</a>
+            <a href="report-cards.html" role="menuitem">Report Cards</a>
+          </div>
+        </li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Work
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="quests.html" role="menuitem">Quests</a>
+            <a href="writing.html" role="menuitem">Writing</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="page">
     <header>
@@ -77,7 +88,7 @@
         <div class="subject-card" style="padding:1.15rem 1.25rem;">
           <h3 style="font-size:1rem;margin-bottom:0.5rem;">Transcripts</h3>
           <p style="font-size:0.92rem;color:var(--muted);margin-bottom:0.85rem;">Scores, curriculum completion, reading log, projects, sports, and travel by grade year.</p>
-          <a href="transcripts.html" style="font-weight:600;color:var(--accent-dark);text-decoration:none;">View Scarlett’s transcripts →</a>
+          <a href="/students/scarlett/transcripts.html" style="font-weight:600;color:var(--accent-dark);text-decoration:none;">View Scarlett’s transcripts →</a>
         </div>
         <div class="subject-card" style="padding:1.15rem 1.25rem;">
           <h3 style="font-size:1rem;margin-bottom:0.5rem;">Report Cards</h3>
