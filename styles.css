@@ -1505,9 +1505,11 @@ a.project-card.is-link:hover {
 body.page-home {
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body.page-home .home-hero {
+  position: relative;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -1516,19 +1518,59 @@ body.page-home .home-hero {
   padding: 2.5rem 1.25rem;
   text-align: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
+/* Subtle full-viewport sunburst — solid core, rays only outside center */
+body.page-home .home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(
+    from 0deg at 50% 42%,
+    rgba(22, 101, 52, 0.03) 0deg 5deg,
+    rgba(22, 101, 52, 0) 5deg 12deg
+  );
+  opacity: 0.7;
+}
+
+/* Soft disc covering inner ~30% so rays read only on the outer ring */
+body.page-home .home-hero::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  z-index: 0;
+  pointer-events: none;
+  width: min(48vw, 26rem);
+  height: min(48vw, 26rem);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    var(--bg) 0%,
+    var(--bg) 62%,
+    rgba(247, 245, 242, 0) 100%
+  );
+}
+
+
 body.page-home .home-hero-inner {
-  max-width: 36rem;
+  position: relative;
+  z-index: 1;
+  max-width: 40rem;
   width: 100%;
 }
 
 body.page-home .home-logo {
   display: block;
-  width: 8.5rem;
-  height: 8.5rem;
-  margin: 0 auto 1.25rem;
+  width: min(18rem, 58vw);
+  height: min(18rem, 58vw);
+  margin: 0 auto 1.35rem;
   object-fit: contain;
+  filter: drop-shadow(0 8px 24px rgba(22, 101, 52, 0.12));
 }
 
 body.page-home .home-title {
@@ -1579,8 +1621,8 @@ body.page-home a.home-bubble:hover {
 
 @media (max-width: 600px) {
   body.page-home .home-logo {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: min(13rem, 62vw);
+    height: min(13rem, 62vw);
   }
   body.page-home .home-tagline {
     margin-bottom: 1.6rem;
