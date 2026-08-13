@@ -1300,3 +1300,187 @@ a.project-card.is-link:hover {
   object-fit: unset;
   object-position: center center;
 }
+
+/* Transcripts mobile polish */
+@media (max-width: 900px) {
+  .page-transcripts .page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-transcripts header {
+    margin-bottom: 1.5rem;
+  }
+
+  .page-transcripts header h1 {
+    font-size: clamp(1.55rem, 6vw, 1.95rem);
+  }
+
+  .page-transcripts .section-head {
+    flex-wrap: wrap;
+    gap: 0.65rem 0.75rem;
+    margin-bottom: 1.15rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .page-transcripts .section-head h2 {
+    font-size: 1.28rem;
+  }
+
+  .page-transcripts .section-head .icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+
+  .page-transcripts .section-head-links {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .page-transcripts .grade-switcher {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .page-transcripts .grade-switcher button {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.88rem;
+  }
+
+  .page-transcripts .score-tabs {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+
+  .page-transcripts .score-tabs button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .page-transcripts .progress-grid {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .page-transcripts .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .page-transcripts .project-title {
+    font-size: 0.92rem;
+  }
+
+  .page-transcripts .project-body {
+    padding: 0.7rem 0.75rem 0.85rem;
+  }
+
+  .page-transcripts .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+    gap: 0.65rem;
+  }
+
+  .page-transcripts .pill-row {
+    gap: 0.45rem;
+  }
+
+  .page-transcripts a.pill-link {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.85rem;
+  }
+
+  .page-transcripts .score-chart-wrap {
+    padding: 0.45rem;
+    border-radius: 12px;
+  }
+
+  .page-transcripts .score-panel[data-score="all"] .score-table-wrap {
+    max-height: 24rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .page-transcripts table.scores {
+    font-size: 0.82rem;
+  }
+
+  .page-transcripts table.scores th,
+  .page-transcripts table.scores td {
+    padding: 0.55rem 0.65rem;
+  }
+
+  .page-transcripts .travel-map,
+  .page-transcripts #map {
+    height: 280px;
+  }
+
+  .page-transcripts .tag {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.55rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-transcripts .page {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .page-transcripts .section-head h2 {
+    font-size: 1.15rem;
+  }
+
+  .page-transcripts .project-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+  }
+
+  .page-transcripts .project-title {
+    font-size: 0.88rem;
+  }
+
+  .page-transcripts .project-cat {
+    font-size: 0.72rem;
+  }
+
+  .page-transcripts .progress-card {
+    padding: 0.95rem 1rem;
+  }
+
+  .page-transcripts .progress-meta .value {
+    font-size: 0.9rem;
+  }
+
+  .page-transcripts a.dash-link {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .page-transcripts .travel-map,
+  .page-transcripts #map {
+    height: 240px;
+  }
+
+  .page-transcripts .book-toc-list {
+    columns: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-transcripts .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-transcripts .grade-switcher button {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.84rem;
+  }
+}
