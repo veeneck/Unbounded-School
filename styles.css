@@ -1907,33 +1907,34 @@ body.page-home a.home-bubble:hover {
 
 /* Lexia level score circles */
 .lexia-card {
-  grid-column: 1 / -1; /* full row so 6 circles fit without crushing other pills */
+  /* sit in progress-grid like other pills (~1/3 width via auto-fit) */
 }
 
 .lexia-levels {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem 0.65rem;
-  justify-content: flex-start;
-  margin: 0.35rem 0 0.5rem;
+  flex-wrap: nowrap;
+  gap: 0.35rem;
+  justify-content: space-between;
+  margin: 0.35rem 0 0.45rem;
 }
 
 .lexia-level {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.28rem;
-  min-width: 3.1rem;
+  gap: 0.22rem;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .lexia-circle {
-  width: 2.85rem;
-  height: 2.85rem;
+  width: 2.35rem;
+  height: 2.35rem;
   border-radius: 999px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 700;
   line-height: 1;
   border: 1.5px solid var(--border);
@@ -1980,11 +1981,11 @@ body.page-home a.home-bubble:hover {
 
 @media (max-width: 600px) {
   .lexia-circle {
-    width: 2.55rem;
-    height: 2.55rem;
-    font-size: 0.68rem;
+    width: 2.15rem;
+    height: 2.15rem;
+    font-size: 0.58rem;
   }
-  .lexia-level {
-    min-width: 2.7rem;
+  .lexia-caption {
+    font-size: 0.7rem;
   }
 }
