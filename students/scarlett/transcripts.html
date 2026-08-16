@@ -769,35 +769,65 @@
       });
 
       // Grade tabs (scoped per section so Reading and Projects switch independently)
+      // Grade tabs — shared across sections; URL can set initial grade (?grade=5th)
+      function normalizeGrade(raw) {
+        if (!raw) return null;
+        var g = String(raw).toLowerCase().trim();
+        if (g === '4' || g === '4th' || g === 'fourth') return '4th';
+        if (g === '5' || g === '5th' || g === 'fifth') return '5th';
+        return null;
+      }
+
+      function setAllGrades(grade, updateUrl) {
+        if (!grade) return;
+        document.querySelectorAll('.grade-tabs').forEach(function (tablist) {
+          var section = tablist.closest('section');
+          if (!section) return;
+          var buttons = tablist.querySelectorAll('button[data-grade]');
+          var panels = section.querySelectorAll('.grade-panel');
+
+          buttons.forEach(function (b) {
+            var on = b.getAttribute('data-grade') === grade;
+            b.classList.toggle('active', on);
+            b.setAttribute('aria-selected', on ? 'true' : 'false');
+          });
+
+          panels.forEach(function (panel) {
+            if (panel.getAttribute('data-grade') === grade) {
+              panel.classList.remove('active');
+              void panel.offsetWidth;
+              panel.classList.add('active');
+            } else {
+              panel.classList.remove('active');
+            }
+          });
+        });
+
+        if (updateUrl) {
+          try {
+            var url = new URL(window.location.href);
+            url.searchParams.set('grade', grade);
+            history.replaceState(null, '', url.pathname + url.search + url.hash);
+          } catch (e) {}
+        }
+      }
+
       document.querySelectorAll('.grade-tabs').forEach(function (tablist) {
-        const section = tablist.closest('section');
-        if (!section) return;
-        const buttons = tablist.querySelectorAll('button[data-grade]');
-        const panels = section.querySelectorAll('.grade-panel');
-
-        buttons.forEach(function (btn) {
+        tablist.querySelectorAll('button[data-grade]').forEach(function (btn) {
           btn.addEventListener('click', function () {
-            const grade = btn.getAttribute('data-grade');
-
-            buttons.forEach(function (b) {
-              b.classList.remove('active');
-              b.setAttribute('aria-selected', 'false');
-            });
-            btn.classList.add('active');
-            btn.setAttribute('aria-selected', 'true');
-
-            panels.forEach(function (panel) {
-              if (panel.getAttribute('data-grade') === grade) {
-                panel.classList.remove('active');
-                void panel.offsetWidth;
-                panel.classList.add('active');
-              } else {
-                panel.classList.remove('active');
-              }
-            });
+            setAllGrades(btn.getAttribute('data-grade'), true);
           });
         });
       });
+
+      // Initial grade from ?grade=4th|5th (or #4th / #5th)
+      (function initGradeFromUrl() {
+        var params = new URLSearchParams(window.location.search);
+        var fromQuery = normalizeGrade(params.get('grade'));
+        var fromHash = normalizeGrade((window.location.hash || '').replace(/^#/, ''));
+        var initial = fromQuery || fromHash;
+        if (initial) setAllGrades(initial, false);
+      })();
     })();
   </script>
 
