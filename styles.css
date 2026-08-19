@@ -1358,6 +1358,40 @@ a.project-card.is-link:hover {
   color: var(--accent-dark);
   margin: 0 0 0.35rem;
 }
+
+/* Guide section tags: Setup, Task, Watch, Questions */
+.guide-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.7rem;
+  border-radius: 999px;
+  margin: 0 0 0.55rem;
+  border: 1px solid transparent;
+}
+.guide-tag-setup {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border-color: rgba(22, 101, 52, 0.15);
+}
+.guide-tag-task {
+  background: #f5f0e8;
+  color: #6b5344;
+  border-color: rgba(107, 83, 68, 0.16);
+}
+.guide-tag-watch {
+  background: var(--warm);
+  color: #92400e;
+  border-color: var(--warm-border);
+}
+.guide-tag-questions {
+  background: var(--blue-soft);
+  color: #075985;
+  border-color: rgba(7, 89, 133, 0.16);
+}
 .book-chapter-head h2 {
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.55rem;

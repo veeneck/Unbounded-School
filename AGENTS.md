@@ -28,6 +28,7 @@ When the user says they pushed/changed something live, pull the live page before
 | `Wufoo.css` | External theme for Wufoo forms (linked in Wufoo theme editor) |
 | `map/` | Simplemaps world map (`mapdata.js`, `worldmap.js`) used on transcripts |
 | `unbounded-logo.svg` / `.png` | Brand assets |
+| `apple-touch-icon.png`, `favicon-32x32.png`, `icons/`, `site.webmanifest` | Home Screen / Mac Dock / PWA icons (school logo) |
 
 ### Students
 
@@ -61,7 +62,9 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Homepage (`page-home`) has no nav bar; bubbles: Schedule, Co-op, Guides (dropdown)
 
 ### Guides (`guides/`)
-- Each guide: header (hero) → Contents TOC (same pattern as Adventure Back Then) → numbered step sections
+- Each guide: header (hero) → Contents TOC (same pattern as Adventure Back Then) → sections
+- TOC links use the section title only (not “Step 1: …”)
+- Mini tags above each heading: `Setup` (first), `Task` (do this), later `Watch` (video) or `Questions` (quiz). Classes: `.guide-tag` + `.guide-tag-setup` / `-task` / `-watch` / `-questions`
 - Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`
 - Hero images: `guides/hero/` (`grokquill.jpg`, `quarterlycoin.jpg`) — sit under the page header, above Contents
 - TOC + step section styles live in `styles.css` (`.book-toc`, `.book-chapter`)
