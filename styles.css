@@ -4,6 +4,7 @@
 
 :root {
   --ink: #1c1917;
+  --writing-ink: #3c3834;
   --muted: #57534e;
   --bg: #f7f5f2;
   --card: #ffffff;
@@ -1319,6 +1320,41 @@ a.project-card.is-link:hover {
   vertical-align: top;
   object-fit: unset;
   object-position: center center;
+}
+
+/* Long-form writing: readable measure, soft ink, open paragraphs */
+.writing-body {
+  font-size: 1.22rem;
+  font-weight: 400;
+  color: var(--writing-ink);
+  letter-spacing: 0.012em;
+  text-wrap: pretty;
+}
+.subject-card.writing-body p,
+.writing-body p {
+  font-size: 1.22rem;
+  font-weight: 400;
+  color: var(--writing-ink);
+  letter-spacing: 0.012em;
+}
+.subject-card.writing-body p {
+  margin-bottom: 1.5rem;
+  line-height: 1.82;
+}
+.subject-card.writing-body p:last-child {
+  margin-bottom: 0;
+}
+.writing-body .task {
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  letter-spacing: 0.012em;
+  margin-bottom: 0.95rem;
+}
+.subject-card.writing-body.is-poem p,
+.writing-body.is-poem p {
+  margin-bottom: 0.48rem;
+  line-height: 1.62;
 }
 
 /* Transcripts mobile polish */

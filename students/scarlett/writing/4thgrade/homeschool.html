@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Year of Homeschool — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+      <!-- Fathom - beautiful, simple website analytics -->
+      <script src="https://cdn.usefathom.com/script.js" data-site="FXWFKUXE" defer></script>
+      <!-- / Fathom -->
+  <style>
+    .writing-body p {
+      margin-bottom: 1.05rem;
+      line-height: 1.68;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/index.html">
+        <img src="../../../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/schedule.html">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
+            <a href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+      <a class="nav-back" href="/students/scarlett/transcripts.html">← Back to Scarlett’s Transcripts</a>
+
+    <header>
+      <div class="hero-badge">Writing piece</div>
+      <h1>My First Year of Homeschool</h1>
+      <p class="subtitle">Scarlett looks back on her first year of homeschool.</p>
+    </header>
+
+    <div class="writing-hero" style="margin:0 0 1.5rem;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+      <img src="../../hero/homeschool.jpg" alt="My First Year of Homeschool" style="display:block;width:100%;height:auto;max-height:420px;object-fit:cover;object-position:center;">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <p>My first year of homeschool was amazing! I learned so much! I did Khan math, Lexia, BEAST math, Ed club, and Khan reading on my computer. Some of Khan math was hard, and some was easy. It was the same with BEAST math, but most of it was really hard. There were very frustrating moments, but I had my parents to help me through them. Lexia and Khan reading were very boring, especially Khan reading. I was never excited to do it, unless I was going to finish something big. On Ed club I did typing, learned new words, got introduced to how computers work, and learned a little bit about finance. It was boring, just like Lexia and Khan reading. There were ups and downs to computer work, but I went through all of them.</p>
+        <p>I read the books Holes, 100 Dresses, Where the Red Fern Grows, Dr. Seuss, The Magic Treehouse Twister on Tuesday, Nancy Drew and The Mystery of the scarlet slippers, Little House on the Prairie, Charlotte’s Web, and The Hobbit. I enjoyed these books so much, I was kind of sad when they ended. You might not believe it, but I used to hate reading, now I love it! I’m glad I read these books, they were the BEST!</p>
+        <p>I also did a lot of writing projects. I wrote a book and got it published, made a song, wrote about books I read, and lots more! Many of my writing projects were many pages long, and took me days, maybe weeks! I chose to make my writing projects long, you may ask, why, well, I’ll tell you. I love to write, I get so caught up in it, pages go so fast! I love to be creative, that’s why I wrote my book. Sometimes it’s hard to finish your work, but you have to push through and do it anyway, just like me. I love writing so much, sometimes I do it for fun!</p>
+        <p>I did workbooks too, but most of them were easy and boring. Sometimes they are hard though, so I ask for help. It’s always ok to ask for help, you never have to be scared to do so. Workbooks aren’t fun, but I do them anyway.</p>
+        <p>It was really hard to leave my friends and do homeschool, it took me forever to get over it. Though I had Maddy, who also homeschools. Every day at 11:30, I get to go in her backyard to jump on the trampoline and swing with her. She keeps me from being lonely, I am so lucky that my best friend homeschools too.</p>
+        <p>I liked homeschool because I can work when I want, play with Maddy more, be cozy, and so much more! I didn’t like homeschool because I had to leave a lot of my friends. My first year of homeschool was so fun, I learned so much! I did computer, read books, and did workbooks. I loved homeschool so much, I might do it next year!</p>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
