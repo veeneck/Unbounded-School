@@ -62,12 +62,25 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Homepage (`page-home`) has no nav bar; bubbles: Schedule, Co-op, Guides (dropdown)
 
 ### Guides (`guides/`)
-- Each guide: header (hero) → Contents TOC (same pattern as Adventure Back Then) → sections
-- TOC links use the section title only (not “Step 1: …”)
-- Mini tags above each heading: `Setup` (first), `Task` (do this), later `Watch` (video) or `Questions` (quiz). Classes: `.guide-tag` + `.guide-tag-setup` / `-task` / `-watch` / `-questions`
-- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`
-- Hero images: `guides/hero/` (`grokquill.jpg`, `quarterlycoin.jpg`) — sit under the page header, above Contents
-- TOC + step section styles live in `styles.css` (`.book-toc`, `.book-chapter`)
+- Each guide: header + hero image → Contents TOC (Adventure Back Then pattern) → titled sections
+- TOC links use the section **title only** (no “Step 1: …” prefix). The `<ol>` already numbers them
+- Mini tags above each heading (not “Step 1”): `Setup` (first), `Task` (do this). Later: `Watch` (video), `Questions` (quiz). Classes: `.guide-tag` + `.guide-tag-setup` / `-task` / `-watch` / `-questions`
+- Voice: short, friendly, readable for a ~10-year-old. Same facts, less lecture
+- Copyable instruction boxes: `.guide-copy` + Copy button (`.guide-copy-btn[data-copy]`)
+- Shared styles in `styles.css`: `.book-toc`, `.book-chapter`, `.guide-tag`, `.guide-copy`, `.guide-tips`
+- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html` (still a blank shell)
+- Heroes: `guides/hero/grokquill.jpg`, `guides/hero/quarterlycoin.jpg`
+
+**Grok & Quill** — writing coach cycle (5th grade). Six sections:
+
+1. Setup — Create a Teacher with Grok: grok.com → Projects → Canvas → Project instructions → paste the writing-cycle prompt → ask Grok if it understands the five days
+2. Task — Writing By Hand: pick a topic with a parent, write ~1–2 pages. Five tips: read out loud; smell/sound/feeling; exact words; show what happened; mix sentence length. Then one parent revision (not a rewrite)
+3. Task — Type It Up: type the paper draft as written (tiny spelling/periods ok; no new scenes). Save as topic + date
+4. Task — First Feedback from Grok: same project (not a new chat). Prompt: “I’m ready for my first round of feedback. I’ll paste my writing below.” Grok already knows (from project instructions) to give spelling/grammar, 1 harder ~15-min fix, up to 3 easy ones. Read notes; don’t edit yet
+5. Task — Revise and Get a Grade: do that list (skip notes that don’t sound like the author). Prompt: “I’m ready for my grade. I’ll paste my writing below.” Fair 0–100% vs 5th-grade peers. Write the score next to the title
+6. Task — Post to Your Blog: parent helps publish the finished piece on Unbounded School writing pages. Same Grok project for the next piece
+
+Do not put the full Day 1–5 project-instruction text in new prompts — it already lives in the project. Keep those two short copy boxes.
 
 ### When editing
 1. Match existing patterns on the same page
