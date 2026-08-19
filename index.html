@@ -18,10 +18,37 @@
       <nav class="home-bubbles" aria-label="Site">
         <a class="home-bubble" href="schedule.html">Schedule</a>
         <a class="home-bubble" href="coop.html">Co-op</a>
-        <a class="home-bubble" href="students/scarlett/transcripts.html">Scarlett</a>
-        <a class="home-bubble" href="students/juliet/transcripts.html">Juliet</a>
+        <div class="home-bubble-drop">
+          <button type="button" class="home-bubble" aria-expanded="false" aria-haspopup="true">
+            Guides
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="home-bubble-menu" role="menu">
+            <a href="guides/grok-and-quill.html" role="menuitem">Grok &amp; Quill</a>
+            <a href="guides/quarterly-coin.html" role="menuitem">Quarterly Coin</a>
+          </div>
+        </div>
       </nav>
     </div>
   </main>
+  <script>
+    (function () {
+      document.querySelectorAll('.home-bubble-drop').forEach(function (drop) {
+        const btn = drop.querySelector('button.home-bubble');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.home-bubble-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          const btn = drop.querySelector('button.home-bubble');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

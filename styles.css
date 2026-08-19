@@ -209,7 +209,8 @@ body {
   text-decoration: none;
 }
 
-.nav-dropdown a:hover {
+.nav-dropdown a:hover,
+.nav-dropdown a.active {
   background: var(--accent-soft);
   color: var(--accent-dark);
 }
@@ -1301,6 +1302,82 @@ a.project-card.is-link:hover {
   line-height: 1;
 }
 
+/* Book / guide table of contents + stepped sections */
+.book-toc {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem 1.35rem;
+  margin: 0 0 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+.book-toc-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+.book-toc-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+.book-toc-list li {
+  margin: 0.35rem 0;
+  break-inside: avoid;
+}
+.book-toc-list a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.book-toc-list a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  .book-toc-list { columns: 1; }
+}
+.book-chapter {
+  margin: 0 0 2.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+.book-chapter:last-of-type {
+  border-bottom: none;
+  margin-bottom: 1rem;
+}
+.book-chapter-head {
+  text-align: center;
+  margin-bottom: 1.35rem;
+}
+.book-chapter-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin: 0 0 0.35rem;
+}
+.book-chapter-head h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.55rem;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.book-chapter-body p {
+  margin: 0 0 1rem;
+  line-height: 1.72;
+  color: var(--writing-ink, var(--ink));
+  font-size: 1.05rem;
+}
+.book-chapter-body p:last-child {
+  margin-bottom: 0;
+}
+.book-chapter-body .placeholder {
+  color: var(--muted);
+  font-style: italic;
+}
+
 /* Writing & project hero images */
 .writing-hero {
   margin: 0 0 1.5rem;
@@ -1653,10 +1730,12 @@ body.page-home .home-bubbles {
   justify-content: center;
 }
 
-body.page-home a.home-bubble {
+body.page-home a.home-bubble,
+body.page-home button.home-bubble {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.3rem;
   padding: 0.7rem 1.35rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.88);
@@ -1665,17 +1744,76 @@ body.page-home a.home-bubble {
   text-decoration: none;
   font-weight: 700;
   font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
 }
 
-body.page-home a.home-bubble:hover {
+body.page-home a.home-bubble:hover,
+body.page-home button.home-bubble:hover {
   background: rgba(255, 255, 255, 0.96);
   border-color: rgba(22, 101, 52, 0.22);
   box-shadow: 0 3px 10px rgba(22, 101, 52, 0.1);
   transform: translateY(-1px);
+}
+
+body.page-home .home-bubble-drop {
+  position: relative;
+}
+
+body.page-home button.home-bubble .chevron {
+  width: 12px;
+  height: 12px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.2;
+  transition: transform 0.2s;
+}
+
+body.page-home .home-bubble-drop.open button.home-bubble .chevron {
+  transform: rotate(180deg);
+}
+
+body.page-home .home-bubble-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  min-width: 12rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 0.35rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-6px);
+  transition: opacity 0.18s, transform 0.18s, visibility 0.18s;
+  z-index: 30;
+  text-align: left;
+}
+
+body.page-home .home-bubble-drop.open .home-bubble-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+body.page-home .home-bubble-menu a {
+  display: block;
+  padding: 0.55rem 0.85rem;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+body.page-home .home-bubble-menu a:hover {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
 }
 
 @media (max-width: 600px) {
@@ -1703,9 +1841,21 @@ body.page-home a.home-bubble:hover {
     margin: 0 auto;
   }
 
-  body.page-home a.home-bubble {
+  body.page-home a.home-bubble,
+  body.page-home button.home-bubble {
     width: 100%;
     box-sizing: border-box;
+  }
+
+  body.page-home .home-bubble-menu {
+    left: 0;
+    right: 0;
+    min-width: 0;
+    transform: translateY(-6px);
+  }
+
+  body.page-home .home-bubble-drop.open .home-bubble-menu {
+    transform: translateY(0);
   }
 }
 

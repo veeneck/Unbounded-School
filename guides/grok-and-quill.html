@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transcripts — Juliet | Unbounded School</title>
-  <link rel="stylesheet" href="../../styles.css">
+  <title>Grok &amp; Quill — Guides | Unbounded School</title>
+  <link rel="stylesheet" href="../styles.css">
       <!-- Fathom - beautiful, simple website analytics -->
       <script src="https://cdn.usefathom.com/script.js" data-site="FXWFKUXE" defer></script>
       <!-- / Fathom -->
@@ -12,19 +12,19 @@
 <body>
   <nav class="site-nav" id="site-nav" aria-label="Main">
     <div class="nav-inner">
-      <a class="nav-logo" href="../../index.html">
-        <img src="../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+      <a class="nav-logo" href="/index.html">
+        <img src="../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
         <span>Unbounded School</span>
       </a>
       <ul class="nav-links">
-        <li><a href="/schedule">Schedule</a></li>
+        <li><a href="/schedule.html">Schedule</a></li>
         <li class="nav-drop">
           <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
             Guides
             <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="nav-dropdown" role="menu">
-            <a href="/guides/grok-and-quill.html" role="menuitem">Grok &amp; Quill</a>
+            <a class="active" href="/guides/grok-and-quill.html" role="menuitem">Grok &amp; Quill</a>
             <a href="/guides/quarterly-coin.html" role="menuitem">Quarterly Coin</a>
           </div>
         </li>
@@ -35,7 +35,7 @@
           </button>
           <div class="nav-dropdown" role="menu">
             <a href="/students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
-            <a class="active" href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
+            <a href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
           </div>
         </li>
       </ul>
@@ -44,20 +44,63 @@
 
   <div class="page">
     <header>
-      <div class="hero-badge">Student Record</div>
-      <h1>Juliet’s Transcripts</h1>
-      <p class="subtitle">Progress, scores, reading, projects, and more.</p>
+      <div class="hero-badge">Guide</div>
+      <h1>Grok &amp; Quill</h1>
+      <p class="subtitle">A four-step guide. Content coming soon.</p>
     </header>
 
-    <section>
-      <div class="subject-card" style="text-align:center; padding:2.5rem 1.5rem;">
-        <p style="font-size:1.15rem; font-weight:650; margin:0 0 0.4rem; color:var(--ink);">Coming soon</p>
-        <p style="margin:0; color:var(--muted); font-size:0.95rem;">Juliet’s transcript will appear here as her work is added.</p>
+    <nav class="book-toc" aria-label="Table of contents">
+      <h2 class="book-toc-title">Contents</h2>
+      <ol class="book-toc-list">
+        <li><a href="#step-1">Step 1</a></li>
+        <li><a href="#step-2">Step 2</a></li>
+        <li><a href="#step-3">Step 3</a></li>
+        <li><a href="#step-4">Step 4</a></li>
+      </ol>
+    </nav>
+
+    <article class="book-chapter" id="step-1">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Step 1</p>
+        <h2>Step 1</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p class="placeholder">Content coming soon.</p>
       </div>
-    </section>
+    </article>
+
+    <article class="book-chapter" id="step-2">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Step 2</p>
+        <h2>Step 2</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p class="placeholder">Content coming soon.</p>
+      </div>
+    </article>
+
+    <article class="book-chapter" id="step-3">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Step 3</p>
+        <h2>Step 3</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p class="placeholder">Content coming soon.</p>
+      </div>
+    </article>
+
+    <article class="book-chapter" id="step-4">
+      <header class="book-chapter-head">
+        <p class="book-chapter-label">Step 4</p>
+        <h2>Step 4</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p class="placeholder">Content coming soon.</p>
+      </div>
+    </article>
 
     <footer>
-      Unbounded School · Juliet
+      Unbounded School · Guides
     </footer>
   </div>
 
@@ -71,7 +114,6 @@
       }
       window.addEventListener('scroll', updateNav, { passive: true });
       updateNav();
-
       document.querySelectorAll('.nav-drop').forEach(function (drop) {
         const btn = drop.querySelector('.nav-drop-btn');
         btn.addEventListener('click', function (e) {

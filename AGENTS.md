@@ -13,7 +13,7 @@ When the user says they pushed/changed something live, pull the live page before
 - Pure static site: HTML + shared `styles.css` + small page scripts
 - No build step, no framework
 - Design system: warm paper background, green accent, Fraunces (headings) + Source Sans 3 (body)
-- Shared chrome: sticky top nav (logo → home, Schedule, Students dropdown), section heads with icon + optional right-side dashboard links
+- Shared chrome: sticky top nav (logo → home, Schedule, Guides dropdown, Students dropdown), section heads with icon + optional right-side dashboard links
 - Max content width ~1056px (`.page`)
 
 ### Top-level pages
@@ -23,6 +23,7 @@ When the user says they pushed/changed something live, pull the live page before
 | `index.html` | Homepage: full-viewport hero, large logo, tagline, bubble links (no site nav) |
 | `schedule.html` | Daily schedule + year structure + tools |
 | `coop.html` | Local Colwich/Andale homeschool mailing list + Wufoo embed |
+| `guides/` | Instruction guides (dropdown in top nav + homepage bubble) |
 | `styles.css` | Global styles |
 | `Wufoo.css` | External theme for Wufoo forms (linked in Wufoo theme editor) |
 | `map/` | Simplemaps world map (`mapdata.js`, `worldmap.js`) used on transcripts |
@@ -55,9 +56,14 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Live may use pretty URLs without `.html`; local files are `.html`
 
 ### Nav
-- Standard nav: logo, Schedule, Students → Scarlett / Juliet
+- Standard nav: logo, Schedule, Guides → Grok & Quill / Quarterly Coin, Students → Scarlett / Juliet
 - **Do not** put Co-op in the main nav
-- Homepage (`page-home`) has no nav bar
+- Homepage (`page-home`) has no nav bar; bubbles: Schedule, Co-op, Guides (dropdown)
+
+### Guides (`guides/`)
+- Each guide: header (hero) → Contents TOC (same pattern as Adventure Back Then) → numbered step sections
+- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`
+- TOC + step section styles live in `styles.css` (`.book-toc`, `.book-chapter`)
 
 ### When editing
 1. Match existing patterns on the same page
@@ -82,7 +88,7 @@ Sections: Testing → Math → Reading & Writing → Projects → Science/SS
 
 ## Other pages
 - **Co-op:** numbered steps + Wufoo embed; theme via `Wufoo.css`
-- **Homepage:** large logo, tagline “A different take on education.”, bubble links
+- **Homepage:** large logo, tagline “A different take on education.”, bubble links (Schedule, Co-op, Guides)
 - **Analytics:** Fathom `FXWFKUXE` on every HTML page
 
 ---
@@ -95,5 +101,6 @@ Sections: Testing → Math → Reading & Writing → Projects → Science/SS
 | Look & components | `styles.css` |
 | Co-op / form | `coop.html` |
 | Schedule | `schedule.html` |
+| Guides | `guides/*.html` |
 | Report cards | `students/scarlett/reportcards/*.html` |
 | Map pins | `map/mapdata.js` |
