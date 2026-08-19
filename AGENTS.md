@@ -63,6 +63,7 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 ### Guides (`guides/`)
 - Each guide: header (hero) → Contents TOC (same pattern as Adventure Back Then) → numbered step sections
 - Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`
+- Hero images: `guides/hero/` (`grokquill.jpg`, `quarterlycoin.jpg`) — sit under the page header, above Contents
 - TOC + step section styles live in `styles.css` (`.book-toc`, `.book-chapter`)
 
 ### When editing
