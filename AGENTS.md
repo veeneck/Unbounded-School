@@ -41,6 +41,7 @@ hero/                     # Hero/thumbnail images for writing & projects
 testing/                  # MAP RIT chart images
 writing/4thgrade/         # Writing entry HTML pages
 projects/4thgrade/        # Project HTML + media (video, photos)
+projects/5thgrade/        # 5th-grade projects (summersale.html, …)
 reportcards/              # fall-2025, winter-2025, spring-2026
 juliet/
 transcripts.html          # Placeholder “coming soon”
@@ -108,9 +109,18 @@ Sections: Testing → Math → Reading & Writing → Projects → Science/SS
 
 - Grade switchers shared; `?grade=5th` / `?grade=4th` selects all sections
 - Progress cards with bars + 100% checkmarks
-- Lexia: score circles (accuracy grades, not % complete) — 16–18 on 4th, 19–21 on 5th
 - Project cards: thumbnail + title + category
-- Empty 5th content: “Nothing here yet, check back!”
+- Empty 5th writing still “Nothing here yet, check back!”
+- 5th projects: first card is **Summer Sale** (`projects/5thgrade/summersale.html`) — featured like Adventure Back Then. Hero `summersalehero.jpg`. Body photos: `.writing-inline` (money, text wraps) and `.writing-figure` (full-width: yardsign, chalk). Replace placeholder copy with Scarlett’s words.
+
+**Lexia Core5 circles** (`.lexia-circle`) — 16–18 on 4th, 19–21 on 5th:
+- The **number inside** the circle is an **accuracy grade**, never lesson % complete. Leave `—` until a test score exists
+- **Fill** (green, from the bottom) = lessons done on that level. Set `--lexia-pct` on the circle, e.g. `style="--lexia-pct:21%"`, and class `is-progress`
+- Finished levels: class `is-done`, full green gradient, accuracy % in the text (e.g. 95%)
+- Not started: class `is-todo`, dashed empty circle, `—`
+- Caption: “Accuracy grades, not % complete · fill = lessons done”
+
+**Current 5th (Aug 2026):** Khan Academy Math 32%. Lexia 19 in progress at 21% fill, 20–21 not started. Books Read includes Magic Tree House Books 1–4 (flat cover `books/treehouse4.jpg`, title without “boxed set”).
 
 ---
 

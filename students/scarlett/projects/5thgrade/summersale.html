@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/unbounded-logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#166534">
+  <meta name="apple-mobile-web-app-title" content="Unbounded School">
+  <meta name="application-name" content="Unbounded School">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Summer Sale — Projects | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+      <!-- Fathom - beautiful, simple website analytics -->
+      <script src="https://cdn.usefathom.com/script.js" data-site="FXWFKUXE" defer></script>
+      <!-- / Fathom -->
+</head>
+<body>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/index.html">
+        <img src="../../../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/schedule.html">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Guides
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/guides/grok-and-quill.html" role="menuitem">Grok &amp; Quill</a>
+            <a href="/guides/quarterly-coin.html" role="menuitem">Quarterly Coin</a>
+            <a href="/guides/travel-crier.html" role="menuitem">Travel Crier</a>
+            <a href="/guides/info-quest.html" role="menuitem">Info Quest</a>
+            <a href="/guides/bakers-guild.html" role="menuitem">Bakers Guild</a>
+          </div>
+        </li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
+            <a href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+    <a class="nav-back" href="/students/scarlett/transcripts.html">← Back to Scarlett’s Transcripts</a>
+
+    <header>
+      <div class="hero-badge">Project</div>
+      <h1>Summer Sale</h1>
+      <p class="subtitle">Scarlett’s first 5th-grade project.</p>
+    </header>
+
+    <div class="writing-hero">
+      <img src="summersalehero.jpg" alt="Summer Sale">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <figure class="writing-inline">
+          <img src="summersalemoney.jpg" alt="Counting money from the summer sale">
+          <figcaption>Counting the take.</figcaption>
+        </figure>
+        <p>Placeholder: This is where Scarlett’s summer sale story will go. For now this text is just here to try the photos — the money picture should sit to the right, with words wrapping around it.</p>
+        <p>Placeholder: We set up in the garage, put out tables, and people came by. Some bought toys, some bought clothes, and some just wanted a cup of blue punch. It was busy and a little loud, and we kept a running count of cash and coins on the table.</p>
+        <figure class="writing-figure">
+          <img src="summersaleyardsign.jpg" alt="Kids holding letters that spell YOU GOT THIS">
+          <figcaption>You got this.</figcaption>
+        </figure>
+        <p>Placeholder: Friends helped too. We stood in the yard with signs and wrote on the driveway so people would know they could do this — the sale, the day, all of it.</p>
+        <figure class="writing-figure">
+          <img src="summersalechalk.jpg" alt="Kids in the driveway with YOU CAN DO THIS written in chalk">
+          <figcaption>You can do this.</figcaption>
+        </figure>
+        <p>Placeholder: When it slowed down we stacked the bills, sorted the change, and added it up. Next pass we’ll swap all of this for Scarlett’s real words.</p>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Projects
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

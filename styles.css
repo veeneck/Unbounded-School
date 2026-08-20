@@ -1638,6 +1638,59 @@ a.project-card.is-link:hover {
   line-height: 1.62;
 }
 
+.writing-body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Inline photo: text wraps beside it */
+.writing-inline {
+  float: right;
+  width: min(48%, 20rem);
+  margin: 0.15rem 0 1rem 1.25rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #f5f5f4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.writing-inline img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.writing-inline figcaption,
+.writing-figure figcaption {
+  font-size: 0.82rem;
+  color: var(--muted);
+  padding: 0.4rem 0.7rem 0.5rem;
+  line-height: 1.4;
+}
+
+/* Full-width photo in the piece */
+.writing-figure {
+  margin: 0 0 1.35rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #f5f5f4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.writing-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .writing-inline {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.15rem;
+  }
+}
+
 /* Transcripts mobile polish */
 @media (max-width: 900px) {
   .page-transcripts .page {
@@ -2349,6 +2402,22 @@ body.page-home .home-bubble-menu a:hover {
   border-color: #e7e5e4;
   border-style: dashed;
   color: #a8a29e;
+}
+
+.lexia-level.is-progress .lexia-circle {
+  background: linear-gradient(
+    to top,
+    #bbf7d0 0%,
+    #dcfce7 var(--lexia-pct, 0%),
+    #fff var(--lexia-pct, 0%)
+  );
+  border-color: #86efac;
+  color: var(--accent-dark);
+  box-shadow: 0 1px 3px rgba(22, 101, 52, 0.1);
+}
+
+.lexia-level.is-progress .lexia-num {
+  color: var(--accent-dark);
 }
 
 .lexia-num {
