@@ -57,7 +57,7 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Live may use pretty URLs without `.html`; local files are `.html`
 
 ### Nav
-- Standard nav: logo, Schedule, Guides → Grok & Quill / Quarterly Coin, Students → Scarlett / Juliet
+- Standard nav: logo, Schedule, Guides → Grok & Quill / Quarterly Coin / Travel Crier / Info Quest / Bakers Guild, Students → Scarlett / Juliet
 - **Do not** put Co-op in the main nav
 - Homepage (`page-home`) has no nav bar; bubbles: Schedule, Co-op, Guides (dropdown)
 
@@ -68,8 +68,8 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Voice: short, friendly, readable for a ~10-year-old. Same facts, less lecture
 - Copyable instruction boxes: `.guide-copy` + Copy button (`.guide-copy-btn[data-copy]`)
 - Shared styles in `styles.css`: `.book-toc`, `.book-chapter`, `.guide-tag`, `.guide-copy`, `.guide-tips`
-- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`
-- Heroes: `guides/hero/grokquill.jpg`, `guides/hero/quarterlycoin.jpg`
+- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`, `guides/travel-crier.html`, `guides/info-quest.html`, `guides/bakers-guild.html`
+- Heroes: `guides/hero/` — `grokquill.jpg`, `quarterlycoin.jpg`, `travelcrier.jpg`, `infoquest.jpg`, `bakersguild.jpg`
 - Watch placeholders: `.guide-video` (“Video coming soon”) until a real video is dropped in
 - Quiz/discussion: same white `.guide-tips` cards as the Grok & Quill writing tips, under a `Questions` tag — talk with a parent, not a scored test
 
@@ -90,6 +90,8 @@ Do not put the full Day 1–5 project-instruction text in new prompts — it alr
 2–7. Watch — What Is Income / Debt / a Loan / a Bond / a Stock / a Dividend. Short kid-facing blurb + video placeholder
 8. Task — Update the Spreadsheet with this quarter’s real numbers (with a parent; no guessing)
 9. Questions — Talk It Over: 10 discussion questions (investment income source; bond vs stock; income; debt vs loan; interest; why buy a stock; bond tradeoff; dividend; spend/save/earn this quarter; $100 extra)
+
+**Travel Crier / Info Quest / Bakers Guild** — quest shells (hero + Setup “Get Ready” only so far). Travel = maps/places you go. Info = hunt for true answers. Bakers = kitchen/recipes with a parent. Fill like Quarterly Coin when content is ready.
 
 ### When editing
 1. Match existing patterns on the same page
