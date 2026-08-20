@@ -68,8 +68,10 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Voice: short, friendly, readable for a ~10-year-old. Same facts, less lecture
 - Copyable instruction boxes: `.guide-copy` + Copy button (`.guide-copy-btn[data-copy]`)
 - Shared styles in `styles.css`: `.book-toc`, `.book-chapter`, `.guide-tag`, `.guide-copy`, `.guide-tips`
-- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html` (still a blank shell)
+- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`
 - Heroes: `guides/hero/grokquill.jpg`, `guides/hero/quarterlycoin.jpg`
+- Watch placeholders: `.guide-video` (“Video coming soon”) until a real video is dropped in
+- Quiz/discussion: same white `.guide-tips` cards as the Grok & Quill writing tips, under a `Questions` tag — talk with a parent, not a scored test
 
 **Grok & Quill** — writing coach cycle (5th grade). Six sections:
 
@@ -81,6 +83,13 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 6. Task — Post to Your Blog: parent helps publish the finished piece on Unbounded School writing pages. Same Grok project for the next piece
 
 Do not put the full Day 1–5 project-instruction text in new prompts — it already lives in the project. Keep those two short copy boxes.
+
+**Quarterly Coin** — once-a-quarter look at Scarlett’s real finances (budgeting + investing). Numbers app spreadsheet (parent knows where it lives). Nine sections:
+
+1. Setup — Open the Spreadsheet: Numbers app → find Quarterly Coin sheet → confirm it opens. Real money, not play money
+2–7. Watch — What Is Income / Debt / a Loan / a Bond / a Stock / a Dividend. Short kid-facing blurb + video placeholder
+8. Task — Update the Spreadsheet with this quarter’s real numbers (with a parent; no guessing)
+9. Questions — Talk It Over: 10 discussion questions (investment income source; bond vs stock; income; debt vs loan; interest; why buy a stock; bond tradeoff; dividend; spend/save/earn this quarter; $100 extra)
 
 ### When editing
 1. Match existing patterns on the same page
