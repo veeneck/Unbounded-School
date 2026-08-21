@@ -79,17 +79,21 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             <span>Homeschool Boss</span>
           </a>
+          <div class="dash-drop">
+            <button type="button" class="dash-link" aria-expanded="false" aria-haspopup="true">
+              <span>Report Cards</span>
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="dash-menu" role="menu">
+              <a href="reportcards/spring-2026.html" role="menuitem">Spring 2026</a>
+              <a href="reportcards/winter-2025.html" role="menuitem">Winter 2025</a>
+              <a href="reportcards/fall-2025.html" role="menuitem">Fall 2025</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="grade-switcher score-tabs" role="tablist" aria-label="Select score view">
-        <button type="button" class="active" data-score="math" role="tab" aria-selected="true">Math</button>
-        <button type="button" data-score="reading" role="tab" aria-selected="false">Reading</button>
-        <button type="button" data-score="language" role="tab" aria-selected="false">Language</button>
-        <button type="button" data-score="science" role="tab" aria-selected="false">Science</button>
-        <button type="button" data-score="all" role="tab" aria-selected="false">All</button>
-      </div>
-
+      <div class="score-stage">
       <div class="score-panel active" id="score-math" data-score="math">
         <div class="score-chart-wrap">
           <img src="testing/mathrit.png" alt="MAP Math RIT score history" loading="lazy">
@@ -226,11 +230,15 @@
         </div>
       </div>
 
-            <div class="pill-row" style="margin-top:1rem;">
-        <a class="pill-link pill-tan" href="reportcards/spring-2026.html">Spring 2026 Report Card</a>
-        <a class="pill-link pill-tan" href="reportcards/winter-2025.html">Winter 2025 Report Card</a>
-        <a class="pill-link pill-tan" href="reportcards/fall-2025.html">Fall 2025 Report Card</a>
+      <div class="grade-switcher score-tabs" role="tablist" aria-label="Select score view">
+        <button type="button" class="active" data-score="math" role="tab" aria-selected="true">Math</button>
+        <button type="button" data-score="reading" role="tab" aria-selected="false">Reading</button>
+        <button type="button" data-score="language" role="tab" aria-selected="false">Language</button>
+        <button type="button" data-score="science" role="tab" aria-selected="false">Science</button>
+        <button type="button" data-score="all" role="tab" aria-selected="false">All</button>
       </div>
+      </div>
+
     </section>
       </div>
     </div>
@@ -768,6 +776,28 @@
         document.querySelectorAll('.nav-drop').forEach(function (drop) {
           drop.classList.remove('open');
           drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+        document.querySelectorAll('.dash-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          var b = drop.querySelector('.dash-link');
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      document.querySelectorAll('.dash-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.dash-link');
+        if (!btn) return;
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.dash-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              var ob = other.querySelector('.dash-link');
+              if (ob) ob.setAttribute('aria-expanded', 'false');
+            }
+          });
         });
       });
 

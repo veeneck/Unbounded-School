@@ -108,9 +108,9 @@ Sections: Testing → Math → Reading & Writing → Projects → Science/SS
 (Travel + map stay outside grade panels.)
 
 - One page-level grade switcher sits under Testing/report cards (`.grade-sticky#grade-sticky`). It sticks to the top as a header while you scroll Math → Travel. **No per-section 4th/5th switchers.**
-- Testing + report cards sit in a **full-width white band** (`.transcripts-lead`). Report-card pills use `.pill-tan` (paper `--bg` on white). Score tabs / dash links also tan so they don’t disappear on white
+- Testing + report cards sit in a **full-width white band** (`.transcripts-lead`). Report cards: custom `.dash-drop` pill beside Homeschool Boss (same `.dash-link` style). Label **Report Cards**; click opens Spring/Winter/Fall. Score tabs / dash links tan so they don’t disappear on white
 - Grade bar is the **subheader of the paper section below**: full viewport width, larger kicker (`Scarlett · 4th Grade` / `5th Grade`). Inner row stays the ~1056px column. `?grade=` still selects all `.grade-panel`s
-- Testing score tabs (Math/Reading/Language/Science/All) are separate and stay in that section
+- Testing score tabs (Math/Reading/Language/Science/All) sit **under** the graph in `.score-stage`, same width as the chart, equal-width buttons (graph controls). Separate from the 4th/5th grade bar.
 - Motion: only progress bars fill from the left as their card scrolls into view (`.js-motion` + `.is-in`). No fade-ins. Off if `prefers-reduced-motion`. Re-observe after grade switch.
 - Progress cards with bars + 100% checkmarks
 - Project cards: thumbnail + title + category
