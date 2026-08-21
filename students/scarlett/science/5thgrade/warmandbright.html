@@ -63,9 +63,8 @@
       <p class="subtitle">Chemistry</p>
     </header>
 
-    <div class="writing-hero writing-hero-pending">
-      <img src="warmandbrighthero.jpg" alt="Warm and Bright" onerror="this.remove()">
-      <p class="writing-hero-pending-label">Photo coming soon</p>
+    <div class="writing-hero">
+      <img src="warmbrighthero.jpg" alt="Warm and Bright">
     </div>
 
     <section>
@@ -77,22 +76,69 @@
       </div>
       <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
         <p>A <a href="https://www.homesciencetools.com/product/warm-and-bright-curriculum-science-unlocked/" target="_blank" rel="noopener">Science Unlocked kit, Warm and Bright</a>, about thermal energy — heat, how it moves, and how to keep it in or let it out.</p>
-        <figure class="writing-figure writing-figure-pending">
-          <img src="warmandbright-1.jpg" alt="" onerror="this.remove()">
-          <figcaption>Photo coming soon.</figcaption>
-        </figure>
-        <ol class="kit-list">
-          <li>Keep a balloon from popping with water.</li>
-          <li>Test which materials move heat.</li>
-          <li>Design and build a drink insulator.</li>
-          <li>Use food coloring to see how heat works at the particle level.</li>
-        </ol>
-        <figure class="writing-figure writing-figure-pending">
-          <img src="warmandbright-2.jpg" alt="" onerror="this.remove()">
-          <figcaption>Photo coming soon.</figcaption>
-        </figure>
       </div>
     </section>
+
+    <nav class="book-toc" aria-label="Experiments">
+      <h2 class="book-toc-title">Experiments</h2>
+      <ol class="book-toc-list">
+        <li><a href="#exp-1">Keep a balloon from popping with water</a></li>
+        <li><a href="#exp-2">Test which materials move heat</a></li>
+        <li><a href="#exp-3">Design and build a drink insulator</a></li>
+        <li><a href="#exp-4">Use food coloring to see how heat works at the particle level</a></li>
+      </ol>
+    </nav>
+
+    <article class="kit-experiment" id="exp-1">
+      <p class="kit-experiment-label">Experiment 1</p>
+      <h2>Keep a balloon from popping with water</h2>
+      <p>A little water in the balloon takes the heat, so the rubber doesn’t pop when the flame touches it.</p>
+      <div class="kit-media">
+        <figure>
+          <img src="warmbright1A.jpg" alt="Holding a green balloon next to a candle on a tray">
+        </figure>
+        <figure>
+          <img src="warmbright1D.jpg" alt="Lighting the candle on the tray">
+        </figure>
+        <figure>
+          <img src="warmbirght1C.jpg" alt="Blowing up a red balloon">
+        </figure>
+        <figure class="kit-clip" data-src="warmbright1B.MOV">
+          <img src="warmbright1B.jpg" alt="Holding a green balloon over a lit tea light">
+          <button type="button" class="kit-play" aria-label="Play video">
+            <span class="kit-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </button>
+        </figure>
+        <figure class="kit-clip" data-src="warmbright1E.mov">
+          <img src="warmbright1E.jpg" alt="Pressing a red balloon onto a tea light">
+          <button type="button" class="kit-play" aria-label="Play video">
+            <span class="kit-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </button>
+        </figure>
+      </div>
+    </article>
+
+    <article class="kit-experiment" id="exp-2">
+      <p class="kit-experiment-label">Experiment 2</p>
+      <h2>Test which materials move heat</h2>
+      <p>Test which materials move heat.</p>
+    </article>
+
+    <article class="kit-experiment" id="exp-3">
+      <p class="kit-experiment-label">Experiment 3</p>
+      <h2>Design and build a drink insulator</h2>
+      <p>Design and build a drink insulator.</p>
+    </article>
+
+    <article class="kit-experiment" id="exp-4">
+      <p class="kit-experiment-label">Experiment 4</p>
+      <h2>Use food coloring to see how heat works at the particle level</h2>
+      <p>Use food coloring to see how heat works at the particle level.</p>
+    </article>
 
     <footer>
       Unbounded School · Science
@@ -130,6 +176,28 @@
         document.querySelectorAll('.nav-drop').forEach(function (drop) {
           drop.classList.remove('open');
           drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+      document.querySelectorAll('.kit-clip').forEach(function (clip) {
+        clip.addEventListener('click', function () {
+          if (clip.classList.contains('is-playing')) return;
+          var src = clip.getAttribute('data-src');
+          if (!src) return;
+          var video = document.createElement('video');
+          video.controls = true;
+          video.playsInline = true;
+          video.autoplay = true;
+          var mp4 = document.createElement('source');
+          mp4.src = src;
+          mp4.type = 'video/mp4';
+          var qt = document.createElement('source');
+          qt.src = src;
+          qt.type = 'video/quicktime';
+          video.appendChild(mp4);
+          video.appendChild(qt);
+          clip.classList.add('is-playing');
+          clip.replaceChildren(video);
+          video.play().catch(function () {});
         });
       });
     })();

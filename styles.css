@@ -2827,6 +2827,128 @@ a.project-card.is-link:hover {
   background: #24150e;
 }
 
+.page-writing .kit-experiment {
+  margin: 0 0 2.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--ink);
+}
+
+.page-writing .kit-experiment:last-of-type {
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.page-writing .kit-experiment-label {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brown);
+  margin: 0 0 0.25rem;
+}
+
+.page-writing .kit-experiment h2 {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  margin: 0 0 0.65rem;
+}
+
+.page-writing .kit-experiment > p {
+  margin: 0 0 1rem;
+  color: var(--writing-ink);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.kit-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.kit-media figure {
+  position: relative;
+  margin: 0;
+  flex: 1 1 calc((100% - 1rem) / 3);
+  min-width: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  box-shadow: 2px 2px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  line-height: 0;
+}
+
+.kit-media:has(> :nth-child(4):last-child) figure {
+  flex-basis: calc((100% - 0.5rem) / 2);
+}
+
+.kit-media img,
+.kit-media video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kit-media .kit-clip.is-playing video {
+  background: #24150e;
+}
+
+.kit-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: color-mix(in srgb, #24150e 22%, transparent);
+  cursor: pointer;
+}
+
+.kit-play:hover,
+.kit-play:focus-visible {
+  background: color-mix(in srgb, #24150e 34%, transparent);
+}
+
+.kit-play:focus-visible {
+  outline: 2px solid var(--brown);
+  outline-offset: -3px;
+}
+
+.kit-play-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+  border: 1px solid var(--ink);
+  background: color-mix(in srgb, var(--brown) 92%, #000);
+  box-shadow: 2px 2px 0 color-mix(in srgb, var(--ink) 22%, transparent);
+}
+
+.kit-play-icon svg {
+  display: block;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-left: 0.12rem;
+  fill: #f4eadc;
+}
+
+@media (max-width: 700px) {
+  .kit-media figure {
+    flex-basis: calc((100% - 0.5rem) / 2);
+  }
+}
+
 .page-writing .art-item {
   background: color-mix(in srgb, var(--bg) 35%, #fff);
   border: 1px solid var(--ink);
@@ -3025,20 +3147,23 @@ a.project-card.is-link:hover {
   font-size: 0.78rem;
 }
 
-.page-guide .book-toc {
+.page-guide .book-toc,
+.page-writing .book-toc {
   background: color-mix(in srgb, var(--bg) 35%, #fff);
   border: 1px solid var(--ink);
   border-radius: 0;
   box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
 }
 
-.page-guide .book-toc-title {
+.page-guide .book-toc-title,
+.page-writing .book-toc-title {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-size: 1.05rem;
 }
 
-.page-guide .book-toc-list a {
+.page-guide .book-toc-list a,
+.page-writing .book-toc-list a {
   color: var(--brown);
   font-family: "Fraunces", Georgia, "Times New Roman", serif;
 }
