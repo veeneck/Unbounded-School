@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Great+Vibes&family=Source+Sans+3:wght@400;600;700&display=swap");
 
 /* Unbounded School — shared styles */
 
 :root {
   --ink: #1c1917;
+  --brown: #24150e;
   --writing-ink: #3c3834;
   --muted: #57534e;
-  --bg: #f7f5f2;
+  --bg: #ede4d7;
   --card: #ffffff;
   --accent: #166534;
   --accent-dark: #14532d;
@@ -17,6 +18,7 @@
   --warm-border: #fde68a;
   --blue-soft: #e0f2fe;
   --nav-height: 64px;
+  --bg-end-space: max(5rem, 12vw);
 }
 
 * {
@@ -29,17 +31,34 @@ body {
   font-family: "Source Sans 3", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg);
   background-image:
-    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(22, 101, 52, 0.07), transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(2, 132, 199, 0.05), transparent 40%),
-    radial-gradient(circle at 0% 80%, rgba(124, 58, 237, 0.04), transparent 35%),
-    url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23166534' fill-opacity='0.035'%3E%3Ccircle cx='2' cy='2' r='1.2'/%3E%3C/g%3E%3C/svg%3E");
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 18%,
+      color-mix(in srgb, var(--bg) 55%, transparent) 52%,
+      var(--bg) 100%
+    ),
+    url("subtlebg.jpg"),
+    linear-gradient(
+      to bottom,
+      var(--bg) 0%,
+      color-mix(in srgb, var(--bg) 55%, transparent) 48%,
+      transparent 82%,
+      transparent 100%
+    ),
+    url("subtlebgend.jpg");
+  background-repeat: no-repeat;
+  background-position: top center, top center, bottom center, bottom center;
+  background-size: 100% 56.25vw, 100% auto, 100% 56.25vw, 100% auto;
   color: var(--ink);
   line-height: 1.55;
   font-size: 16.5px;
   min-height: 100vh;
 }
 
-/* ========== Site nav (sticky then fade) ========== */
+/* ========== Site nav (sticky then fade) ==========
+   NEWSPAPER THEME EXPERIMENT — revert this block to the
+   frosted-paper + green-pill nav if it doesn’t stick. */
 .site-nav {
   position: fixed;
   top: 0;
@@ -51,10 +70,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.25rem;
-  background: rgba(247, 245, 242, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  background: var(--brown);
+  border-bottom: 1px solid var(--bg);
+  box-shadow: 0 3px 0 var(--brown), 0 4px 0 var(--bg);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
   will-change: transform, opacity;
 }
@@ -79,10 +97,11 @@ body {
   align-items: center;
   gap: 0.65rem;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--bg);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
   font-weight: 700;
   font-size: 0.95rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.04em;
   height: 42px;
   line-height: 1;
   box-sizing: border-box;
@@ -93,12 +112,13 @@ body {
   width: auto;
   display: block;
   flex-shrink: 0;
+  filter: invert(1);
 }
 
 .nav-logo span {
   display: none;
   line-height: 1;
-  transform: translateY(0.5px); /* optical align with mark */
+  transform: translateY(0.5px);
 }
 
 @media (min-width: 520px) {
@@ -110,7 +130,7 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.7rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -121,27 +141,32 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 
-.nav-links a,
+.nav-links > li > a,
 .nav-links button.nav-drop-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
-  height: 36px;
-  padding: 0 0.85rem;
-  font-size: 0.9rem;
-  font-weight: 600;
+  gap: 0.35rem;
+  height: auto;
+  min-height: 1.7rem;
+  padding: 0.22rem 0.65rem;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.68rem;
+  font-weight: 700;
   line-height: 1;
-  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bg);
   text-decoration: none;
   background: transparent;
-  border: none;
-  border-radius: 8px;
+  border: 1px solid var(--bg);
+  outline: 1px solid var(--bg);
+  outline-offset: 2px;
+  border-radius: 0;
   cursor: pointer;
-  font-family: inherit;
   box-sizing: border-box;
   appearance: none;
   -webkit-appearance: none;
@@ -150,22 +175,22 @@ body {
   transition: color 0.15s, background 0.15s;
 }
 
-.nav-links a:hover,
+.nav-links > li > a:hover,
 .nav-links button.nav-drop-btn:hover,
-.nav-links a:focus-visible,
-.nav-links button.nav-drop-btn:focus-visible {
-  color: var(--ink);
-  background: rgba(0, 0, 0, 0.04);
-}
-
-.nav-links a.active {
-  color: var(--accent-dark);
-  background: var(--accent-soft);
+.nav-links > li > a:focus-visible,
+.nav-links button.nav-drop-btn:focus-visible,
+.nav-drop.open .nav-drop-btn,
+.nav-links > li > a.active {
+  color: var(--brown);
+  background: var(--bg);
+  border-color: var(--bg);
 }
 
 .nav-drop-btn .chevron {
-  width: 12px;
-  height: 12px;
+  width: 0.75em;
+  height: 0.75em;
+  display: block;
+  flex-shrink: 0;
   stroke: currentColor;
   fill: none;
   stroke-width: 2.2;
@@ -178,14 +203,14 @@ body {
 
 .nav-dropdown {
   position: absolute;
-  top: calc(100% + 6px);
+  top: calc(100% + 10px);
   right: 0;
   min-width: 180px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  padding: 0.35rem;
+  background: var(--bg);
+  border: 1px solid var(--brown);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 var(--brown);
+  padding: 0.2rem 0;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-6px);
@@ -201,25 +226,31 @@ body {
 
 .nav-dropdown a {
   display: block;
-  padding: 0.55rem 0.85rem;
-  border-radius: 7px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--ink);
+  padding: 0.55rem 0.95rem;
+  border-radius: 0;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--brown);
   text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--brown) 18%, transparent);
+}
+
+.nav-dropdown a:last-child {
+  border-bottom: 0;
 }
 
 .nav-dropdown a:hover,
 .nav-dropdown a.active {
-  background: var(--accent-soft);
-  color: var(--accent-dark);
+  background: var(--brown);
+  color: var(--bg);
 }
 
 /* Layout shell */
 .page {
   max-width: 1056px;
   margin: 0 auto;
-  padding: calc(var(--nav-height) + 1.25rem) 1.25rem 3.5rem;
+  padding: calc(var(--nav-height) + 1.25rem) 1.25rem calc(2rem + var(--bg-end-space));
 }
 
 /* Header / hero */
@@ -818,6 +849,7 @@ body.page-transcripts .page {
   background: #fff;
   margin-top: 3.25rem;
   padding: 2.15rem 0 1.75rem;
+  margin-bottom: var(--bg-end-space);
   border-top: 1px solid var(--border);
 }
 
@@ -2187,6 +2219,183 @@ a.project-card.is-link:hover {
   }
 }
 
+/* ========== Schedule newspaper theme (experiment — this page only) ========== */
+.page-schedule header {
+  text-align: center;
+  margin-bottom: 2.75rem;
+  padding: 0.15rem 0 1.15rem;
+  border-bottom: 3px double var(--ink);
+}
+
+.page-schedule .hero-badge {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: var(--ink);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  padding: 0.25rem 0 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+.page-schedule header h1 {
+  font-family: "Great Vibes", "Palatino", cursive;
+  font-weight: 400;
+  font-size: clamp(3.4rem, 12vw, 5.25rem);
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.page-schedule header .subtitle {
+  max-width: 36em;
+  font-size: 0.98rem;
+  font-style: italic;
+}
+
+.page-schedule .section-head {
+  border-bottom: 1px solid var(--ink);
+  gap: 0.75rem;
+}
+
+.page-schedule .section-head::after {
+  display: none;
+}
+
+.page-schedule .section-head .icon-wrap {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid var(--ink);
+  box-shadow: none;
+}
+
+.page-schedule .section-head .icon-wrap svg {
+  width: 15px;
+  height: 15px;
+  stroke: var(--ink);
+}
+
+.page-schedule .section-head h2 {
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.page-schedule .daily,
+.page-schedule .season,
+.page-schedule .subject-card {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+.page-schedule .daily {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  overflow: hidden;
+}
+
+.page-schedule .daily-row {
+  display: contents;
+}
+
+.page-schedule .daily-row .time,
+.page-schedule .daily-row .activity {
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
+}
+
+.page-schedule .daily-row:last-child .time,
+.page-schedule .daily-row:last-child .activity {
+  border-bottom: none;
+}
+
+.page-schedule .daily-row .time {
+  background: color-mix(in srgb, var(--ink) 8%, var(--bg));
+  color: var(--ink);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.page-schedule .season {
+  overflow: hidden;
+}
+
+.page-schedule .season.core,
+.page-schedule .season.expand,
+.page-schedule .season.rest,
+.page-schedule .season.ramp {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+}
+
+.page-schedule .season::before {
+  height: 3px;
+}
+
+.page-schedule .season.core::before { background: #1a3c2a; }
+.page-schedule .season.expand::before { background: #1e3a5f; }
+.page-schedule .season.rest::before { background: #8a6a2f; }
+.page-schedule .season.ramp::before { background: #6b2d2d; }
+
+.page-schedule .season .period {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.12em;
+}
+
+.page-schedule .season h3 {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+.page-schedule .season li::before {
+  color: var(--ink);
+  content: "–";
+}
+
+.page-schedule .subject-card h3 {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+.page-schedule .tag {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.5rem;
+}
+
+.page-schedule .tag.muted {
+  background: transparent;
+  color: var(--muted);
+  border-color: color-mix(in srgb, var(--ink) 32%, transparent);
+}
+
+.page-schedule .note-box,
+.page-schedule .note-box.warm {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  border: 1px dashed var(--ink);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.page-schedule footer {
+  border-top: 3px double var(--ink);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+}
+
 /* Schedule: brief labels on mobile, full on larger screens */
 .activity-brief {
   display: none;
@@ -2265,7 +2474,8 @@ body.page-home .home-tagline {
 body.page-home .home-bubbles {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
+  align-items: stretch;
+  gap: 0.7rem 0.85rem;
   justify-content: center;
 }
 
@@ -2274,38 +2484,57 @@ body.page-home button.home-bubble {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
-  padding: 0.7rem 1.35rem;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  color: var(--accent-dark);
-  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+  gap: 0.4rem;
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0.55rem 1.15rem;
+  border-radius: 0;
+  background: color-mix(in srgb, var(--bg) 62%, transparent);
+  color: var(--brown);
+  border: 1px solid var(--brown);
+  outline: 1px solid var(--brown);
+  outline-offset: 3px;
   text-decoration: none;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
   font-weight: 700;
-  font-size: 0.95rem;
-  font-family: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 0 1px 2px rgba(28, 25, 23, 0.04);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
 body.page-home a.home-bubble:hover,
-body.page-home button.home-bubble:hover {
-  background: color-mix(in srgb, var(--bg) 96%, transparent);
-  border-color: color-mix(in srgb, var(--ink) 16%, transparent);
-  box-shadow: 0 3px 10px rgba(28, 25, 23, 0.07);
-  transform: translateY(-1px);
+body.page-home button.home-bubble:hover,
+body.page-home .home-bubble-drop.open button.home-bubble {
+  background: var(--brown);
+  color: var(--bg);
+  transform: none;
+  box-shadow: none;
+  border-color: var(--brown);
 }
 
 body.page-home .home-bubble-drop {
   position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+body.page-home .home-bubble-drop > button.home-bubble {
+  height: 100%;
 }
 
 body.page-home button.home-bubble .chevron {
-  width: 12px;
-  height: 12px;
+  width: 0.75em;
+  height: 0.75em;
+  display: block;
+  flex-shrink: 0;
   stroke: currentColor;
   fill: none;
   stroke-width: 2.2;
@@ -2318,14 +2547,14 @@ body.page-home .home-bubble-drop.open button.home-bubble .chevron {
 
 body.page-home .home-bubble-menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 12px);
   left: 50%;
-  min-width: 12rem;
+  min-width: 13rem;
   background: var(--bg);
-  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  padding: 0.35rem;
+  border: 1px solid var(--brown);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 var(--brown);
+  padding: 0.2rem 0;
   opacity: 0;
   visibility: hidden;
   transform: translateX(-50%) translateY(-6px);
@@ -2342,17 +2571,23 @@ body.page-home .home-bubble-drop.open .home-bubble-menu {
 
 body.page-home .home-bubble-menu a {
   display: block;
-  padding: 0.55rem 0.85rem;
-  border-radius: 7px;
-  font-size: 0.9rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 0;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--brown);
   text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--brown) 18%, transparent);
+}
+
+body.page-home .home-bubble-menu a:last-child {
+  border-bottom: 0;
 }
 
 body.page-home .home-bubble-menu a:hover {
-  background: var(--accent-soft);
-  color: var(--accent-dark);
+  background: var(--brown);
+  color: var(--bg);
 }
 
 @media (max-width: 600px) {

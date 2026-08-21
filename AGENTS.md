@@ -12,7 +12,7 @@ When the user says they pushed/changed something live, pull the live page before
 
 - Pure static site: HTML + shared `styles.css` + small page scripts
 - No build step, no framework
-- Design system: warm paper background, green accent, Fraunces (headings) + Source Sans 3 (body)
+- Design system: warm paper background (`--bg` `#ede4d7`, sampled from `subtlebg.jpg`), near-black brown (`--brown` `#24150e`) for nav/home buttons, green accent, Fraunces (headings) + Source Sans 3 (body). Content pages show `subtlebg.jpg` at the top and `subtlebgend.jpg` at the bottom, each fading into solid `--bg`. Extra bottom space (`--bg-end-space`) keeps content off the end flourish. Homepage uses `wallpaper.jpg` instead.
 - Shared chrome: sticky top nav (logo → home, Schedule, Guides dropdown, Students dropdown), section heads with icon + optional right-side dashboard links
 - Max content width ~1056px (`.page`)
 
@@ -21,10 +21,13 @@ When the user says they pushed/changed something live, pull the live page before
 | Path | Role |
 |------|------|
 | `index.html` | Homepage: full-viewport hero, large logo, tagline, bubble links (no site nav) |
-| `schedule.html` | Daily schedule + year structure + tools |
+| `schedule.html` | Daily schedule + year structure + tools. **Theme experiment:** newspaper / Hogwarts-parchment look scoped to `body.page-schedule` in `styles.css`. Refine here before rolling site-wide. |
 | `coop.html` | Local Colwich/Andale homeschool mailing list + Wufoo embed |
 | `guides/` | Instruction guides (dropdown in top nav + homepage bubble) |
 | `styles.css` | Global styles |
+| `subtlebg.jpg` | Aged-paper texture at the **top** of content pages (fades down to `--bg`) |
+| `subtlebgend.jpg` | Flourish texture at the **bottom** of content pages (fades up to `--bg`) |
+| `wallpaper.jpg` | Homepage full-viewport background |
 | `Wufoo.css` | External theme for Wufoo forms (linked in Wufoo theme editor) |
 | `map/` | Simplemaps world map (`mapdata.js`, `worldmap.js`) used on transcripts |
 | `unbounded-logo.svg` / `.png` | Brand assets |
@@ -61,7 +64,8 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 ### Nav
 - Standard nav: logo, Schedule, Guides → Grok & Quill / Quarterly Coin / Travel Crier / Info Quest / Bakers Guild, Students → Scarlett / Juliet
 - **Do not** put Co-op in the main nav
-- Homepage (`page-home`) has no nav bar; bubbles: Schedule, Co-op, Guides (dropdown). `wallpaper.jpg` fills the viewport (`background-size: cover`). Logo, title, and menu sit directly on the wallpaper (no parchment panel).
+- **Experiment (easy revert):** site-wide `.site-nav` uses the newspaper index look (dark brown bar, boxed labels, double rule). Revert the “Site nav” block in `styles.css` to frosted paper + green pills if it doesn’t stick.
+- Homepage (`page-home`) has no nav bar; newspaper-index labels (Schedule, Co-op, Guides dropdown). `wallpaper.jpg` fills the viewport (`background-size: cover`). Logo, title, and menu sit directly on the wallpaper.
 
 ### Guides (`guides/`)
 - Each guide: header + hero image → Contents TOC (Adventure Back Then pattern) → titled sections
