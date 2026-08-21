@@ -2086,6 +2086,9 @@ a.project-card.is-link:hover {
   letter-spacing: 0.012em;
   margin-bottom: 0.95rem;
 }
+.page-writing .writing-body .task {
+  color: var(--brown);
+}
 .subject-card.writing-body.is-poem p,
 .writing-body.is-poem p {
   margin-bottom: 0.48rem;
@@ -2785,6 +2788,42 @@ a.project-card.is-link:hover {
   border: 1px solid var(--ink);
   box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
   background: color-mix(in srgb, var(--bg) 35%, #fff);
+}
+
+.page-writing .writing-hero img {
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.page-writing .writing-video {
+  margin: 0 0 1.25rem;
+  border: 1px solid var(--ink);
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+  background: #24150e;
+  line-height: 0;
+}
+
+.page-writing .writing-video video {
+  display: block;
+  width: 100%;
+  background: #24150e;
+}
+
+.page-writing .art-item {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+.page-writing .art-item:hover {
+  transform: none;
+  box-shadow: 3px 3px 0 var(--brown);
+}
+
+.page-writing .art-item figcaption {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-style: italic;
 }
 
 .page-writing .subject-card.writing-body {
