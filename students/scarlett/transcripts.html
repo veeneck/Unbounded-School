@@ -231,6 +231,16 @@
       </div>
     </section>
 
+    <div class="grade-sticky" id="grade-sticky">
+      <div class="grade-sticky-inner">
+        <p class="grade-sticky-kicker" id="grade-kicker">Scarlett · 5th Grade</p>
+        <div class="grade-switcher score-tabs grade-tabs" role="tablist" aria-label="Select grade">
+          <button type="button" data-grade="4th" role="tab" aria-selected="false">4th</button>
+          <button type="button" class="active" data-grade="5th" role="tab" aria-selected="true">5th</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Math -->
     <section>
       <div class="section-head">
@@ -251,11 +261,6 @@
           </a>
         </div>
       </div>
-      <div class="grade-switcher score-tabs grade-tabs" role="tablist" aria-label="Select grade">
-        <button type="button" data-grade="4th" role="tab" aria-selected="false">4th</button>
-        <button type="button" class="active" data-grade="5th" role="tab" aria-selected="true">5th</button>
-      </div>
-
       <div class="grade-panel" data-grade="4th">
         <div class="progress-grid">
           <div class="progress-card complete" data-pct="100">
@@ -322,11 +327,6 @@
             <span>Lexia</span>
           </a>
         </div>
-      </div>
-
-      <div class="grade-switcher score-tabs grade-tabs" role="tablist" aria-label="Select grade">
-        <button type="button" data-grade="4th" role="tab" aria-selected="false">4th</button>
-        <button type="button" class="active" data-grade="5th" role="tab" aria-selected="true">5th</button>
       </div>
 
       <div class="grade-panel" data-grade="4th">
@@ -497,11 +497,6 @@
         <h2>Projects, Skills, Sports &amp; Electives</h2>
       </div>
 
-      <div class="grade-switcher score-tabs grade-tabs" role="tablist" aria-label="Select grade">
-        <button type="button" data-grade="4th" role="tab" aria-selected="false">4th</button>
-        <button type="button" class="active" data-grade="5th" role="tab" aria-selected="true">5th</button>
-      </div>
-
       <div class="grade-panel" data-grade="4th">
                 <div class="project-grid">
           <a class="project-card is-link featured" href="projects/4thgrade/adventurebackthen.html">
@@ -613,11 +608,6 @@
         </div>
         <h2>Science, Geography & Social Studies</h2>
       </div>
-      <div class="grade-switcher score-tabs grade-tabs" role="tablist" aria-label="Select grade">
-        <button type="button" data-grade="4th" role="tab" aria-selected="false">4th</button>
-        <button type="button" class="active" data-grade="5th" role="tab" aria-selected="true">5th</button>
-      </div>
-
       <div class="grade-panel" data-grade="4th">
         <div class="progress-grid">
           <div class="progress-card complete" data-pct="100">
@@ -804,8 +794,7 @@
         });
       });
 
-      // Grade tabs (scoped per section so Reading and Projects switch independently)
-      // Grade tabs — shared across sections; URL can set initial grade (?grade=5th)
+      // One page-level grade switcher drives every .grade-panel; URL can set initial (?grade=5th)
       function normalizeGrade(raw) {
         if (!raw) return null;
         var g = String(raw).toLowerCase().trim();
@@ -816,27 +805,21 @@
 
       function setAllGrades(grade, updateUrl) {
         if (!grade) return;
-        document.querySelectorAll('.grade-tabs').forEach(function (tablist) {
-          var section = tablist.closest('section');
-          if (!section) return;
-          var buttons = tablist.querySelectorAll('button[data-grade]');
-          var panels = section.querySelectorAll('.grade-panel');
-
-          buttons.forEach(function (b) {
-            var on = b.getAttribute('data-grade') === grade;
-            b.classList.toggle('active', on);
-            b.setAttribute('aria-selected', on ? 'true' : 'false');
-          });
-
-          panels.forEach(function (panel) {
-            if (panel.getAttribute('data-grade') === grade) {
-              panel.classList.remove('active');
-              void panel.offsetWidth;
-              panel.classList.add('active');
-            } else {
-              panel.classList.remove('active');
-            }
-          });
+        var kicker = document.getElementById('grade-kicker');
+        if (kicker) kicker.textContent = 'Scarlett \u00b7 ' + grade + ' Grade';
+        document.querySelectorAll('.grade-tabs button[data-grade]').forEach(function (b) {
+          var on = b.getAttribute('data-grade') === grade;
+          b.classList.toggle('active', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        document.querySelectorAll('.grade-panel').forEach(function (panel) {
+          if (panel.getAttribute('data-grade') === grade) {
+            panel.classList.remove('active');
+            void panel.offsetWidth;
+            panel.classList.add('active');
+          } else {
+            panel.classList.remove('active');
+          }
         });
 
         if (updateUrl) {
@@ -848,13 +831,23 @@
         }
       }
 
-      document.querySelectorAll('.grade-tabs').forEach(function (tablist) {
-        tablist.querySelectorAll('button[data-grade]').forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            setAllGrades(btn.getAttribute('data-grade'), true);
-          });
+      document.querySelectorAll('.grade-tabs button[data-grade]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setAllGrades(btn.getAttribute('data-grade'), true);
         });
       });
+
+      (function stickyGradeBar() {
+        var bar = document.getElementById('grade-sticky');
+        if (!bar || !('IntersectionObserver' in window)) return;
+        var probe = document.createElement('div');
+        probe.setAttribute('aria-hidden', 'true');
+        probe.style.cssText = 'height:1px;margin:0;padding:0;pointer-events:none;';
+        bar.parentNode.insertBefore(probe, bar);
+        new IntersectionObserver(function (entries) {
+          bar.classList.toggle('is-stuck', !entries[0].isIntersecting);
+        }, { threshold: [1] }).observe(probe);
+      })();
 
       // Initial grade from ?grade=4th|5th (or #4th / #5th)
       (function initGradeFromUrl() {

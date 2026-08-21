@@ -731,6 +731,52 @@ footer {
   box-shadow: 0 1px 2px rgba(22, 101, 52, 0.1);
 }
 
+body.page-transcripts {
+  overflow-x: hidden;
+}
+
+.page-transcripts .grade-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 150;
+  width: 100vw;
+  max-width: none;
+  box-sizing: border-box;
+  margin: 0.35rem 0 1.6rem;
+  margin-left: calc(50% - 50vw);
+  padding: 0.7rem 1.25rem;
+  background: rgba(247, 245, 242, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.page-transcripts .grade-sticky.is-stuck {
+  border-bottom-color: var(--border);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  background: rgba(247, 245, 242, 0.96);
+}
+.grade-sticky-inner {
+  max-width: 1056px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  flex-wrap: wrap;
+}
+.grade-sticky-kicker {
+  margin: 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.page-transcripts .grade-sticky .grade-switcher {
+  margin: 0;
+}
+
 .grade-panel {
   display: none;
   opacity: 0;
@@ -1727,6 +1773,21 @@ a.project-card.is-link:hover {
     width: 100%;
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .page-transcripts .grade-sticky {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-transcripts .grade-sticky-inner {
+    justify-content: center;
+  }
+
+  .page-transcripts .grade-sticky-kicker {
+    width: 100%;
+    text-align: center;
+    font-size: 0.98rem;
   }
 
   .page-transcripts .grade-switcher {

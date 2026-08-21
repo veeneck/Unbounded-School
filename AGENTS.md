@@ -107,7 +107,10 @@ Do not put the full Day 1–5 project-instruction text in new prompts — it alr
 Sections: Testing → Math → Reading & Writing → Projects → Science/SS  
 (Travel + map stay outside grade panels.)
 
-- Grade switchers shared; `?grade=5th` / `?grade=4th` selects all sections
+- One page-level grade switcher sits under Testing/report cards (`.grade-sticky#grade-sticky`). It sticks to the top as a header while you scroll Math → Travel. **No per-section 4th/5th switchers.**
+- Bar is **full viewport width** (blur/bg like the site nav); inner row (`.grade-sticky-inner`) stays the ~1056px content column
+- Kicker (`#grade-kicker`) reads `Scarlett · 4th Grade` or `Scarlett · 5th Grade` and updates with the tabs. `?grade=5th` / `?grade=4th` still selects all `.grade-panel`s
+- Testing score tabs (Math/Reading/Language/Science/All) are separate and stay in that section
 - Progress cards with bars + 100% checkmarks
 - Project cards: thumbnail + title + category
 - Empty 5th writing still “Nothing here yet, check back!”
