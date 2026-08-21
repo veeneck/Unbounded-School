@@ -782,8 +782,17 @@
         </div>
 
         <h3 style="font-size:0.95rem; margin:1.25rem 0 0.75rem; font-weight:650;">Science Experiments</h3>
-        <div class="subject-card" style="text-align:center; padding:1.75rem 1.25rem;">
-          <p style="margin:0; color:var(--muted); font-size:0.98rem;">Nothing here yet, check back!</p>
+        <div class="project-grid">
+          <a class="project-card is-link" href="science/5thgrade/warmandbright.html">
+            <div class="project-thumb project-thumb-fallback project-thumb-science">
+              <img src="thumbnails/science/warmandbrighthero.jpg" alt="" loading="lazy" onerror="this.remove()">
+              <svg class="proj-link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <div class="project-body">
+              <div class="project-title">Warm and Bright</div>
+              <div class="project-cat"><svg class="proj-cat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v5.5L6.5 21h11L14 8.5V3"/><path d="M8 14h8"/></svg><span>Chemistry</span></div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -839,6 +848,9 @@
       <footer>
         Unbounded School · Transcript data through early 2026
       </footer>
+      <a class="page-end-logo" href="../../index.html">
+        <img src="../../unbounded-logo.svg" alt="Unbounded School">
+      </a>
     </div>
   </div>
 
@@ -937,24 +949,163 @@
         return null;
       }
 
+      document.querySelectorAll('.grade-panel[data-grade="4th"]').forEach(function (panel) {
+        if (panel.parentElement && panel.parentElement.classList.contains('grade-stage')) return;
+        var next = panel.nextElementSibling;
+        if (!next || !next.classList.contains('grade-panel')) return;
+        var stage = document.createElement('div');
+        stage.className = 'grade-stage';
+        panel.parentNode.insertBefore(stage, panel);
+        stage.appendChild(panel);
+        stage.appendChild(next);
+      });
+
+      var currentGrade = (function () {
+        var active = document.querySelector('.grade-panel.active');
+        return active ? active.getAttribute('data-grade') : '5th';
+      })();
+      var gradeSlideTimer = null;
+      var gradeSlideToken = 0;
+      var gradeArrive = null;
+
+      function clearPanelMotion(panel) {
+        panel.classList.remove('is-leaving');
+        panel.style.transform = '';
+        panel.style.opacity = '';
+        panel.style.transition = '';
+      }
+
+      function snapGradePanels(grade) {
+        document.querySelectorAll('.grade-panel').forEach(function (panel) {
+          panel.classList.toggle('active', panel.getAttribute('data-grade') === grade);
+          clearPanelMotion(panel);
+        });
+        document.querySelectorAll('.grade-stage').forEach(function (stage) {
+          stage.classList.remove('is-sliding');
+          stage.style.height = '';
+        });
+      }
+
+      function finishGradeSlide() {
+        document.querySelectorAll('.grade-stage').forEach(function (stage) {
+          stage.classList.remove('is-sliding');
+          stage.style.height = '';
+          stage.querySelectorAll('.grade-panel').forEach(clearPanelMotion);
+        });
+      }
+
+      function slideGradePanels(from, grade) {
+        var fromLeft = grade === '4th';
+        var token = ++gradeSlideToken;
+        var jobs = [];
+        document.querySelectorAll('.grade-stage').forEach(function (stage) {
+          var incoming = stage.querySelector('.grade-panel[data-grade="' + grade + '"]');
+          var outgoing = stage.querySelector('.grade-panel[data-grade="' + from + '"]');
+          if (!incoming || !outgoing || incoming === outgoing) return;
+          var hOut = outgoing.offsetHeight || 0;
+          stage.style.height = hOut + 'px';
+          stage.classList.add('is-sliding');
+          outgoing.classList.add('is-leaving');
+          outgoing.classList.remove('active');
+          incoming.classList.remove('active');
+          outgoing.style.transition = 'none';
+          outgoing.style.transform = 'translateX(0)';
+          outgoing.style.opacity = '1';
+          void outgoing.offsetWidth;
+          outgoing.style.transition = '';
+          outgoing.style.transform = fromLeft ? 'translateX(100%)' : 'translateX(-100%)';
+          outgoing.style.opacity = '0';
+          jobs.push({ stage: stage, incoming: incoming, outgoing: outgoing });
+        });
+        if (gradeSlideTimer) window.clearTimeout(gradeSlideTimer);
+        gradeSlideTimer = window.setTimeout(function () {
+          if (token !== gradeSlideToken) return;
+          jobs.forEach(function (job) {
+            clearPanelMotion(job.outgoing);
+            job.incoming.classList.add('active');
+            job.incoming.style.transition = 'none';
+            job.incoming.style.transform = fromLeft ? 'translateX(-100%)' : 'translateX(100%)';
+            job.incoming.style.opacity = '0';
+            var hIn = job.incoming.offsetHeight || 0;
+            void job.incoming.offsetWidth;
+            job.incoming.style.transition = '';
+            job.incoming.style.transform = 'translateX(0)';
+            job.incoming.style.opacity = '1';
+            job.stage.style.height = hIn + 'px';
+          });
+          if (typeof window._watchGradeReveals === 'function') {
+            window.requestAnimationFrame(function () { window._watchGradeReveals(); });
+          }
+          gradeSlideTimer = window.setTimeout(function () {
+            if (token !== gradeSlideToken) return;
+            gradeSlideTimer = null;
+            finishGradeSlide();
+          }, 420);
+        }, 480);
+      }
+
+      function whenAtGradeStart(cb) {
+        var start = document.getElementById('grade-start');
+        if (!start) { cb(); return; }
+        var bar = document.getElementById('grade-sticky');
+        var dest = start.getBoundingClientRect().top + window.scrollY;
+        if (bar) dest -= bar.offsetHeight;
+        dest = Math.max(0, dest);
+        if (Math.abs(window.scrollY - dest) < 48) {
+          cb();
+          return;
+        }
+        var token = {};
+        gradeArrive = token;
+        function done() {
+          if (gradeArrive !== token) return;
+          gradeArrive = null;
+          window.removeEventListener('scroll', onScroll);
+          cb();
+        }
+        function onScroll() {
+          if (Math.abs(window.scrollY - dest) < 28) done();
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.setTimeout(done, 720);
+      }
+
       function setAllGrades(grade, updateUrl) {
         if (!grade) return;
+        var same = grade === currentGrade;
+        var from = currentGrade;
+        currentGrade = grade;
+
         var kicker = document.getElementById('grade-kicker');
-        if (kicker) kicker.textContent = 'Scarlett \u00b7 ' + grade + ' Grade';
+        if (kicker) {
+          kicker.textContent = 'Scarlett \u00b7 ' + grade + ' Grade';
+          if (updateUrl && !same) {
+            kicker.style.setProperty('--grade-kicker-x', grade === '4th' ? '-0.7rem' : '0.7rem');
+            kicker.classList.remove('is-grade-swap');
+            void kicker.offsetWidth;
+            kicker.classList.add('is-grade-swap');
+          }
+        }
         document.querySelectorAll('.grade-tabs button[data-grade]').forEach(function (b) {
           var on = b.getAttribute('data-grade') === grade;
           b.classList.toggle('active', on);
           b.setAttribute('aria-selected', on ? 'true' : 'false');
         });
-        document.querySelectorAll('.grade-panel').forEach(function (panel) {
-          if (panel.getAttribute('data-grade') === grade) {
-            panel.classList.remove('active');
-            void panel.offsetWidth;
-            panel.classList.add('active');
-          } else {
-            panel.classList.remove('active');
-          }
-        });
+
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var animate = updateUrl && !same && from && !reduce && document.documentElement.classList.contains('js-motion');
+
+        gradeArrive = null;
+        gradeSlideToken += 1;
+        if (gradeSlideTimer) {
+          window.clearTimeout(gradeSlideTimer);
+          gradeSlideTimer = null;
+        }
+        finishGradeSlide();
+
+        if (!animate) {
+          snapGradePanels(grade);
+        }
 
         if (updateUrl) {
           try {
@@ -964,7 +1115,12 @@
           } catch (e) {}
           scrollToGradeStart();
         }
-        if (typeof window._watchGradeReveals === 'function') {
+
+        if (animate) {
+          whenAtGradeStart(function () {
+            slideGradePanels(from, grade);
+          });
+        } else if (typeof window._watchGradeReveals === 'function') {
           window.requestAnimationFrame(function () { window._watchGradeReveals(); });
         }
       }
@@ -1011,7 +1167,23 @@
 
       (function stickyGradeBar() {
         var bar = document.getElementById('grade-sticky');
-        if (!bar || !('IntersectionObserver' in window)) return;
+        if (!bar) return;
+        function setPaperTop() {
+          var y = Math.max(0, Math.round(bar.getBoundingClientRect().top + window.scrollY));
+          document.documentElement.style.setProperty('--transcripts-paper-top', y + 'px');
+          var travel = document.querySelector('.transcripts-travel');
+          if (travel) {
+            var t = Math.max(0, Math.round(travel.getBoundingClientRect().top + window.scrollY));
+            document.documentElement.style.setProperty('--transcripts-travel-top', t + 'px');
+          }
+        }
+        setPaperTop();
+        window.addEventListener('resize', setPaperTop);
+        if (window.ResizeObserver) {
+          var page = document.querySelector('.page');
+          if (page) new ResizeObserver(setPaperTop).observe(page);
+        }
+        if (!('IntersectionObserver' in window)) return;
         var probe = document.createElement('div');
         probe.setAttribute('aria-hidden', 'true');
         probe.style.cssText = 'height:1px;margin:0;padding:0;pointer-events:none;';

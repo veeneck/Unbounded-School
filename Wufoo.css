@@ -88,16 +88,16 @@ form label.choice {
 /* Required asterisk */
 .wufoo label.desc span.req,
 .wufoo .req {
-  color: #166534 !important;
+  color: #24150e !important;
   font-weight: 700 !important;
 }
 
 /* Instruct / help text */
 .wufoo .instruct,
 form p.instruct {
-  background: #f7f5f2 !important;
-  border: 1px solid #e7e5e4 !important;
-  border-radius: 10px !important;
+  background: #ede4d7 !important;
+  border: 1px dashed #24150e !important;
+  border-radius: 0 !important;
   color: #57534e !important;
   font-size: 0.85rem !important;
   padding: 0.55rem 0.75rem !important;
@@ -124,8 +124,8 @@ form p.instruct {
   font-size: 1rem !important;
   color: #1c1917 !important;
   background: #ffffff !important;
-  border: 1px solid #e7e5e4 !important;
-  border-radius: 10px !important;
+  border: 1px solid #24150e !important;
+  border-radius: 0 !important;
   padding: 0.7rem 0.85rem !important;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
   width: 100% !important;
@@ -145,8 +145,8 @@ form p.instruct {
 .wufoo input.email:focus,
 .wufoo textarea:focus,
 .wufoo select:focus {
-  border-color: #86efac !important;
-  box-shadow: 0 0 0 3px rgba(220, 252, 231, 0.9) !important;
+  border-color: #24150e !important;
+  box-shadow: 3px 3px 0 rgba(36, 21, 14, 0.16) !important;
 }
 
 .wufoo textarea,
@@ -190,7 +190,7 @@ form ul.choices li {
 
 .wufoo input[type="radio"],
 .wufoo input[type="checkbox"] {
-  accent-color: #166534 !important;
+  accent-color: #24150e !important;
   margin-right: 0.4rem !important;
 }
 
@@ -200,7 +200,7 @@ form li.section,
 li.section {
   background: transparent !important;
   border: none !important;
-  border-top: 1px solid #e7e5e4 !important;
+  border-top: 1px solid #24150e !important;
   border-bottom: none !important;
   border-left: none !important;
   border-right: none !important;
@@ -263,7 +263,7 @@ form li.section > * {
 .wufoo li.error,
 form li.error {
   background: #fef2f2 !important;
-  border-radius: 10px !important;
+  border-radius: 0 !important;
   padding: 0.75rem !important;
   border: 1px solid #fecaca !important;
 }
@@ -297,26 +297,29 @@ form li.buttons {
 form input[type="submit"] {
   appearance: none !important;
   -webkit-appearance: none !important;
-  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif !important;
-  font-size: 0.98rem !important;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif !important;
+  font-size: 0.88rem !important;
   font-weight: 700 !important;
-  color: #14532d !important;
-  background: #dcfce7 !important;
-  border: 1px solid #bbf7d0 !important;
-  border-radius: 999px !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #ede4d7 !important;
+  background: #24150e !important;
+  border: 1px solid #24150e !important;
+  border-radius: 0 !important;
   padding: 0.75rem 1.5rem !important;
   cursor: pointer !important;
-  box-shadow: 0 1px 3px rgba(22, 101, 52, 0.08) !important;
-  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease !important;
+  box-shadow: 3px 3px 0 rgba(36, 21, 14, 0.16) !important;
+  transition: background 0.15s ease, color 0.15s ease !important;
 }
 
 .wufoo input[type="submit"]:hover,
 .wufoo input.submit:hover,
 .wufoo button[type="submit"]:hover,
 form input[type="submit"]:hover {
-  background: #bbf7d0 !important;
-  box-shadow: 0 3px 10px rgba(22, 101, 52, 0.12) !important;
-  transform: translateY(-1px) !important;
+  background: #ede4d7 !important;
+  color: #24150e !important;
+  box-shadow: 3px 3px 0 rgba(36, 21, 14, 0.16) !important;
+  transform: none !important;
 }
 
 .wufoo input[type="submit"]:active,

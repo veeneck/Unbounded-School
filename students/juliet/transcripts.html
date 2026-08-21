@@ -14,19 +14,19 @@
   <meta name="mobile-web-app-capable" content="yes">
   <title>Transcripts — Juliet | Unbounded School</title>
   <link rel="stylesheet" href="../../styles.css">
-      <!-- Fathom - beautiful, simple website analytics -->
-      <script src="https://cdn.usefathom.com/script.js" data-site="FXWFKUXE" defer></script>
-      <!-- / Fathom -->
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="FXWFKUXE" defer></script>
+  <!-- / Fathom -->
 </head>
-<body>
+<body class="page-transcripts">
   <nav class="site-nav" id="site-nav" aria-label="Main">
     <div class="nav-inner">
-      <a class="nav-logo" href="../../index.html">
+      <a class="nav-logo" href="/index.html">
         <img src="../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
         <span>Unbounded School</span>
       </a>
       <ul class="nav-links">
-        <li><a href="/schedule">Schedule</a></li>
+        <li><a href="/schedule.html">Schedule</a></li>
         <li class="nav-drop">
           <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
             Guides
@@ -55,22 +55,38 @@
   </nav>
 
   <div class="page">
-    <header>
-      <div class="hero-badge">Student Record</div>
-      <h1>Juliet’s Transcripts</h1>
-      <p class="subtitle">Progress, scores, reading, projects, and more.</p>
-    </header>
 
-    <section>
+    <div class="transcripts-lead">
+      <div class="transcripts-lead-inner">
+        <header>
+          <div class="hero-badge">Student Record</div>
+          <h1>Juliet’s Transcripts</h1>
+          <p class="subtitle">Progress, scores, reading, projects, sports, and travel.</p>
+        </header>
+      </div>
+    </div>
+
+    <div class="grade-sticky" id="grade-sticky">
+      <div class="grade-sticky-inner">
+        <p class="grade-sticky-kicker" id="grade-kicker">Juliet</p>
+      </div>
+    </div>
+
+    <section id="grade-start">
       <div class="subject-card" style="text-align:center; padding:2.5rem 1.5rem;">
         <p style="font-size:1.15rem; font-weight:650; margin:0 0 0.4rem; color:var(--ink);">Coming soon</p>
         <p style="margin:0; color:var(--muted); font-size:0.95rem;">Juliet’s transcript will appear here as her work is added.</p>
       </div>
     </section>
 
-    <footer>
-      Unbounded School · Juliet
-    </footer>
+    <div class="transcripts-travel">
+      <footer>
+        Unbounded School · Juliet
+      </footer>
+      <a class="page-end-logo" href="../../index.html">
+        <img src="../../unbounded-logo.svg" alt="Unbounded School">
+      </a>
+    </div>
   </div>
 
   <script>
@@ -104,6 +120,34 @@
           drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
         });
       });
+
+      (function stickyGradeBar() {
+        var bar = document.getElementById('grade-sticky');
+        if (!bar) return;
+        function setPaperTop() {
+          var y = Math.max(0, Math.round(bar.getBoundingClientRect().top + window.scrollY));
+          document.documentElement.style.setProperty('--transcripts-paper-top', y + 'px');
+          var travel = document.querySelector('.transcripts-travel');
+          if (travel) {
+            var t = Math.max(0, Math.round(travel.getBoundingClientRect().top + window.scrollY));
+            document.documentElement.style.setProperty('--transcripts-travel-top', t + 'px');
+          }
+        }
+        setPaperTop();
+        window.addEventListener('resize', setPaperTop);
+        if (window.ResizeObserver) {
+          var page = document.querySelector('.page');
+          if (page) new ResizeObserver(setPaperTop).observe(page);
+        }
+        if (!('IntersectionObserver' in window)) return;
+        var probe = document.createElement('div');
+        probe.setAttribute('aria-hidden', 'true');
+        probe.style.cssText = 'height:1px;margin:0;padding:0;pointer-events:none;';
+        bar.parentNode.insertBefore(probe, bar);
+        new IntersectionObserver(function (entries) {
+          bar.classList.toggle('is-stuck', !entries[0].isIntersecting);
+        }, { threshold: [1] }).observe(probe);
+      })();
     })();
   </script>
 </body>

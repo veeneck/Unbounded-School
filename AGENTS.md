@@ -12,7 +12,7 @@ When the user says they pushed/changed something live, pull the live page before
 
 - Pure static site: HTML + shared `styles.css` + small page scripts
 - No build step, no framework
-- Design system: warm paper background (`--bg` `#ede4d7`, sampled from `subtlebg.jpg`), near-black brown (`--brown` `#24150e`) for nav/home buttons, green accent, Fraunces (headings) + Source Sans 3 (body). Content pages show `subtlebg.jpg` at the top and `subtlebgend.jpg` at the bottom, each fading into solid `--bg`. Extra bottom space (`--bg-end-space`) keeps content off the end flourish. Homepage uses `wallpaper.jpg` instead.
+- Design system: warm paper background (`--bg` `#ede4d7`, sampled from `subtlebg.jpg`), near-black brown (`--brown` `#24150e`) for nav/home buttons, green accent, Fraunces (headings) + Source Sans 3 (body). Content pages show `subtlebg.jpg` at the top and `subtlebgend.jpg` at the bottom, each fading into solid `--bg`. Extra bottom space (`--bg-end-space`) keeps content off the end flourish. A centered `.page-end-logo` (links to `/index.html`) sits in that space above the swirl. Homepage uses `wallpaper.jpg` instead.
 - Shared chrome: sticky top nav (logo → home, Schedule, Guides dropdown, Students dropdown), section heads with icon + optional right-side dashboard links
 - Max content width ~1056px (`.page`)
 
@@ -22,7 +22,8 @@ When the user says they pushed/changed something live, pull the live page before
 |------|------|
 | `index.html` | Homepage: full-viewport hero, large logo, tagline, bubble links (no site nav) |
 | `schedule.html` | Daily schedule + year structure + tools. **Theme experiment:** newspaper / Hogwarts-parchment look scoped to `body.page-schedule` in `styles.css`. Refine here before rolling site-wide. |
-| `coop.html` | Local Colwich/Andale homeschool mailing list + Wufoo embed |
+| `404.html` | Custom Netlify 404 (`body.page-404`). Root-absolute asset/hrefs so it works from any missing path. |
+| `coop.html` | Local Colwich/Andale homeschool mailing list + Wufoo embed. Newspaper look via `body.page-coop`. |
 | `guides/` | Instruction guides (dropdown in top nav + homepage bubble) |
 | `styles.css` | Global styles |
 | `subtlebg.jpg` | Aged-paper texture at the **top** of content pages (fades down to `--bg`). Portrait: `subtlebgmobile.jpg` |
@@ -46,9 +47,10 @@ testing/                  # MAP RIT chart images
 writing/4thgrade/         # Writing entry HTML pages
 projects/4thgrade/        # Project HTML + media (video, photos)
 projects/5thgrade/        # 5th-grade projects (summersale.html, …)
+science/5thgrade/         # Science kit pages (warmandbright.html, …)
 reportcards/              # fall-2025, winter-2025, spring-2026
 juliet/
-transcripts.html          # Placeholder “coming soon”
+transcripts.html          # Same newspaper transcripts shell as Scarlett; content still “coming soon”
 
 Each student has their own `transcripts.html`. Do not put transcripts at site root.
 
@@ -74,6 +76,8 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Voice: short, friendly, readable for a ~10-year-old. Same facts, less lecture
 - Copyable instruction boxes: `.guide-copy` + Copy button (`.guide-copy-btn[data-copy]`)
 - Shared styles in `styles.css`: `.book-toc`, `.book-chapter`, `.guide-tag`, `.guide-copy`, `.guide-tips`. Newspaper look via `body.page-guide` (same masthead/ink frames as schedule and writing).
+- **Report cards** (`students/scarlett/reportcards/`): `body.page-report`. Gazette masthead, boxed term tabs (Fall/Winter/Spring), grades + “The Index” (GPA/attendance), two-column achievements/growth, MAP tests table. Same ink frames as schedule.
+- **404:** `404.html` at site root. Lost & Found masthead, dashed notice, boxed Home/Schedule/Scarlett/Guides links.
 - Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`, `guides/travel-crier.html`, `guides/info-quest.html`, `guides/bakers-guild.html`
 - Heroes: `guides/hero/` — `grokquill.jpg`, `quarterlycoin.jpg`, `travelcrier.jpg`, `infoquest.jpg`, `bakersguild.jpg`
 - Watch placeholders: `.guide-video` (“Video coming soon”) until a real video is dropped in
@@ -107,20 +111,26 @@ Do not put the full Day 1–5 project-instruction text in new prompts — it alr
 
 ---
 
-## Transcripts (`students/scarlett/transcripts.html`)
+## Transcripts
+
+Newspaper look is **locked** (`body.page-transcripts`): script masthead, ink section heads, parchment cards, boxed 4th/5th and score tabs, brown sticky grade bar, `subtlebg.jpg` at the grade bar and again (fade reversed) just above Travel. Same chrome for Scarlett and Juliet.
+
+### Scarlett (`students/scarlett/transcripts.html`)
 
 Sections: Testing → Math → Reading → Writing → Projects → Science/SS  
-Travel & Field Trips is **not grade-specific**: white footer band (`.transcripts-travel`), like Testing. Pills and the world map stay in the ~1056px column. The page footer sits in that same white band.
+Travel & Field Trips is **not grade-specific**: footer band (`.transcripts-travel`), like Testing. Pills and the world map stay in the ~1056px column. The page footer sits in that same band.
 
 - One page-level grade switcher sits under Testing/report cards (`.grade-sticky#grade-sticky`). It sticks to the top as a header while you scroll Math → Travel. **No per-section 4th/5th switchers.**
 - Testing + report cards sit in a **full-width white band** (`.transcripts-lead`). Report cards: custom `.dash-drop` pill beside Homeschool Boss (same `.dash-link` style). Label **Report Cards**; click opens Spring/Winter/Fall. Score tabs / dash links tan so they don’t disappear on white
 - Grade bar is the **subheader of the paper section below**: full viewport width, larger kicker (`Scarlett · 4th Grade` / `5th Grade`). Inner row stays the ~1056px column. `?grade=` still selects all `.grade-panel`s. Clicking 4th/5th scrolls back to Math (`#grade-start`), just under the sticky bar. No scroll on first load from the URL.
+- Paper texture: `subtlebg.jpg` at the grade-sticky (fades down to `--bg`). Same file again just above Travel, faded the other way (strongest at the travel edge). No `subtlebgend` swirl on transcripts. `--transcripts-travel-top` is the travel band’s document Y.
 - Testing score tabs (Math/Reading/Language/Science/All) sit **under** the graph in `.score-stage`, same width as the chart, equal-width buttons (graph controls). Separate from the 4th/5th grade bar.
-- Motion: only progress bars fill from the left as their card scrolls into view (`.js-motion` + `.is-in`). No fade-ins. Off if `prefers-reduced-motion`. Re-observe after grade switch.
+- Motion: progress bars fill from the left as their card scrolls into view (`.js-motion` + `.is-in`). 4th/5th grade switch: outgoing slides + fades out, a short pause, then the new grade slides + fades in (direction matches the tab). No animation on first load from `?grade=`. Off if `prefers-reduced-motion`. Re-observe after the incoming panel lands.
 - Progress cards with bars + 100% checkmarks
 - Project / writing / book cards on transcripts use **`thumbnails/`** (resized JPEGs). Full `hero/`, `books/`, and project photos stay on the individual pages.
 - Writing is its own section after Reading. 4th-grade pieces use compact `.writing-grid` cards (same as project cards, smaller) with hero thumbs from `hero/`. 5th writing still “Nothing here yet, check back!”
 - 5th projects: first card is **Summer Sale** (`projects/5thgrade/summersale.html`) — featured like Adventure Back Then. Hero `summersalehero.jpg`. Body photos: `.writing-inline` (money, text wraps) and `.writing-figure` (full-width: yardsign, chalk). Scarlett’s copy is in; they raised $520 for Melissa.
+- 5th **Science Experiments** are project-style cards under Science/SS (not progress bars). Line under the title is the **field** (Chemistry, Physics, …) on the card (`.project-cat`) and on the kit page (`.subtitle`). First kit: **Warm and Bright** (`science/5thgrade/warmandbright.html`) — Science Unlocked / Home Science Tools, field **Chemistry**. Regular card, not featured. Kit page lead + numbered `.kit-list`. Drop photos as `science/5thgrade/warmandbrighthero.jpg` (hero), `warmandbright-1.jpg` / `-2.jpg` (in the piece), and `thumbnails/science/warmandbrighthero.jpg` (transcripts card). Until those files exist, the hero/card show a parchment “Photo coming soon” fallback. Replace the placeholder notes with Scarlett’s write-up when ready.
 
 **Lexia Core5 circles** (`.lexia-circle`) — 16–18 on 4th, 19–21 on 5th:
 - The **number inside** the circle is an **accuracy grade**, never lesson % complete. Leave `—` until a test score exists
@@ -131,10 +141,14 @@ Travel & Field Trips is **not grade-specific**: white footer band (`.transcripts
 
 **Current 5th (Aug 2026):** Khan Academy Math 32%. Lexia 19 in progress at 21% fill, 20–21 not started. Books Read includes Magic Tree House Books 1–4 (flat cover `books/treehouse4.jpg`, title without “boxed set”).
 
+### Juliet (`students/juliet/transcripts.html`)
+
+Same lead band, sticky kicker, paper section, travel footer, and paper-texture JS. No 4th/5th switcher, testing, or map yet. Body copy is still the “Coming soon” card until her work is added.
+
 ---
 
 ## Other pages
-- **Co-op:** numbered steps + Wufoo embed; theme via `Wufoo.css`
+- **Co-op:** numbered steps + Wufoo embed (`body.page-coop`). Form chrome via `Wufoo.css` (ink/brown, square corners — update after deploy so Wufoo’s custom CSS URL picks it up)
 - **Homepage:** `wallpaper.jpg` fills the screen; logo/menu sit on the wallpaper; tagline “A different take on education.”, bubble links (Schedule, Co-op, Guides)
 - **Analytics:** Fathom `FXWFKUXE` on every HTML page
 
