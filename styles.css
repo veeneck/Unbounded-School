@@ -3230,6 +3230,11 @@ a.project-card.is-link:hover {
   border-top-color: color-mix(in srgb, var(--ink) 22%, transparent);
 }
 
+.page-report table.scores tr.scores-break td {
+  border-top: 3px double var(--ink);
+  padding-top: 0.95rem;
+}
+
 .page-report table.scores tr:hover td {
   background: color-mix(in srgb, var(--ink) 6%, var(--bg));
 }
