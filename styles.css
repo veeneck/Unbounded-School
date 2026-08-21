@@ -56,6 +56,29 @@ body {
   min-height: 100vh;
 }
 
+@media (orientation: portrait) {
+  body {
+    background-image:
+      linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 18%,
+        color-mix(in srgb, var(--bg) 55%, transparent) 52%,
+        var(--bg) 100%
+      ),
+      url("subtlebgmobile.jpg"),
+      linear-gradient(
+        to bottom,
+        var(--bg) 0%,
+        color-mix(in srgb, var(--bg) 55%, transparent) 48%,
+        transparent 82%,
+        transparent 100%
+      ),
+      url("subtlebgendmobile.jpg");
+    background-size: 100% 100vw, 100% auto, 100% 100vw, 100% auto;
+  }
+}
+
 /* ========== Site nav (sticky then fade) ==========
    NEWSPAPER THEME EXPERIMENT — revert this block to the
    frosted-paper + green-pill nav if it doesn’t stick. */
@@ -68,11 +91,12 @@ body {
   height: var(--nav-height);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 1.25rem;
   background: var(--brown);
   border-bottom: 1px solid var(--bg);
   box-shadow: 0 3px 0 var(--brown), 0 4px 0 var(--bg);
+  overflow: visible;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
   will-change: transform, opacity;
 }
@@ -89,19 +113,15 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .nav-logo {
-  display: inline-flex;
+  display: none;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0;
   text-decoration: none;
   color: var(--bg);
-  font-family: "Fraunces", Georgia, "Times New Roman", serif;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
   height: 42px;
   line-height: 1;
   box-sizing: border-box;
@@ -117,13 +137,15 @@ body {
 
 .nav-logo span {
   display: none;
-  line-height: 1;
-  transform: translateY(0.5px);
 }
 
-@media (min-width: 520px) {
-  .nav-logo span {
-    display: inline;
+@media (orientation: landscape) {
+  .nav-logo {
+    display: flex;
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -2219,15 +2241,17 @@ a.project-card.is-link:hover {
   }
 }
 
-/* ========== Schedule newspaper theme (experiment — this page only) ========== */
-.page-schedule header {
+/* ========== Newspaper theme (schedule + writing/project pages) ========== */
+.page-schedule header,
+.page-writing header {
   text-align: center;
   margin-bottom: 2.75rem;
   padding: 0.15rem 0 1.15rem;
   border-bottom: 3px double var(--ink);
 }
 
-.page-schedule .hero-badge {
+.page-schedule .hero-badge,
+.page-writing .hero-badge {
   background: none;
   border: 0;
   border-radius: 0;
@@ -2240,7 +2264,8 @@ a.project-card.is-link:hover {
   margin-bottom: 0.15rem;
 }
 
-.page-schedule header h1 {
+.page-schedule header h1,
+.page-writing header h1 {
   font-family: "Great Vibes", "Palatino", cursive;
   font-weight: 400;
   font-size: clamp(3.4rem, 12vw, 5.25rem);
@@ -2249,22 +2274,26 @@ a.project-card.is-link:hover {
   margin-bottom: 0.35rem;
 }
 
-.page-schedule header .subtitle {
+.page-schedule header .subtitle,
+.page-writing header .subtitle {
   max-width: 36em;
   font-size: 0.98rem;
   font-style: italic;
 }
 
-.page-schedule .section-head {
+.page-schedule .section-head,
+.page-writing .section-head {
   border-bottom: 1px solid var(--ink);
   gap: 0.75rem;
 }
 
-.page-schedule .section-head::after {
+.page-schedule .section-head::after,
+.page-writing .section-head::after {
   display: none;
 }
 
-.page-schedule .section-head .icon-wrap {
+.page-schedule .section-head .icon-wrap,
+.page-writing .section-head .icon-wrap {
   width: 2rem;
   height: 2rem;
   border-radius: 0;
@@ -2273,16 +2302,52 @@ a.project-card.is-link:hover {
   box-shadow: none;
 }
 
-.page-schedule .section-head .icon-wrap svg {
+.page-schedule .section-head .icon-wrap svg,
+.page-writing .section-head .icon-wrap svg {
   width: 15px;
   height: 15px;
   stroke: var(--ink);
 }
 
-.page-schedule .section-head h2 {
+.page-schedule .section-head h2,
+.page-writing .section-head h2 {
   font-size: 1.35rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.page-writing .nav-back {
+  color: var(--brown);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.04em;
+}
+
+.page-writing .writing-hero {
+  border-radius: 0;
+  border: 1px solid var(--ink);
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+}
+
+.page-writing .subject-card.writing-body {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+.page-writing .writing-inline,
+.page-writing .writing-figure {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.page-writing .writing-inline figcaption,
+.page-writing .writing-figure figcaption {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-style: italic;
 }
 
 .page-schedule .daily,
@@ -2389,7 +2454,8 @@ a.project-card.is-link:hover {
   color: var(--ink);
 }
 
-.page-schedule footer {
+.page-schedule footer,
+.page-writing footer {
   border-top: 3px double var(--ink);
   font-family: "Fraunces", Georgia, "Times New Roman", serif;
   letter-spacing: 0.04em;

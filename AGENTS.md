@@ -25,8 +25,8 @@ When the user says they pushed/changed something live, pull the live page before
 | `coop.html` | Local Colwich/Andale homeschool mailing list + Wufoo embed |
 | `guides/` | Instruction guides (dropdown in top nav + homepage bubble) |
 | `styles.css` | Global styles |
-| `subtlebg.jpg` | Aged-paper texture at the **top** of content pages (fades down to `--bg`) |
-| `subtlebgend.jpg` | Flourish texture at the **bottom** of content pages (fades up to `--bg`) |
+| `subtlebg.jpg` | Aged-paper texture at the **top** of content pages (fades down to `--bg`). Portrait: `subtlebgmobile.jpg` |
+| `subtlebgend.jpg` | Flourish texture at the **bottom** of content pages (fades up to `--bg`). Portrait: `subtlebgendmobile.jpg` |
 | `wallpaper.jpg` | Homepage full-viewport background |
 | `Wufoo.css` | External theme for Wufoo forms (linked in Wufoo theme editor) |
 | `map/` | Simplemaps world map (`mapdata.js`, `worldmap.js`) used on transcripts |
@@ -64,7 +64,7 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 ### Nav
 - Standard nav: logo, Schedule, Guides → Grok & Quill / Quarterly Coin / Travel Crier / Info Quest / Bakers Guild, Students → Scarlett / Juliet
 - **Do not** put Co-op in the main nav
-- **Experiment (easy revert):** site-wide `.site-nav` uses the newspaper index look (dark brown bar, boxed labels, double rule). Revert the “Site nav” block in `styles.css` to frosted paper + green pills if it doesn’t stick.
+- **Experiment (easy revert):** site-wide `.site-nav` uses the newspaper index look (dark brown bar, boxed labels, double rule). School name is hidden; links are centered. On landscape, the inverted logo sits left in the bar and scrolls away with it. Revert the “Site nav” block in `styles.css` if it doesn’t stick.
 - Homepage (`page-home`) has no nav bar; newspaper-index labels (Schedule, Co-op, Guides dropdown). `wallpaper.jpg` fills the viewport (`background-size: cover`). Logo, title, and menu sit directly on the wallpaper.
 
 ### Guides (`guides/`)
@@ -120,7 +120,7 @@ Travel & Field Trips is **not grade-specific**: white footer band (`.transcripts
 - Progress cards with bars + 100% checkmarks
 - Project / writing / book cards on transcripts use **`thumbnails/`** (resized JPEGs). Full `hero/`, `books/`, and project photos stay on the individual pages.
 - Writing is its own section after Reading. 4th-grade pieces use compact `.writing-grid` cards (same as project cards, smaller) with hero thumbs from `hero/`. 5th writing still “Nothing here yet, check back!”
-- 5th projects: first card is **Summer Sale** (`projects/5thgrade/summersale.html`) — featured like Adventure Back Then. Hero `summersalehero.jpg`. Body photos: `.writing-inline` (money, text wraps) and `.writing-figure` (full-width: yardsign, chalk). Replace placeholder copy with Scarlett’s words.
+- 5th projects: first card is **Summer Sale** (`projects/5thgrade/summersale.html`) — featured like Adventure Back Then. Hero `summersalehero.jpg`. Body photos: `.writing-inline` (money, text wraps) and `.writing-figure` (full-width: yardsign, chalk). Scarlett’s copy is in; they raised $520 for Melissa.
 
 **Lexia Core5 circles** (`.lexia-circle`) — 16–18 on 4th, 19–21 on 5th:
 - The **number inside** the circle is an **accuracy grade**, never lesson % complete. Leave `—` until a test score exists
