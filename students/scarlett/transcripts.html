@@ -94,24 +94,25 @@
       </div>
 
       <div class="score-stage">
+      <div class="score-chart-stage">
       <div class="score-panel active" id="score-math" data-score="math">
         <div class="score-chart-wrap">
-          <img src="testing/mathrit.png" alt="MAP Math RIT score history" loading="lazy">
+          <img src="testing/mathrit.png" alt="MAP Math RIT score history" width="2376" height="1154">
         </div>
       </div>
       <div class="score-panel" id="score-reading" data-score="reading">
         <div class="score-chart-wrap">
-          <img src="testing/readingrit.png" alt="MAP Reading RIT score history" loading="lazy">
+          <img src="testing/readingrit.png" alt="MAP Reading RIT score history" width="2378" height="1152">
         </div>
       </div>
       <div class="score-panel" id="score-language" data-score="language">
         <div class="score-chart-wrap">
-          <img src="testing/languagerit.png" alt="MAP Language RIT score history" loading="lazy">
+          <img src="testing/languagerit.png" alt="MAP Language RIT score history" width="2370" height="1148">
         </div>
       </div>
       <div class="score-panel" id="score-science" data-score="science">
         <div class="score-chart-wrap">
-          <img src="testing/sciencerit.png" alt="MAP Science RIT score history" loading="lazy">
+          <img src="testing/sciencerit.png" alt="MAP Science RIT score history" width="2366" height="1144">
         </div>
       </div>
       <div class="score-panel" id="score-all" data-score="all">
@@ -228,6 +229,7 @@
             </tbody>
           </table>
         </div>
+      </div>
       </div>
 
       <div class="grade-switcher score-tabs" role="tablist" aria-label="Select score view">
@@ -906,27 +908,117 @@
       // Score tabs (Math / Reading / Language / Science / All)
       const scoreButtons = document.querySelectorAll('.score-tabs button[data-score]');
       const scorePanels = document.querySelectorAll('.score-panel');
+      const scoreStage = document.querySelector('.score-chart-stage');
+      var scoreOrder = ['math', 'reading', 'language', 'science', 'all'];
+      var currentScore = (function () {
+        var active = document.querySelector('.score-panel.active');
+        return active ? active.getAttribute('data-score') : 'math';
+      })();
+      var scoreSlideTimer = null;
+      var scoreSlideToken = 0;
+
+      document.querySelectorAll('.score-chart-wrap img').forEach(function (img) {
+        var pre = new Image();
+        pre.src = img.getAttribute('src');
+      });
+
+      function clearScoreMotion(panel) {
+        panel.classList.remove('is-leaving');
+        panel.style.transform = '';
+        panel.style.opacity = '';
+        panel.style.transition = '';
+      }
+
+      function snapScorePanel(score) {
+        scorePanels.forEach(function (panel) {
+          panel.classList.toggle('active', panel.getAttribute('data-score') === score);
+          clearScoreMotion(panel);
+        });
+        if (scoreStage) {
+          scoreStage.classList.remove('is-sliding');
+          scoreStage.style.height = '';
+        }
+      }
+
+      function finishScoreSlide() {
+        if (!scoreStage) return;
+        scoreStage.classList.remove('is-sliding');
+        scoreStage.style.height = '';
+        scorePanels.forEach(clearScoreMotion);
+      }
+
+      function slideScorePanel(from, score) {
+        if (!scoreStage) {
+          snapScorePanel(score);
+          return;
+        }
+        var incoming = scoreStage.querySelector('.score-panel[data-score="' + score + '"]');
+        var outgoing = scoreStage.querySelector('.score-panel[data-score="' + from + '"]');
+        if (!incoming || !outgoing || incoming === outgoing) {
+          snapScorePanel(score);
+          return;
+        }
+        var fromLeft = scoreOrder.indexOf(score) < scoreOrder.indexOf(from);
+        var token = ++scoreSlideToken;
+        var hOut = outgoing.offsetHeight || 0;
+        scoreStage.style.height = hOut + 'px';
+        scoreStage.classList.add('is-sliding');
+        outgoing.classList.add('is-leaving');
+        outgoing.classList.remove('active');
+        incoming.classList.remove('active');
+        outgoing.style.transition = 'none';
+        outgoing.style.transform = 'translateX(0)';
+        outgoing.style.opacity = '1';
+        void outgoing.offsetWidth;
+        outgoing.style.transition = '';
+        outgoing.style.transform = fromLeft ? 'translateX(100%)' : 'translateX(-100%)';
+        outgoing.style.opacity = '0';
+        if (scoreSlideTimer) window.clearTimeout(scoreSlideTimer);
+        scoreSlideTimer = window.setTimeout(function () {
+          if (token !== scoreSlideToken) return;
+          clearScoreMotion(outgoing);
+          incoming.classList.add('active');
+          incoming.style.transition = 'none';
+          incoming.style.transform = fromLeft ? 'translateX(-100%)' : 'translateX(100%)';
+          incoming.style.opacity = '0';
+          var hIn = incoming.offsetHeight || 0;
+          void incoming.offsetWidth;
+          incoming.style.transition = '';
+          incoming.style.transform = 'translateX(0)';
+          incoming.style.opacity = '1';
+          scoreStage.style.height = hIn + 'px';
+          scoreSlideTimer = window.setTimeout(function () {
+            if (token !== scoreSlideToken) return;
+            scoreSlideTimer = null;
+            finishScoreSlide();
+          }, 420);
+        }, 480);
+      }
+
+      function setScore(score) {
+        if (!score || score === currentScore) return;
+        var from = currentScore;
+        currentScore = score;
+        scoreButtons.forEach(function (b) {
+          var on = b.getAttribute('data-score') === score;
+          b.classList.toggle('active', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var animate = !reduce && document.documentElement.classList.contains('js-motion');
+        scoreSlideToken += 1;
+        if (scoreSlideTimer) {
+          window.clearTimeout(scoreSlideTimer);
+          scoreSlideTimer = null;
+        }
+        finishScoreSlide();
+        if (animate) slideScorePanel(from, score);
+        else snapScorePanel(score);
+      }
 
       scoreButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
-          const score = btn.getAttribute('data-score');
-
-          scoreButtons.forEach(function (b) {
-            b.classList.remove('active');
-            b.setAttribute('aria-selected', 'false');
-          });
-          btn.classList.add('active');
-          btn.setAttribute('aria-selected', 'true');
-
-          scorePanels.forEach(function (panel) {
-            if (panel.getAttribute('data-score') === score) {
-              panel.classList.remove('active');
-              void panel.offsetWidth;
-              panel.classList.add('active');
-            } else {
-              panel.classList.remove('active');
-            }
-          });
+          setScore(btn.getAttribute('data-score'));
         });
       });
 
