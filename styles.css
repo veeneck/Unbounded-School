@@ -762,8 +762,8 @@ body.page-transcripts {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem 1.25rem;
-  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  flex-wrap: nowrap;
 }
 .grade-sticky-kicker {
   margin: 0;
@@ -772,6 +772,10 @@ body.page-transcripts {
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--ink);
+  white-space: nowrap;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .page-transcripts .grade-sticky .grade-switcher {
   margin: 0;
@@ -1781,13 +1785,27 @@ a.project-card.is-link:hover {
   }
 
   .page-transcripts .grade-sticky-inner {
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .page-transcripts .grade-sticky-kicker {
-    width: 100%;
-    text-align: center;
-    font-size: 0.98rem;
+    width: auto;
+    flex: 1 1 auto;
+    text-align: left;
+    font-size: 0.92rem;
+  }
+
+  .page-transcripts .grade-sticky .grade-switcher {
+    width: auto;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+  }
+
+  .page-transcripts .grade-sticky .grade-switcher button {
+    flex: 0 0 auto;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.82rem;
   }
 
   .page-transcripts .grade-switcher {
