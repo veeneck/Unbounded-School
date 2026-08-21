@@ -3196,67 +3196,9 @@ a.project-card.is-link:hover {
   border-color: var(--brown);
 }
 
-.page-report .report-top {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(13.5rem, 16.25rem);
-  gap: 1.25rem 1.5rem;
-  align-items: start;
-  margin-bottom: 3.5rem;
-}
-
-.page-report .report-top > section,
 .page-report .report-columns > section {
   margin-bottom: 0;
   padding-bottom: 0;
-}
-
-.page-report .report-index {
-  background: color-mix(in srgb, var(--bg) 35%, #fff);
-  border: 1px solid var(--ink);
-  border-radius: 0;
-  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
-  padding: 1.1rem 1.15rem 1.2rem;
-}
-
-.page-report .report-index-kicker {
-  font-family: "Fraunces", Georgia, "Times New Roman", serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--ink);
-  border-bottom: 1px solid var(--ink);
-  padding-bottom: 0.55rem;
-  margin-bottom: 0.9rem;
-}
-
-.page-report .report-index dl {
-  display: grid;
-  gap: 0.85rem;
-}
-
-.page-report .report-index div {
-  text-align: center;
-}
-
-.page-report .report-index dt {
-  font-family: "Fraunces", Georgia, "Times New Roman", serif;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.15rem;
-}
-
-.page-report .report-index dd {
-  font-family: "Fraunces", Georgia, "Times New Roman", serif;
-  font-size: 1.65rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: var(--ink);
-  line-height: 1.1;
 }
 
 .page-report .report-columns {
@@ -3378,18 +3320,9 @@ a.project-card.is-link:hover {
 }
 
 @media (max-width: 800px) {
-  .page-report .report-top,
   .page-report .report-columns {
     grid-template-columns: 1fr;
-  }
-
-  .page-report .report-top,
-  .page-report .report-columns {
     margin-bottom: 2.25rem;
-  }
-
-  .page-report .report-index dd {
-    font-size: 1.45rem;
   }
 }
 

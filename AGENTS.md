@@ -76,7 +76,7 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Voice: short, friendly, readable for a ~10-year-old. Same facts, less lecture
 - Copyable instruction boxes: `.guide-copy` + Copy button (`.guide-copy-btn[data-copy]`)
 - Shared styles in `styles.css`: `.book-toc`, `.book-chapter`, `.guide-tag`, `.guide-copy`, `.guide-tips`. Newspaper look via `body.page-guide` (same masthead/ink frames as schedule and writing).
-- **Report cards** (`students/scarlett/reportcards/`): `body.page-report`. Gazette masthead, boxed term tabs (Fall/Winter/Spring), grades + “The Index” (GPA/attendance), two-column achievements/growth, MAP tests table. Same ink frames as schedule.
+- **Report cards** (`students/scarlett/reportcards/`): `body.page-report`. Gazette masthead, boxed term tabs (Fall/Winter/Spring), full-width grades table, two-column achievements/growth, MAP tests table with GPA / attendance / days missed at the bottom. Same ink frames as schedule.
 - **404:** `404.html` at site root. Lost & Found masthead, dashed notice, boxed Home/Schedule/Scarlett/Guides links.
 - Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`, `guides/travel-crier.html`, `guides/info-quest.html`, `guides/bakers-guild.html`
 - Heroes: `guides/hero/` — `grokquill.jpg`, `quarterlycoin.jpg`, `travelcrier.jpg`, `infoquest.jpg`, `bakersguild.jpg`
