@@ -2803,9 +2803,12 @@ a.project-card.is-link:hover {
   background: color-mix(in srgb, var(--bg) 35%, #fff);
 }
 
-.page-writing .writing-hero img {
-  max-height: 420px;
-  object-fit: cover;
+.page-writing .writing-hero img,
+.page-guide .writing-hero img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: unset;
 }
 
 .page-writing .writing-video {
