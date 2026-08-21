@@ -19,6 +19,14 @@
   --blue-soft: #e0f2fe;
   --nav-height: 64px;
   --bg-end-space: max(6rem, 12vw);
+  /* Cap each paper texture to under half the page so top + bottom never overlap. */
+  --paper-fade: min(56.25vw, 42%);
+}
+
+@media (orientation: portrait) {
+  :root {
+    --paper-fade: min(100vw, 42%);
+  }
 }
 
 * {
@@ -30,6 +38,29 @@
 body {
   font-family: "Source Sans 3", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+  font-size: 16.5px;
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+}
+
+/* Paper textures: full width, native aspect, cropped to --paper-fade (no stretch). */
+body:not(.page-home)::before,
+body:not(.page-home)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--paper-fade);
+  pointer-events: none;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+body:not(.page-home)::before {
+  top: 0;
   background-image:
     linear-gradient(
       to bottom,
@@ -38,7 +69,14 @@ body {
       color-mix(in srgb, var(--bg) 55%, transparent) 52%,
       var(--bg) 100%
     ),
-    url("subtlebg.jpg"),
+    url("subtlebg.jpg");
+  background-position: top center, top center;
+  background-size: 100% 100%, 100% auto;
+}
+
+body:not(.page-home)::after {
+  bottom: 0;
+  background-image:
     linear-gradient(
       to bottom,
       var(--bg) 0%,
@@ -47,17 +85,12 @@ body {
       transparent 100%
     ),
     url("subtlebgend.jpg");
-  background-repeat: no-repeat;
-  background-position: top center, top center, bottom center, bottom center;
-  background-size: 100% 56.25vw, 100% auto, 100% 56.25vw, 100% auto;
-  color: var(--ink);
-  line-height: 1.55;
-  font-size: 16.5px;
-  min-height: 100vh;
+  background-position: bottom center, bottom center;
+  background-size: 100% 100%, 100% auto;
 }
 
 @media (orientation: portrait) {
-  body {
+  body:not(.page-home)::before {
     background-image:
       linear-gradient(
         to bottom,
@@ -66,7 +99,10 @@ body {
         color-mix(in srgb, var(--bg) 55%, transparent) 52%,
         var(--bg) 100%
       ),
-      url("subtlebgmobile.jpg"),
+      url("subtlebgmobile.jpg");
+  }
+  body:not(.page-home)::after {
+    background-image:
       linear-gradient(
         to bottom,
         var(--bg) 0%,
@@ -75,21 +111,17 @@ body {
         transparent 100%
       ),
       url("subtlebgendmobile.jpg");
-    background-size: 100% 100vw, 100% auto, 100% 100vw, 100% auto;
   }
 }
 
-body.page-transcripts {
-  --transcripts-paper-fade: 56.25vw;
+body.page-transcripts::before {
+  top: var(--transcripts-paper-top, 0px);
+}
+
+body.page-transcripts::after {
+  top: calc(var(--transcripts-travel-top, 100%) - var(--paper-fade));
+  bottom: auto;
   background-image:
-    linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 18%,
-      color-mix(in srgb, var(--bg) 55%, transparent) 52%,
-      var(--bg) 100%
-    ),
-    url("subtlebg.jpg"),
     linear-gradient(
       to bottom,
       var(--bg) 0%,
@@ -98,31 +130,12 @@ body.page-transcripts {
       transparent 100%
     ),
     url("subtlebg.jpg");
-  background-repeat: no-repeat;
-  background-position:
-    center var(--transcripts-paper-top, 0px),
-    center var(--transcripts-paper-top, 0px),
-    center calc(var(--transcripts-travel-top, 99999px) - var(--transcripts-paper-fade)),
-    center calc(var(--transcripts-travel-top, 99999px) - var(--transcripts-paper-fade));
-  background-size:
-    100% var(--transcripts-paper-fade),
-    100% auto,
-    100% var(--transcripts-paper-fade),
-    100% auto;
+  background-position: bottom center, bottom center;
 }
 
 @media (orientation: portrait) {
-  body.page-transcripts {
-    --transcripts-paper-fade: 100vw;
+  body.page-transcripts::after {
     background-image:
-      linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 18%,
-        color-mix(in srgb, var(--bg) 55%, transparent) 52%,
-        var(--bg) 100%
-      ),
-      url("subtlebgmobile.jpg"),
       linear-gradient(
         to bottom,
         var(--bg) 0%,

@@ -128,10 +128,16 @@
           var y = Math.max(0, Math.round(bar.getBoundingClientRect().top + window.scrollY));
           document.documentElement.style.setProperty('--transcripts-paper-top', y + 'px');
           var travel = document.querySelector('.transcripts-travel');
-          if (travel) {
-            var t = Math.max(0, Math.round(travel.getBoundingClientRect().top + window.scrollY));
-            document.documentElement.style.setProperty('--transcripts-travel-top', t + 'px');
-          }
+          var t = travel
+            ? Math.max(0, Math.round(travel.getBoundingClientRect().top + window.scrollY))
+            : document.documentElement.scrollHeight;
+          document.documentElement.style.setProperty('--transcripts-travel-top', t + 'px');
+          var span = Math.max(0, t - y);
+          var natural = window.matchMedia('(orientation: portrait)').matches
+            ? window.innerWidth
+            : window.innerWidth * 0.5625;
+          var fade = Math.min(natural, span * 0.42);
+          document.documentElement.style.setProperty('--paper-fade', Math.round(fade) + 'px');
         }
         setPaperTop();
         window.addEventListener('resize', setPaperTop);
