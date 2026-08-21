@@ -3529,7 +3529,7 @@ body.page-home .home-bubble-menu a:hover {
   body.page-home .home-bubbles {
     flex-direction: column;
     align-items: stretch;
-    gap: 0.55rem;
+    gap: 1.05rem;
     max-width: 16rem;
     margin: 0 auto;
   }
