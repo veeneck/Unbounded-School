@@ -2208,6 +2208,11 @@ body.page-home {
   min-height: 100vh;
   margin: 0;
   overflow-x: hidden;
+  background-color: #efe8dc;
+  background-image: url("wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 body.page-home .home-hero {
@@ -2217,47 +2222,12 @@ body.page-home .home-hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2.5rem 1.25rem;
+  padding: 6vh 1.25rem 22vh;
   text-align: center;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
+  background: transparent;
 }
-
-/* Subtle full-viewport sunburst — solid core, rays only outside center */
-body.page-home .home-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background: repeating-conic-gradient(
-    from 0deg at 50% 42%,
-    rgba(22, 101, 52, 0.03) 0deg 5deg,
-    rgba(22, 101, 52, 0) 5deg 12deg
-  );
-  opacity: 0.7;
-}
-
-/* Soft disc covering inner ~30% so rays read only on the outer ring */
-body.page-home .home-hero::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 42%;
-  z-index: 0;
-  pointer-events: none;
-  width: min(48vw, 26rem);
-  height: min(48vw, 26rem);
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    var(--bg) 0%,
-    var(--bg) 62%,
-    rgba(247, 245, 242, 0) 100%
-  );
-}
-
 
 body.page-home .home-hero-inner {
   position: relative;
@@ -2307,15 +2277,15 @@ body.page-home button.home-bubble {
   gap: 0.3rem;
   padding: 0.7rem 1.35rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.88);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
   color: var(--accent-dark);
-  border: 1px solid rgba(22, 101, 52, 0.14);
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
   text-decoration: none;
   font-weight: 700;
   font-size: 0.95rem;
   font-family: inherit;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(28, 25, 23, 0.04);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
@@ -2323,9 +2293,9 @@ body.page-home button.home-bubble {
 
 body.page-home a.home-bubble:hover,
 body.page-home button.home-bubble:hover {
-  background: rgba(255, 255, 255, 0.96);
-  border-color: rgba(22, 101, 52, 0.22);
-  box-shadow: 0 3px 10px rgba(22, 101, 52, 0.1);
+  background: color-mix(in srgb, var(--bg) 96%, transparent);
+  border-color: color-mix(in srgb, var(--ink) 16%, transparent);
+  box-shadow: 0 3px 10px rgba(28, 25, 23, 0.07);
   transform: translateY(-1px);
 }
 
@@ -2351,8 +2321,8 @@ body.page-home .home-bubble-menu {
   top: calc(100% + 8px);
   left: 50%;
   min-width: 12rem;
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: var(--bg);
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   padding: 0.35rem;

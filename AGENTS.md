@@ -61,7 +61,7 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 ### Nav
 - Standard nav: logo, Schedule, Guides → Grok & Quill / Quarterly Coin / Travel Crier / Info Quest / Bakers Guild, Students → Scarlett / Juliet
 - **Do not** put Co-op in the main nav
-- Homepage (`page-home`) has no nav bar; bubbles: Schedule, Co-op, Guides (dropdown)
+- Homepage (`page-home`) has no nav bar; bubbles: Schedule, Co-op, Guides (dropdown). `wallpaper.jpg` fills the viewport (`background-size: cover`). Logo, title, and menu sit directly on the wallpaper (no parchment panel).
 
 ### Guides (`guides/`)
 - Each guide: header + hero image → Contents TOC (Adventure Back Then pattern) → titled sections
@@ -131,7 +131,7 @@ Travel & Field Trips is **not grade-specific**: white footer band (`.transcripts
 
 ## Other pages
 - **Co-op:** numbered steps + Wufoo embed; theme via `Wufoo.css`
-- **Homepage:** large logo, tagline “A different take on education.”, bubble links (Schedule, Co-op, Guides)
+- **Homepage:** `wallpaper.jpg` fills the screen; logo/menu sit on the wallpaper; tagline “A different take on education.”, bubble links (Schedule, Co-op, Guides)
 - **Analytics:** Fathom `FXWFKUXE` on every HTML page
 
 ---
