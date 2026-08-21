@@ -2243,7 +2243,8 @@ a.project-card.is-link:hover {
 
 /* ========== Newspaper theme (schedule + writing/project pages) ========== */
 .page-schedule header,
-.page-writing header {
+.page-writing header,
+.page-guide header {
   text-align: center;
   margin-bottom: 2.75rem;
   padding: 0.15rem 0 1.15rem;
@@ -2251,7 +2252,8 @@ a.project-card.is-link:hover {
 }
 
 .page-schedule .hero-badge,
-.page-writing .hero-badge {
+.page-writing .hero-badge,
+.page-guide .hero-badge {
   background: none;
   border: 0;
   border-radius: 0;
@@ -2265,7 +2267,8 @@ a.project-card.is-link:hover {
 }
 
 .page-schedule header h1,
-.page-writing header h1 {
+.page-writing header h1,
+.page-guide header h1 {
   font-family: "Great Vibes", "Palatino", cursive;
   font-weight: 400;
   font-size: clamp(3.4rem, 12vw, 5.25rem);
@@ -2275,7 +2278,8 @@ a.project-card.is-link:hover {
 }
 
 .page-schedule header .subtitle,
-.page-writing header .subtitle {
+.page-writing header .subtitle,
+.page-guide header .subtitle {
   max-width: 36em;
   font-size: 0.98rem;
   font-style: italic;
@@ -2322,7 +2326,8 @@ a.project-card.is-link:hover {
   letter-spacing: 0.04em;
 }
 
-.page-writing .writing-hero {
+.page-writing .writing-hero,
+.page-guide .writing-hero {
   border-radius: 0;
   border: 1px solid var(--ink);
   box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
@@ -2455,11 +2460,138 @@ a.project-card.is-link:hover {
 }
 
 .page-schedule footer,
-.page-writing footer {
+.page-writing footer,
+.page-guide footer {
   border-top: 3px double var(--ink);
   font-family: "Fraunces", Georgia, "Times New Roman", serif;
   letter-spacing: 0.04em;
   font-size: 0.78rem;
+}
+
+.page-guide .book-toc {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+.page-guide .book-toc-title {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+}
+
+.page-guide .book-toc-list a {
+  color: var(--brown);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+.page-guide .book-chapter {
+  border-bottom-color: var(--ink);
+}
+
+.page-guide .guide-tag {
+  border-radius: 0;
+  background: transparent;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.14em;
+}
+
+.page-guide .guide-tag-setup {
+  color: var(--brown);
+  border-color: var(--brown);
+}
+
+.page-guide .guide-tag-task {
+  color: var(--ink);
+  border-color: var(--ink);
+  background: transparent;
+}
+
+.page-guide .guide-tag-watch {
+  color: #8a6a2f;
+  border-color: #8a6a2f;
+  background: transparent;
+}
+
+.page-guide .guide-tag-questions {
+  color: #1e3a5f;
+  border-color: #1e3a5f;
+  background: transparent;
+}
+
+.page-guide .book-chapter-head h2 {
+  letter-spacing: 0.04em;
+}
+
+.page-guide .book-chapter-body a {
+  color: var(--brown);
+}
+
+.page-guide .guide-copy {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  border: 1px solid var(--ink);
+  border-left: 3px solid var(--brown);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+.page-guide .guide-copy-bar {
+  background: color-mix(in srgb, var(--brown) 10%, var(--bg));
+  border-bottom: 1px solid var(--ink);
+}
+
+.page-guide .guide-copy-label {
+  color: var(--brown);
+}
+
+.page-guide .guide-copy-btn {
+  border-radius: 0;
+  border: 1px solid var(--brown);
+  background: transparent;
+  color: var(--brown);
+  box-shadow: none;
+}
+
+.page-guide .guide-copy-btn:hover {
+  background: var(--brown);
+  color: var(--bg);
+  transform: none;
+}
+
+.page-guide .guide-copy-btn.is-copied {
+  background: var(--brown);
+  color: var(--bg);
+  border-color: var(--brown);
+}
+
+.page-guide .guide-tips > li {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.page-guide .guide-tips .tip-num {
+  color: var(--brown);
+}
+
+.page-guide .guide-video {
+  border-radius: 0;
+  border: 1px dashed var(--brown);
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  color: var(--brown);
+}
+
+.page-guide .guide-video:has(iframe),
+.page-guide .guide-video:has(video) {
+  border-style: solid;
+  border-color: var(--ink);
+}
+
+.page-guide .guide-video iframe,
+.page-guide .guide-video video {
+  border-radius: 0;
 }
 
 /* Schedule: brief labels on mobile, full on larger screens */

@@ -73,7 +73,7 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Mini tags above each heading (not “Step 1”): `Setup` (first), `Task` (do this). Later: `Watch` (video), `Questions` (quiz). Classes: `.guide-tag` + `.guide-tag-setup` / `-task` / `-watch` / `-questions`
 - Voice: short, friendly, readable for a ~10-year-old. Same facts, less lecture
 - Copyable instruction boxes: `.guide-copy` + Copy button (`.guide-copy-btn[data-copy]`)
-- Shared styles in `styles.css`: `.book-toc`, `.book-chapter`, `.guide-tag`, `.guide-copy`, `.guide-tips`
+- Shared styles in `styles.css`: `.book-toc`, `.book-chapter`, `.guide-tag`, `.guide-copy`, `.guide-tips`. Newspaper look via `body.page-guide` (same masthead/ink frames as schedule and writing).
 - Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`, `guides/travel-crier.html`, `guides/info-quest.html`, `guides/bakers-guild.html`
 - Heroes: `guides/hero/` — `grokquill.jpg`, `quarterlycoin.jpg`, `travelcrier.jpg`, `infoquest.jpg`, `bakersguild.jpg`
 - Watch placeholders: `.guide-video` (“Video coming soon”) until a real video is dropped in
