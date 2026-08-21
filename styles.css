@@ -1192,10 +1192,11 @@ a.pill-link.pill-project:hover {
 }
 
 /* Project cards (Projects / Skills / Sports) */
-.project-grid {
+.project-grid,
+.writing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 0.75rem;
 }
 
 .project-card {
@@ -1350,22 +1351,20 @@ a.project-card.is-link:hover {
   flex-shrink: 0;
 }
 
-.writing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
-  gap: 0.75rem;
-}
-
+.project-grid .project-card,
 .writing-grid .project-card,
+.project-grid .project-body,
 .writing-grid .project-body {
   min-width: 0;
 }
 
+.project-grid .project-body,
 .writing-grid .project-body {
   padding: 0.55rem 0.7rem 0.7rem;
   gap: 0.22rem;
 }
 
+.project-grid .project-title,
 .writing-grid .project-title {
   font-size: 0.88rem;
   min-width: 0;
@@ -1374,15 +1373,18 @@ a.project-card.is-link:hover {
   text-overflow: ellipsis;
 }
 
+.project-grid .project-cat,
 .writing-grid .project-cat {
   font-size: 0.7rem;
 }
 
+.project-grid .proj-cat-icon,
 .writing-grid .proj-cat-icon {
   width: 0.78rem;
   height: 0.78rem;
 }
 
+.project-grid .project-thumb .proj-link-icon,
 .writing-grid .project-thumb .proj-link-icon {
   top: 0.4rem;
   right: 0.4rem;
@@ -2045,22 +2047,18 @@ a.project-card.is-link:hover {
     gap: 0.65rem;
   }
 
-  .page-transcripts .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-  }
-
+  .page-transcripts .project-grid,
   .page-transcripts .writing-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.6rem;
   }
 
   .page-transcripts .project-title {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
   }
 
   .page-transcripts .project-body {
-    padding: 0.7rem 0.75rem 0.85rem;
+    padding: 0.55rem 0.7rem 0.7rem;
   }
 
   .page-transcripts .book-grid {
@@ -2140,26 +2138,18 @@ a.project-card.is-link:hover {
     font-size: 1.15rem;
   }
 
-  .page-transcripts .project-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
-  }
-
+  .page-transcripts .project-grid,
   .page-transcripts .writing-grid {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
   }
 
-  .page-transcripts .writing-grid .project-title {
+  .page-transcripts .project-title {
     font-size: 0.82rem;
   }
 
-  .page-transcripts .project-title {
-    font-size: 0.88rem;
-  }
-
   .page-transcripts .project-cat {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
   }
 
   .page-transcripts .progress-card {
@@ -2186,8 +2176,9 @@ a.project-card.is-link:hover {
 }
 
 @media (max-width: 400px) {
-  .page-transcripts .project-grid {
-    grid-template-columns: 1fr;
+  .page-transcripts .project-grid,
+  .page-transcripts .writing-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .page-transcripts .grade-switcher button {
