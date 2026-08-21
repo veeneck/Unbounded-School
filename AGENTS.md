@@ -37,7 +37,8 @@ scarlett/
 transcripts.html          # Main portfolio (per-student; not site-root)
 art/                      # Art images (MonArt grid, etc.)
 books/                    # Book cover images
-hero/                     # Hero/thumbnail images for writing & projects
+hero/                     # Full hero images for writing & project pages
+thumbnails/               # Smaller JPEGs for transcripts cards (hero/, books/, projects/, art/)
 testing/                  # MAP RIT chart images
 writing/4thgrade/         # Writing entry HTML pages
 projects/4thgrade/        # Project HTML + media (video, photos)
@@ -104,17 +105,17 @@ Do not put the full Day 1–5 project-instruction text in new prompts — it alr
 
 ## Transcripts (`students/scarlett/transcripts.html`)
 
-Sections: Testing → Math → Reading & Writing → Projects → Science/SS  
-(Travel + map stay outside grade panels.)
+Sections: Testing → Math → Reading → Writing → Projects → Science/SS  
+Travel & Field Trips is **not grade-specific**: white footer band (`.transcripts-travel`), like Testing. Pills and the world map stay in the ~1056px column. The page footer sits in that same white band.
 
 - One page-level grade switcher sits under Testing/report cards (`.grade-sticky#grade-sticky`). It sticks to the top as a header while you scroll Math → Travel. **No per-section 4th/5th switchers.**
 - Testing + report cards sit in a **full-width white band** (`.transcripts-lead`). Report cards: custom `.dash-drop` pill beside Homeschool Boss (same `.dash-link` style). Label **Report Cards**; click opens Spring/Winter/Fall. Score tabs / dash links tan so they don’t disappear on white
-- Grade bar is the **subheader of the paper section below**: full viewport width, larger kicker (`Scarlett · 4th Grade` / `5th Grade`). Inner row stays the ~1056px column. `?grade=` still selects all `.grade-panel`s
+- Grade bar is the **subheader of the paper section below**: full viewport width, larger kicker (`Scarlett · 4th Grade` / `5th Grade`). Inner row stays the ~1056px column. `?grade=` still selects all `.grade-panel`s. Clicking 4th/5th scrolls back to Math (`#grade-start`), just under the sticky bar. No scroll on first load from the URL.
 - Testing score tabs (Math/Reading/Language/Science/All) sit **under** the graph in `.score-stage`, same width as the chart, equal-width buttons (graph controls). Separate from the 4th/5th grade bar.
 - Motion: only progress bars fill from the left as their card scrolls into view (`.js-motion` + `.is-in`). No fade-ins. Off if `prefers-reduced-motion`. Re-observe after grade switch.
 - Progress cards with bars + 100% checkmarks
-- Project cards: thumbnail + title + category
-- Empty 5th writing still “Nothing here yet, check back!”
+- Project / writing / book cards on transcripts use **`thumbnails/`** (resized JPEGs). Full `hero/`, `books/`, and project photos stay on the individual pages.
+- Writing is its own section after Reading. 4th-grade pieces use compact `.writing-grid` cards (same as project cards, smaller) with hero thumbs from `hero/`. 5th writing still “Nothing here yet, check back!”
 - 5th projects: first card is **Summer Sale** (`projects/5thgrade/summersale.html`) — featured like Adventure Back Then. Hero `summersalehero.jpg`. Body photos: `.writing-inline` (money, text wraps) and `.writing-figure` (full-width: yardsign, chalk). Replace placeholder copy with Scarlett’s words.
 
 **Lexia Core5 circles** (`.lexia-circle`) — 16–18 on 4th, 19–21 on 5th:

@@ -786,6 +786,7 @@ body.page-transcripts {
 
 body.page-transcripts .page {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .transcripts-lead {
@@ -808,6 +809,58 @@ body.page-transcripts .page {
 
 .transcripts-lead .dash-link {
   background: var(--bg);
+}
+
+.transcripts-travel {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 3.25rem;
+  padding: 2.15rem 0 1.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.transcripts-travel-inner {
+  max-width: 1056px;
+  margin: 0 auto;
+  padding: 0 1.25rem 1.5rem;
+}
+
+.transcripts-travel .section-head {
+  margin-top: 1.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.travel-places .label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 1rem 0 0.45rem;
+}
+
+.travel-places .label:first-child {
+  margin-top: 0;
+}
+
+.transcripts-travel footer {
+  max-width: 1056px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem 0;
+}
+
+.page-transcripts .page > section .section-head {
+  margin-top: 1.85rem;
+}
+
+.page-transcripts #grade-start {
+  padding-top: 1.85rem;
+}
+
+.page-transcripts #grade-start .section-head {
+  margin-top: 0;
 }
 
 .page-transcripts .grade-sticky {
@@ -1295,6 +1348,47 @@ a.project-card.is-link:hover {
   stroke-linecap: round;
   stroke-linejoin: round;
   flex-shrink: 0;
+}
+
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 0.75rem;
+}
+
+.writing-grid .project-card,
+.writing-grid .project-body {
+  min-width: 0;
+}
+
+.writing-grid .project-body {
+  padding: 0.55rem 0.7rem 0.7rem;
+  gap: 0.22rem;
+}
+
+.writing-grid .project-title {
+  font-size: 0.88rem;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.writing-grid .project-cat {
+  font-size: 0.7rem;
+}
+
+.writing-grid .proj-cat-icon {
+  width: 0.78rem;
+  height: 0.78rem;
+}
+
+.writing-grid .project-thumb .proj-link-icon {
+  top: 0.4rem;
+  right: 0.4rem;
+  width: 0.95rem;
+  height: 0.95rem;
+  padding: 0.22rem;
 }
 
 /* Art gallery grid (MonArt project pages) */
@@ -1873,6 +1967,28 @@ a.project-card.is-link:hover {
     padding-right: 1rem;
   }
 
+  .transcripts-travel-inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .transcripts-travel footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-transcripts .page > section .section-head {
+    margin-top: 1.25rem;
+  }
+
+  .transcripts-travel .section-head {
+    margin-top: 1.25rem;
+  }
+
+  .page-transcripts #grade-start {
+    padding-top: 1.25rem;
+  }
+
   .page-transcripts .grade-sticky-inner {
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -1934,6 +2050,11 @@ a.project-card.is-link:hover {
     gap: 0.75rem;
   }
 
+  .page-transcripts .writing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
   .page-transcripts .project-title {
     font-size: 0.92rem;
   }
@@ -1990,7 +2111,29 @@ a.project-card.is-link:hover {
   .page-transcripts .page {
     padding-left: 0.85rem;
     padding-right: 0.85rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0;
+  }
+
+  .transcripts-travel-inner {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .transcripts-travel footer {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .page-transcripts .page > section .section-head {
+    margin-top: 1rem;
+  }
+
+  .transcripts-travel .section-head {
+    margin-top: 1rem;
+  }
+
+  .page-transcripts #grade-start {
+    padding-top: 1rem;
   }
 
   .page-transcripts .section-head h2 {
@@ -2000,6 +2143,15 @@ a.project-card.is-link:hover {
   .page-transcripts .project-grid {
     grid-template-columns: 1fr 1fr;
     gap: 0.6rem;
+  }
+
+  .page-transcripts .writing-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .page-transcripts .writing-grid .project-title {
+    font-size: 0.82rem;
   }
 
   .page-transcripts .project-title {
