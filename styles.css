@@ -481,6 +481,18 @@ a.pill-link.pill-white:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
+a.pill-link.pill-tan {
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+a.pill-link.pill-tan:hover {
+  background: #efece7;
+  border-color: #d6d3d1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
 
 /* Notes */
 .note-box,
@@ -735,6 +747,32 @@ body.page-transcripts {
   overflow-x: hidden;
 }
 
+body.page-transcripts .page {
+  padding-top: 0;
+}
+
+.transcripts-lead {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  box-sizing: border-box;
+  background: #fff;
+  padding: calc(var(--nav-height) + 1.25rem) 1.25rem 2.15rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.transcripts-lead-inner {
+  max-width: 1056px;
+  margin: 0 auto;
+}
+
+.transcripts-lead .grade-switcher {
+  background: var(--bg);
+}
+
+.transcripts-lead a.dash-link {
+  background: var(--bg);
+}
+
 .page-transcripts .grade-sticky {
   position: sticky;
   top: 0;
@@ -742,19 +780,18 @@ body.page-transcripts {
   width: 100vw;
   max-width: none;
   box-sizing: border-box;
-  margin: 0.35rem 0 1.6rem;
+  margin: 0 0 1.75rem;
   margin-left: calc(50% - 50vw);
-  padding: 0.7rem 1.25rem;
-  background: rgba(247, 245, 242, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  padding: 1rem 1.25rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition: box-shadow 0.2s, background 0.2s;
 }
 .page-transcripts .grade-sticky.is-stuck {
-  border-bottom-color: var(--border);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   background: rgba(247, 245, 242, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 .grade-sticky-inner {
   max-width: 1056px;
@@ -768,7 +805,7 @@ body.page-transcripts {
 .grade-sticky-kicker {
   margin: 0;
   font-family: "Fraunces", Georgia, serif;
-  font-size: 1.05rem;
+  font-size: 1.28rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--ink);
@@ -2484,15 +2521,27 @@ body.page-home .home-bubble-menu a:hover {
 }
 
 .lexia-level.is-progress .lexia-circle {
-  background: linear-gradient(
-    to top,
-    #bbf7d0 0%,
-    #dcfce7 var(--lexia-pct, 0%),
-    #fff var(--lexia-pct, 0%)
-  );
+  position: relative;
+  overflow: hidden;
+  background: #fff;
   border-color: #86efac;
   color: var(--accent-dark);
   box-shadow: 0 1px 3px rgba(22, 101, 52, 0.1);
+}
+.lexia-level.is-progress .lexia-circle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--lexia-pct, 0%);
+  background: linear-gradient(to top, #bbf7d0, #dcfce7);
+  transform-origin: bottom center;
+  z-index: 0;
+}
+.lexia-level.is-progress .lexia-circle span {
+  position: relative;
+  z-index: 1;
 }
 
 .lexia-level.is-progress .lexia-num {
@@ -2525,5 +2574,22 @@ body.page-home .home-bubble-menu a:hover {
   }
   .lexia-caption {
     font-size: 0.7rem;
+  }
+}
+
+/* Progress bars fill when the card scrolls into view */
+.js-motion .page-transcripts .progress-bar-fill {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.js-motion .page-transcripts .is-in .progress-bar-fill {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-motion .page-transcripts .progress-bar-fill {
+    transition: none;
+    transform: none;
   }
 }

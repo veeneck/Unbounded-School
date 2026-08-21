@@ -108,9 +108,10 @@ Sections: Testing → Math → Reading & Writing → Projects → Science/SS
 (Travel + map stay outside grade panels.)
 
 - One page-level grade switcher sits under Testing/report cards (`.grade-sticky#grade-sticky`). It sticks to the top as a header while you scroll Math → Travel. **No per-section 4th/5th switchers.**
-- Bar is **full viewport width** (blur/bg like the site nav); inner row (`.grade-sticky-inner`) stays the ~1056px content column
-- Kicker (`#grade-kicker`) reads `Scarlett · 4th Grade` or `Scarlett · 5th Grade` and updates with the tabs. `?grade=5th` / `?grade=4th` still selects all `.grade-panel`s
+- Testing + report cards sit in a **full-width white band** (`.transcripts-lead`). Report-card pills use `.pill-tan` (paper `--bg` on white). Score tabs / dash links also tan so they don’t disappear on white
+- Grade bar is the **subheader of the paper section below**: full viewport width, larger kicker (`Scarlett · 4th Grade` / `5th Grade`). Inner row stays the ~1056px column. `?grade=` still selects all `.grade-panel`s
 - Testing score tabs (Math/Reading/Language/Science/All) are separate and stay in that section
+- Motion: only progress bars fill from the left as their card scrolls into view (`.js-motion` + `.is-in`). No fade-ins. Off if `prefers-reduced-motion`. Re-observe after grade switch.
 - Progress cards with bars + 100% checkmarks
 - Project cards: thumbnail + title + category
 - Empty 5th writing still “Nothing here yet, check back!”

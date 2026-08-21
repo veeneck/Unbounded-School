@@ -57,6 +57,8 @@
 
   <div class="page">
 
+    <div class="transcripts-lead">
+      <div class="transcripts-lead-inner">
     <header>
       <div class="hero-badge">Student Record</div>
       <h1>Scarlett’s Transcripts</h1>
@@ -225,11 +227,13 @@
       </div>
 
             <div class="pill-row" style="margin-top:1rem;">
-        <a class="pill-link pill-white" href="reportcards/spring-2026.html">Spring 2026 Report Card</a>
-        <a class="pill-link pill-white" href="reportcards/winter-2025.html">Winter 2025 Report Card</a>
-        <a class="pill-link pill-white" href="reportcards/fall-2025.html">Fall 2025 Report Card</a>
+        <a class="pill-link pill-tan" href="reportcards/spring-2026.html">Spring 2026 Report Card</a>
+        <a class="pill-link pill-tan" href="reportcards/winter-2025.html">Winter 2025 Report Card</a>
+        <a class="pill-link pill-tan" href="reportcards/fall-2025.html">Fall 2025 Report Card</a>
       </div>
     </section>
+      </div>
+    </div>
 
     <div class="grade-sticky" id="grade-sticky">
       <div class="grade-sticky-inner">
@@ -829,6 +833,9 @@
             history.replaceState(null, '', url.pathname + url.search + url.hash);
           } catch (e) {}
         }
+        if (typeof window._watchGradeReveals === 'function') {
+          window.requestAnimationFrame(function () { window._watchGradeReveals(); });
+        }
       }
 
       document.querySelectorAll('.grade-tabs button[data-grade]').forEach(function (btn) {
@@ -836,6 +843,30 @@
           setAllGrades(btn.getAttribute('data-grade'), true);
         });
       });
+
+      document.documentElement.classList.add('js-motion');
+
+      (function setupBarFills() {
+        var cards = document.querySelectorAll('.page-transcripts .progress-card');
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduce) {
+          cards.forEach(function (el) { el.classList.add('is-in'); });
+          return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-in');
+            io.unobserve(entry.target);
+          });
+        }, { threshold: 0.25, rootMargin: '0px 0px -6% 0px' });
+        cards.forEach(function (el) { io.observe(el); });
+        window._watchGradeReveals = function () {
+          document.querySelectorAll('.grade-panel.active .progress-card:not(.is-in)').forEach(function (el) {
+            io.observe(el);
+          });
+        };
+      })();
 
       (function stickyGradeBar() {
         var bar = document.getElementById('grade-sticky');
