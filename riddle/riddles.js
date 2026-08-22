@@ -1,0 +1,155 @@
+window.UNBOUNDED_RIDDLES = {
+  "timezone": "America/Chicago",
+  "dayStartsAt": "06:30",
+  "entries": [
+    {
+      "date": "2026-08-17",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus riddle-count-phrase\" role=\"img\" aria-label=\"COOL twice, then SCHOOL four times\"><div class=\"riddle-repeat\"><span class=\"riddle-word\">cool</span><span class=\"riddle-word\">cool</span></div><div class=\"riddle-repeat riddle-repeat-4\"><span class=\"riddle-word\">school</span><span class=\"riddle-word\">school</span><span class=\"riddle-word\">school</span><span class=\"riddle-word\">school</span></div></div>",
+      "prompt": "COOL twice, then SCHOOL four times",
+      "answer": "Too cool for school",
+      "joke": "What do you call a fish with no eyes? Fsh."
+    },
+    {
+      "date": "2026-08-18",
+      "type": "riddle",
+      "prompt": "What has keys but can't open a door?",
+      "answer": "A piano",
+      "joke": "Why did the golfer bring two pairs of pants? In case he got a hole in one."
+    },
+    {
+      "date": "2026-08-19",
+      "type": "math",
+      "prompt": "A farmer has 17 sheep. All but 9 die. How many are left?",
+      "answer": "9",
+      "joke": "How do you organize a space party? You planet."
+    },
+    {
+      "date": "2026-08-20",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"DEAL in very large letters\"><span class=\"riddle-mega\">deal</span></div>",
+      "prompt": "DEAL in very large letters",
+      "answer": "A big deal",
+      "joke": "What do you call a snowman in summer? A puddle."
+    },
+    {
+      "date": "2026-08-21",
+      "type": "riddle",
+      "prompt": "What can you catch but not throw?",
+      "answer": "A cold",
+      "joke": "Why was 6 afraid of 7? Because 7 8 9."
+    },
+    {
+      "date": "2026-08-22",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"ONCE sitting in the middle of LIFETIME\"><span class=\"riddle-nest-outer\">life<span class=\"riddle-nest-inner\">once</span>time</span></div>",
+      "prompt": "ONCE sitting in the middle of LIFETIME",
+      "answer": "Once in a lifetime",
+      "joke": "Why did the scarecrow win an award? He was outstanding in his field."
+    },
+    {
+      "date": "2026-08-23",
+      "type": "riddle",
+      "prompt": "I have cities but no houses, forests but no trees, water but no fish. What am I?",
+      "answer": "A map",
+      "joke": "What do you call a fake noodle? An impasta."
+    },
+    {
+      "date": "2026-08-24",
+      "type": "math",
+      "prompt": "A snail climbs 3 feet up a 10-foot well each day and slides 2 feet down each night. On which day does it get out?",
+      "answer": "Day 8 (on day 8 it climbs the last 3 feet from 7 to 10 and is out before night)",
+      "joke": "Why don't scientists trust atoms? They make up everything."
+    },
+    {
+      "date": "2026-08-25",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus riddle-rebus-row\" role=\"img\" aria-label=\"CYCLE CYCLE CYCLE\"><span class=\"riddle-word\">CYCLE</span><span class=\"riddle-word\">CYCLE</span><span class=\"riddle-word\">CYCLE</span></div>",
+      "prompt": "CYCLE CYCLE CYCLE",
+      "answer": "A tricycle",
+      "joke": "What did the ocean say to the beach? Nothing, it just waved."
+    },
+    {
+      "date": "2026-08-26",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"STAND with I under it\"><span class=\"riddle-word\">STAND</span><span class=\"riddle-word riddle-under\">I</span></div>",
+      "prompt": "STAND with I under it",
+      "answer": "I understand",
+      "joke": "Why did the math book look sad? It had too many problems."
+    },
+    {
+      "date": "2026-08-27",
+      "type": "riddle",
+      "prompt": "What has to be broken before you can use it?",
+      "answer": "An egg",
+      "joke": "What do you call a bear with no teeth? A gummy bear."
+    },
+    {
+      "date": "2026-08-28",
+      "type": "math",
+      "prompt": "It takes 12 minutes to saw a log into 4 pieces. How long to saw it into 6 pieces? (equal pieces, same saw)",
+      "answer": "20 minutes (3 cuts for 4 pieces, 5 cuts for 6)",
+      "joke": "Why can't your nose be 12 inches long? Because then it would be a foot."
+    },
+    {
+      "date": "2026-08-29",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"WEAR with LONG under it\"><span class=\"riddle-word\">WEAR</span><span class=\"riddle-word riddle-under\">LONG</span></div>",
+      "prompt": "WEAR with LONG under it",
+      "answer": "Long underwear",
+      "joke": "What do you call cheese that isn't yours? Nacho cheese."
+    },
+    {
+      "date": "2026-08-30",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus riddle-touchdown\" role=\"img\" aria-label=\"TOUCH then D-O-W-N stacked as a column\"><span class=\"riddle-word\">TOUCH</span><span class=\"riddle-col\" aria-hidden=\"true\"><span>D</span><span>O</span><span>W</span><span>N</span></span></div>",
+      "prompt": "TOUCH then D-O-W-N stacked as a column",
+      "answer": "Touchdown",
+      "joke": "Why did the bicycle fall over? It was two-tired."
+    },
+    {
+      "date": "2026-08-31",
+      "type": "riddle",
+      "prompt": "What gets wetter the more it dries?",
+      "answer": "A towel",
+      "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+      "date": "2026-09-01",
+      "type": "math",
+      "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+      "answer": "5 cents",
+      "joke": "Why did the student eat his homework? The teacher said it was a piece of cake."
+    },
+    {
+      "date": "2026-09-02",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"GROUND with six FEET under it\"><span class=\"riddle-word\">GROUND</span><span class=\"riddle-feet riddle-under\" aria-hidden=\"true\"><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span></span></div>",
+      "prompt": "GROUND with six FEET under it",
+      "answer": "Six feet underground",
+      "joke": "What do you call a sleeping bull? A bulldozer."
+    },
+    {
+      "date": "2026-09-03",
+      "type": "riddle",
+      "prompt": "The more you take, the more you leave behind. What am I?",
+      "answer": "Footsteps",
+      "joke": "Why are ghosts bad liars? You can see right through them."
+    },
+    {
+      "date": "2026-09-04",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"HIGH above and LOW below the word and\"><span class=\"riddle-word\">HIGH</span><span class=\"riddle-small\">and</span><span class=\"riddle-word\">LOW</span></div>",
+      "prompt": "HIGH above and LOW below the word and",
+      "answer": "High and low",
+      "joke": "What do you call an alligator in a vest? An investigator."
+    },
+    {
+      "date": "2026-09-05",
+      "type": "math",
+      "prompt": "3 cats catch 3 mice in 3 minutes. How many cats to catch 100 mice in 100 minutes? (same rate)",
+      "answer": "3 cats",
+      "joke": "Why did the cookie go to the nurse? It felt crummy."
+    }
+  ]
+};

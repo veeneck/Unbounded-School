@@ -3498,6 +3498,21 @@ body.page-home {
   background-position: center;
 }
 
+body.page-home .home-ball-link {
+  position: fixed;
+  z-index: 2;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+body.page-home .home-ball-link:focus-visible {
+  outline: 2px solid var(--brown);
+  outline-offset: 3px;
+}
+
 body.page-home .home-hero {
   position: relative;
   min-height: 100vh;
@@ -4028,5 +4043,410 @@ body.page-home .home-bubble-menu a:hover {
   .js-motion .page-transcripts .progress-bar-fill {
     transition: none;
     transform: none;
+  }
+}
+
+/* ========== Riddle page ========== */
+.page-riddle header {
+  text-align: center;
+  margin-bottom: 2.75rem;
+  padding: 0.15rem 0 1.15rem;
+  border-bottom: 3px double var(--ink);
+}
+
+.page-riddle .hero-badge {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: var(--ink);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  padding: 0.25rem 0 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+.page-riddle header h1 {
+  font-family: "Great Vibes", "Palatino", cursive;
+  font-weight: 400;
+  font-size: clamp(3.4rem, 12vw, 5.25rem);
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.page-riddle header .subtitle {
+  max-width: 36em;
+  font-size: 0.98rem;
+  font-style: italic;
+}
+
+.page-riddle footer {
+  border-top: 3px double var(--ink);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+}
+
+.page-riddle .riddle-app {
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+}
+
+.page-riddle .riddle-toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.65rem 0.85rem;
+  margin-bottom: 1.15rem;
+}
+
+.page-riddle .riddle-date {
+  grid-column: 2;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.page-riddle .riddle-nav-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  padding: 0.2rem 0;
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page-riddle .riddle-nav-btn:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.page-riddle #riddle-prev {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.page-riddle #riddle-next {
+  grid-column: 3;
+  justify-self: end;
+}
+
+.page-riddle .riddle-nav-btn:disabled,
+.page-riddle .riddle-nav-btn[aria-disabled="true"] {
+  color: color-mix(in srgb, var(--muted) 55%, var(--bg));
+  cursor: default;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.page-riddle .riddle-card,
+.page-riddle .riddle-empty {
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+  padding: 1.45rem 1.35rem 1.5rem;
+}
+
+.page-riddle .riddle-empty {
+  border-style: dashed;
+  text-align: center;
+}
+
+.page-riddle .riddle-empty p {
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.62;
+  margin: 0;
+}
+
+.page-riddle .riddle-kicker {
+  display: table;
+  margin: 0 auto 1.25rem;
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--ink) 28%, var(--bg));
+  border-radius: 999px;
+  padding: 0.22rem 0.7rem 0.2rem;
+}
+
+.page-riddle .riddle-prompt {
+  font-size: 1.12rem;
+  line-height: 1.55;
+  color: var(--ink);
+  text-align: center;
+  margin: 0 0 1.35rem;
+}
+
+.page-riddle .riddle-prompt-visual {
+  margin-bottom: 1.5rem;
+}
+
+.page-riddle .riddle-rebus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: clamp(1.45rem, 5.5vw, 2.05rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1.12;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.page-riddle .riddle-word {
+  display: block;
+}
+
+.page-riddle .riddle-rebus-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.55em 0.9em;
+  font-size: clamp(1.15rem, 4.2vw, 1.7rem);
+}
+
+.page-riddle .riddle-under {
+  margin-top: 0.15em;
+}
+
+.page-riddle .riddle-small {
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.55em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0.15em 0;
+}
+
+.page-riddle .riddle-touchdown {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.85rem 1.1rem;
+  flex-wrap: wrap;
+}
+
+.page-riddle .riddle-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.08em;
+  line-height: 1.05;
+  font-size: 0.72em;
+}
+
+.page-riddle .riddle-feet {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.28em 0.7em;
+  margin-top: 0.45em;
+  font-size: 0.58em;
+  letter-spacing: 0.1em;
+}
+
+.page-riddle .riddle-count-phrase {
+  gap: 0.85rem;
+  font-size: clamp(1.05rem, 4vw, 1.55rem);
+  letter-spacing: 0.08em;
+}
+
+.page-riddle .riddle-count-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem 0.9rem;
+  flex-wrap: wrap;
+}
+
+.page-riddle .riddle-numeral {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.55em;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  min-width: 1.1em;
+}
+
+.page-riddle .riddle-repeat {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35em 0.7em;
+}
+
+.page-riddle .riddle-repeat .riddle-word {
+  display: inline-block;
+}
+
+.page-riddle .riddle-repeat-4 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.28em 0.75em;
+}
+
+.page-riddle .riddle-mega {
+  display: block;
+  font-size: clamp(3.2rem, 16vw, 5.4rem);
+  letter-spacing: 0.08em;
+  line-height: 0.9;
+}
+
+.page-riddle .riddle-micro {
+  font-size: 0.42em;
+  letter-spacing: 0.16em;
+}
+
+.page-riddle .riddle-strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.08em;
+}
+
+.page-riddle .riddle-back {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+.page-riddle .riddle-nest-outer {
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.12em;
+  font-size: clamp(1.35rem, 5vw, 1.9rem);
+}
+
+.page-riddle .riddle-nest-inner {
+  font-size: 0.42em;
+  letter-spacing: 0.1em;
+  margin: 0 0.22em;
+  padding: 0.2em 0.28em 0.12em;
+  border: 1px solid var(--ink);
+  line-height: 1.1;
+}
+
+.page-riddle .riddle-box {
+  display: inline-block;
+  border: 2px solid var(--ink);
+  padding: 0.35em 0.45em 0.28em;
+  letter-spacing: 0.12em;
+}
+
+.page-riddle .riddle-reveal-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.page-riddle .riddle-reveal {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.95rem;
+  cursor: pointer;
+}
+
+.page-riddle .riddle-reveal:hover,
+.page-riddle .riddle-reveal:focus-visible {
+  background: var(--brown);
+  color: var(--bg);
+  border-color: var(--brown);
+  outline: none;
+}
+
+.page-riddle .riddle-answer {
+  margin: 0;
+  text-align: center;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--ink);
+  max-width: 28em;
+}
+
+.page-riddle .riddle-joke {
+  margin: 0;
+  padding-top: 1.1rem;
+  border-top: 1px dashed var(--ink);
+  font-size: 0.98rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .page-riddle .riddle-toolbar {
+    grid-template-columns: 1fr 1fr;
+  }
+  .page-riddle .riddle-date {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-size: 0.72rem;
+  }
+  .page-riddle #riddle-prev {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .page-riddle #riddle-next {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .page-riddle .riddle-card,
+  .page-riddle .riddle-empty {
+    padding: 1.2rem 1rem 1.3rem;
+  }
+  .page-riddle .riddle-prompt {
+    font-size: 1.05rem;
+  }
+  .page-riddle .riddle-feet {
+    gap: 0.22em 0.45em;
+  }
+  .page-riddle .riddle-mega {
+    font-size: clamp(2.6rem, 18vw, 4.2rem);
+  }
+  .page-riddle .riddle-numeral {
+    font-size: 1.35em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-riddle .riddle-reveal,
+  .page-riddle .page-end-logo img {
+    transition: none;
   }
 }

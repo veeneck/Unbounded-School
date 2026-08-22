@@ -42,6 +42,7 @@
         </div>
       </nav>
     </div>
+    <a class="home-ball-link" href="riddle/index.html" aria-label="Daily riddle"></a>
   </main>
   <script>
     (function () {
@@ -60,6 +61,29 @@
           if (btn) btn.setAttribute('aria-expanded', 'false');
         });
       });
+
+      var ball = document.querySelector('.home-ball-link');
+      if (ball) {
+        var IMG_W = 1792;
+        var IMG_H = 1008;
+        var CX = 740;
+        var CY = 820;
+        var R = 100;
+        function placeBall() {
+          var vw = window.innerWidth;
+          var vh = window.innerHeight;
+          var scale = Math.max(vw / IMG_W, vh / IMG_H);
+          var size = R * 2 * scale;
+          var left = (vw - IMG_W * scale) / 2 + CX * scale - size / 2;
+          var top = (vh - IMG_H * scale) / 2 + CY * scale - size / 2;
+          ball.style.width = size + 'px';
+          ball.style.height = size + 'px';
+          ball.style.left = left + 'px';
+          ball.style.top = top + 'px';
+        }
+        placeBall();
+        window.addEventListener('resize', placeBall);
+      }
     })();
   </script>
 </body>
