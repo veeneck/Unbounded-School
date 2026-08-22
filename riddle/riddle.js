@@ -199,8 +199,6 @@
     emptyEl.hidden = true;
     cardEl.hidden = false;
 
-    var typeKey = (entry.type || "riddle").toLowerCase();
-    var typeLabel = TYPE_LABELS[typeKey] || "Riddle";
     var promptHtml = entry.promptHtml;
     var prompt = entry.prompt || "";
     var body;
@@ -211,13 +209,23 @@
     }
 
     cardEl.innerHTML =
-      '<p class="riddle-kicker">' + escapeText(typeLabel) + "</p>" +
+      '<p class="riddle-kicker">' + escapeText("Riddle") + "</p>" +
       body +
       '<div class="riddle-reveal-wrap">' +
         '<button type="button" class="riddle-reveal" id="riddle-reveal" aria-expanded="false" aria-controls="riddle-answer">Show answer</button>' +
         '<p class="riddle-answer" id="riddle-answer" hidden></p>' +
       "</div>" +
-      '<p class="riddle-joke">' + escapeText(entry.joke || "") + "</p>";
+      '<div class="riddle-joke-block">' +
+        '<p class="riddle-section-label">Joke</p>' +
+        '<p class="riddle-joke">' + escapeText(entry.joke || "") + "</p>" +
+      "</div>";
+    if (entry.discuss) {
+      cardEl.innerHTML +=
+        '<div class="riddle-discuss">' +
+          '<p class="riddle-section-label">Talk it over</p>' +
+          '<p class="riddle-discuss-q">' + escapeText(entry.discuss) + "</p>" +
+        "</div>";
+    }
 
     var answerEl = document.getElementById("riddle-answer");
     answerEl.textContent = entry.answer || "";

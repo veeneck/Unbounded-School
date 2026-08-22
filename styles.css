@@ -3088,6 +3088,15 @@ a.project-card.is-link:hover {
   border-bottom: none;
 }
 
+.page-schedule .daily-row .activity a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.page-schedule .daily-row .activity a:hover {
+  color: var(--accent-dark);
+}
+
 .page-schedule .daily-row .time {
   background: color-mix(in srgb, var(--ink) 8%, var(--bg));
   color: var(--ink);
@@ -4173,7 +4182,7 @@ body.page-home .home-bubble-menu a:hover {
 
 .page-riddle .riddle-kicker {
   display: table;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 1.55rem;
   font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
   font-size: 0.62rem;
   font-weight: 600;
@@ -4192,11 +4201,11 @@ body.page-home .home-bubble-menu a:hover {
   line-height: 1.55;
   color: var(--ink);
   text-align: center;
-  margin: 0 0 1.35rem;
+  margin: 0 0 1.65rem;
 }
 
 .page-riddle .riddle-prompt-visual {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .page-riddle .riddle-rebus {
@@ -4358,7 +4367,7 @@ body.page-home .home-bubble-menu a:hover {
   flex-direction: column;
   align-items: center;
   gap: 0.85rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.55rem;
 }
 
 .page-riddle .riddle-reveal {
@@ -4398,15 +4407,45 @@ body.page-home .home-bubble-menu a:hover {
   max-width: 28em;
 }
 
+.page-riddle .riddle-joke-block,
+.page-riddle .riddle-discuss {
+  margin-top: 1.45rem;
+  padding-top: 1.35rem;
+  border-top: 1px dashed var(--ink);
+  text-align: center;
+}
+
+.page-riddle .riddle-section-label {
+  display: table;
+  margin: 0 auto 0.65rem;
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid color-mix(in srgb, var(--ink) 28%, var(--bg));
+  border-radius: 999px;
+  padding: 0.22rem 0.7rem 0.2rem;
+}
+
 .page-riddle .riddle-joke {
   margin: 0;
-  padding-top: 1.1rem;
-  border-top: 1px dashed var(--ink);
   font-size: 0.98rem;
   font-style: italic;
   line-height: 1.55;
   color: var(--muted);
   text-align: center;
+}
+
+.page-riddle .riddle-discuss-q {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--ink);
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 600px) {

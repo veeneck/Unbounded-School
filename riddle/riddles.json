@@ -8,21 +8,24 @@
       "promptHtml": "<div class=\"riddle-rebus riddle-count-phrase\" role=\"img\" aria-label=\"COOL twice, then SCHOOL four times\"><div class=\"riddle-repeat\"><span class=\"riddle-word\">cool</span><span class=\"riddle-word\">cool</span></div><div class=\"riddle-repeat riddle-repeat-4\"><span class=\"riddle-word\">school</span><span class=\"riddle-word\">school</span><span class=\"riddle-word\">school</span><span class=\"riddle-word\">school</span></div></div>",
       "prompt": "COOL twice, then SCHOOL four times",
       "answer": "Too cool for school",
-      "joke": "What do you call a fish with no eyes? Fsh."
+      "joke": "What do you call a fish with no eyes? Fsh.",
+      "discuss": "When is it actually useful to care what other people think, and when is it just noise?"
     },
     {
       "date": "2026-08-18",
       "type": "riddle",
       "prompt": "What has keys but can't open a door?",
       "answer": "A piano",
-      "joke": "Why did the golfer bring two pairs of pants? In case he got a hole in one."
+      "joke": "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+      "discuss": "Can two things share a name and still be nothing alike? What other words work that way?"
     },
     {
       "date": "2026-08-19",
       "type": "math",
       "prompt": "A farmer has 17 sheep. All but 9 die. How many are left?",
       "answer": "9",
-      "joke": "How do you organize a space party? You planet."
+      "joke": "How do you organize a space party? You planet.",
+      "discuss": "Why do we sometimes hear the first number and stop listening?"
     },
     {
       "date": "2026-08-20",
@@ -30,14 +33,16 @@
       "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"DEAL in very large letters\"><span class=\"riddle-mega\">deal</span></div>",
       "prompt": "DEAL in very large letters",
       "answer": "A big deal",
-      "joke": "What do you call a snowman in summer? A puddle."
+      "joke": "What do you call a snowman in summer? A puddle.",
+      "discuss": "What makes something a big deal to one person and nothing to another?"
     },
     {
       "date": "2026-08-21",
       "type": "riddle",
       "prompt": "What can you catch but not throw?",
       "answer": "A cold",
-      "joke": "Why was 6 afraid of 7? Because 7 8 9."
+      "joke": "Why was 6 afraid of 7? Because 7 8 9.",
+      "discuss": "If you cannot see something, how do you still know it is real?"
     },
     {
       "date": "2026-08-22",
@@ -45,21 +50,24 @@
       "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"ONCE sitting in the middle of LIFETIME\"><span class=\"riddle-nest-outer\">life<span class=\"riddle-nest-inner\">once</span>time</span></div>",
       "prompt": "ONCE sitting in the middle of LIFETIME",
       "answer": "Once in a lifetime",
-      "joke": "Why did the scarecrow win an award? He was outstanding in his field."
+      "joke": "Why did the scarecrow win an award? He was outstanding in his field.",
+      "discuss": "Should you wait for a once-in-a-lifetime moment, or make ordinary days count more?"
     },
     {
       "date": "2026-08-23",
       "type": "riddle",
       "prompt": "I have cities but no houses, forests but no trees, water but no fish. What am I?",
       "answer": "A map",
-      "joke": "What do you call a fake noodle? An impasta."
+      "joke": "What do you call a fake noodle? An impasta.",
+      "discuss": "How is a map true, and how is it a lie?"
     },
     {
       "date": "2026-08-24",
       "type": "math",
       "prompt": "A snail climbs 3 feet up a 10-foot well each day and slides 2 feet down each night. On which day does it get out?",
       "answer": "Day 8 (on day 8 it climbs the last 3 feet from 7 to 10 and is out before night)",
-      "joke": "Why don't scientists trust atoms? They make up everything."
+      "joke": "Why don't scientists trust atoms? They make up everything.",
+      "discuss": "When does keeping going beat starting over, and when is it just stubbornness?"
     },
     {
       "date": "2026-08-25",
@@ -67,7 +75,8 @@
       "promptHtml": "<div class=\"riddle-rebus riddle-rebus-row\" role=\"img\" aria-label=\"CYCLE CYCLE CYCLE\"><span class=\"riddle-word\">CYCLE</span><span class=\"riddle-word\">CYCLE</span><span class=\"riddle-word\">CYCLE</span></div>",
       "prompt": "CYCLE CYCLE CYCLE",
       "answer": "A tricycle",
-      "joke": "What did the ocean say to the beach? Nothing, it just waved."
+      "joke": "What did the ocean say to the beach? Nothing, it just waved.",
+      "discuss": "What does a prefix tell you before you even know the whole word?"
     },
     {
       "date": "2026-08-26",
@@ -75,21 +84,24 @@
       "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"STAND with I under it\"><span class=\"riddle-word\">STAND</span><span class=\"riddle-word riddle-under\">I</span></div>",
       "prompt": "STAND with I under it",
       "answer": "I understand",
-      "joke": "Why did the math book look sad? It had too many problems."
+      "joke": "Why did the math book look sad? It had too many problems.",
+      "discuss": "What is the difference between repeating something and actually understanding it?"
     },
     {
       "date": "2026-08-27",
       "type": "riddle",
       "prompt": "What has to be broken before you can use it?",
       "answer": "An egg",
-      "joke": "What do you call a bear with no teeth? A gummy bear."
+      "joke": "What do you call a bear with no teeth? A gummy bear.",
+      "discuss": "What else in life has to break a little before it becomes useful?"
     },
     {
       "date": "2026-08-28",
       "type": "math",
       "prompt": "It takes 12 minutes to saw a log into 4 pieces. How long to saw it into 6 pieces? (equal pieces, same saw)",
       "answer": "20 minutes (3 cuts for 4 pieces, 5 cuts for 6)",
-      "joke": "Why can't your nose be 12 inches long? Because then it would be a foot."
+      "joke": "Why can't your nose be 12 inches long? Because then it would be a foot.",
+      "discuss": "Why isn't more pieces the same as more work, in a straight line?"
     },
     {
       "date": "2026-08-29",
@@ -97,7 +109,8 @@
       "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"WEAR with LONG under it\"><span class=\"riddle-word\">WEAR</span><span class=\"riddle-word riddle-under\">LONG</span></div>",
       "prompt": "WEAR with LONG under it",
       "answer": "Long underwear",
-      "joke": "What do you call cheese that isn't yours? Nacho cheese."
+      "joke": "What do you call cheese that isn't yours? Nacho cheese.",
+      "discuss": "How do you untangle a picture-puzzle when the words feel in the wrong order?"
     },
     {
       "date": "2026-08-30",
@@ -105,21 +118,24 @@
       "promptHtml": "<div class=\"riddle-rebus riddle-touchdown\" role=\"img\" aria-label=\"TOUCH then D-O-W-N stacked as a column\"><span class=\"riddle-word\">TOUCH</span><span class=\"riddle-col\" aria-hidden=\"true\"><span>D</span><span>O</span><span>W</span><span>N</span></span></div>",
       "prompt": "TOUCH then D-O-W-N stacked as a column",
       "answer": "Touchdown",
-      "joke": "Why did the bicycle fall over? It was two-tired."
+      "joke": "Why did the bicycle fall over? It was two-tired.",
+      "discuss": "Why do games and stories need a clear we-made-it moment?"
     },
     {
       "date": "2026-08-31",
       "type": "riddle",
       "prompt": "What gets wetter the more it dries?",
       "answer": "A towel",
-      "joke": "What's orange and sounds like a parrot? A carrot."
+      "joke": "What's orange and sounds like a parrot? A carrot.",
+      "discuss": "Can something do two opposite jobs at once? Where else does that happen?"
     },
     {
       "date": "2026-09-01",
       "type": "math",
       "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
       "answer": "5 cents",
-      "joke": "Why did the student eat his homework? The teacher said it was a piece of cake."
+      "joke": "Why did the student eat his homework? The teacher said it was a piece of cake.",
+      "discuss": "Why does the obvious first answer feel so sure even when it is wrong?"
     },
     {
       "date": "2026-09-02",
@@ -127,14 +143,16 @@
       "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"GROUND with six FEET under it\"><span class=\"riddle-word\">GROUND</span><span class=\"riddle-feet riddle-under\" aria-hidden=\"true\"><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span><span class=\"riddle-word\">FEET</span></span></div>",
       "prompt": "GROUND with six FEET under it",
       "answer": "Six feet underground",
-      "joke": "What do you call a sleeping bull? A bulldozer."
+      "joke": "What do you call a sleeping bull? A bulldozer.",
+      "discuss": "Why do we use measurements as metaphors? What gets lost when we do?"
     },
     {
       "date": "2026-09-03",
       "type": "riddle",
       "prompt": "The more you take, the more you leave behind. What am I?",
       "answer": "Footsteps",
-      "joke": "Why are ghosts bad liars? You can see right through them."
+      "joke": "Why are ghosts bad liars? You can see right through them.",
+      "discuss": "What do you leave behind that you never notice?"
     },
     {
       "date": "2026-09-04",
@@ -142,14 +160,16 @@
       "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"HIGH above and LOW below the word and\"><span class=\"riddle-word\">HIGH</span><span class=\"riddle-small\">and</span><span class=\"riddle-word\">LOW</span></div>",
       "prompt": "HIGH above and LOW below the word and",
       "answer": "High and low",
-      "joke": "What do you call an alligator in a vest? An investigator."
+      "joke": "What do you call an alligator in a vest? An investigator.",
+      "discuss": "When is looking at both extremes more honest than picking a side?"
     },
     {
       "date": "2026-09-05",
       "type": "math",
       "prompt": "3 cats catch 3 mice in 3 minutes. How many cats to catch 100 mice in 100 minutes? (same rate)",
       "answer": "3 cats",
-      "joke": "Why did the cookie go to the nurse? It felt crummy."
+      "joke": "Why did the cookie go to the nurse? It felt crummy.",
+      "discuss": "If you triple the time, do you always need to triple the workers? When would that fail?"
     }
   ]
 }
