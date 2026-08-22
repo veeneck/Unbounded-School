@@ -226,6 +226,7 @@
           '<p class="riddle-discuss-q">' + escapeText(entry.discuss) + "</p>" +
         "</div>";
     }
+    cardEl.innerHTML += crumbBlock(entry, viewed);
 
     var answerEl = document.getElementById("riddle-answer");
     answerEl.textContent = entry.answer || "";
@@ -237,7 +238,53 @@
       reveal.setAttribute("aria-expanded", answerOpen ? "true" : "false");
       reveal.textContent = answerOpen ? "Hide answer" : "Show answer";
     });
+
   }
+
+  function addDays(iso, n) {
+    var bits = iso.split("-");
+    var dt = new Date(Date.UTC(parseInt(bits[0], 10), parseInt(bits[1], 10) - 1, parseInt(bits[2], 10)));
+    dt.setUTCDate(dt.getUTCDate() + n);
+    return isoFromYmd(dt.getUTCFullYear(), dt.getUTCMonth() + 1, dt.getUTCDate());
+  }
+
+  function isoWeekday(iso) {
+    var bits = iso.split("-");
+    var dt = new Date(Date.UTC(parseInt(bits[0], 10), parseInt(bits[1], 10) - 1, parseInt(bits[2], 10)));
+    var day = dt.getUTCDay();
+    return day === 0 ? 7 : day;
+  }
+
+  function crumbBlock(entry, iso) {
+    var crumb = entry.crumb;
+    if (!crumb || !crumb.word || !crumb.letter) return "";
+    var dow = isoWeekday(iso);
+    if (dow < 1 || dow > 5) return "";
+    var word = crumb.word;
+    var week = crumb.week;
+    var slots = "";
+    for (var i = 0; i < 5; i++) {
+      var slotDate = addDays(week, i);
+      var shown = slotDate <= iso;
+      var isToday = slotDate === iso;
+      var ch = shown && i < word.length ? word.charAt(i) : "";
+      slots += '<span class="riddle-crumb-slot' +
+        (shown ? " is-in" : "") +
+        (isToday ? " is-today" : "") +
+        '">' + escapeText(ch) + "</span>";
+    }
+    var note = dow === 5
+      ? 'This week\'s word is <em>' + escapeText(word) + "</em>."
+      : "Today\'s letter. Monday through Friday, one word.";
+    return (
+      '<div class="riddle-crumb">' +
+        '<p class="riddle-section-label">This week\'s crumb</p>' +
+        '<div class="riddle-crumb-slots" aria-label="Weekly letters, Monday through Friday">' + slots + "</div>" +
+        '<p class="riddle-crumb-note">' + note + "</p>" +
+      "</div>"
+    );
+  }
+
 
   function go(iso, push) {
     viewed = clampDate(iso);

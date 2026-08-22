@@ -9,7 +9,12 @@
       "prompt": "COOL twice, then SCHOOL four times",
       "answer": "Too cool for school",
       "joke": "What do you call a fish with no eyes? Fsh.",
-      "discuss": "When is it actually useful to care what other people think, and when is it just noise?"
+      "discuss": "When is it actually useful to care what other people think, and when is it just noise?",
+      "crumb": {
+        "week": "2026-08-17",
+        "word": "BRAVE",
+        "letter": "B"
+      }
     },
     {
       "date": "2026-08-18",
@@ -17,7 +22,12 @@
       "prompt": "What has keys but can't open a door?",
       "answer": "A piano",
       "joke": "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
-      "discuss": "Can two things share a name and still be nothing alike? What other words work that way?"
+      "discuss": "Can two things share a name and still be nothing alike? What other words work that way?",
+      "crumb": {
+        "week": "2026-08-17",
+        "word": "BRAVE",
+        "letter": "R"
+      }
     },
     {
       "date": "2026-08-19",
@@ -25,7 +35,12 @@
       "prompt": "A farmer has 17 sheep. All but 9 die. How many are left?",
       "answer": "9",
       "joke": "How do you organize a space party? You planet.",
-      "discuss": "Why do we sometimes hear the first number and stop listening?"
+      "discuss": "Why do we sometimes hear the first number and stop listening?",
+      "crumb": {
+        "week": "2026-08-17",
+        "word": "BRAVE",
+        "letter": "A"
+      }
     },
     {
       "date": "2026-08-20",
@@ -34,7 +49,12 @@
       "prompt": "DEAL in very large letters",
       "answer": "A big deal",
       "joke": "What do you call a snowman in summer? A puddle.",
-      "discuss": "What makes something a big deal to one person and nothing to another?"
+      "discuss": "What makes something a big deal to one person and nothing to another?",
+      "crumb": {
+        "week": "2026-08-17",
+        "word": "BRAVE",
+        "letter": "V"
+      }
     },
     {
       "date": "2026-08-21",
@@ -42,7 +62,12 @@
       "prompt": "What can you catch but not throw?",
       "answer": "A cold",
       "joke": "Why was 6 afraid of 7? Because 7 8 9.",
-      "discuss": "If you cannot see something, how do you still know it is real?"
+      "discuss": "If you cannot see something, how do you still know it is real?",
+      "crumb": {
+        "week": "2026-08-17",
+        "word": "BRAVE",
+        "letter": "E"
+      }
     },
     {
       "date": "2026-08-22",
@@ -67,7 +92,12 @@
       "prompt": "A snail climbs 3 feet up a 10-foot well each day and slides 2 feet down each night. On which day does it get out?",
       "answer": "Day 8 (on day 8 it climbs the last 3 feet from 7 to 10 and is out before night)",
       "joke": "Why don't scientists trust atoms? They make up everything.",
-      "discuss": "When does keeping going beat starting over, and when is it just stubbornness?"
+      "discuss": "When does keeping going beat starting over, and when is it just stubbornness?",
+      "crumb": {
+        "week": "2026-08-24",
+        "word": "QUEST",
+        "letter": "Q"
+      }
     },
     {
       "date": "2026-08-25",
@@ -76,7 +106,12 @@
       "prompt": "CYCLE CYCLE CYCLE",
       "answer": "A tricycle",
       "joke": "What did the ocean say to the beach? Nothing, it just waved.",
-      "discuss": "What does a prefix tell you before you even know the whole word?"
+      "discuss": "What does a prefix tell you before you even know the whole word?",
+      "crumb": {
+        "week": "2026-08-24",
+        "word": "QUEST",
+        "letter": "U"
+      }
     },
     {
       "date": "2026-08-26",
@@ -85,7 +120,12 @@
       "prompt": "STAND with I under it",
       "answer": "I understand",
       "joke": "Why did the math book look sad? It had too many problems.",
-      "discuss": "What is the difference between repeating something and actually understanding it?"
+      "discuss": "What is the difference between repeating something and actually understanding it?",
+      "crumb": {
+        "week": "2026-08-24",
+        "word": "QUEST",
+        "letter": "E"
+      }
     },
     {
       "date": "2026-08-27",
@@ -93,7 +133,12 @@
       "prompt": "What has to be broken before you can use it?",
       "answer": "An egg",
       "joke": "What do you call a bear with no teeth? A gummy bear.",
-      "discuss": "What else in life has to break a little before it becomes useful?"
+      "discuss": "What else in life has to break a little before it becomes useful?",
+      "crumb": {
+        "week": "2026-08-24",
+        "word": "QUEST",
+        "letter": "S"
+      }
     },
     {
       "date": "2026-08-28",
@@ -101,7 +146,12 @@
       "prompt": "It takes 12 minutes to saw a log into 4 pieces. How long to saw it into 6 pieces? (equal pieces, same saw)",
       "answer": "20 minutes (3 cuts for 4 pieces, 5 cuts for 6)",
       "joke": "Why can't your nose be 12 inches long? Because then it would be a foot.",
-      "discuss": "Why isn't more pieces the same as more work, in a straight line?"
+      "discuss": "Why isn't more pieces the same as more work, in a straight line?",
+      "crumb": {
+        "week": "2026-08-24",
+        "word": "QUEST",
+        "letter": "T"
+      }
     },
     {
       "date": "2026-08-29",
@@ -127,7 +177,12 @@
       "prompt": "What gets wetter the more it dries?",
       "answer": "A towel",
       "joke": "What's orange and sounds like a parrot? A carrot.",
-      "discuss": "Can something do two opposite jobs at once? Where else does that happen?"
+      "discuss": "Can something do two opposite jobs at once? Where else does that happen?",
+      "crumb": {
+        "week": "2026-08-31",
+        "word": "MAGIC",
+        "letter": "M"
+      }
     },
     {
       "date": "2026-09-01",
@@ -135,7 +190,12 @@
       "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
       "answer": "5 cents",
       "joke": "Why did the student eat his homework? The teacher said it was a piece of cake.",
-      "discuss": "Why does the obvious first answer feel so sure even when it is wrong?"
+      "discuss": "Why does the obvious first answer feel so sure even when it is wrong?",
+      "crumb": {
+        "week": "2026-08-31",
+        "word": "MAGIC",
+        "letter": "A"
+      }
     },
     {
       "date": "2026-09-02",
@@ -144,7 +204,12 @@
       "prompt": "GROUND with six FEET under it",
       "answer": "Six feet underground",
       "joke": "What do you call a sleeping bull? A bulldozer.",
-      "discuss": "Why do we use measurements as metaphors? What gets lost when we do?"
+      "discuss": "Why do we use measurements as metaphors? What gets lost when we do?",
+      "crumb": {
+        "week": "2026-08-31",
+        "word": "MAGIC",
+        "letter": "G"
+      }
     },
     {
       "date": "2026-09-03",
@@ -152,7 +217,12 @@
       "prompt": "The more you take, the more you leave behind. What am I?",
       "answer": "Footsteps",
       "joke": "Why are ghosts bad liars? You can see right through them.",
-      "discuss": "What do you leave behind that you never notice?"
+      "discuss": "What do you leave behind that you never notice?",
+      "crumb": {
+        "week": "2026-08-31",
+        "word": "MAGIC",
+        "letter": "I"
+      }
     },
     {
       "date": "2026-09-04",
@@ -161,7 +231,12 @@
       "prompt": "HIGH above and LOW below the word and",
       "answer": "High and low",
       "joke": "What do you call an alligator in a vest? An investigator.",
-      "discuss": "When is looking at both extremes more honest than picking a side?"
+      "discuss": "When is looking at both extremes more honest than picking a side?",
+      "crumb": {
+        "week": "2026-08-31",
+        "word": "MAGIC",
+        "letter": "C"
+      }
     },
     {
       "date": "2026-09-05",

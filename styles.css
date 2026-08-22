@@ -4448,6 +4448,69 @@ body.page-home .home-bubble-menu a:hover {
   margin-right: auto;
 }
 
+.page-riddle .riddle-crumb {
+  margin-top: 1.45rem;
+  padding-top: 1.35rem;
+  border-top: 1px dashed var(--ink);
+  text-align: center;
+}
+
+.page-riddle .riddle-crumb-slots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0.15rem 0 0.7rem;
+}
+
+.page-riddle .riddle-crumb-slot {
+  width: 2.05rem;
+  height: 2.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ink);
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+}
+
+.page-riddle .riddle-crumb-slot.is-today {
+  border-width: 2px;
+  border-color: var(--brown);
+  box-shadow: 2px 2px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+.page-riddle .riddle-crumb-note {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.page-riddle .riddle-crumb-note em {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .page-riddle .riddle-crumb-slot {
+    width: 1.85rem;
+    height: 2.15rem;
+    font-size: 1.05rem;
+  }
+}
+
 @media (max-width: 600px) {
   .page-riddle .riddle-toolbar {
     grid-template-columns: 1fr 1fr;
