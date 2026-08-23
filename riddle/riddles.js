@@ -1,6 +1,6 @@
 window.UNBOUNDED_RIDDLES = {
   "timezone": "America/Chicago",
-  "dayStartsAt": "05:00",
+  "dayStartsAt": "04:00",
   "entries": [
     {
       "date": "2026-08-17",

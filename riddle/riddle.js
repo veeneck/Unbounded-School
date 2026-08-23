@@ -16,7 +16,7 @@
   var cardEl = document.getElementById("riddle-card");
   var emptyEl = document.getElementById("riddle-empty");
 
-  var data = { timezone: "America/Chicago", dayStartsAt: "05:00", entries: [] };
+  var data = { timezone: "America/Chicago", dayStartsAt: "04:00", entries: [] };
   var byDate = {};
   var available = [];
   var today = "";
@@ -40,7 +40,7 @@
 
   function schoolToday(cfg) {
     var tz = (cfg && cfg.timezone) || "America/Chicago";
-    var start = ((cfg && cfg.dayStartsAt) || "05:00").split(":");
+    var start = ((cfg && cfg.dayStartsAt) || "04:00").split(":");
     var startH = parseInt(start[0], 10);
     var startM = parseInt(start[1], 10) || 0;
     var parts = new Intl.DateTimeFormat("en-US", {
