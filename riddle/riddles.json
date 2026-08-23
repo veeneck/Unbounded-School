@@ -14,6 +14,10 @@
         "week": "2026-08-17",
         "word": "BRAVE",
         "letter": "B"
+      },
+      "bright": {
+        "title": "X-rays work in space",
+        "blurb": "Astronauts took the first medical X-rays in orbit, a step toward keeping people healthy on the way to the Moon."
       }
     },
     {
@@ -27,6 +31,10 @@
         "week": "2026-08-17",
         "word": "BRAVE",
         "letter": "R"
+      },
+      "bright": {
+        "title": "A robot turtle that hunts plastic",
+        "blurb": "A high-schooler built a swimming robot turtle that uses AI to spot tiny bits of plastic in lakes and rivers."
       }
     },
     {
@@ -40,6 +48,10 @@
         "week": "2026-08-17",
         "word": "BRAVE",
         "letter": "A"
+      },
+      "bright": {
+        "title": "Turning mosquito bites into practice",
+        "blurb": "Scientists are testing a way to stop malaria early so later mosquito bites help the body learn, instead of making people sick."
       }
     },
     {
@@ -54,6 +66,10 @@
         "week": "2026-08-17",
         "word": "BRAVE",
         "letter": "V"
+      },
+      "bright": {
+        "title": "Small towns getting hospital tools",
+        "blurb": "The same portable X-ray kit that worked in orbit is the kind of tool that could help clinics far from a city hospital."
       }
     },
     {
@@ -67,6 +83,10 @@
         "week": "2026-08-17",
         "word": "BRAVE",
         "letter": "E"
+      },
+      "bright": {
+        "title": "Learning that does not need a building",
+        "blurb": "More families are piecing together a school day from parks, kitchens, and one hard question, and the work still counts."
       }
     },
     {
@@ -76,7 +96,11 @@
       "prompt": "ONCE sitting in the middle of LIFETIME",
       "answer": "Once in a lifetime",
       "joke": "Why did the scarecrow win an award? He was outstanding in his field.",
-      "discuss": "Should you wait for a once-in-a-lifetime moment, or make ordinary days count more?"
+      "discuss": "Should you wait for a once-in-a-lifetime moment, or make ordinary days count more?",
+      "bright": {
+        "title": "Satellites that find their own way",
+        "blurb": "A NASA swarm learned to figure out where it is by looking at other objects in space, not just by asking Earth."
+      }
     },
     {
       "date": "2026-08-23",
@@ -84,7 +108,11 @@
       "prompt": "I have cities but no houses, forests but no trees, water but no fish. What am I?",
       "answer": "A map",
       "joke": "What do you call a fake noodle? An impasta.",
-      "discuss": "How is a map true, and how is it a lie?"
+      "discuss": "How is a map true, and how is it a lie?",
+      "bright": {
+        "title": "A whole generation of young inventors",
+        "blurb": "Kids around the world are building robots and medical ideas at kitchen tables, then showing them at science fairs."
+      }
     },
     {
       "date": "2026-08-24",
@@ -97,6 +125,10 @@
         "week": "2026-08-24",
         "word": "QUEST",
         "letter": "Q"
+      },
+      "bright": {
+        "title": "More driverless taxis on city streets",
+        "blurb": "In a few cities you can hail a car with no one behind the wheel, and the service is opening to more riders."
       }
     },
     {
@@ -111,6 +143,10 @@
         "week": "2026-08-24",
         "word": "QUEST",
         "letter": "U"
+      },
+      "bright": {
+        "title": "Hearing that starts from the inside",
+        "blurb": "Researchers are testing gene therapy that tries to repair the inner ear itself, not only amplify sound from the outside."
       }
     },
     {
@@ -125,6 +161,10 @@
         "week": "2026-08-24",
         "word": "QUEST",
         "letter": "E"
+      },
+      "bright": {
+        "title": "Clean water from unlikely places",
+        "blurb": "New filters and sun-powered stills are pulling safe drinking water from dirty sources and even from the air."
       }
     },
     {
@@ -138,6 +178,10 @@
         "week": "2026-08-24",
         "word": "QUEST",
         "letter": "S"
+      },
+      "bright": {
+        "title": "Kids building the next tools",
+        "blurb": "This year’s student science fairs were full of robots and medical ideas invented at kitchen tables and in garages."
       }
     },
     {
@@ -151,6 +195,10 @@
         "week": "2026-08-24",
         "word": "QUEST",
         "letter": "T"
+      },
+      "bright": {
+        "title": "Rockets that come home again",
+        "blurb": "Boosters that land and fly again are making it cheaper to send telescopes, weather tools, and people off the planet."
       }
     },
     {
@@ -160,7 +208,11 @@
       "prompt": "WEAR with LONG under it",
       "answer": "Long underwear",
       "joke": "What do you call cheese that isn't yours? Nacho cheese.",
-      "discuss": "How do you untangle a picture-puzzle when the words feel in the wrong order?"
+      "discuss": "How do you untangle a picture-puzzle when the words feel in the wrong order?",
+      "bright": {
+        "title": "Farm robots that weed and pick",
+        "blurb": "In more fields, small robots now spot weeds and ripe fruit so farms can grow food with a lighter touch."
+      }
     },
     {
       "date": "2026-08-30",
@@ -169,7 +221,11 @@
       "prompt": "TOUCH then D-O-W-N stacked as a column",
       "answer": "Touchdown",
       "joke": "Why did the bicycle fall over? It was two-tired.",
-      "discuss": "Why do games and stories need a clear we-made-it moment?"
+      "discuss": "Why do games and stories need a clear we-made-it moment?",
+      "bright": {
+        "title": "A planet-hunter waits on the pad",
+        "blurb": "NASA’s Roman telescope is aimed at launch, ready to hunt for worlds we have never seen with a camera that drinks in a wide sky."
+      }
     },
     {
       "date": "2026-08-31",
@@ -182,6 +238,10 @@
         "week": "2026-08-31",
         "word": "MAGIC",
         "letter": "M"
+      },
+      "bright": {
+        "title": "Robots that could reach a stroke in time",
+        "blurb": "Engineers are building remote helper-robots so a life-saving stroke treatment might one day reach people far from a big hospital."
       }
     },
     {
@@ -195,6 +255,10 @@
         "week": "2026-08-31",
         "word": "MAGIC",
         "letter": "A"
+      },
+      "bright": {
+        "title": "Coral that can take the heat",
+        "blurb": "Reef teams are growing corals that handle warmer water, so color and fish can return to tired reefs."
       }
     },
     {
@@ -209,6 +273,10 @@
         "week": "2026-08-31",
         "word": "MAGIC",
         "letter": "G"
+      },
+      "bright": {
+        "title": "A school day that looks like a quest",
+        "blurb": "Homeschool is getting better at feeling like a project, not a desk: one problem, real tools, and time to finish it."
       }
     },
     {
@@ -222,6 +290,10 @@
         "week": "2026-08-31",
         "word": "MAGIC",
         "letter": "I"
+      },
+      "bright": {
+        "title": "New pictures of old light",
+        "blurb": "The James Webb Space Telescope keeps sending back galaxies and planet weather from so far away the light is ancient."
       }
     },
     {
@@ -236,6 +308,10 @@
         "week": "2026-08-31",
         "word": "MAGIC",
         "letter": "C"
+      },
+      "bright": {
+        "title": "Houses printed from a nozzle",
+        "blurb": "Giant 3D printers are laying down walls in days, a way to build sturdy homes with less leftover scrap."
       }
     },
     {
@@ -244,7 +320,11 @@
       "prompt": "3 cats catch 3 mice in 3 minutes. How many cats to catch 100 mice in 100 minutes? (same rate)",
       "answer": "3 cats",
       "joke": "Why did the cookie go to the nurse? It felt crummy.",
-      "discuss": "If you triple the time, do you always need to triple the workers? When would that fail?"
+      "discuss": "If you triple the time, do you always need to triple the workers? When would that fail?",
+      "bright": {
+        "title": "A clue in the back of the eye",
+        "blurb": "A 17-year-old built an AI tool that studies a photo of the retina, looking for patterns that might help kids get support sooner."
+      }
     }
   ]
 }

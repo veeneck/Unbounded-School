@@ -4455,6 +4455,31 @@ body.page-home .home-bubble-menu a:hover {
   text-align: center;
 }
 
+.page-riddle .riddle-bright {
+  margin-top: 1.45rem;
+  padding-top: 1.35rem;
+  border-top: 1px dashed var(--ink);
+  text-align: center;
+}
+
+.page-riddle .riddle-bright-title {
+  margin: 0 0 0.4rem;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.page-riddle .riddle-bright-blurb {
+  margin: 0 auto;
+  max-width: 28em;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--writing-ink, var(--ink));
+}
+
 .page-riddle .riddle-crumb-slots {
   display: flex;
   justify-content: center;

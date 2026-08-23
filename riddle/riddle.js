@@ -227,6 +227,7 @@
         "</div>";
     }
     cardEl.innerHTML += crumbBlock(entry, viewed);
+    cardEl.innerHTML += brightBlock(entry);
 
     var answerEl = document.getElementById("riddle-answer");
     answerEl.textContent = entry.answer || "";
@@ -286,6 +287,19 @@
   }
 
 
+
+  function brightBlock(entry) {
+    var b = entry.bright;
+    if (!b || !b.title) return "";
+    var line = b.blurb ? '<p class="riddle-bright-blurb">' + escapeText(b.blurb) + "</p>" : "";
+    return (
+      '<div class="riddle-bright">' +
+        '<p class="riddle-section-label">Looking up</p>' +
+        '<p class="riddle-bright-title">' + escapeText(b.title) + "</p>" +
+        line +
+      "</div>"
+    );
+  }
   function go(iso, push) {
     viewed = clampDate(iso);
     setUrl(viewed, push);
