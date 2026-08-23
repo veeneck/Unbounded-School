@@ -1,6 +1,6 @@
 window.UNBOUNDED_RIDDLES = {
   "timezone": "America/Chicago",
-  "dayStartsAt": "06:30",
+  "dayStartsAt": "05:00",
   "entries": [
     {
       "date": "2026-08-17",
@@ -9,7 +9,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "COOL twice, then SCHOOL four times",
       "answer": "Too cool for school",
       "joke": "What do you call a fish with no eyes? Fsh.",
-      "discuss": "When is it actually useful to care what other people think, and when is it just noise?",
+      "discuss": "If you found $10 and nobody claimed it, what would you do with it, and why?",
       "crumb": {
         "week": "2026-08-17",
         "word": "BRAVE",
@@ -18,7 +18,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "X-rays work in space",
         "blurb": "Astronauts took the first medical X-rays in orbit, a step toward keeping people healthy on the way to the Moon."
-      }
+      },
+      "discussTheme": "money"
     },
     {
       "date": "2026-08-18",
@@ -43,7 +44,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "A farmer has 17 sheep. All but 9 die. How many are left?",
       "answer": "9",
       "joke": "How do you organize a space party? You planet.",
-      "discuss": "Why do we sometimes hear the first number and stop listening?",
+      "discuss": "What food makes you feel ready to think, and what food makes you sleepy?",
       "crumb": {
         "week": "2026-08-17",
         "word": "BRAVE",
@@ -52,7 +53,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "Turning mosquito bites into practice",
         "blurb": "Scientists are testing a way to stop malaria early so later mosquito bites help the body learn, instead of making people sick."
-      }
+      },
+      "discussTheme": "food"
     },
     {
       "date": "2026-08-20",
@@ -78,7 +80,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "What can you catch but not throw?",
       "answer": "A cold",
       "joke": "Why was 6 afraid of 7? Because 7 8 9.",
-      "discuss": "If you cannot see something, how do you still know it is real?",
+      "discuss": "When does moving your body feel like play, and when does it feel like a chore?",
       "crumb": {
         "week": "2026-08-17",
         "word": "BRAVE",
@@ -87,7 +89,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "Learning that does not need a building",
         "blurb": "More families are piecing together a school day from parks, kitchens, and one hard question, and the work still counts."
-      }
+      },
+      "discussTheme": "move"
     },
     {
       "date": "2026-08-22",
@@ -120,7 +123,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "A snail climbs 3 feet up a 10-foot well each day and slides 2 feet down each night. On which day does it get out?",
       "answer": "Day 8 (on day 8 it climbs the last 3 feet from 7 to 10 and is out before night)",
       "joke": "Why don't scientists trust atoms? They make up everything.",
-      "discuss": "When does keeping going beat starting over, and when is it just stubbornness?",
+      "discuss": "Would you rather have $20 today or $30 next month? What changes your answer?",
       "crumb": {
         "week": "2026-08-24",
         "word": "QUEST",
@@ -129,7 +132,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "More driverless taxis on city streets",
         "blurb": "In a few cities you can hail a car with no one behind the wheel, and the service is opening to more riders."
-      }
+      },
+      "discussTheme": "money"
     },
     {
       "date": "2026-08-25",
@@ -156,7 +160,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "STAND with I under it",
       "answer": "I understand",
       "joke": "Why did the math book look sad? It had too many problems.",
-      "discuss": "What is the difference between repeating something and actually understanding it?",
+      "discuss": "If you cooked supper for someone you love, what would be on the plate, and why those things?",
       "crumb": {
         "week": "2026-08-24",
         "word": "QUEST",
@@ -165,7 +169,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "Clean water from unlikely places",
         "blurb": "New filters and sun-powered stills are pulling safe drinking water from dirty sources and even from the air."
-      }
+      },
+      "discussTheme": "food"
     },
     {
       "date": "2026-08-27",
@@ -190,7 +195,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "It takes 12 minutes to saw a log into 4 pieces. How long to saw it into 6 pieces? (equal pieces, same saw)",
       "answer": "20 minutes (3 cuts for 4 pieces, 5 cuts for 6)",
       "joke": "Why can't your nose be 12 inches long? Because then it would be a foot.",
-      "discuss": "Why isn't more pieces the same as more work, in a straight line?",
+      "discuss": "What's a kind of tired that feels good, and how is it different from the worn-out kind?",
       "crumb": {
         "week": "2026-08-24",
         "word": "QUEST",
@@ -199,7 +204,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "Rockets that come home again",
         "blurb": "Boosters that land and fly again are making it cheaper to send telescopes, weather tools, and people off the planet."
-      }
+      },
+      "discussTheme": "move"
     },
     {
       "date": "2026-08-29",
@@ -233,7 +239,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "What gets wetter the more it dries?",
       "answer": "A towel",
       "joke": "What's orange and sounds like a parrot? A carrot.",
-      "discuss": "Can something do two opposite jobs at once? Where else does that happen?",
+      "discuss": "When is it smart to wait to buy something, and when is waiting just frustrating?",
       "crumb": {
         "week": "2026-08-31",
         "word": "MAGIC",
@@ -242,7 +248,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "Robots that could reach a stroke in time",
         "blurb": "Engineers are building remote helper-robots so a life-saving stroke treatment might one day reach people far from a big hospital."
-      }
+      },
+      "discussTheme": "money"
     },
     {
       "date": "2026-09-01",
@@ -268,7 +275,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "GROUND with six FEET under it",
       "answer": "Six feet underground",
       "joke": "What do you call a sleeping bull? A bulldozer.",
-      "discuss": "Why do we use measurements as metaphors? What gets lost when we do?",
+      "discuss": "When is a treat a treat, and when is it just habit?",
       "crumb": {
         "week": "2026-08-31",
         "word": "MAGIC",
@@ -277,7 +284,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "A school day that looks like a quest",
         "blurb": "Homeschool is getting better at feeling like a project, not a desk: one problem, real tools, and time to finish it."
-      }
+      },
+      "discussTheme": "food"
     },
     {
       "date": "2026-09-03",
@@ -303,7 +311,7 @@ window.UNBOUNDED_RIDDLES = {
       "prompt": "HIGH above and LOW below the word and",
       "answer": "High and low",
       "joke": "What do you call an alligator in a vest? An investigator.",
-      "discuss": "When is looking at both extremes more honest than picking a side?",
+      "discuss": "If you invented a game that made people run without calling it exercise, what would it be?",
       "crumb": {
         "week": "2026-08-31",
         "word": "MAGIC",
@@ -312,7 +320,8 @@ window.UNBOUNDED_RIDDLES = {
       "bright": {
         "title": "Houses printed from a nozzle",
         "blurb": "Giant 3D printers are laying down walls in days, a way to build sturdy homes with less leftover scrap."
-      }
+      },
+      "discussTheme": "move"
     },
     {
       "date": "2026-09-05",

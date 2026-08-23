@@ -16,7 +16,7 @@
   var cardEl = document.getElementById("riddle-card");
   var emptyEl = document.getElementById("riddle-empty");
 
-  var data = { timezone: "America/Chicago", dayStartsAt: "06:30", entries: [] };
+  var data = { timezone: "America/Chicago", dayStartsAt: "05:00", entries: [] };
   var byDate = {};
   var available = [];
   var today = "";
@@ -40,7 +40,7 @@
 
   function schoolToday(cfg) {
     var tz = (cfg && cfg.timezone) || "America/Chicago";
-    var start = ((cfg && cfg.dayStartsAt) || "06:30").split(":");
+    var start = ((cfg && cfg.dayStartsAt) || "05:00").split(":");
     var startH = parseInt(start[0], 10);
     var startM = parseInt(start[1], 10) || 0;
     var parts = new Intl.DateTimeFormat("en-US", {
@@ -220,9 +220,16 @@
         '<p class="riddle-joke">' + escapeText(entry.joke || "") + "</p>" +
       "</div>";
     if (entry.discuss) {
+      var theme = entry.discussTheme;
+      var themeLabel = { money: "Money", food: "Food", move: "Move" }[theme];
+      var labels = '<p class="riddle-section-label">Talk it over</p>';
+      if (themeLabel) {
+        labels = '<div class="riddle-section-labels">' + labels +
+          '<p class="riddle-section-label">' + escapeText(themeLabel) + "</p></div>";
+      }
       cardEl.innerHTML +=
         '<div class="riddle-discuss">' +
-          '<p class="riddle-section-label">Talk it over</p>' +
+          labels +
           '<p class="riddle-discuss-q">' + escapeText(entry.discuss) + "</p>" +
         "</div>";
     }
