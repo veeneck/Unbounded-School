@@ -1505,6 +1505,17 @@ a.project-card.is-link:hover {
 .project-thumb-fallback.project-thumb-sport {
   background: linear-gradient(145deg, #e0f2fe, #bae6fd);
 }
+.project-thumb-fallback.project-thumb-art {
+  background: linear-gradient(145deg, #ffedd5, #fed7aa);
+}
+
+.project-thumb-soon {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
 
 .project-thumb-fallback.project-thumb-exercise {
   background: linear-gradient(145deg, #fef3c7, #fde68a);
