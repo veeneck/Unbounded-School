@@ -2628,6 +2628,74 @@ a.project-card.is-link:hover {
   box-shadow: none;
 }
 
+.page-transcripts .book-card.is-reading .book-cover {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--bg) 62%, #fff);
+  border-bottom: 1px solid var(--ink);
+}
+.page-transcripts .book-card.is-reading .book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: auto;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+.page-transcripts .book-cover-type {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 0.65rem 1.6rem;
+  text-align: center;
+}
+.page-transcripts .book-cover-series {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+.page-transcripts .book-cover-name {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.page-transcripts .book-card.is-reading .book-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--read-pct);
+  background: color-mix(in srgb, var(--brown) 24%, transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+.page-transcripts .book-fill-label {
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.35rem;
+  z-index: 2;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--brown);
+  background: color-mix(in srgb, var(--bg) 88%, #fff);
+  border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent);
+  padding: 0.1rem 0.34rem;
+}
+
 .page-transcripts .project-card.featured {
   border-color: #8a6a2f;
 }

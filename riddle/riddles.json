@@ -186,7 +186,7 @@
       },
       "bright": {
         "title": "Kids building the next tools",
-        "blurb": "This year’s student science fairs were full of robots and medical ideas invented at kitchen tables and in garages."
+        "blurb": "This year\u2019s student science fairs were full of robots and medical ideas invented at kitchen tables and in garages."
       }
     },
     {
@@ -230,7 +230,7 @@
       "discuss": "Why do games and stories need a clear we-made-it moment?",
       "bright": {
         "title": "A planet-hunter waits on the pad",
-        "blurb": "NASA’s Roman telescope is aimed at launch, ready to hunt for worlds we have never seen with a camera that drinks in a wide sky."
+        "blurb": "NASA\u2019s Roman telescope is aimed at launch, ready to hunt for worlds we have never seen with a camera that drinks in a wide sky."
       }
     },
     {
@@ -333,6 +333,237 @@
       "bright": {
         "title": "A clue in the back of the eye",
         "blurb": "A 17-year-old built an AI tool that studies a photo of the retina, looking for patterns that might help kids get support sooner."
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"HEAD stacked over HEELS\"><span class=\"riddle-word\">HEAD</span><span class=\"riddle-word riddle-under\">HEELS</span></div>",
+      "prompt": "HEAD stacked over HEELS",
+      "answer": "Head over heels",
+      "joke": "Why did the stadium get hot after the game? All the fans left.",
+      "discuss": "When have you been so into something that everything else felt small for a while?",
+      "bright": {
+        "title": "Paper that folds into a working robot",
+        "blurb": "Engineers are making flat sheets that fold themselves into tiny machines, the kind of trick that could one day tuck tools into a pocket."
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "type": "riddle",
+      "prompt": "What has a head, a tail, is brown, and has no legs?",
+      "answer": "A penny",
+      "joke": "What do you call a dinosaur that is always on time? A prompt-saurus.",
+      "discuss": "Would you rather get $20 once, or $2 every day for two weeks? Why?",
+      "crumb": {
+        "week": "2026-09-07",
+        "word": "STORY",
+        "letter": "S"
+      },
+      "bright": {
+        "title": "Clean water from salty waves",
+        "blurb": "New desalting setups use less power to turn ocean water into drinking water, a quiet win for towns that live near the coast."
+      },
+      "discussTheme": "money"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "math",
+      "prompt": "A drawer has many red and blue socks mixed up. How many socks must you pull (in the dark) to be sure you have a matching pair?",
+      "answer": "3",
+      "joke": "Why don't eggs tell jokes? They'd crack each other up.",
+      "discuss": "When is 'just in case' smart, and when is it just packing too much?",
+      "crumb": {
+        "week": "2026-09-07",
+        "word": "STORY",
+        "letter": "T"
+      },
+      "bright": {
+        "title": "Batteries that last longer between charges",
+        "blurb": "Labs keep finding ways to pack more energy into the same size battery, so phones, bikes, and tools can go farther on one charge."
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"MIND stacked over MATTER\"><span class=\"riddle-word\">MIND</span><span class=\"riddle-word riddle-under\">MATTER</span></div>",
+      "prompt": "MIND stacked over MATTER",
+      "answer": "Mind over matter",
+      "joke": "What did the grape do when it got stepped on? It let out a little wine.",
+      "discuss": "What meal would you invent if the only rule was that it had to make people talk at the table?",
+      "crumb": {
+        "week": "2026-09-07",
+        "word": "STORY",
+        "letter": "O"
+      },
+      "bright": {
+        "title": "Hearing aids that learn your day",
+        "blurb": "Newer hearing tools can tune themselves to a noisy room or a quiet talk, so more people can join the conversation without strain."
+      },
+      "discussTheme": "food"
+    },
+    {
+      "date": "2026-09-10",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"READING between two LINES\"><span class=\"riddle-word\">LINES</span><span class=\"riddle-word riddle-small\">READING</span><span class=\"riddle-word\">LINES</span></div>",
+      "prompt": "READING between the LINES",
+      "answer": "Reading between the lines",
+      "joke": "How do you make a tissue dance? Put a little boogie in it.",
+      "discuss": "When has someone said one thing out loud but meant something else underneath?",
+      "crumb": {
+        "week": "2026-09-07",
+        "word": "STORY",
+        "letter": "R"
+      },
+      "bright": {
+        "title": "A second chance for leftover wood",
+        "blurb": "Small shops and makers are turning scrap lumber into furniture and toys, proving leftover material can still become something people love."
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "type": "riddle",
+      "prompt": "I'm light as a feather, yet the strongest person can't hold me for five minutes. What am I?",
+      "answer": "Breath",
+      "joke": "Why did the belt go to jail? It held up a pair of pants.",
+      "discuss": "What is a kind of practice that feels hard in the moment but good afterward?",
+      "crumb": {
+        "week": "2026-09-07",
+        "word": "STORY",
+        "letter": "Y"
+      },
+      "bright": {
+        "title": "Learning that feels like finishing a quest",
+        "blurb": "More families are treating school like a project board: one hard problem, real tools, and a finish you can show someone."
+      },
+      "discussTheme": "move"
+    },
+    {
+      "date": "2026-09-12",
+      "type": "math",
+      "prompt": "If 5 machines make 5 widgets in 5 minutes, how long do 100 machines take to make 100 widgets (same rate)?",
+      "answer": "5 minutes",
+      "joke": "What do you call a pig that does karate? A pork chop.",
+      "discuss": "When does adding more people make a job faster, and when does it just make a crowd?",
+      "bright": {
+        "title": "Satellites that watch wildfire smoke",
+        "blurb": "New orbit cameras track smoke plumes in near real time, helping crews see where air is getting thick before people feel it."
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"LOOK before LEAP\"><span class=\"riddle-word\">LOOK</span><span class=\"riddle-small\">before</span><span class=\"riddle-word\">LEAP</span></div>",
+      "prompt": "LOOK before LEAP",
+      "answer": "Look before you leap",
+      "joke": "Why did the tomato turn red? Because it saw the salad dressing.",
+      "discuss": "When is it wise to pause, and when does pausing just mean you never start?",
+      "bright": {
+        "title": "Vaccines that train the body faster",
+        "blurb": "Researchers keep finding sharper ways to teach the immune system, so protection can show up sooner against tough bugs."
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "type": "riddle",
+      "prompt": "What is full of holes but still holds water?",
+      "answer": "A sponge",
+      "joke": "What do you call a boomerang that won't come back? A stick.",
+      "discuss": "Is it better to save first and spend later, or buy something you need now and catch up later?",
+      "crumb": {
+        "week": "2026-09-14",
+        "word": "BUILD",
+        "letter": "B"
+      },
+      "bright": {
+        "title": "Concrete that can heal its own cracks",
+        "blurb": "Scientists are mixing tiny helpers into concrete so small cracks can seal themselves, which could make bridges last longer."
+      },
+      "discussTheme": "money"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus riddle-rebus-row\" role=\"img\" aria-label=\"FOR next to GIVEN\"><span class=\"riddle-word\">FOR</span><span class=\"riddle-word\">GIVEN</span></div>",
+      "prompt": "FOR next to GIVEN",
+      "answer": "Forgiven",
+      "joke": "Why was the broom late? It over-swept.",
+      "discuss": "What does it take to forgive someone, and what does it take to feel forgiven?",
+      "crumb": {
+        "week": "2026-09-14",
+        "word": "BUILD",
+        "letter": "U"
+      },
+      "bright": {
+        "title": "A telescope that will map dark sky",
+        "blurb": "Teams are finishing giant surveys that will chart billions of galaxies, a map of how the universe grew over time."
+      }
+    },
+    {
+      "date": "2026-09-16",
+      "type": "math",
+      "prompt": "How many times can you subtract the number 5 from 25?",
+      "answer": "Once (after that you're subtracting from 20)",
+      "joke": "What kind of key opens a banana? A mon-key.",
+      "discuss": "What snack actually helps you keep going, and what snack just makes you want another snack?",
+      "crumb": {
+        "week": "2026-09-14",
+        "word": "BUILD",
+        "letter": "I"
+      },
+      "bright": {
+        "title": "Farms that waste less water",
+        "blurb": "Smart drips and soil sensors are helping growers give plants only what they need, so more food grows with less waste."
+      },
+      "discussTheme": "food"
+    },
+    {
+      "date": "2026-09-17",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"TIME then TIME with after between\"><span class=\"riddle-word\">TIME</span><span class=\"riddle-small\">after</span><span class=\"riddle-word\">TIME</span></div>",
+      "prompt": "TIME after TIME",
+      "answer": "Time after time",
+      "joke": "Why did the computer go to the doctor? It had a virus.",
+      "discuss": "What is something you got better at only because you did it again and again?",
+      "crumb": {
+        "week": "2026-09-14",
+        "word": "BUILD",
+        "letter": "L"
+      },
+      "bright": {
+        "title": "Robots that sort recycling better",
+        "blurb": "AI arms on sorting lines can spot plastics and metals faster than a busy conveyor allows, so less good material ends up in the trash."
+      }
+    },
+    {
+      "date": "2026-09-18",
+      "type": "riddle",
+      "prompt": "What runs but never walks, has a bed but never sleeps, and has a mouth but never eats?",
+      "answer": "A river",
+      "joke": "Why can't you give Elsa a balloon? Because she will let it go.",
+      "discuss": "If your perfect Saturday had to include moving your body somehow, what would the day look like?",
+      "crumb": {
+        "week": "2026-09-14",
+        "word": "BUILD",
+        "letter": "D"
+      },
+      "bright": {
+        "title": "Medicine printed one pill at a time",
+        "blurb": "3D printers are starting to make pills shaped for one person, so a dose can match a kid's size instead of a one-size bottle."
+      },
+      "discussTheme": "move"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"BOX with JACK inside\"><span class=\"riddle-nest-outer\">B<span class=\"riddle-nest-inner\">JACK</span>OX</span></div>",
+      "prompt": "JACK inside BOX",
+      "answer": "Jack in the box",
+      "joke": "Why did the kid bring a ladder to school? Because it was high school.",
+      "discuss": "What surprise is fun, and what surprise is the kind that makes you jump for the wrong reason?",
+      "bright": {
+        "title": "Kids teaching machines to be kinder",
+        "blurb": "Classrooms are trying simple AI helpers that practice patience and clear questions, a peek at tools that work with kids, not at them."
       }
     }
   ]
