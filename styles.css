@@ -1197,6 +1197,54 @@ body.page-transcripts .page {
   border-radius: 8px;
   background: var(--card);
 }
+.map-rit {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.map-rit-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 860 / 360;
+}
+.map-rit-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  fill: #1c1917;
+}
+.map-rit-sub {
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  fill: #57534e;
+}
+.map-rit-grid line {
+  stroke: #e7e5e4;
+  stroke-width: 1;
+}
+.map-rit-grid line.map-rit-minor {
+  stroke: #f4f1ee;
+}
+.map-rit-axis {
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 11px;
+  fill: #57534e;
+}
+.map-rit-ylab,
+.map-rit-xlab {
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  fill: #57534e;
+  text-anchor: middle;
+}
+.page-transcripts .score-chart-wrap .map-rit-svg {
+  border-radius: 0;
+  background: #fff;
+}
+
 
 .score-stage {
   display: flex;
@@ -4667,5 +4715,135 @@ body.page-home .home-bubble-menu a:hover {
   .page-riddle .riddle-reveal,
   .page-riddle .page-end-logo img {
     transition: none;
+  }
+}
+
+.map-rit {
+  position: relative;
+}
+.map-rit-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 2.8% 0.1rem 6.74%;
+}
+.map-rit-head-title {
+  margin: 0;
+  white-space: nowrap;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #57534e;
+}
+.map-rit-head-title strong {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-right: 0.4rem;
+}
+.map-rit-head-meta {
+  margin: 0;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 58%;
+  padding: 0.18rem 0.55rem 0.2rem;
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+.map-rit-head-meta.is-on {
+  opacity: 1;
+}
+@media (max-width: 700px) {
+  .map-rit-head-meta {
+    display: none !important;
+  }
+}
+.map-rit-hit {
+  cursor: pointer;
+  outline: none;
+}
+.page-transcripts .score-chart-wrap {
+  overflow: visible;
+}
+
+.map-rit-dot {
+  transition: fill 0.12s ease, r 0.12s ease;
+}
+.map-rit-dot.is-hot {
+  fill: #f4a24a;
+  stroke: #1c1917;
+  stroke-width: 1.25;
+}
+
+.map-rit-band {
+  cursor: pointer;
+  transition: fill 0.15s ease, opacity 0.15s ease;
+}
+.map-rit-edge,
+.map-rit-line {
+  pointer-events: none;
+}
+
+.js-motion .map-rit.is-anim .map-rit-band,
+.js-motion .map-rit.is-anim .map-rit-edge {
+  transition: none;
+  animation: map-rit-wave 0.8s linear both;
+  animation-delay: calc(var(--wave-i, 0) * 78ms);
+}
+.js-motion .map-rit.is-anim .map-rit-line {
+  stroke-dasharray: 1;
+  animation: map-rit-draw 0.7s cubic-bezier(0.37, 0, 0.63, 1) 0.34s both;
+}
+.js-motion .map-rit.is-anim .map-rit-dot {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: map-rit-dot 0.5s linear backwards;
+}
+@keyframes map-rit-wave {
+  0% { transform: translateY(var(--rise)); }
+  12.5% { transform: translateY(calc(var(--rise) * 0.9619)); }
+  25% { transform: translateY(calc(var(--rise) * 0.8536)); }
+  37.5% { transform: translateY(calc(var(--rise) * 0.6913)); }
+  50% { transform: translateY(calc(var(--rise) * 0.5)); }
+  62.5% { transform: translateY(calc(var(--rise) * 0.3087)); }
+  75% { transform: translateY(calc(var(--rise) * 0.1464)); }
+  87.5% { transform: translateY(calc(var(--rise) * 0.0381)); }
+  100% { transform: translateY(0); }
+}
+@keyframes map-rit-dot {
+  0% { opacity: 0; transform: scale(0.15); }
+  12.5% { opacity: 0.04; transform: scale(0.18); }
+  25% { opacity: 0.15; transform: scale(0.28); }
+  37.5% { opacity: 0.31; transform: scale(0.45); }
+  50% { opacity: 0.5; transform: scale(0.62); }
+  62.5% { opacity: 0.69; transform: scale(0.78); }
+  75% { opacity: 0.85; transform: scale(0.9); }
+  87.5% { opacity: 0.96; transform: scale(0.97); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes map-rit-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-motion .map-rit.is-anim .map-rit-band,
+  .js-motion .map-rit.is-anim .map-rit-edge,
+  .js-motion .map-rit.is-anim .map-rit-line,
+  .js-motion .map-rit.is-anim .map-rit-dot {
+    animation: none !important;
   }
 }

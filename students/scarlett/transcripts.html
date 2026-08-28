@@ -95,24 +95,9 @@
 
       <div class="score-stage">
       <div class="score-chart-stage">
-      <div class="score-panel active" id="score-math" data-score="math">
+      <div class="score-panel active" id="score-map" data-score="map">
         <div class="score-chart-wrap">
-          <img src="testing/mathrit.png" alt="MAP Math RIT score history" width="2376" height="1154">
-        </div>
-      </div>
-      <div class="score-panel" id="score-reading" data-score="reading">
-        <div class="score-chart-wrap">
-          <img src="testing/readingrit.png" alt="MAP Reading RIT score history" width="2378" height="1152">
-        </div>
-      </div>
-      <div class="score-panel" id="score-language" data-score="language">
-        <div class="score-chart-wrap">
-          <img src="testing/languagerit.png" alt="MAP Language RIT score history" width="2370" height="1148">
-        </div>
-      </div>
-      <div class="score-panel" id="score-science" data-score="science">
-        <div class="score-chart-wrap">
-          <img src="testing/sciencerit.png" alt="MAP Science RIT score history" width="2366" height="1144">
+          <div class="map-rit" data-subject="math" aria-label="MAP Math RIT score history"></div>
         </div>
       </div>
       <div class="score-panel" id="score-all" data-score="all">
@@ -874,6 +859,7 @@
     </div>
   </div>
 
+    <script src="testing/map-chart.js"></script>
   <script>
     (function () {
       // Nav: stay visible for first ~200px, then fade up and away
@@ -938,17 +924,17 @@
       const scorePanels = document.querySelectorAll('.score-panel');
       const scoreStage = document.querySelector('.score-chart-stage');
       var scoreOrder = ['math', 'reading', 'language', 'science', 'all'];
+      function panelKey(score) {
+        return score === 'all' ? 'all' : 'map';
+      }
       var currentScore = (function () {
-        var active = document.querySelector('.score-panel.active');
-        return active ? active.getAttribute('data-score') : 'math';
+        var btn = document.querySelector('.score-tabs button.active');
+        return btn ? btn.getAttribute('data-score') : 'math';
       })();
       var scoreSlideTimer = null;
       var scoreSlideToken = 0;
 
-      document.querySelectorAll('.score-chart-wrap img').forEach(function (img) {
-        var pre = new Image();
-        pre.src = img.getAttribute('src');
-      });
+      /* MAP charts are SVG; no screenshot preload */
 
       function clearScoreMotion(panel) {
         panel.classList.remove('is-leaving');
@@ -958,8 +944,9 @@
       }
 
       function snapScorePanel(score) {
+        var key = panelKey(score);
         scorePanels.forEach(function (panel) {
-          panel.classList.toggle('active', panel.getAttribute('data-score') === score);
+          panel.classList.toggle('active', panel.getAttribute('data-score') === key);
           clearScoreMotion(panel);
         });
         if (scoreStage) {
@@ -980,8 +967,8 @@
           snapScorePanel(score);
           return;
         }
-        var incoming = scoreStage.querySelector('.score-panel[data-score="' + score + '"]');
-        var outgoing = scoreStage.querySelector('.score-panel[data-score="' + from + '"]');
+        var incoming = scoreStage.querySelector('.score-panel[data-score="' + panelKey(score) + '"]');
+        var outgoing = scoreStage.querySelector('.score-panel[data-score="' + panelKey(from) + '"]');
         if (!incoming || !outgoing || incoming === outgoing) {
           snapScorePanel(score);
           return;
@@ -1034,6 +1021,11 @@
         });
         var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         var animate = !reduce && document.documentElement.classList.contains('js-motion');
+        var sameMap = panelKey(from) === 'map' && panelKey(score) === 'map';
+        if (panelKey(score) === 'map' && window.UnboundedMap) {
+          window.UnboundedMap.setSubject(score, { animate: animate && sameMap });
+        }
+        if (sameMap) return;
         scoreSlideToken += 1;
         if (scoreSlideTimer) {
           window.clearTimeout(scoreSlideTimer);
