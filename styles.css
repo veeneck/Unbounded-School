@@ -4847,3 +4847,45 @@ body.page-home .home-bubble-menu a:hover {
     animation: none !important;
   }
 }
+
+.spelling-words-btn {
+  display: inline;
+  margin-left: 0.45rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--brown);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  cursor: pointer;
+}
+.spelling-words-btn:hover {
+  color: var(--ink);
+}
+.spelling-week-block .section-head {
+  align-items: baseline;
+}
+.spelling-week-score {
+  margin-left: auto;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--brown);
+}
+.spelling-week-words ol {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  columns: 2;
+  column-gap: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+@media (max-width: 700px) {
+  .spelling-week-words ol {
+    columns: 1;
+  }
+}

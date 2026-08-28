@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/unbounded-logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#166534">
+  <meta name="apple-mobile-web-app-title" content="Unbounded School">
+  <meta name="application-name" content="Unbounded School">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Olden — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+      <!-- Fathom - beautiful, simple website analytics -->
+      <script src="https://cdn.usefathom.com/script.js" data-site="FXWFKUXE" defer></script>
+      <!-- / Fathom -->
+  <style>
+    .writing-body p {
+      margin-bottom: 1.05rem;
+      line-height: 1.68;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body class="page-writing">
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/index.html">
+        <img src="../../../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/schedule">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Guides
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/guides/grok-and-quill.html" role="menuitem">Grok &amp; Quill</a>
+            <a href="/guides/quarterly-coin.html" role="menuitem">Quarterly Coin</a>
+            <a href="/guides/travel-crier.html" role="menuitem">Travel Crier</a>
+            <a href="/guides/info-quest.html" role="menuitem">Info Quest</a>
+            <a href="/guides/bakers-guild.html" role="menuitem">Bakers Guild</a>
+          </div>
+        </li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts" role="menuitem">Scarlett</a>
+            <a href="/students/juliet/transcripts" role="menuitem">Juliet</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+      <a class="nav-back" href="/students/scarlett/transcripts.html">← Back to Scarlett’s Transcripts</a>
+
+    <header>
+      <div class="hero-badge">Writing piece</div>
+      <h1>Olden</h1>
+      <p class="subtitle">A trip to Olden, Norway.</p>
+    </header>
+
+    <div class="writing-hero">
+      <img src="../../hero/olden.jpg" alt="Olden, Norway">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <p>When we went on our Norway cruise, one of our stops was Olden. I chose to write about this stop because of its beauty. It was the most beautiful place I have ever been. The fjords were stunning.</p>
+        <p>While we were there we went hiking in the mountains. We rode a gondola that took us super high before we started our hike. It was very tiring but worth it. The view was outstanding! We got to see the ocean, the cute little town, and smaller mountains all from above! The top seemed like it would never come. Our legs ached. My parents wanted to give up, but I kept them going. As we got closer to the top we saw snow and had a snowball fight, and our dad let us throw one at him. Then finally we made it to the top! We were in a cloud! The cloud felt like mist and looked like fog, it was so refreshing. The top was pretty quiet and peaceful, but quite chilly. I felt relieved and proud of myself.</p>
+        <p>Once we made it back down, we ate a popsicle and went to explore the town. There were so many old little houses and we got awesome photos. Fun fact: Olden has a legend about trolls, so there’s lot’s of troll statues. I would love to go back there some day.</p>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+    <a class="page-end-logo" href="../../../../index.html">
+      <img src="../../../../unbounded-logo.svg" alt="Unbounded School">
+    </a>
+
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
