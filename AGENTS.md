@@ -47,7 +47,7 @@ testing/                  # MAP RIT chart images
 writing/4thgrade/         # Writing entry HTML pages
 writing/5thgrade/         # 5th-grade writing (olden.html, …)
 projects/4thgrade/        # Project HTML + media (video, photos)
-projects/5thgrade/        # 5th-grade projects (summersale.html, …)
+projects/5thgrade/        # 5th-grade projects (summersale.html, monart2026.html, spelling.html tests log)
 science/5thgrade/         # One folder per kit (warmbright/, …)
 reportcards/              # fall-2025, winter-2025, spring-2026
 juliet/
@@ -127,7 +127,9 @@ Travel & Field Trips is **not grade-specific**: footer band (`.transcripts-trave
 - Paper texture: `subtlebg.jpg` at the grade-sticky (fades down to `--bg`). Same file again just above Travel, faded the other way (strongest at the travel edge). No `subtlebgend` swirl on transcripts. `--transcripts-travel-top` is the travel band’s document Y. JS sets `--paper-fade` to the smaller of the natural band and 42% of the paper span so short transcripts (Juliet, etc.) don’t overlap.
 - Testing score tabs (Math/Reading/Language/Science/All) sit **under** the graph in `.score-stage`, same width as the chart, equal-width buttons (graph controls). Separate from the 4th/5th grade bar.
 - Motion: progress bars fill from the left as their card scrolls into view (`.js-motion` + `.is-in`). 4th/5th grade switch: outgoing slides + fades out, a short pause, then the new grade slides + fades in (direction matches the tab). One live SVG RIT chart (`.map-rit`, `testing/map-chart.js`, 2020 NWEA bands) morphs in place for Math/Reading/Language/Science (waves, points, labels). Switching to All still slides to the scores table. Old PNGs remain in `testing/` unused. No animation on first load from `?grade=`. Off if `prefers-reduced-motion`. Re-observe after the incoming panel lands.
-- Progress cards with bars + 100% checkmarks. 5th **180 Days Spelling** has a Spelling tests link to `projects/5thgrade/spelling.html` (filed as a project page, not a transcripts project card). Weeks list on that page: heading + score, then the 20 words. Week 1 is in (100%, 2026-08-28 test).
+- Progress cards with bars + 100% checkmarks.
+
+**Spelling tests (locked, 2026-08-28).** One page: `students/scarlett/projects/5thgrade/spelling.html` (writing/project shell, badge Project, title Spelling Tests). Not a transcripts project card, not a new item type, not a report-card subsection, not an in-place drawer. The 5th **180 Days Spelling** pill is the only entry: text link “Spelling tests”. Each test is a stacked section (the **test date** as the heading, e.g. August 28, 2026, + score on the right, then the 20 words in two columns; one column under 700px). Oldest first; later tests append below. Future tests: parse the photo or list, use the test date not a week number, append on the same page, do not restyle. First test is in (August 28, 2026, 100%, 20 words).
 - Project / writing / book cards on transcripts use **`thumbnails/`** (resized JPEGs). Full `hero/`, `books/`, and project photos stay on the individual pages.
 - Writing is its own section after Reading. 4th-grade pieces use compact `.writing-grid` cards (same as project cards, smaller) with hero thumbs from `hero/`. 5th writing starts with **Olden** (`writing/5thgrade/olden.html`) — trip to Olden, Norway. Copy and hero `hero/olden.jpg` are in; card thumb is `thumbnails/hero/olden.jpg`.
 - 5th projects: first card is **Summer Sale** (`projects/5thgrade/summersale.html`) — featured like Adventure Back Then. **MonArt** links to `projects/5thgrade/monart2026.html` (gallery coming soon). **Soccer** is a sports card with photo coming soon. Hero `summersalehero.jpg`. Body photos: `.writing-inline` (money, text wraps) and `.writing-figure` (full-width: yardsign, chalk). Scarlett’s copy is in; they raised $520 for Melissa.
@@ -160,6 +162,7 @@ Same lead band, sticky kicker, paper section, travel footer, and paper-texture J
 | Task | File |
 |------|------|
 | Progress / books / projects UI | `students/scarlett/transcripts.html` |
+| 5th spelling tests | `students/scarlett/projects/5thgrade/spelling.html` |
 | Look & components | `styles.css` |
 | Co-op / form | `coop.html` |
 | Schedule | `schedule.html` |
