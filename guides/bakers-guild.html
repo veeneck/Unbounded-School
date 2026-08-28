@@ -68,18 +68,92 @@
     <nav class="book-toc" aria-label="Table of contents">
       <h2 class="book-toc-title">Contents</h2>
       <ol class="book-toc-list">
-        <li><a href="#get-ready">Get Ready</a></li>
+        <li><a href="#find-a-recipe">Find a Recipe</a></li>
+        <li><a href="#check-the-kitchen">Check the Kitchen</a></li>
+        <li><a href="#go-to-the-store">Go to the Store</a></li>
+        <li><a href="#bake">Bake</a></li>
+        <li><a href="#share-and-enjoy">Share and Enjoy</a></li>
       </ol>
     </nav>
 
-    <article class="book-chapter" id="get-ready">
+    <article class="book-chapter" id="find-a-recipe">
       <header class="book-chapter-head">
         <p class="guide-tag guide-tag-setup">Setup</p>
-        <h2>Get Ready</h2>
+        <h2>Find a Recipe</h2>
       </header>
       <div class="book-chapter-body">
-        <p>This quest is for the kitchen: pick ingredients, follow a recipe, and bake (or cook) with a parent. We’ll pack the rest of the steps soon.</p>
-        <p class="placeholder">More coming soon.</p>
+        <p>Pick something you actually want to eat. Ask a parent, ask Grok, or search a recipe site. <a href="https://cookieandkate.com/" target="_blank" rel="noopener">Cookie and Kate</a> is a good place to look: real ingredients, lots of baked goods, not too fussy.</p>
+        <p>When you have a recipe, write down <strong>every</strong> ingredient and how much. That’s your list for the next step.</p>
+        <div class="guide-copy">
+          <div class="guide-copy-bar">
+            <span class="guide-copy-label">Grok prompt</span>
+            <button type="button" class="guide-copy-btn" data-copy="#baker-recipe-prompt">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="guide-copy-btn-label">Copy</span>
+            </button>
+          </div>
+          <blockquote id="baker-recipe-prompt">
+            <p>Help me pick a baking recipe I can make with a parent. I want mostly real ingredients, not too hard, and something we’d actually eat. Ask me a couple of questions, then give me 2 or 3 ideas.</p>
+          </blockquote>
+        </div>
+        <p>Then show the recipe to Mom. Ask if any ingredients should be swapped for something healthier before you write the final list.</p>
+      </div>
+    </article>
+
+    <article class="book-chapter" id="check-the-kitchen">
+      <header class="book-chapter-head">
+        <p class="guide-tag guide-tag-task">Task</p>
+        <h2>Check the Kitchen</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>Take your ingredient list into the kitchen. Check the pantry, fridge, and baking cupboard. Cross off anything you already have enough of.</p>
+        <p>What’s left is the shopping list. Write it on paper (or a note on a parent’s phone) before you go.</p>
+      </div>
+    </article>
+
+    <article class="book-chapter" id="go-to-the-store">
+      <header class="book-chapter-head">
+        <p class="guide-tag guide-tag-task">Task</p>
+        <h2>Go to the Store</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>Before you go, you can check prices and products online at <a href="https://www.target.com/" target="_blank" rel="noopener">Target</a> or <a href="https://www.walmart.com/" target="_blank" rel="noopener">Walmart</a>. You can also ask Grok for a rough price estimate or any shopping tips.</p>
+        <div class="guide-copy">
+          <div class="guide-copy-bar">
+            <span class="guide-copy-label">Grok prompt</span>
+            <button type="button" class="guide-copy-btn" data-copy="#baker-store-prompt">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="guide-copy-btn-label">Copy</span>
+            </button>
+          </div>
+          <blockquote id="baker-store-prompt">
+            <p>Here’s my baking shopping list. About how much might this cost at Target or Walmart? Any tips for cheaper swaps or what to look for?</p>
+          </blockquote>
+        </div>
+        <p>Then go with a parent and buy what’s on the list. Stick to the list unless a parent says otherwise.</p>
+        <p>At checkout, write down the <strong>total amount spent</strong> on the ingredients. Keep the receipt or copy the number onto your recipe page. That’s part of the quest, not extra homework.</p>
+      </div>
+    </article>
+
+    <article class="book-chapter" id="bake">
+      <header class="book-chapter-head">
+        <p class="guide-tag guide-tag-task">Task</p>
+        <h2>Bake</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>Follow the recipe with a parent. Read the whole thing once before you start. Measure, mix, and get it in the oven.</p>
+        <p>Hot ovens and pans are a parent job if you need help. Clean as you go if you can. Then wait for it to cool enough to eat.</p>
+      </div>
+    </article>
+
+    <article class="book-chapter" id="share-and-enjoy">
+      <header class="book-chapter-head">
+        <p class="guide-tag guide-tag-task">Task</p>
+        <h2>Share and Enjoy</h2>
+      </header>
+      <div class="book-chapter-body">
+        <p>Take a picture of what you made. Send that photo along with the recipe to a parent. Then eat it.</p>
+        <p>That’s the whole guild run. Next time, a new recipe.</p>
       </div>
     </article>
 
@@ -120,6 +194,30 @@
         document.querySelectorAll('.nav-drop').forEach(function (drop) {
           drop.classList.remove('open');
           drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      document.querySelectorAll('.guide-copy-btn[data-copy]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const target = document.querySelector(btn.getAttribute('data-copy'));
+          if (!target) return;
+          const text = (target.innerText || target.textContent || '').trim();
+          const label = btn.querySelector('.guide-copy-btn-label');
+          function markCopied() {
+            btn.classList.add('is-copied');
+            if (label) label.textContent = 'Copied';
+            window.setTimeout(function () {
+              btn.classList.remove('is-copied');
+              if (label) label.textContent = 'Copy';
+            }, 1600);
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(markCopied).catch(function () {
+              window.prompt('Copy this prompt:', text);
+            });
+          } else {
+            window.prompt('Copy this prompt:', text);
+          }
         });
       });
     })();

@@ -102,7 +102,16 @@ Do not put the full Day 1–5 project-instruction text in new prompts — it alr
 8. Task — Update the Spreadsheet with this quarter’s real numbers (with a parent; no guessing)
 9. Questions — Talk It Over: 10 discussion questions (investment income source; bond vs stock; income; debt vs loan; interest; why buy a stock; bond tradeoff; dividend; spend/save/earn this quarter; $100 extra)
 
-**Travel Crier / Info Quest / Bakers Guild** — quest shells (hero + Setup “Get Ready” only so far). Travel = maps/places you go. Info = hunt for true answers. Bakers = kitchen/recipes with a parent. Fill like Quarterly Coin when content is ready.
+**Travel Crier / Info Quest** — quest shells (hero + Setup “Get Ready” only so far). Travel = maps/places you go. Info = hunt for true answers. Fill like Quarterly Coin when content is ready.
+
+**Bakers Guild** — kitchen quest with a parent (rough draft 2026-08-28). Five sections:
+
+1. Setup — Find a Recipe: ask a parent, ask Grok, or search [Cookie and Kate](https://cookieandkate.com/). Write down every ingredient. Copy box: Grok prompt for 2–3 doable baking ideas. Then show the recipe to Mom and ask about healthy ingredient swaps
+2. Task — Check the Kitchen: cross off what you have; leftover items become the shopping list
+3. Task — Go to the Store: check prices/products on Target or Walmart (or ask Grok for an estimate/tips); buy the list; write down the total amount spent
+4. Task — Bake: follow the recipe with a parent
+5. Task — Share and Enjoy: take a pic of what you made, send that photo along with the recipe to a parent, eat it
+
 
 ### When editing
 1. Match existing patterns on the same page
