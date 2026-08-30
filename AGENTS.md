@@ -43,7 +43,7 @@ art/                      # Art images (MonArt grid, etc.)
 books/                    # Book cover images
 hero/                     # Full hero images for writing & project pages
 thumbnails/               # Smaller JPEGs for transcripts cards (hero/, books/, projects/, art/)
-testing/                  # MAP RIT chart images
+testing/                  # MAP RIT chart images + practice quiz (index.html)
 writing/4thgrade/         # Writing entry HTML pages
 writing/5thgrade/         # 5th-grade writing (olden.html, …)
 projects/4thgrade/        # Project HTML + media (video, photos)
