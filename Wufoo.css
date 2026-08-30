@@ -237,6 +237,21 @@ form ul.choices li {
   margin-right: 0.45rem !important;
 }
 
+.wufoo ul.choices input[type="text"],
+.wufoo ul.choices input.text,
+.wufoo input.other,
+form ul.choices input[type="text"],
+form ul.choices input.text,
+form input.other {
+  width: 10.5rem !important;
+  max-width: 46% !important;
+  min-width: 0 !important;
+  padding: 0.28rem 0.5rem !important;
+  margin: 0 0 0 0.4rem !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
 /* ---------- Section breaks ---------- */
 .wufoo li.section,
 form li.section,

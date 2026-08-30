@@ -23,7 +23,7 @@ When the user says they pushed/changed something live, pull the live page before
 | `index.html` | Homepage: full-viewport hero, large logo, tagline, bubble links (no site nav) |
 | `schedule.html` | Daily schedule + year structure + tools. **Theme experiment:** newspaper / Hogwarts-parchment look scoped to `body.page-schedule` in `styles.css`. Refine here before rolling site-wide. |
 | `404.html` | Custom Netlify 404 (`body.page-404`). Root-absolute asset/hrefs so it works from any missing path. |
-| `coop.html` | Local Colwich/Andale homeschool mailing list + Wufoo embed. Newspaper look via `body.page-coop`. |
+| `coop.html` | Co-op homepage (`/coop`): Stay Informed white band + Calendar module. Newspaper look via `body.page-coop`. Calendar uses the same sticky kicker bar as transcripts (`.grade-sticky`, no grade switcher). Form is `coop/mailinglist.html`. |
 | `guides/` | Instruction guides (dropdown in top nav + homepage bubble) |
 | `styles.css` | Global styles |
 | `subtlebg.jpg` | Aged-paper texture at the **top** of content pages (fades down to `--bg`). Portrait: `subtlebgmobile.jpg` |
@@ -160,7 +160,8 @@ Same lead band, sticky kicker, paper section, travel footer, and paper-texture J
 ---
 
 ## Other pages
-- **Co-op:** numbered steps + Wufoo embed (`body.page-coop`). Form chrome via `Wufoo.css` (ink/brown, square corners — update after deploy so Wufoo’s custom CSS URL picks it up)
+- **Co-op homepage** (`coop.html`): header, Stay Informed (mailing list → `coop/mailinglist.html`, subscribe to calendar → `coop/calendar.ics`), then a calendar module in the Colwich HSO events layout (month labels, date-on-top cards, 2-across). Calendar runs Sep–May: 2nd Friday is PE in the park, last Friday is a field trip (example sites: Trader Joe’s, recycling plant, nursery, cookie place, KSN, post office, water plant, airport fire/police, Maize police). Subtext: sample dates and example ideas; actual trips would be discussed. Kombucha owner is on the idea list but not on this sample year. Top bar stays but has **no links**. Do not put Co-op in the main nav.
+- **Co-op mailing list** (`coop/mailinglist.html`): numbered steps + Wufoo embed, same as the old co-op page. Form chrome via `Wufoo.css` (ink/brown, square corners — update after deploy so Wufoo’s custom CSS URL picks it up)
 - **Homepage:** `wallpaper.jpg` fills the screen; logo/menu sit on the wallpaper; tagline “A different take on education.”, bubble links (Schedule, Co-op, Guides)
 - **Analytics:** Fathom `FXWFKUXE` on every HTML page
 
@@ -173,7 +174,8 @@ Same lead band, sticky kicker, paper section, travel footer, and paper-texture J
 | Progress / books / projects UI | `students/scarlett/transcripts.html` |
 | 5th spelling tests | `students/scarlett/projects/5thgrade/spelling.html` |
 | Look & components | `styles.css` |
-| Co-op / form | `coop.html` |
+| Co-op homepage | `coop.html` |
+| Co-op mailing list | `coop/mailinglist.html` |
 | Schedule | `schedule.html` |
 | Guides | `guides/*.html` |
 | Report cards | `students/scarlett/reportcards/*.html` |
