@@ -65,7 +65,7 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Live may use pretty URLs without `.html`; local files are `.html`
 
 ### Nav
-- Standard nav: logo, Schedule, Guides → Grok & Quill / Quarterly Coin / Travel Crier / Info Quest / Bakers Guild, Students → Scarlett / Juliet
+- Standard nav: logo, Schedule, Guides → Grok & Quill / Quarterly Coin / Travel Crier / Info Quest / Bakers Guild / Housewright, Students → Scarlett / Juliet
 - **Do not** put Co-op in the main nav
 - **Experiment (easy revert):** site-wide `.site-nav` uses the newspaper index look (dark brown bar, boxed labels, double rule). School name is hidden; links are centered. On landscape, the inverted logo sits left in the bar and scrolls away with it. Revert the “Site nav” block in `styles.css` if it doesn’t stick.
 - Homepage (`page-home`) has no nav bar; newspaper-index labels (Schedule, Co-op, Guides dropdown). `wallpaper.jpg` fills the viewport (`background-size: cover`). Logo, title, and menu sit directly on the wallpaper.
@@ -79,8 +79,8 @@ Each student has their own `transcripts.html`. Do not put transcripts at site ro
 - Shared styles in `styles.css`: `.book-toc`, `.book-chapter`, `.guide-tag`, `.guide-copy`, `.guide-tips`. Newspaper look via `body.page-guide` (same masthead/ink frames as schedule and writing).
 - **Report cards** (`students/scarlett/reportcards/`): `body.page-report`. Gazette masthead, boxed term tabs (Fall/Winter/Spring), full-width grades table, two-column achievements/growth, MAP tests table with GPA / attendance / days missed at the bottom. Same ink frames as schedule.
 - **404:** `404.html` at site root. Lost & Found masthead, dashed notice, boxed Home/Schedule/Scarlett/Guides links.
-- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`, `guides/travel-crier.html`, `guides/info-quest.html`, `guides/bakers-guild.html`
-- Heroes: `guides/hero/` — `grokquill.jpg`, `quarterlycoin.jpg`, `travelcrier.jpg`, `infoquest.jpg`, `bakersguild.jpg`
+- Files: `guides/grok-and-quill.html`, `guides/quarterly-coin.html`, `guides/travel-crier.html`, `guides/info-quest.html`, `guides/bakers-guild.html`, `guides/housewright.html`
+- Heroes: `guides/hero/` — `grokquill.jpg`, `quarterlycoin.jpg`, `travelcrier.jpg`, `infoquest.jpg`, `bakersguild.jpg`, `housewright.jpg`
 - Watch placeholders: `.guide-video` (“Video coming soon”) until a real video is dropped in
 - Quiz/discussion: same white `.guide-tips` cards as the Grok & Quill writing tips, under a `Questions` tag — talk with a parent, not a scored test
 
@@ -111,6 +111,16 @@ Do not put the full Day 1–5 project-instruction text in new prompts — it alr
 3. Task — Go to the Store: check prices/products on Target or Walmart (or ask Grok for an estimate/tips); buy the list; write down the total amount spent
 4. Task — Bake: follow the recipe with a parent
 5. Task — Share and Enjoy: take a pic of what you made, send that photo along with the recipe to a parent, eat it
+
+**Housewright** — how this house actually works (hunt, then be ready for questions). Five sections:
+
+1. Setup — Get Ready: 20 items, five per section. Use Grok, Google, the library, or people you know. Figure out what each does, where it is, and be ready to answer questions
+2. Task — Electrical: GFCI TEST/RESET; dead plug (GFCI vs breaker); tamper-resistant outlet; breaker panel; meter / power entry
+3. Task — Plumbing: P-trap; house entry / main shutoff; water at the street; water softener; RO + fridge filters
+4. Task — HVAC: supply into rooms; stale-air return; fresh outdoor air; machines that heat/cool; basement Lunos vs bath fans
+5. Task — Low Voltage / AV: Lutron smart switches; UniFi router; basement ceiling speakers; attic antenna; internet from yard into the house
+
+Each item is a numbered card: topic title on top, hunt hint underneath (`.guide-tips.hw-items`, one column).
 
 
 ### When editing

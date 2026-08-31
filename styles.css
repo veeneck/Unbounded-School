@@ -3422,6 +3422,21 @@ a.project-card.is-link:hover {
   color: var(--brown);
 }
 
+.page-guide .hw-items {
+  grid-template-columns: 1fr;
+}
+.page-guide .hw-items > li {
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+}
+.page-guide .hw-items h3 {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.08rem;
+  letter-spacing: -0.01em;
+}
+.page-guide .hw-items p {
+  color: var(--muted);
+}
+
 .page-guide .guide-video {
   border-radius: 0;
   border: 1px dashed var(--brown);
