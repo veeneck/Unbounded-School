@@ -43,7 +43,7 @@ art/                      # Art images (MonArt grid, etc.)
 books/                    # Book cover images
 hero/                     # Full hero images for writing & project pages
 thumbnails/               # Smaller JPEGs for transcripts cards (hero/, books/, projects/, art/)
-testing/                  # MAP RIT chart images + practice quiz (index.html)
+testing/                  # MAP RIT PNGs + map-chart.js. Chooser index.html. Practice quizzes in math/, reading/, language/, science/ (each index.html + items.js)
 writing/4thgrade/         # Writing entry HTML pages
 writing/5thgrade/         # 5th-grade writing (olden.html, …)
 projects/4thgrade/        # Project HTML + media (video, photos)
@@ -52,8 +52,12 @@ science/5thgrade/         # One folder per kit (warmbright/, …)
 reportcards/              # fall-2025, winter-2025, spring-2026
 juliet/
 transcripts.html          # Same newspaper transcripts shell as Scarlett; content still “coming soon”
+testing/                  # 1st-grade sample quizzes: math/, reading/ (same engine as Scarlett)
 
 Each student has their own `transcripts.html`. Do not put transcripts at site root.
+
+**MAP practice quizzes (local, noindex).** Shared engine `students/quiz.js`. Scarlett: `students/scarlett/testing/` chooser plus `math/`, `reading/`, `language/`, `science/` (20 items each, 4th recap into 5th plus stretch). Juliet: `students/juliet/testing/math/` and `reading/` (10 items, 1st grade). Each subject folder is `index.html` + `items.js`. One question at a time; Next locked until answered; results with checks and score. Not in the main nav.
+
 
 ---
 

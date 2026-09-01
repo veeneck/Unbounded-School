@@ -5407,3 +5407,36 @@ ol.spelling-week-words {
 .page-map-quiz #quiz-retry {
   margin: 0 auto;
 }
+
+.page-map-quiz .quiz-passage {
+  margin: 0 0 0.85rem;
+  padding: 0.85rem 1rem;
+  background: color-mix(in srgb, var(--bg) 20%, #fff);
+  border: 1px solid var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--writing-ink, var(--ink));
+}
+.page-map-quiz .quiz-pick {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: grid;
+  gap: 0.75rem;
+}
+.page-map-quiz .quiz-pick a {
+  display: block;
+  padding: 0.9rem 1.15rem;
+  border: 1px solid var(--ink);
+  background: color-mix(in srgb, var(--bg) 35%, #fff);
+  color: var(--ink);
+  text-decoration: none;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--ink) 16%, transparent);
+}
+.page-map-quiz .quiz-pick a:hover {
+  background: var(--brown);
+  color: var(--bg);
+}
