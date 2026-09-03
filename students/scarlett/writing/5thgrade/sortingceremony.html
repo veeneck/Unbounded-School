@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/unbounded-logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#166534">
+  <meta name="apple-mobile-web-app-title" content="Unbounded School">
+  <meta name="application-name" content="Unbounded School">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>The Sorting Ceremony — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+      <!-- Fathom - beautiful, simple website analytics -->
+      <script src="https://cdn.usefathom.com/script.js" data-site="FXWFKUXE" defer></script>
+      <!-- / Fathom -->
+  <style>
+    .writing-body p {
+      margin-bottom: 1.05rem;
+      line-height: 1.68;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body class="page-writing">
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/index.html">
+        <img src="../../../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/schedule.html">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Guides
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/guides/grok-and-quill.html" role="menuitem">Grok &amp; Quill</a>
+            <a href="/guides/quarterly-coin.html" role="menuitem">Quarterly Coin</a>
+            <a href="/guides/travel-crier.html" role="menuitem">Travel Crier</a>
+            <a href="/guides/info-quest.html" role="menuitem">Info Quest</a>
+            <a href="/guides/bakers-guild.html" role="menuitem">Bakers Guild</a>
+            <a href="/guides/housewright.html" role="menuitem">Housewright</a>
+          </div>
+        </li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
+            <a href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+      <a class="nav-back" href="/students/scarlett/transcripts.html">← Back to Scarlett’s Transcripts</a>
+
+    <header>
+      <div class="hero-badge">Writing piece</div>
+      <h1>The Sorting Ceremony</h1>
+      <p class="subtitle">Which house?</p>
+    </header>
+
+    <div class="writing-hero">
+      <img src="../../hero/sortingceremony.jpg" alt="The Sorting Ceremony">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <p>The Sorting Ceremony was about to start. We were all standing in the wide hallway. Suddenly, the big doors opened. Feeling both nervous and excited, I walked into the Great Hall. They called my name. As I walked up to the stool, I saw the whole school staring at me. When the hat was put on my head, it slid down over my eyes. There was a spider in the hat! The material was so weird! The hat was disgusting! Taking it off that second would have felt great.</p>
+        <p>To take my mind off the hat, I thought about which house I wanted to be in. I think all the houses are fine, except Slytherin. They are selfish. For example, if they have to, they’ll hurt someone to win. Even though I like Ravenclaw and Hufflepuff, Gryffindor’s my favorite. I have no idea where the hat’s going to put me, but two of my traits are wanting to do the right thing, and being kind.</p>
+        <p>Wait a second, is it good that they sort us into houses? I guess it is because we get to be with people like us, we get to be part of a group, and we’ll have people to depend on. But it’s also bad because people can be split from their friends, and you can’t meet new people. I’m not sure if sorting people into groups is good.</p>
+        <p>Finally, the Sorting Hat made a decision, I’m in…….</p>
+      </div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+    <a class="page-end-logo" href="../../../../index.html">
+      <img src="../../../../unbounded-logo.svg" alt="Unbounded School">
+    </a>
+
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
