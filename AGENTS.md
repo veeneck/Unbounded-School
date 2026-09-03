@@ -165,7 +165,7 @@ Travel & Field Trips is **not grade-specific**: footer band (`.transcripts-trave
 - Not started: class `is-todo`, dashed empty circle, `—`
 - Caption: “Accuracy grades, not % complete · fill = lessons done”
 
-**Current 5th (Aug 2026):** Khan Academy Math 32%. Lexia 19 in progress at 21% fill, 20–21 not started. Books Read includes Magic Tree House Books 1–4 (flat cover `books/treehouse4.jpg`, title without “boxed set”).
+**Current 5th (Aug 2026):** Khan Academy Math 50%. Lexia leave as-is until Friday pull. Harry Potter and the Sorcerer’s Stone at p.165/249 (~66%). Books Read includes Magic Tree House Books 1–4 (flat cover `books/treehouse4.jpg`, title without “boxed set”). Warm and Bright experiments 1–3 have photos.
 
 ### Juliet (`students/juliet/transcripts.html`)
 
