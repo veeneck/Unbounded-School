@@ -4881,7 +4881,7 @@ body.page-home .home-bubble-menu a:hover {
   color: var(--ink);
 }
 .spelling-week-block .guide-copy {
-  margin: 0 0 1.5rem;
+  margin: 0 0 0.75rem;
   background: color-mix(in srgb, var(--bg) 35%, #fff);
   border: 1px solid var(--ink);
   border-left: 3px solid var(--brown);
