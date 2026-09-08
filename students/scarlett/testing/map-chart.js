@@ -68,7 +68,8 @@
         { name: 'Number & Operations', rit: 234 },
         { name: 'Measurement & Data', rit: 252 },
         { name: 'Geometry', rit: 252 }
-      ]}
+      ]},
+      { g: 5, t: 0, rit: 241, pct: '98th', label: 'Fall 2026' }
     ],
     reading: [
       { g: 4, t: 0, rit: 224, pct: '94th', label: 'Fall 2025' },
