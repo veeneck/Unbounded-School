@@ -39,15 +39,14 @@ When the user says they pushed/changed something live, pull the live page before
 students/
 scarlett/
 transcripts.html          # Main portfolio (per-student; not site-root)
-art/                      # Art images (MonArt grid, etc.)
 books/                    # Book cover images
 hero/                     # Full hero images for writing & project pages
 thumbnails/               # Smaller JPEGs for transcripts cards (hero/, books/, projects/, art/)
 testing/                  # MAP RIT PNGs + map-chart.js. Chooser index.html. Practice quizzes in math/, reading/, language/, science/ (each index.html + items.js)
 writing/4thgrade/         # Writing entry HTML pages
 writing/5thgrade/         # 5th-grade writing (olden.html, …)
-projects/4thgrade/        # Project HTML + media (video, photos)
-projects/5thgrade/        # 5th-grade projects (summersale.html, monart2026.html, spelling.html tests log)
+projects/4thgrade/        # Project HTML + media (video, photos) · art/ MonArt gallery images
+projects/5thgrade/        # 5th-grade projects (summersale.html, monart2026.html, spelling.html tests log) · art/ (empty, for future)
 science/5thgrade/         # One folder per kit (warmbright/, …)
 reportcards/              # fall-2025, winter-2025, spring-2026
 juliet/
