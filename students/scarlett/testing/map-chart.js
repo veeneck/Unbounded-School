@@ -69,7 +69,12 @@
         { name: 'Measurement & Data', rit: 252 },
         { name: 'Geometry', rit: 252 }
       ]},
-      { g: 5, t: 0, rit: 241, pct: '98th', label: 'Fall 2026' }
+      { g: 5, t: 0, rit: 241, pct: '98th', label: 'Fall 2026', goals: [
+        { name: 'Operations & Algebraic Thinking', rit: 233 },
+        { name: 'Number & Operations', rit: 259 },
+        { name: 'Measurement & Data', rit: 237 },
+        { name: 'Geometry', rit: 238 }
+      ]}
     ],
     reading: [
       { g: 4, t: 0, rit: 224, pct: '94th', label: 'Fall 2025' },
@@ -78,7 +83,8 @@
         { name: 'Literary Text', rit: 226 },
         { name: 'Informational Text', rit: 224 },
         { name: 'Vocabulary', rit: 229 }
-      ]}
+      ]},
+      { g: 5, t: 0, rit: 228, pct: '92nd', label: 'Fall 2026' }
     ],
     language: [
       { g: 4, t: 1, rit: 226, pct: '95th', label: 'Winter 2025' },
