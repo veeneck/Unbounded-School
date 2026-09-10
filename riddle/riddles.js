@@ -186,7 +186,7 @@ window.UNBOUNDED_RIDDLES = {
       },
       "bright": {
         "title": "Kids building the next tools",
-        "blurb": "This year\u2019s student science fairs were full of robots and medical ideas invented at kitchen tables and in garages."
+        "blurb": "This year’s student science fairs were full of robots and medical ideas invented at kitchen tables and in garages."
       }
     },
     {
@@ -230,7 +230,7 @@ window.UNBOUNDED_RIDDLES = {
       "discuss": "Why do games and stories need a clear we-made-it moment?",
       "bright": {
         "title": "A planet-hunter waits on the pad",
-        "blurb": "NASA\u2019s Roman telescope is aimed at launch, ready to hunt for worlds we have never seen with a camera that drinks in a wide sky."
+        "blurb": "NASA’s Roman telescope is aimed at launch, ready to hunt for worlds we have never seen with a camera that drinks in a wide sky."
       }
     },
     {
@@ -565,6 +565,237 @@ window.UNBOUNDED_RIDDLES = {
         "title": "Kids teaching machines to be kinder",
         "blurb": "Classrooms are trying simple AI helpers that practice patience and clear questions, a peek at tools that work with kids, not at them."
       }
+    },
+    {
+      "date": "2026-09-20",
+      "type": "riddle",
+      "prompt": "What can travel around the world while staying in a corner?",
+      "answer": "A stamp",
+      "joke": "Why did the bicycle fall over? It was two-tired.",
+      "discuss": "If you could send one letter that had to stay in its corner forever, who would it go to?",
+      "bright": {
+        "title": "Mail that proves it arrived",
+        "blurb": "Tiny trackers and clearer scans are making it easier to watch a package move mile by mile, without guessing."
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"HISTORY then HISTORY\"><span class=\"riddle-word\">HISTORY</span><span class=\"riddle-word\">HISTORY</span></div>",
+      "prompt": "HISTORY HISTORY",
+      "answer": "History repeating itself",
+      "joke": "What do you call a fake noodle? An impasta.",
+      "discuss": "Would you rather earn $5 a day for a month, or one $100 surprise at the end? Why?",
+      "crumb": {
+        "week": "2026-09-21",
+        "word": "SPARK",
+        "letter": "S"
+      },
+      "discussTheme": "money",
+      "bright": {
+        "title": "Banks kids can actually understand",
+        "blurb": "Teen banking apps are showing savings goals with simple meters, so money feels like a project instead of a mystery."
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "type": "math",
+      "prompt": "A rooster lays an egg on the peak of a barn roof. Which way does it roll?",
+      "answer": "Roosters don't lay eggs",
+      "joke": "Why was the equal sign so humble? It knew it wasn't greater than or less than anyone.",
+      "discuss": "When is a trick question fair, and when is it just mean?",
+      "crumb": {
+        "week": "2026-09-21",
+        "word": "SPARK",
+        "letter": "P"
+      },
+      "bright": {
+        "title": "Math that catches its own typos",
+        "blurb": "Homework helpers are getting better at spotting a slipped digit early, so kids can fix the step instead of the whole page."
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"HARD stacked over EASY\"><span class=\"riddle-word\">HARD</span><span class=\"riddle-word riddle-under\">EASY</span></div>",
+      "prompt": "HARD over EASY",
+      "answer": "Hard over easy",
+      "joke": "Why did the banana go to the doctor? It wasn't peeling well.",
+      "discuss": "What breakfast actually wakes you up, and what breakfast just tastes like a treat?",
+      "crumb": {
+        "week": "2026-09-21",
+        "word": "SPARK",
+        "letter": "A"
+      },
+      "discussTheme": "food",
+      "bright": {
+        "title": "Kitchens that waste less heat",
+        "blurb": "New ovens and induction pans heat food faster and cooler to the touch, so cooking takes less energy and fewer burned wrists."
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "type": "riddle",
+      "prompt": "I have keys but no locks. I have space but no room. You can enter but you can't go outside. What am I?",
+      "answer": "A keyboard",
+      "joke": "What do you call cheese that isn't yours? Nacho cheese.",
+      "discuss": "What tool do you use every day without really noticing how clever it is?",
+      "crumb": {
+        "week": "2026-09-21",
+        "word": "SPARK",
+        "letter": "R"
+      },
+      "bright": {
+        "title": "Keyboards that learn your hands",
+        "blurb": "Soft keys and layout tweaks are helping kids type longer with less strain, a small upgrade that makes writing feel easier."
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus riddle-rebus-row\" role=\"img\" aria-label=\"CROSS next to ROADS\"><span class=\"riddle-word\">CROSS</span><span class=\"riddle-word\">ROADS</span></div>",
+      "prompt": "CROSS next to ROADS",
+      "answer": "Crossroads",
+      "joke": "Why don't eggs tell jokes? They'd crack each other up.",
+      "discuss": "What kind of moving around feels like play even when it makes you sweat?",
+      "crumb": {
+        "week": "2026-09-21",
+        "word": "SPARK",
+        "letter": "K"
+      },
+      "discussTheme": "move",
+      "bright": {
+        "title": "Playgrounds that keep everyone in the game",
+        "blurb": "New park designs mix climbing, rolling, and quiet corners so more kids can join without sitting on the sidelines."
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "type": "math",
+      "prompt": "There are 8 stacks of coins. Seven weigh the same. One stack is heavier. Using a balance scale only twice, how do you find the heavy stack?",
+      "answer": "Weigh 3 vs 3. If one side is heavier, weigh two of those three against each other; the heavier is it, or if equal it's the third. If the first weigh is equal, the heavy stack is one of the leftover two — weigh them.",
+      "joke": "Why was the fraction worried about marrying a decimal? Because it would have to convert.",
+      "discuss": "When is it smarter to narrow choices first, instead of checking every option?",
+      "bright": {
+        "title": "Scales that talk in tiny units",
+        "blurb": "Lab balances can now spot a speck of change, helping makers and scientists catch mistakes before a whole batch is wasted."
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"HIGH above NOON\"><span class=\"riddle-word\">HIGH</span><span class=\"riddle-word riddle-under\">NOON</span></div>",
+      "prompt": "HIGH over NOON",
+      "answer": "High noon",
+      "joke": "What do clouds wear under their clothes? Thunderwear.",
+      "discuss": "Why do some stories need a moment that feels exactly on time?",
+      "bright": {
+        "title": "Clocks that sync to space",
+        "blurb": "Everyday phones keep time from satellite signals, so a noon meetup can match across towns without anyone watching a tower clock."
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "type": "riddle",
+      "prompt": "What belongs to you, but other people use it more than you do?",
+      "answer": "Your name",
+      "joke": "Why did the scarecrow win an award? He was outstanding in his field.",
+      "discuss": "Is it better to save a little every week, or wait until you have a big chunk to put away?",
+      "crumb": {
+        "week": "2026-09-28",
+        "word": "CLIMB",
+        "letter": "C"
+      },
+      "discussTheme": "money",
+      "bright": {
+        "title": "Names that travel safely online",
+        "blurb": "Kid accounts are getting clearer privacy defaults, so a first name can stay a first name without spilling a whole address."
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"BLOOD with water under it\"><span class=\"riddle-word\">BLOOD</span><span class=\"riddle-word riddle-under\">WATER</span></div>",
+      "prompt": "BLOOD over WATER",
+      "answer": "Blood is thicker than water",
+      "joke": "What has ears but cannot hear? A cornfield.",
+      "discuss": "What rule do you follow even when nobody is watching?",
+      "crumb": {
+        "week": "2026-09-28",
+        "word": "CLIMB",
+        "letter": "L"
+      },
+      "bright": {
+        "title": "Water filters that fit more homes",
+        "blurb": "Smaller, cheaper filters are helping families get cleaner tap water without a whole-house remodel."
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "type": "math",
+      "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1 more than the ball. How much does the ball cost?",
+      "answer": "5 cents (bat $1.05)",
+      "joke": "Why did the cookie go to the hospital? It felt crummy.",
+      "discuss": "What food keeps you going on a long afternoon, and what food just makes you sleepy?",
+      "crumb": {
+        "week": "2026-09-28",
+        "word": "CLIMB",
+        "letter": "I"
+      },
+      "discussTheme": "food",
+      "bright": {
+        "title": "Snacks that steady energy",
+        "blurb": "Researchers keep finding simple mixes of protein and fiber that help kids stay focused longer than sugary spikes alone."
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "type": "pictogram",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"SAND with BOX around it\"><span class=\"riddle-nest-outer\">B<span class=\"riddle-nest-inner\">SAND</span>OX</span></div>",
+      "prompt": "SAND inside BOX",
+      "answer": "Sandbox",
+      "joke": "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+      "discuss": "When does trying something new feel brave, and when does it just feel messy?",
+      "crumb": {
+        "week": "2026-09-28",
+        "word": "CLIMB",
+        "letter": "M"
+      },
+      "bright": {
+        "title": "Play spaces that invite making",
+        "blurb": "Schools and parks are adding loose parts and sand tables again, because building with hands still teaches problem-solving fast."
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "type": "riddle",
+      "prompt": "What goes up but never comes down?",
+      "answer": "Your age",
+      "joke": "What do you call a snowman in summer? A puddle.",
+      "discuss": "If you had to invent a five-minute warm-up that made everyone laugh and move, what would it be?",
+      "crumb": {
+        "week": "2026-09-28",
+        "word": "CLIMB",
+        "letter": "B"
+      },
+      "discussTheme": "move",
+      "bright": {
+        "title": "Short workouts that still count",
+        "blurb": "Coaches are proving that brief, playful bursts of movement can help focus and mood, even on busy school days."
+      }
+    },
+    {
+      "date": "2026-10-03",
+      "type": "rebus",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"BAD above TIMING\"><span class=\"riddle-word\">BAD</span><span class=\"riddle-word riddle-under\">TIMING</span></div>",
+      "prompt": "BAD over TIMING",
+      "answer": "Bad timing",
+      "joke": "Why can't you trust atoms? They make up everything.",
+      "discuss": "When has waiting one more second changed how a moment felt?",
+      "bright": {
+        "title": "Timers that help, not nag",
+        "blurb": "Gentle countdown tools are helping families share turns and focus blocks without the sharp beep of a kitchen clock."
+      }
     }
   ]
-};
+}
