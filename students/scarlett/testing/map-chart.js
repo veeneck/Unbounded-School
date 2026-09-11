@@ -84,7 +84,11 @@
         { name: 'Informational Text', rit: 224 },
         { name: 'Vocabulary', rit: 229 }
       ]},
-      { g: 5, t: 0, rit: 228, pct: '92nd', label: 'Fall 2026' }
+      { g: 5, t: 0, rit: 228, pct: '92nd', label: 'Fall 2026', goals: [
+        { name: 'Literary Text', rit: 231 },
+        { name: 'Informational Text', rit: 228 },
+        { name: 'Vocabulary', rit: 225 }
+      ]}
     ],
     language: [
       { g: 4, t: 1, rit: 226, pct: '95th', label: 'Winter 2025' },
@@ -92,7 +96,8 @@
         { name: 'Writing', rit: 234 },
         { name: 'Grammar', rit: 227 },
         { name: 'Mechanics', rit: 232 }
-      ]}
+      ]},
+      { g: 5, t: 0, rit: 225, pct: '92nd', label: 'Fall 2026' }
     ],
     science: [
       { g: 4, t: 1, rit: 219, pct: '95th', label: 'Winter 2025' },
