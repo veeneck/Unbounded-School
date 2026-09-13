@@ -147,6 +147,37 @@ body.page-transcripts::after {
   }
 }
 
+
+/* Wide screens: soft medieval/Hogwarts side gutters instead of top/bottom scroll paper */
+@media (min-width: 1280px) {
+  /* Co-op + mailing list keep the regular scroll paper texture */
+  body:not(.page-home):not(.page-coop) {
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 6%,
+        color-mix(in srgb, var(--bg) 35%, transparent) 14%,
+        var(--bg) 24%,
+        var(--bg) 76%,
+        color-mix(in srgb, var(--bg) 35%, transparent) 86%,
+        transparent 94%,
+        transparent 100%
+      ),
+      url("sidebg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    background-attachment: fixed, fixed;
+  }
+
+  body:not(.page-home):not(.page-coop)::before,
+  body:not(.page-home):not(.page-coop)::after {
+    display: none;
+  }
+}
+
 /* ========== Site nav (sticky then fade) ==========
    NEWSPAPER THEME EXPERIMENT — revert this block to the
    frosted-paper + green-pill nav if it doesn’t stick. */

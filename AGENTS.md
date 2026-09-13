@@ -29,6 +29,7 @@ When the user says they pushed/changed something live, pull the live page before
 | `subtlebg.jpg` | Aged-paper texture at the **top** of content pages (fades down to `--bg`). Portrait: `subtlebgmobile.jpg` |
 | `subtlebgend.jpg` | Flourish texture at the **bottom** of content pages (fades up to `--bg`). Portrait: `subtlebgendmobile.jpg` |
 | `wallpaper.jpg` | Homepage full-viewport background |
+| `sidebg.jpg` | Wide-screen only (≥1280px): soft medieval/Hogwarts side gutters; scroll paper stays on smaller screens and on `page-coop` (coop + mailing list) |
 | `Wufoo.css` | External theme for Wufoo forms (linked in Wufoo theme editor) |
 | `map/` | Simplemaps world map (`mapdata.js`, `worldmap.js`) used on transcripts |
 | `unbounded-logo.svg` / `.png` | Brand assets |
