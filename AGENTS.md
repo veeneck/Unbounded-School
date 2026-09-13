@@ -137,7 +137,7 @@ Each item is a numbered card: topic title on top, hunt hint underneath (`.guide-
 
 ## Transcripts
 
-Newspaper look is **locked** (`body.page-transcripts`): script masthead, ink section heads, parchment cards, boxed 4th/5th and score tabs, brown sticky grade bar, `subtlebg.jpg` at the grade bar and again (fade reversed) just above Travel. Same chrome for Scarlett and Juliet.
+Newspaper look is **locked** (`body.page-transcripts`): script masthead, ink section heads, parchment cards, boxed 4th/5th and score tabs, brown sticky grade bar, `subtlebg.jpg` at the grade bar and again (fade reversed) just above Travel. Same chrome for Scarlett and Juliet. **Print:** `@media print` in `styles.css` for `page-transcripts` + `page-report` — File → Print / Save as PDF. Hides nav, dash links, sticky chrome, charts; shows all grade panels + the All scores table; ink on white.
 
 ### Scarlett (`students/scarlett/transcripts.html`)
 

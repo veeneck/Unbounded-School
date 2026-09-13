@@ -5471,3 +5471,213 @@ ol.spelling-week-words {
   background: var(--brown);
   color: var(--bg);
 }
+
+
+/* ========== Print / Save as PDF (transcripts + report cards) ========== */
+@media print {
+  @page {
+    margin: 0.6in;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    background-image: none !important;
+    color: #1c1917 !important;
+    font-size: 11pt;
+    line-height: 1.4;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body.page-transcripts,
+  body.page-report {
+    background: #fff !important;
+    background-image: none !important;
+  }
+
+  /* Hide chrome / interactive UI */
+  .site-nav,
+  .nav-back,
+  .page-end-logo,
+  .section-head-links,
+  .dash-link,
+  .dash-drop,
+  .dash-menu,
+  .grade-switcher,
+  .score-tabs,
+  .spelling-words-btn,
+  .proj-link-icon,
+  button {
+    display: none !important;
+  }
+
+  body.page-transcripts::before,
+  body.page-transcripts::after,
+  body.page-report::before,
+  body.page-report::after,
+  body:not(.page-home)::before,
+  body:not(.page-home)::after {
+    display: none !important;
+  }
+
+  .page {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Unstick sticky bars; keep the grade kicker as a simple heading */
+  .grade-sticky,
+  .page-transcripts .grade-sticky,
+  .page-transcripts .grade-sticky.is-stuck {
+    position: static !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0.75rem 0 1rem !important;
+    margin-left: 0 !important;
+    padding: 0.35rem 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    border-bottom: 1.5pt solid #24150e;
+  }
+
+  .grade-sticky-inner {
+    max-width: none !important;
+    display: block !important;
+  }
+
+  .grade-sticky-kicker {
+    white-space: normal !important;
+    font-size: 14pt !important;
+    color: #1c1917 !important;
+  }
+
+  .transcripts-lead,
+  .page-transcripts .transcripts-lead {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 0 0.75rem !important;
+    margin: 0 0 0.75rem !important;
+    border-bottom: 1pt solid #24150e;
+  }
+
+  .transcripts-lead-inner {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  /* Show every grade + the full scores table (not the interactive single panel) */
+  .grade-panel {
+    display: block !important;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+    margin-bottom: 1.25rem;
+  }
+
+  .grade-panel + .grade-panel {
+    border-top: 1pt dashed #a8a29e;
+    padding-top: 1rem;
+  }
+
+  .score-panel {
+    display: none !important;
+  }
+
+  .score-panel[data-score="all"] {
+    display: block !important;
+  }
+
+  .score-chart-wrap,
+  .map-rit,
+  .score-chart-stage {
+    display: none !important;
+  }
+
+  .score-table-wrap,
+  .score-panel[data-score="all"] .score-table-wrap {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  table.scores {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  table.scores th,
+  table.scores td {
+    border: 0.5pt solid #a8a29e !important;
+    padding: 0.25rem 0.4rem !important;
+    color: #1c1917 !important;
+  }
+
+  /* Cards / progress — keep fills, drop heavy shadows */
+  .progress-card,
+  .project-card,
+  .book-card,
+  .subject-card,
+  .writing-grid a,
+  .project-grid a {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+    border: 0.5pt solid #d6d3d1 !important;
+    background: #fff !important;
+  }
+
+  .progress-bar-fill,
+  .book-fill,
+  .lexia-circle {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    color: #1c1917 !important;
+    text-decoration: none !important;
+  }
+
+  a[href^="http"]::after {
+    content: none !important;
+  }
+
+  .section-head {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h1, h2, h3 {
+    color: #1c1917 !important;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .hero-badge {
+    border: 0.5pt solid #24150e !important;
+    color: #24150e !important;
+    background: transparent !important;
+  }
+
+  /* Travel map often prints poorly — keep caption, drop canvas */
+  .travel-map,
+  .travel-map-wrap canvas,
+  #map,
+  .mapdata,
+  .travel-map-wrap .map {
+    display: none !important;
+  }
+
+  .travel-map-caption {
+    display: block !important;
+    font-style: italic;
+  }
+
+  /* Report cards: show active term content; hide term switcher chrome */
+  .page-report .report-terms {
+    display: none !important;
+  }
+}
