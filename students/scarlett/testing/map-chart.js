@@ -105,6 +105,11 @@
         { name: 'Life Science', rit: 225 },
         { name: 'Physical Science', rit: 223 },
         { name: 'Earth & Space', rit: 224 }
+      ]},
+      { g: 5, t: 0, rit: 217, pct: '89th', label: 'Fall 2026', goals: [
+        { name: 'Life Science', rit: 223 },
+        { name: 'Physical Science', rit: 212 },
+        { name: 'Earth & Space', rit: 216 }
       ]}
     ]
   };
