@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/unbounded-logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#166534">
+  <meta name="apple-mobile-web-app-title" content="Unbounded School">
+  <meta name="application-name" content="Unbounded School">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>A Note to Future Me — Writing | Unbounded School</title>
+  <link rel="stylesheet" href="../../../../styles.css">
+      <!-- Fathom - beautiful, simple website analytics -->
+      <script src="https://cdn.usefathom.com/script.js" data-site="FXWFKUXE" defer></script>
+      <!-- / Fathom -->
+  <style>
+    .writing-body p {
+      margin-bottom: 1.05rem;
+      line-height: 1.68;
+      color: var(--ink);
+    }
+    .writing-body p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body class="page-writing">
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/index.html">
+        <img src="../../../../unbounded-logo.svg" alt="Unbounded School" width="42" height="42">
+        <span>Unbounded School</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/schedule.html">Schedule</a></li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Guides
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/guides/grok-and-quill.html" role="menuitem">Grok &amp; Quill</a>
+            <a href="/guides/quarterly-coin.html" role="menuitem">Quarterly Coin</a>
+            <a href="/guides/travel-crier.html" role="menuitem">Travel Crier</a>
+            <a href="/guides/info-quest.html" role="menuitem">Info Quest</a>
+            <a href="/guides/bakers-guild.html" role="menuitem">Bakers Guild</a>
+            <a href="/guides/housewright.html" role="menuitem">Housewright</a>
+          </div>
+        </li>
+        <li class="nav-drop">
+          <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+            Students
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="/students/scarlett/transcripts.html" role="menuitem">Scarlett</a>
+            <a href="/students/juliet/transcripts.html" role="menuitem">Juliet</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+      <a class="nav-back" href="/students/scarlett/transcripts.html">← Back to Scarlett’s Transcripts</a>
+
+    <header>
+      <div class="hero-badge">Writing piece</div>
+      <h1>A Note to Future Me</h1>
+      <p class="subtitle">Letter to grown-up me</p>
+    </header>
+
+    <div class="writing-hero">
+      <img src="../../hero/futureself.jpg" alt="A Note to Future Me">
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h2>The Piece</h2>
+      </div>
+      <div class="subject-card writing-body" style="padding:1.35rem 1.5rem;">
+        <p>Hey, future me, I’m writing to you because I want to remind you how life was when you were 10 years old, ask you questions, and give you advice. As your 10-years-old self, you lived in a neighborhood full of kids, where everyone’s always out having a good time, and kids are laughing and running around, you are homeschooled, played soccer and basketball, and did art class.</p>
+        <p>I have so many questions to ask you, so don’t stop reading now. Where do you live? Who are you friends with? Are you friends with Maddy, Avery, and Emily? If you aren’t, try to get in touch with them. Do you still blast music super loud and jam to it in your room? Do you have a job? If so, do you enjoy it? Are you about to have kids, or do you already have kids, or do you not have kids at all? What color is your hair? Is it still dirty brown? I’m out of questions right now, but there’s more coming up next.</p>
+        <p>Traits I want when I grow up are being kind, honest, brave, goofy, and any other trait that will make me a good person. Do you have any of these traits? If not, start showing them. My advice to you is to stay in touch with family. They will always help guide you. Kindness is important. It will make life easier. Never give up. Make the best of life. You only have one. Always stay positive and confident. Remember that even in the darkest times, good can be found. Wait! I forgot to ask you something. Do you still like Harry Potter? Please let your kids watch it once they get old enough.</p>
+        <p>I want to tell you my predictions of how I think I’m going to be when I’m your age. I think I’m going to be a party planner that plans huge birthday parties and has two or three kids. Be a good person and love life. Thank you so much for reading this note. I hope I made your day.</p>
+      </div></div>
+    </section>
+
+    <footer>
+      Unbounded School · Writing log
+    </footer>
+    <a class="page-end-logo" href="../../../../index.html">
+      <img src="../../../../unbounded-logo.svg" alt="Unbounded School">
+    </a>
+
+  </div>
+
+  <script>
+    (function () {
+      const nav = document.getElementById('site-nav');
+      const THRESHOLD = 200;
+      function updateNav() {
+        if (window.scrollY > THRESHOLD) nav.classList.add('nav-away');
+        else nav.classList.remove('nav-away');
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+      document.querySelectorAll('.nav-drop').forEach(function (drop) {
+        const btn = drop.querySelector('.nav-drop-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const open = drop.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.querySelectorAll('.nav-drop').forEach(function (other) {
+            if (other !== drop) {
+              other.classList.remove('open');
+              other.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-drop').forEach(function (drop) {
+          drop.classList.remove('open');
+          drop.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
