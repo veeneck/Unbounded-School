@@ -796,6 +796,234 @@ window.UNBOUNDED_RIDDLES = {
         "title": "Timers that help, not nag",
         "blurb": "Gentle countdown tools are helping families share turns and focus blocks without the sharp beep of a kitchen clock."
       }
+    },
+    {
+      "date": "2026-10-04",
+      "type": "math",
+      "prompt": "A baker packs muffins in boxes of 6. She has 47 muffins. How many full boxes can she fill, and how many muffins are left over?",
+      "answer": "7 boxes with 5 left over",
+      "joke": "Why did the muffin go to school? To get a little bread-ucation.",
+      "discuss": "When something doesn’t divide evenly, do you prefer to share the leftovers or save them for later?",
+      "bright": {
+        "title": "Fair shares, leftover crumbs",
+        "blurb": "Classrooms are using leftover-problem warm-ups so kids practice remainder thinking before the day’s harder math."
+      }
+    },
+    {
+      "date": "2026-10-05",
+      "type": "pictogram",
+      "prompt": "MAN inside HOLE",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"MAN nested inside HOLE\"><span class=\"riddle-nest-outer\">H<span class=\"riddle-nest-inner\">MAN</span>OLE</span></div>",
+      "answer": "Manhole",
+      "joke": "What has a bed but never sleeps? A river.",
+      "discuss": "What everyday object suddenly seems clever once you notice how it was named?",
+      "crumb": {
+        "week": "2026-10-05",
+        "word": "FORGE",
+        "letter": "F"
+      },
+      "bright": {
+        "title": "Words hiding in plain sight",
+        "blurb": "Word-play puzzles are helping middle schoolers spot compound words faster when they read new science labels."
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "type": "riddle",
+      "prompt": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+      "answer": "An echo",
+      "joke": "Why did the echo break up with its friend? It needed some space.",
+      "discuss": "Where have you heard a really good echo — a canyon, a gym, a hallway?",
+      "crumb": {
+        "week": "2026-10-05",
+        "word": "FORGE",
+        "letter": "O"
+      },
+      "discussTheme": "listen",
+      "bright": {
+        "title": "Sound that bounces back",
+        "blurb": "Simple clap-and-listen walks are turning empty rooms and stairwells into tiny physics labs for reflection."
+      }
+    },
+    {
+      "date": "2026-10-07",
+      "type": "rebus",
+      "prompt": "EVERY cloud has a SILVER LINING",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"EVERY then CLOUD with SILVER LINING underneath\"><span class=\"riddle-word\">EVERY</span><span class=\"riddle-word\">CLOUD</span><span class=\"riddle-word riddle-under\">SILVER LINING</span></div>",
+      "answer": "Every cloud has a silver lining",
+      "joke": "What do clouds wear under their robes? Thunderwear.",
+      "discuss": "Tell about a small good thing that showed up after a rough moment.",
+      "crumb": {
+        "week": "2026-10-05",
+        "word": "FORGE",
+        "letter": "R"
+      },
+      "bright": {
+        "title": "Bright side without glossing over",
+        "blurb": "Families are pairing a tough-day check-in with one concrete next step, so optimism has a job to do."
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "type": "math",
+      "prompt": "You start with 3. Each step you add the next odd number: +1, then +3, then +5, then +7. What number do you land on after those four steps?",
+      "answer": "19",
+      "joke": "Why was six afraid of seven? Because seven eight nine.",
+      "discuss": "Do you like patterns that grow by adding, or patterns that grow by multiplying?",
+      "crumb": {
+        "week": "2026-10-05",
+        "word": "FORGE",
+        "letter": "G"
+      },
+      "bright": {
+        "title": "Odd-number ladders",
+        "blurb": "Teachers are using quick odd-number climbs as morning warm-ups so place-value and pattern talk start before the lesson."
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "type": "pictogram",
+      "prompt": "PARKING between the LINES",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"PARKING sitting between two LINES\"><span class=\"riddle-word\">LINE</span><span class=\"riddle-word\">PARKING</span><span class=\"riddle-word\">LINE</span></div>",
+      "answer": "Parallel parking",
+      "joke": "Why did the bicycle fall over? It was two tired.",
+      "discuss": "What’s a grown-up skill that looks easy until you try it?",
+      "crumb": {
+        "week": "2026-10-05",
+        "word": "FORGE",
+        "letter": "E"
+      },
+      "bright": {
+        "title": "Skills that take practice laps",
+        "blurb": "Driving instructors still teach parallel parking in tiny chunks so nerves don’t wipe out the whole lesson."
+      }
+    },
+    {
+      "date": "2026-10-10",
+      "type": "riddle",
+      "prompt": "What has hands but can’t clap?",
+      "answer": "A clock",
+      "joke": "What time do ducks wake up? At the quack of dawn.",
+      "discuss": "If you could redesign a clock face for kids, what would you put on it besides numbers?",
+      "bright": {
+        "title": "Time sense without stress",
+        "blurb": "Analog clocks are back in some classrooms so kids can see chunks of time, not only blinking digits."
+      }
+    },
+    {
+      "date": "2026-10-11",
+      "type": "rebus",
+      "prompt": "SQUARE over CIRCLE",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"SQUARE stacked over CIRCLE\"><span class=\"riddle-word\">SQUARE</span><span class=\"riddle-word riddle-under\">CIRCLE</span></div>",
+      "answer": "Square over circle",
+      "joke": "Why did the circle break up with the triangle? It felt too pointed.",
+      "discuss": "If shapes had personalities, which one would match your mood today?",
+      "bright": {
+        "title": "Geometry jokes that stick",
+        "blurb": "Silly shape idioms are helping kids remember position words like over, under, and beside without a worksheet grind."
+      }
+    },
+    {
+      "date": "2026-10-12",
+      "type": "math",
+      "prompt": "A recipe needs 3/4 cup of sugar. You only have a 1/4-cup scoop. How many scoops do you need?",
+      "answer": "3 scoops",
+      "joke": "Why did the cookie go to the doctor? It felt crumby.",
+      "discuss": "What’s a kitchen job you can do now that used to feel too hard?",
+      "crumb": {
+        "week": "2026-10-12",
+        "word": "TRACE",
+        "letter": "T"
+      },
+      "discussTheme": "cook",
+      "bright": {
+        "title": "Fraction scoops in real bowls",
+        "blurb": "Baking fractions with a single scoop is giving families a no-worksheet way to see thirds and fourths in action."
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "type": "pictogram",
+      "prompt": "SPACE inside BAR",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"SPACE nested inside BAR\"><span class=\"riddle-nest-outer\">B<span class=\"riddle-nest-inner\">SPACE</span>AR</span></div>",
+      "answer": "Space bar",
+      "joke": "Why did the computer go to the doctor? It had a virus.",
+      "discuss": "Which keyboard key would you rename if you could, and what would you call it?",
+      "crumb": {
+        "week": "2026-10-12",
+        "word": "TRACE",
+        "letter": "R"
+      },
+      "bright": {
+        "title": "Tiny typing victories",
+        "blurb": "Short daily typing games are helping kids notice useful keys, not just race for speed."
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "type": "riddle",
+      "prompt": "What kind of room has no doors or windows?",
+      "answer": "A mushroom",
+      "joke": "Why did the fungus and the algae get married? Because they took a lichen to each other.",
+      "discuss": "What’s your favorite cozy habit when the weather turns cooler?",
+      "crumb": {
+        "week": "2026-10-12",
+        "word": "TRACE",
+        "letter": "A"
+      },
+      "bright": {
+        "title": "Season change check-ins",
+        "blurb": "Families are stacking a short outdoor walk with a warm drink so cooler weeks still feel like an adventure, not a shutdown."
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "type": "rebus",
+      "prompt": "FISH next to FISH",
+      "promptHtml": "<div class=\"riddle-rebus riddle-rebus-row\" role=\"img\" aria-label=\"FISH next to FISH\"><span class=\"riddle-word\">FISH</span><span class=\"riddle-word\">FISH</span></div>",
+      "answer": "A school of fish",
+      "joke": "Why are fish so smart? Because they live in schools.",
+      "discuss": "Would you rather learn something alone or with a group that helps you stay curious?",
+      "crumb": {
+        "week": "2026-10-12",
+        "word": "TRACE",
+        "letter": "C"
+      },
+      "bright": {
+        "title": "Learning in a school of peers",
+        "blurb": "Co-op groups are proving that kids remember ideas better when they explain them out loud to a friend."
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "type": "math",
+      "prompt": "A rope is cut into 5 equal pieces. Each piece is 2.4 meters long. How long was the rope before it was cut?",
+      "answer": "12 meters",
+      "joke": "What’s a snail’s favorite sports car? A shelby.",
+      "discuss": "When progress feels slow, what tiny win still counts for you?",
+      "crumb": {
+        "week": "2026-10-12",
+        "word": "TRACE",
+        "letter": "E"
+      },
+      "discussTheme": "persist",
+      "bright": {
+        "title": "Measure twice, cut once",
+        "blurb": "Hands-on length problems with string are helping kids trust multiplication as repeated groups, not just a button on a calculator."
+      }
+    },
+    {
+      "date": "2026-10-17",
+      "type": "pictogram",
+      "prompt": "ONCE inside MOON",
+      "promptHtml": "<div class=\"riddle-rebus\" role=\"img\" aria-label=\"ONCE nested inside MOON\"><span class=\"riddle-nest-outer\">M<span class=\"riddle-nest-inner\">ONCE</span>OON</span></div>",
+      "answer": "Once in a blue moon",
+      "joke": "How does the moon cut his hair? Eclipse it.",
+      "discuss": "What’s a rare treat your family saves for special days?",
+      "bright": {
+        "title": "Rare-sky watching",
+        "blurb": "Simple moon calendars are giving kids a reason to peek outside at dusk and notice how the night sky changes."
+      }
     }
   ]
 }
